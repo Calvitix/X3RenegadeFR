@@ -1,0 +1,1409 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>ZH.Template.Lasers</name>
+	<version>11</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* always use highest DPS laser</comment>
+		</line>
+		<line linenr="002" indent="" />
+		<line linenr="003" indent="" interruptable="@">
+			<var>$lasers</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[NULL]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.GetLaser.All</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="004" indent="" />
+		<line linenr="005" indent="">
+			<var>$template</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>alloc</text>
+		</line>
+		<line linenr="006" indent="">
+			<var>$dpsShipCompendium</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>alloc</text>
+		</line>
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
+			<var>$mainType</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[SSTYPE_SHIP]</var>
+		</line>
+		<line linenr="009" indent="">
+			<var>$subTypes</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>number</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>subtypes</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>maintype</text>
+			<text> </text>
+			<var>$mainType</var>
+		</line>
+		<line linenr="010" indent="">
+			<var>$laserToInstall</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$subTypes</var>
+		</line>
+		<line linenr="013" indent="&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$subTypes</var>
+		</line>
+		<line linenr="014" indent="&#160;">
+			<var>$type</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>ware</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>maintype</text>
+			<text> </text>
+			<var>$mainType</var>
+			<text> </text>
+			<text>and</text>
+			<text> </text>
+			<text>subtype</text>
+			<text> </text>
+			<var>$subTypes</var>
+		</line>
+		<line linenr="015" indent="&#160;">
+			<var>$dps.total</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="016" indent="&#160;" interruptable="@">
+			<var>$isMiner</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[NULL]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Joubarbe.Lib.IsMiner</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>shipOrType</text>
+			<text>=</text>
+			<var>$type</var>
+		</line>
+		<line linenr="017" indent="&#160;">
+			<var>$turrets</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>number</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>turrets</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>type</text>
+			<text>:</text>
+			<text> </text>
+			<text>subtype</text>
+			<text>=</text>
+			<var>$type</var>
+		</line>
+		<line linenr="018" indent="&#160;">
+			<comment>* do if $turrets &gt; 1</comment>
+		</line>
+		<line linenr="019" indent="&#160;">
+			<comment>* inc $turrets</comment>
+		</line>
+		<line linenr="020" indent="&#160;">
+			<var>$turretArray</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="021" indent="&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$turrets</var>
+			<text> </text>
+			<text>&gt;=</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="022" indent="&#160;&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$turrets</var>
+		</line>
+		<line linenr="023" indent="&#160;&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$turrets</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="024" indent="&#160;&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="025" indent="&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>turret</text>
+			<text> </text>
+			<text>laser</text>
+			<text> </text>
+			<text>mask</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>type</text>
+			<text>:</text>
+			<text> </text>
+			<text>subtype</text>
+			<text>=</text>
+			<var>$type</var>
+			<text>,</text>
+			<text> </text>
+			<text>turret</text>
+			<text>=</text>
+			<var>$turrets</var>
+		</line>
+		<line linenr="026" indent="&#160;&#160;&#160;">
+			<text>append</text>
+			<text> </text>
+			<var>null</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$turretArray</var>
+		</line>
+		<line linenr="027" indent="&#160;&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="028" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="029" indent="&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>number</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>lasers</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<text>turret</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>ship</text>
+			<text> </text>
+			<text>type</text>
+			<text>:</text>
+			<text> </text>
+			<text>subtype</text>
+			<text>=</text>
+			<var>$type</var>
+			<text>,</text>
+			<text> </text>
+			<text>turret</text>
+			<text>=</text>
+			<var>$turrets</var>
+		</line>
+		<line linenr="030" indent="&#160;&#160;&#160;">
+			<text>append</text>
+			<text> </text>
+			<var>null</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$turretArray</var>
+		</line>
+		<line linenr="031" indent="&#160;&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="032" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="033" indent="&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$isMiner</var>
+			<text> </text>
+			<text>AND</text>
+			<text> </text>
+			<var>$turrets</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="034" indent="&#160;&#160;&#160;">
+			<text>append</text>
+			<text> </text>
+			<var>{Mobile Drilling System}</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$turretArray</var>
+		</line>
+		<line linenr="035" indent="&#160;&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="036" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="037" indent="&#160;&#160;">
+			<comment>* first get all compatible lasers for that turret</comment>
+		</line>
+		<line linenr="038" indent="&#160;&#160;">
+			<var>$lasers.compatible</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="039" indent="&#160;&#160;">
+			<var>$dps.array</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="040" indent="&#160;&#160;">
+			<var>$XS.Iterator1</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$lasers</var>
+		</line>
+		<line linenr="041" indent="&#160;&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$XS.Iterator1</var>
+		</line>
+		<line linenr="042" indent="&#160;&#160;&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$XS.Iterator1</var>
+		</line>
+		<line linenr="043" indent="&#160;&#160;&#160;">
+			<var>$laser</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$lasers</var>
+			<text>[</text>
+			<var>$XS.Iterator1</var>
+			<text>]</text>
+		</line>
+		<line linenr="044" indent="&#160;&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<text>can</text>
+			<text> </text>
+			<text>laser</text>
+			<text> </text>
+			<text>install</text>
+			<text> </text>
+			<text>into</text>
+			<text> </text>
+			<text>turret</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>type</text>
+			<text>:</text>
+			<text> </text>
+			<text>subtype</text>
+			<text>=</text>
+			<var>$type</var>
+			<text>,</text>
+			<text> </text>
+			<text>laser</text>
+			<text> </text>
+			<text>subtype</text>
+			<text>=</text>
+			<var>$laser</var>
+			<text>,</text>
+			<text> </text>
+			<text>turret</text>
+			<text>=</text>
+			<var>$turrets</var>
+		</line>
+		<line linenr="045" indent="&#160;&#160;&#160;&#160;">
+			<text>append</text>
+			<text> </text>
+			<var>$laser</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$lasers.compatible</var>
+		</line>
+		<line linenr="046" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+			<var>$stats</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[NULL]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.GetStats.Laser</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>laser</text>
+			<text>=</text>
+			<var>$laser</var>
+		</line>
+		<line linenr="047" indent="&#160;&#160;&#160;&#160;">
+			<var>$dpsAverage</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$stats</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'dpsAverageInt'</text>
+			<text> </text>
+			<text>)</text>
+		</line>
+		<line linenr="048" indent="&#160;&#160;&#160;&#160;">
+			<text>append</text>
+			<text> </text>
+			<var>$dpsAverage</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$dps.array</var>
+		</line>
+		<line linenr="049" indent="&#160;&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="050" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="051" indent="&#160;&#160;">
+			<comment>* now Tri par DPS</comment>
+		</line>
+		<line linenr="052" indent="&#160;&#160;">
+			<var>$lasers.compatible.s</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$lasers.compatible</var>
+		</line>
+		<line linenr="053" indent="&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$lasers.compatible.s</var>
+			<text> </text>
+			<text>&gt;</text>
+			<text> </text>
+			<var>1</var>
+		</line>
+		<line linenr="054" indent="&#160;&#160;&#160;">
+			<var>$lasers.compatible</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sort</text>
+			<text> </text>
+			<text>array</text>
+			<text>:</text>
+			<text> </text>
+			<text>data</text>
+			<text>=</text>
+			<var>$lasers.compatible</var>
+			<text> </text>
+			<text>sort</text>
+			<text> </text>
+			<text>values</text>
+			<text>=</text>
+			<var>$dps.array</var>
+		</line>
+		<line linenr="055" indent="&#160;&#160;&#160;">
+			<var>$lasers.compatible</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>reverse</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$lasers.compatible</var>
+		</line>
+		<line linenr="056" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="057" indent="&#160;&#160;">
+			<var>$laserToInstall</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$lasers.compatible</var>
+			<text>[</text>
+			<var>0</var>
+			<text>]</text>
+		</line>
+		<line linenr="058" indent="&#160;&#160;" interruptable="@">
+			<var>$stats</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[NULL]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.GetStats.Laser</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>laser</text>
+			<text>=</text>
+			<var>$laserToInstall</var>
+		</line>
+		<line linenr="059" indent="&#160;&#160;">
+			<var>$dpsAverage</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$stats</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'dpsAverageInt'</text>
+			<text> </text>
+			<text>)</text>
+		</line>
+		<line linenr="060" indent="&#160;&#160;">
+			<var>$dps</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>number</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>lasers</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<text>turret</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>ship</text>
+			<text> </text>
+			<text>type</text>
+			<text>:</text>
+			<text> </text>
+			<text>subtype</text>
+			<text>=</text>
+			<var>$type</var>
+			<text>,</text>
+			<text> </text>
+			<text>turret</text>
+			<text>=</text>
+			<var>$turrets</var>
+		</line>
+		<line linenr="061" indent="&#160;&#160;">
+			<var>$dps</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$dps</var>
+			<text> </text>
+			<text>*</text>
+			<text> </text>
+			<var>$dpsAverage</var>
+		</line>
+		<line linenr="062" indent="&#160;&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$dpsAverage</var>
+			<text> </text>
+			<text>&gt;</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="063" indent="&#160;&#160;&#160;">
+			<var>$dps.total</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$dps.total</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$dps</var>
+		</line>
+		<line linenr="064" indent="&#160;&#160;">
+			<text>append</text>
+			<text> </text>
+			<var>$laserToInstall</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$turretArray</var>
+		</line>
+		<line linenr="065" indent="&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="066" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="067" indent="&#160;">
+			<var>$turretArray</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>reverse</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$turretArray</var>
+		</line>
+		<line linenr="068" indent="&#160;">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$template</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$type</var>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$turretArray</var>
+		</line>
+		<line linenr="069" indent="&#160;">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$dpsShipCompendium</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$type</var>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$dps.total</var>
+		</line>
+		<line linenr="070" indent="&#160;" />
+		<line linenr="071" indent="&#160;">
+			<comment>* Mordan2 - Outputs a list of ship types, class, primary installed laser, and total DPS.</comment>
+		</line>
+		<line linenr="072" indent="&#160;">
+			<comment>*$ShipClass = get ship class from subtype: $type</comment>
+		</line>
+		<line linenr="073" indent="&#160;">
+			<comment>*write to logfile 1 append=[TRUE] printf: fmt='%s,%s,%s,%s', $type, $ShipClass, $laserToInstall, $dps.total, null</comment>
+		</line>
+		<line linenr="074" indent="&#160;" />
+		<line linenr="075" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="076" indent="" />
+		<line linenr="077" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'mayhem_templates.lasers'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$template</var>
+		</line>
+		<line linenr="078" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'ZH_dpsShipCompendium'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$dpsShipCompendium</var>
+		</line>
+		<line linenr="079" indent="" />
+		<line linenr="080" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="ZH.Template.Lasers" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="11" />
+			<sval type="int" val="0" />
+			<sval type="array" size="19">
+				<sval type="string" val="lasers" />
+				<sval type="string" val="template" />
+				<sval type="string" val="dpsShipCompendium" />
+				<sval type="string" val="mainType" />
+				<sval type="string" val="subTypes" />
+				<sval type="string" val="laserToInstall" />
+				<sval type="string" val="type" />
+				<sval type="string" val="dps.total" />
+				<sval type="string" val="isMiner" />
+				<sval type="string" val="turrets" />
+				<sval type="string" val="turretArray" />
+				<sval type="string" val="lasers.compatible" />
+				<sval type="string" val="dps.array" />
+				<sval type="string" val="XS.Iterator1" />
+				<sval type="string" val="laser" />
+				<sval type="string" val="stats" />
+				<sval type="string" val="dpsAverage" />
+				<sval type="string" val="lasers.compatible.s" />
+				<sval type="string" val="dps" />
+			</sval>
+			<sval type="array" size="59">
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="Mayhem.GetLaser.All" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1706" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1706" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="3" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="207" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="658" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="5" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610598391" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="657" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="Joubarbe.Lib.IsMiner" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="2019" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="10" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610599415" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608376" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="52" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="2026" />
+					<sval type="int" val="-536865788" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="135" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="2020" />
+					<sval type="int" val="-536865020" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="135" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="19">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610606077" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="9" />
+					<sval type="int" val="5" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="9" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-3" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="135" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="9" />
+					<sval type="int" val="524325" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="12" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610602999" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="14" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="2027" />
+					<sval type="int" val="-1610603261" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="14" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="135" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="14" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="Mayhem.GetStats.Laser" />
+					<sval type="int" val="15" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="14" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1709" />
+					<sval type="int" val="16" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="15" />
+					<sval type="int" val="5" />
+					<sval type="string" val="dpsAverageInt" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="135" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="29" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="17" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610601981" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="17" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1417" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1443" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="Mayhem.GetStats.Laser" />
+					<sval type="int" val="15" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1709" />
+					<sval type="int" val="16" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="15" />
+					<sval type="int" val="5" />
+					<sval type="string" val="dpsAverageInt" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="2020" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="18" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="15" />
+					<sval type="int" val="13" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="13" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610600184" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="7" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="135" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1443" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhem_templates.lasers" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="ZH_dpsShipCompendium" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="29">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="always use highest DPS laser" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="3" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="string" val="do if $turrets &gt; 1" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="string" val="inc $turrets" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="26" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="26" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="26" />
+					<sval type="int" val="1" />
+					<sval type="string" val="first get all compatible lasers for that turret" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="37" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="38" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="38" />
+					<sval type="int" val="1" />
+					<sval type="string" val="now Tri par DPS" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="42" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="51" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="52" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="55" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="55" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Mordan2 - Outputs a list of ship types, class, primary installed laser, and total DPS." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="55" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$ShipClass = get ship class from subtype: $type" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="55" />
+					<sval type="int" val="1" />
+					<sval type="string" val="write to logfile 1 append=[TRUE] printf: fmt='%s,%s,%s,%s', $type, $ShipClass, $laserToInstall, $dps.total, null" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="55" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="56" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="56" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="58" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

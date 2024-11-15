@@ -1,0 +1,837 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>!init.wing.commandupgrade</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description>Init script for the map wing command to needed upgrade.</description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* Used to map upgrades to specific Wing Commands (Cycrow)</comment>
+		</line>
+		<line linenr="002" indent="" />
+		<line linenr="003" indent="">
+			<comment>* --- Standard Commands  -------------</comment>
+		</line>
+		<line linenr="004" indent="">
+			<var>$upgrade</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="005" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_DOCKAT]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="006" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_STANDBY]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="007" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_IDLE]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="008" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_FOLLOW]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="009" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_RETURN_HOME]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="">
+			<comment>* --- Navigation Mk1  -------------</comment>
+		</line>
+		<line linenr="012" indent="">
+			<comment>*$upgrade = {Navigation Command Software MK1}</comment>
+		</line>
+		<line linenr="013" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_MOVE_SECTOR]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="014" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_MOVE_POS]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="">
+			<comment>* --- Jumpdrive Commands  -------------</comment>
+		</line>
+		<line linenr="017" indent="">
+			<comment>*$upgrade = {Jumpdrive}</comment>
+		</line>
+		<line linenr="018" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_JUMP]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="019" indent="" />
+		<line linenr="020" indent="">
+			<comment>* --- Logiciel de commande de Combat MK1  -------------</comment>
+		</line>
+		<line linenr="021" indent="">
+			<comment>*$upgrade = {Combat Command Software MK1}</comment>
+		</line>
+		<line linenr="022" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_ATTACK]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="023" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_ATTACKALL]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="024" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_PROTECT]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="025" indent="" />
+		<line linenr="026" indent="">
+			<comment>* --- Logiciel de commande de Combat MK2  -------------</comment>
+		</line>
+		<line linenr="027" indent="">
+			<comment>*$upgrade = {Combat Command Software MK2}</comment>
+		</line>
+		<line linenr="028" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_ATTACK_NEAREST]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="029" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_ATTACK_SAME]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="030" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_DEFEND_POS]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="031" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_ATTACK_SHIELDS]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="032" indent="" />
+		<line linenr="033" indent="">
+			<comment>* --- Supply Command Software  -------------</comment>
+		</line>
+		<line linenr="034" indent="">
+			<comment>*$upgrade = {Supply Command Software}</comment>
+		</line>
+		<line linenr="035" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_SUPPLY]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="036" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_SUPPLY_EQUIP]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="037" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_SUPPLY_REPROV]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="038" indent="" />
+		<line linenr="039" indent="">
+			<comment>* --- Special Command Software  -------------</comment>
+		</line>
+		<line linenr="040" indent="">
+			<comment>*$upgrade = {Special Command Software MK1}</comment>
+		</line>
+		<line linenr="041" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_COLLECTWARE]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="042" indent="" />
+		<line linenr="043" indent="">
+			<comment>* --- Patrol Command Software  -------------</comment>
+		</line>
+		<line linenr="044" indent="">
+			<comment>*$upgrade = {Patrol Command Software}</comment>
+		</line>
+		<line linenr="045" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>wing</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_WING_PATROL]</var>
+			<text> </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>$upgrade</var>
+		</line>
+		<line linenr="046" indent="" />
+		<line linenr="047" indent="">
+			<comment>* --- Internal Scriptcalls --------------</comment>
+		</line>
+		<line linenr="048" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_MOVE_WINGFORMATION]</var>
+			<text>  </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="049" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>upgrade</text>
+			<text>:</text>
+			<text> </text>
+			<text>command</text>
+			<text>=</text>
+			<var>[COMMAND_ATTACK_WINGFORMATION]</var>
+			<text>  </text>
+			<text>upgrade</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="050" indent="" />
+		<line linenr="051" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="052" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="!init.wing.commandupgrade" />
+			<sval type="int" val="50" />
+			<sval type="string" val="Init script for the map wing command to needed upgrade." />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="1">
+				<sval type="string" val="upgrade" />
+			</sval>
+			<sval type="array" size="24">
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="20" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="19" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="17" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="16" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="15" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1380" />
+					<sval type="int" val="25" />
+					<sval type="int" val="14" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="144" />
+					<sval type="int" val="18" />
+					<sval type="int" val="56" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="144" />
+					<sval type="int" val="18" />
+					<sval type="int" val="57" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="28">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Used to map upgrades to specific Wing Commands (Cycrow)" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Commandes Standard -------------" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="6" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="6" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Navigation Mk1  -------------" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="6" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$upgrade = {Navigation Command Software MK1}" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="8" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="8" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Commandes de moteur de saut -------------" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="8" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$upgrade = {Jumpdrive}" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="9" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Logiciel de commande de Combat MK1  -------------" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="9" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$upgrade = {Combat Command Software MK1}" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Logiciel de commande de Combat MK2  -------------" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$upgrade = {Combat Command Software MK2}" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="16" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="16" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Supply Command Software  -------------" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="16" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$upgrade = {Supply Command Software}" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="19" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="19" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Special Command Software  -------------" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="19" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$upgrade = {Special Command Software MK1}" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="20" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Logiciel de commande de Patrouille -------------" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="20" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$upgrade = {Patrol Command Software}" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="21" />
+					<sval type="int" val="1" />
+					<sval type="string" val="--- Internal Scriptcalls --------------" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="24" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

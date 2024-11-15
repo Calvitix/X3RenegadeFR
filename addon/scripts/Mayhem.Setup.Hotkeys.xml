@@ -1,0 +1,2346 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>Mayhem.Setup.Hotkeys</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="" />
+		<line linenr="002" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemDataScannerHK'</text>
+		</line>
+		<line linenr="003" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="004" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="005" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Data scanner'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.DataScanner</call>
+		</line>
+		<line linenr="006" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="007" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="008" indent="" />
+		<line linenr="009" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemMinistryHK'</text>
+		</line>
+		<line linenr="010" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="011" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="012" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Ministry of war'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Menu.Mayhem.Ministry</call>
+		</line>
+		<line linenr="013" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="014" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemDWM'</text>
+		</line>
+		<line linenr="017" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="018" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="019" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Outposts'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Menu.PC.Sanctuaries</call>
+		</line>
+		<line linenr="020" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="021" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="022" indent="" />
+		<line linenr="023" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'SatellitesMonitoring'</text>
+		</line>
+		<line linenr="024" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="025" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="026" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Satellite monitoring'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Menu.SatellitesMonitoring</call>
+		</line>
+		<line linenr="027" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="028" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="029" indent="" />
+		<line linenr="030" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'WingmenGoHome'</text>
+		</line>
+		<line linenr="031" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="032" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="033" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Wingmen go home'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.Wingmen.GoHome</call>
+		</line>
+		<line linenr="034" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="035" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="036" indent="" />
+		<line linenr="037" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'TurretAttackEnemies'</text>
+		</line>
+		<line linenr="038" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="039" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="040" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Turret: Attack All Enemies'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.Turret.AttackEnemies</call>
+		</line>
+		<line linenr="041" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="042" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="043" indent="" />
+		<line linenr="044" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'TurretMissileDefense'</text>
+		</line>
+		<line linenr="045" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="046" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="047" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Turret: Missile Defence'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.Turret.MissileDefense</call>
+		</line>
+		<line linenr="048" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="049" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="050" indent="" />
+		<line linenr="051" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'SelectNearestLeader'</text>
+		</line>
+		<line linenr="052" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="053" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="054" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Target nearest fleet leader'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.Fleet.TargetLeader</call>
+		</line>
+		<line linenr="055" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="056" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="057" indent="" />
+		<line linenr="058" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemStationSettingsHK'</text>
+		</line>
+		<line linenr="059" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="060" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="061" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Station settings'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Menu.PC.StationSettings</call>
+		</line>
+		<line linenr="062" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="063" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="064" indent="" />
+		<line linenr="065" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemJumpHK'</text>
+		</line>
+		<line linenr="066" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="067" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="068" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Move to position using jump beacons'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.HK.Jump</call>
+		</line>
+		<line linenr="069" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="070" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="071" indent="" />
+		<line linenr="072" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemJumpdrivePrototypeHK'</text>
+		</line>
+		<line linenr="073" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="074" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="075" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Experimental Transporter Device'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.HK.JumpdrivePrototype</call>
+		</line>
+		<line linenr="076" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="077" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="078" indent="" />
+		<line linenr="079" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemPersonalJournalHK'</text>
+		</line>
+		<line linenr="080" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="081" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="082" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Journal personnel'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Menu.PC.Journal</call>
+		</line>
+		<line linenr="083" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="084" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="085" indent="" />
+		<line linenr="086" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemFleetSettingsHK'</text>
+		</line>
+		<line linenr="087" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="088" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="089" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Fleet settings'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.HK.FleetSettings</call>
+		</line>
+		<line linenr="090" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="091" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="092" indent="" />
+		<line linenr="093" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemQuickAccessConfigHK'</text>
+		</line>
+		<line linenr="094" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="095" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="096" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Quick access configuration'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Menu.PC.QuickAccess</call>
+		</line>
+		<line linenr="097" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="098" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="099" indent="" />
+		<line linenr="100" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemQuickAccess1HK'</text>
+		</line>
+		<line linenr="101" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="102" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="103" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Quick access 1'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.QuickAccess.Call1</call>
+		</line>
+		<line linenr="104" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="105" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="106" indent="" />
+		<line linenr="107" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemQuickAccess2HK'</text>
+		</line>
+		<line linenr="108" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="109" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="110" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Quick access 2'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.QuickAccess.Call2</call>
+		</line>
+		<line linenr="111" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="112" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="113" indent="" />
+		<line linenr="114" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemQuickAccess3HK'</text>
+		</line>
+		<line linenr="115" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="116" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="117" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Quick access 3'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.QuickAccess.Call3</call>
+		</line>
+		<line linenr="118" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="119" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="120" indent="" />
+		<line linenr="121" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemQuickAccess4HK'</text>
+		</line>
+		<line linenr="122" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="123" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="124" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Quick access 4'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.QuickAccess.Call4</call>
+		</line>
+		<line linenr="125" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="126" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="127" indent="" />
+		<line linenr="128" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'mayhemQuickAccess5HK'</text>
+		</line>
+		<line linenr="129" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="130" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="131" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Quick access 5'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.QuickAccess.Call5</call>
+		</line>
+		<line linenr="132" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="133" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="134" indent="" />
+		<line linenr="135" indent="">
+			<var>$string</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'targetNearestMissile'</text>
+		</line>
+		<line linenr="136" indent="">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+		</line>
+		<line linenr="137" indent="">
+			<text>if</text>
+			<text> </text>
+			<text>not</text>
+			<text> </text>
+			<var>$key</var>
+		</line>
+		<line linenr="138" indent="&#160;">
+			<var>$key</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>register</text>
+			<text> </text>
+			<text>hotkey</text>
+			<text> </text>
+			<text>'Target nearest incoming missile'</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.TargetNearestMissile</call>
+		</line>
+		<line linenr="139" indent="&#160;">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$string</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$key</var>
+		</line>
+		<line linenr="140" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="141" indent="" />
+		<line linenr="142" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="Mayhem.Setup.Hotkeys" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="2">
+				<sval type="string" val="string" />
+				<sval type="string" val="key" />
+			</sval>
+			<sval type="array" size="101">
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemDataScannerHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536869628" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Data scanner" />
+					<sval type="string" val="Mayhem.DataScanner" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemMinistryHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536868348" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Ministry of war" />
+					<sval type="string" val="Menu.Mayhem.Ministry" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemDWM" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536867068" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Outposts" />
+					<sval type="string" val="Menu.PC.Sanctuaries" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="SatellitesMonitoring" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536865788" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Satellite monitoring" />
+					<sval type="string" val="Menu.SatellitesMonitoring" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="WingmenGoHome" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536864508" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Wingmen go home" />
+					<sval type="string" val="Mayhem.Wingmen.GoHome" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="TurretAttackEnemies" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536863228" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Turret: Attack All Enemies" />
+					<sval type="string" val="Mayhem.Turret.AttackEnemies" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="TurretMissileDefense" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536861948" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Turret: Missile Defence" />
+					<sval type="string" val="Mayhem.Turret.MissileDefense" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="SelectNearestLeader" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536860668" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Target nearest fleet leader" />
+					<sval type="string" val="Mayhem.Fleet.TargetLeader" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemStationSettingsHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536859388" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Station settings" />
+					<sval type="string" val="Menu.PC.StationSettings" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemJumpHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536858108" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Move to position using jump beacons" />
+					<sval type="string" val="Mayhem.HK.Jump" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemJumpdrivePrototypeHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536856828" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Experimental Transporter Device" />
+					<sval type="string" val="Mayhem.HK.JumpdrivePrototype" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemPersonalJournalHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536855548" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Journal personnel" />
+					<sval type="string" val="Menu.PC.Journal" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemFleetSettingsHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536854268" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Fleet settings" />
+					<sval type="string" val="Mayhem.HK.FleetSettings" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemQuickAccessConfigHK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536852988" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Quick access configuration" />
+					<sval type="string" val="Menu.PC.QuickAccess" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemQuickAccess1HK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536851708" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Quick access 1" />
+					<sval type="string" val="Mayhem.QuickAccess.Call1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemQuickAccess2HK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536850428" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Quick access 2" />
+					<sval type="string" val="Mayhem.QuickAccess.Call2" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemQuickAccess3HK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536849148" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Quick access 3" />
+					<sval type="string" val="Mayhem.QuickAccess.Call3" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemQuickAccess4HK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536847868" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Quick access 4" />
+					<sval type="string" val="Mayhem.QuickAccess.Call4" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhemQuickAccess5HK" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536846588" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Quick access 5" />
+					<sval type="string" val="Mayhem.QuickAccess.Call5" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="targetNearestMissile" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536845308" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="1100" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Target nearest incoming missile" />
+					<sval type="string" val="Mayhem.TargetNearestMissile" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="41">
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="30" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="30" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="35" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="35" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="40" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="40" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="45" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="45" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="50" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="50" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="55" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="55" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="60" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="60" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="65" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="65" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="70" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="70" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="75" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="75" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="80" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="80" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="85" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="85" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="90" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="90" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="95" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="95" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="100" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

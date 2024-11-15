@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language id="44">
+	<page id="382010" title="Noms des Commandes de Script" descr="">
+		<t id="528">Collecter les Marchandises dans l'Univers</t>
+		<t id="263">Cartographier les Portes</t>
+	</page>
+	<page id="382011" title="Script Cmd Shorts" descr="">
+		<t id="528">ColWarUni</t>
+		<t id="263">MapGates</t>
+	</page>
+	<page id="382008" title="Script Cmd Names" descr="">
+		<t id="528">COMMAND_COLLECT_WARES_UNIVERSE</t>
+		<t id="263">COMMAND_MAP_GATES</t>
+	</page>
+	<page id="382022" title="Aide utilisateur des Scripts" descr="">
+		<t id="528">Cette commande ordonne à ce vaisseau de collecter toutes les marchandises dans l'univers. Il recherchera en priorité les marchandises les plus précieuses. Vous ne pouvez pas avoir plus d'un collecteur en même temps.</t>
+		<t id="263">Cette commande cartographie les portes dans le secteur actuel.</t>
+	</page>
+	<page id="8500" title="Référence des conditions des commandes de script" descr="0" voice="no">
+		<t id="300">Un seul vaisseau</t>
+	</page>
+</language>

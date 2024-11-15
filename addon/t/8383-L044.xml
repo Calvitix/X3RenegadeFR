@@ -1,0 +1,1638 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language id="44">
+	<!--
+  Colour conventions:
+  
+  Ware:  Magenta
+  Amount: White
+  Stations:  Cyan
+  Ship: Blue
+  Sectors:  Cyan
+  Price:  Yellow
+  Author:  Green
+  Templates:  White
+  
+  -->
+	<page id="8000" title="Subtitle Event Notifications" descr="Script Text">
+		<t id="1">Ship Killed Notifications</t>
+		<t id="2">\033RVotre\033X %s \033Ra été détruit par %s dans le secteur %s\033X</t>
+		<t id="3">%s Récompense de Licence de Police :   \033C%s\033X   \033Y%s Cr\033X</t>
+	</page>
+	<page id="8001" title="Station Agent Station Logs" descr="Script Text">
+		<t id="1">Log de Station\n</t>
+		<t id="2">[center][green]Exports[/green][/center]\n</t>
+		<t id="3">[center][green]Imports[/green][/center]\n</t>
+		<t id="4">[left][magenta]%s[/magenta] X [white]%s[/white][/left][right][yellow]%s[/yellow][/right]                                  \n</t>
+		<t id="5">[left][white]Total:[/white][/left][center][yellow]%s[/yellow]\n</t>
+	</page>
+	<page id="8002" title="Dock Agent" descr="Script Text">
+		<t id="1">[author][green]%s[/green][/author]Seuls %s agents d'amarrage peuvent opérer sur un seul poste d'amarrage.</t>
+	</page>
+	<page id="8112" title="Map 00749 BOD maker" descr="Map bod string">
+		<t id="1">VER: 3;\nP 0; B -1; N Camera01; c\n  { 0x0808;  0; 0; -19818;  0; 0; 32;  0.000000;  1.570796;  -1;  -1; } // 0</t>
+		<t id="2">P %s; B %s; N %s;</t>
+		<t id="3">{ 0x2002;  %s; %s; 0;  0.000000; 0.000000; 0.000000; 0.000000;  -1;  -1; } // 0</t>
+		<t id="4">{ 0x2002;  %s; %s; 0;  0.498793; 0.001430; 0.999658; 0.022553;  -1;  -1; } // 0</t>
+		<t id="5">{ 0x2002;  %s; %s; 0;  0.000000; 0.702794; 0.705675; 0.090018;  -1;  -1; } // 0</t>
+		<t id="6">{ 0x2002;  %s; %s; 0;  0.471900; 0.702794; 0.705675; 0.090018;  -1;  -1; } // 0</t>
+		<t id="7">{ 0x2002;  %s; %s; 0;  0.471900; -0.702794; 0.705675; -0.090018;  -1;  -1; } // 0</t>
+	</page>
+	<page id="70000" title="TFile Out" descr="For writing TFiles">
+		<t id="1">@?xml version="1.0" encoding="utf-8"?^</t>
+		<t id="2">@language id="44"^</t>
+		<t id="3">@page id="%s" title="%s" descr="%s"^</t>
+		<t id="4">@t id="%s"^%s@;t^@!--%s--^</t>
+		<t id="5">@t id="%s"^%s@;t^ @!--%s--^</t>
+		<t id="6">@;page^</t>
+		<t id="7">@;language^</t>
+	</page>
+	<page id="8314" title="Texts" descr="Find Product and various otherstuff">
+		<t id="1">\033M%s\33X %s trouvé...\n\033C%s\033X\ dans \033C%s\033X\n</t>
+		<t id="2">Sauts: \033R%s\033X\nPrix: \033W%s\033X\n</t>
+		<t id="3">Pas de %s trouvés pour \033M%s\033X\n</t>
+		<t id="4">Nb. à la station : \33W%s\033X\n</t>
+		<t id="5">Nb. libre à la station : \33W%s\033X\n</t>
+	</page>
+	<page id="8315" title="Déployer des Satellites" descr="Textes pour Déployer des Satellites">
+		<t id="1">[author][green]%s[/green][/author]Impossible de charger [magenta]%s[/magenta] dans la soute à cargaison. Pas d'espace disponible.</t>
+		<t id="2">[author][green]%s[/green][/author]Impossible d'acheter [magenta]%s[/magenta] à [cyan]%s[/cyan]. Pas assez de crédits.</t>
+		<t id="3">[author][green]%s[/green][/author]Aucun emplacement de déploiement de satellite disponible pour [magenta]%s[/magenta]. Déploiement de satellite terminé.</t>
+	</page>
+	<page id="8316" title="Faire le Plein" desc="Messages pour Faire le Plein">
+		<t id="1">[author][green]%s[/green][/author]Ravitaillement terminé.</t>
+	</page>
+	<page id="8402" title="Trajet Marchand" desc="Vendre des marchandises">
+		<t id="1">[author][green]%s[/green][/author]Vendu [white]%s[/white] unités de [magenta]%s[/magenta] à [yellow]%s[/yellow] pour un retour total de [yellow]%s[/yellow].</t>
+		<t id="2">[author][green]%s[/green][/author]Impossible de trouver un acheteur pour [magenta]%s[/magenta].</t>
+		<t id="3">[author][green]%s[/green][/author]Impossible de trouver un vendeur pour [magenta]%s[/magenta].</t>
+		<t id="4">[author][green]%s[/green][/author]Vous avez déjà plus de [magenta]%s[/magenta] que ce qui a été demandé.</t>
+		<t id="5">[author][green]%s[/green][/author]Acheté [white]%s[/white] unités de [magenta]%s[/magenta] à une moyenne de [yellow]%s[/yellow] par unité, pour un coût total de [yellow]%s[/yellow].</t>
+	</page>
+	<page id="8403" title="Équiper la flotte à partir d'un modèle" desc="Textes pour équiper la flotte à partir d'un modèle">
+		<t id="1">[author]%s[/author]J'ai terminé l'équipement des vaisseaux suivants en utilisant le modèle [green]%s[/green].\n</t>
+		<t id="2">[author]%s[/author]Il n'y avait pas de vaisseaux à équiper.</t>
+	</page>
+	<page id="8404" title="Approvisionner des Marchandises" desc="Textes pour Approvisionner des Marchandises">
+		<t id="1">[author]%s[/author]Approvisionnement de [white]%s[/white] x [magenta]%s[/magenta] terminé pour %s.</t>
+		<t id="2">[author]%s[/author]Il n'y avait pas de vaisseaux à équiper.</t>
+		<t id="3">[author]%s[/author]Ravitaillement de %s terminé.</t>
+		<t id="4">[author]%s[/author]Réarmement de %s terminé.</t>
+	</page>
+	<page id="8407" title="CLMM">
+		<t id="1">[author][green]%s[/green][/author]Centre de Commandement Logistique Militaire installé. Centre de répartition des forces opérationnelles initialisé. Centres d'appels en attente.</t>
+		<t id="2">[author][green]s[/green][/author]Cette implémentation du Centre de Commandement Logistique Militaire n'existe pas.</t>
+		<t id="8">[author][green]%s[/green][/author]Centre de Commandement Logistique Militaire. Centre de répartition des forces opérationnelles fermé.</t>
+		<t id="101">[author][green]Commandement Logistique Militaire[/green][/author][white]%s[/white] secteurs enregistrés avec des plaintes, [white]%s[/white] vaisseaux en mission. Répartition initiée...\n</t>
+		<t id="102">[blue]%s[/blue] : [cyan]%s #%s[/cyan] --- [red]%s[/red]\n</t>
+		<t id="110">[author][green]Commandement Logistique Militaire[/green][/author]Le Centre de Commandement Logistique Militaire n'a pas assez de forces pour faire face aux menaces dans les secteurs avec des plaintes enregistrées.</t>
+		<t id="111">[author][green]Commandement Logistique Militaire[/green][/author]Aucune plainte enregistrée.</t>
+		<t id="112">[author][green]Commandement Logistique Militaire[/green][/author]Pas de vaisseaux en mission disponibles. Impossible d'envoyer.</t>
+		<t id="150">\n[green]Annulations de l'Horaire des Secteurs Sécurisés[/green]\n</t>
+		<t id="151">[blue]%s[/blue], [cyan]%s[/cyan] [white]#%s[/white] : Pas assez de carburant pour le voyage de retour\n</t>
+		<t id="152">[blue]%s[/blue], [cyan]%s[/cyan] [white]#%s[/white], [red]%s[/red] : Soute du vaisseau trop petite pour le saut\n</t>
+		<t id="153">[blue]%s[/blue], [cyan]%s[/cyan] [white]#%s[/white] : Trop dangereux à cause de la menace : [red]%s[/red]\n</t>
+		<t id="154">[author][green]Commandement Logistique Militaire[/green][/author]Annulations d'Assistance pour [blue]%s[/blue] dans le secteur [cyan]%s[/cyan]\n</t>
+		<t id="155">[blue]%s[/blue] : Pas assez de carburant de la station pour le voyage de retour\n</t>
+		<t id="156">[blue]%s[/blue], coque à [white]%s[/white] : Vaisseau endommagé\n</t>
+	</page>
+	<page id="8408" title="Formation au Combat des Marines">
+		<t id="1">[author][green]%s[/green][/author]Désamarré d'une installation d'entraînement valide. Entraînement des marines annulé.</t>
+		<t id="2">[author][green]%s[/green][/author][magenta]%s[/magenta] est un marine d'élite et n'est pas éligible pour suivre une formation au combat des marines à [cyan]%s[/cyan].</t>
+		<t id="3">
+      [author][green]%s[/green][/author]Aucun marine dans le cours actuel à [cyan]%s[/cyan].
+      Entraînement des marines annulé.
+		</t>
+		<t id="4">[author][green]%s[/green][/author][cyan]%s[/cyan] nécessite [yellow]%s[/yellow] pour couvrir le coût de l'Entraînement de [white]%s[/white] marines inscrits au cours. Pas assez de crédits sur le compte. Entraînement des marines annulé.</t>
+		<t id="5">[author][green]%s[/green][/author]Faible en élément d'Entraînement [magenta]%s[/magenta] pour l'Entraînement des marines à [cyan]%s[/cyan]. Trop peu pour tirer un quelconque bénéfice d'Entraînement de cet élément.</t>
+		<t id="6">[author][green]%s[/green][/author][magenta]%s[/magenta] a quitté l'Entraînement avant la fin du cours à [cyan]%s[/cyan]. Aucune progression acquise.</t>
+		<t id="7">[author][green]%s[/green][/author]Entraînement des marines terminé à [cyan]%s[/cyan].\nMarines formés : [white]%s[/white]\nCoût total : [yellow]%s[/yellow]\nArmes rendues inopérantes pendant l'Entraînement : [white]%s[/white]</t>
+	</page>
+	<page id="8396" title="General Use" desc="">
+		<t id="1">%s\n</t>
+		<t id="2">%s  %s\n</t>
+		<t id="3">%s  %s  %s\n</t>
+		<t id="4">%s  %s  %s  %s\n</t>
+		<t id="5">%s  %s  %s  %s  %s\n</t>
+		<t id="6">%s</t>
+		<t id="7">%s	%s</t>
+		<t id="8">%s	%s	%s</t>
+		<t id="9">%s	%s	%s	%s</t>
+		<t id="10">%s	%s	%s	%s	%s</t>
+		<t id="11">%s\n</t>
+		<t id="12">%s%s\n</t>
+		<t id="13">%s%s%s\n</t>
+		<t id="14">%s%s%s%s\n</t>
+		<t id="15">%s%s%s%s%s\n</t>
+		<t id="20">§</t>
+		<t id="50">[author][green]%s[/green][/author]</t>
+		<t id="51">[author][green]%s[/green][/author]%s</t>
+		<t id="52">[author][green]%s[/green][/author]%s %s</t>
+		<t id="53">[author][green]%s[/green][/author]%s %s %s</t>
+		<t id="54">[author][green]%s[/green][/author]%s %s %s %s</t>
+		<t id="100">%s</t>
+		<!-- Menu, ship name compatible-->
+		<t id="101">\033R%s\033X</t>
+		<t id="102">\033G%s\033X</t>
+		<t id="103">\033B%s\033X</t>
+		<t id="104">\033C%s\033X</t>
+		<t id="105">\033M%s\033X</t>
+		<t id="106">\033Y%s\033X</t>
+		<t id="107">%s</t>
+		<t id="108">\033W%s\033X</t>
+		<t id="109">\033O%s\033X</t>
+		<t id="110">\033A%s\033X</t>
+		<!-- Log book Compatible -->
+		<t id="201">[red]%s[/red]</t>
+		<t id="202">[green]%s[/green]</t>
+		<t id="203">[blue]%s[/blue]</t>
+		<t id="204">[cyan]%s[/cyan]</t>
+		<t id="205">[magenta]%s[/magenta]</t>
+		<t id="206">[yellow]%s[/yellow]</t>
+		<t id="207">%s</t>
+		<t id="208">[white]%s[/white]</t>
+		<!-- Empire Copy, find replace , to left bracket, and ; to right bracket-->
+		<t id="300">,t id="%s".%s,/t.</t>
+		<t id="400">*</t>
+		<t id="401"/>
+	</page>
+	<page id="17" title="Chaînes de Rapports de Négoce des Marchandises Naturelles" desc="Chaînes de Rapports de Négoce des Marchandises Naturelles">
+		<t id="30001">Formation des Marines : Piratage.</t>
+		<t id="30003">Formation des Marines : Mécanique.</t>
+		<t id="30005">Formation des Marines : Ingénierie.</t>
+		<t id="30007">Formation des Marines : Général</t>
+		<t id="30009">Formation des Marines : Combat</t>
+		<t id="30011">Licence de Marchandise</t>
+		<t id="30013">Frais de Livraison des Optimisations UT</t>
+	</page>
+	<page id="8390" title="Total Asset Value" descr="">
+		<t id="1">[author][green]Total Asset Value Calculator[/green][/author]\n[title]Total Asset Value Report[/title]\nPlayer Account: [yellow]%s[/yellow] Cr\n</t>
+		<t id="2">[left][white]%s[/white] x %s[/left] [right][yellow]%s[/yellow] Cr[/right]\n</t>
+		<t id="3">[center][u]Ships[/u][/center]\n%s\n[left]TOTAL:[/left] [right][yellow]%s[/yellow] Cr[/right]\n</t>
+		<t id="4">[center][u]Stations[/u][/center]\n%s[left]Comptes:[/left][right][yellow]%s[/yellow] Cr[/right]\n\n[left]TOTAL:[/left][right][yellow]%s[/yellow] Cr[/right]\n\n</t>
+		<t id="5">[u]TOTAL ASSET VALUE[/u]: [yellow]%s[/yellow] Cr</t>
+		<t id="6">[center][u]Marchandise dans vaisseaux:[/u][/center]\n%s\n\n[left]TOTAL:[/left][right][yellow]%s[/yellow] Cr[/right]\n</t>
+		<t id="7">%s x %s</t>
+		<t id="8">%s Cr</t>
+	</page>
+	<page id="8398" title="Error codes" desc="Texts for compiling errors">
+		<t id="1">[author]%s[/author]Problème lors de la tentative de %s :\n</t>
+		<t id="100">Problème de transport de fret général lors de la tentative de transport de [magenta]%s[/magenta] dans la soute à cargaison de [cyan]%s[/cyan].</t>
+		<t id="101">Pas assez d'espace de chargement libre disponible pour transporter [white]%s[/white] unités de [magenta]%s[/magenta].</t>
+		<t id="102">Impossible de transporter [magenta]%s[/magenta]. La classe de conteneur de cargaison du vaisseau est [cyan]%s[/cyan], alors que [cyan]%s[/cyan] était requis.</t>
+		<t id="103">Montant de [magenta]%s[/magenta] pour le transfert déjà au montant demandé de [white]%s[/white].</t>
+		<t id="104">Tentative de %s [magenta]%s[/magenta] vers [cyan]%s[/cyan] annulée. Aucun montant demandé.</t>
+		<t id="105">Tentative de transfert de [white]%s[/white] unités de [magenta]%s[/magenta] vers [cyan]%s[/cyan] annulée. Aucune marchandise disponible dans la cargaison.</t>
+		<t id="106">Tentative de vente de [white]%s[/white] unités de [magenta]%s[/magenta] annulée. Aucune marchandise disponible dans la cargaison.</t>
+		<t id="200">[cyan]%s[/cyan] n'a aucune des [magenta]%s[/magenta] demandées.</t>
+		<t id="201">Cette commande nécessite une base d'attache.</t>
+		<t id="202">Le vaisseau nécessite [magenta]%s[/magenta] pour exécuter cette commande.</t>
+		<t id="225">Tentative de saut vers [cyan]%s[/cyan] échouée. Pas assez d'énergie pour le saut.</t>
+		<t id="250">Tentative de ravitaillement pour le saut de [cyan]%s[/cyan] à [cyan]%s[/cyan] échouée. La quantité de ravitaillement en carburant est inférieure à l'énergie de saut requise.</t>
+		<t id="251">Tentative de ravitaillement pour le saut de [cyan]%s[/cyan] à [cyan]%s[/cyan] échouée. Pas assez d'espace de cargaison pour l'énergie de saut requise.</t>
+		<t id="252">Tentative de ravitaillement pour le saut de [cyan]%s[/cyan] à [cyan]%s[/cyan] échouée. Impossible de rechercher des stations sans avoir au moins un des éléments suivants installés : Logiciel de Commande Commerciale MK1, Logiciel de Commande Commerciale MK2, Extension du Système Commercial, Localisateur des Meilleures Affaires.</t>
+		<t id="260">Pas assez de carburant pour la quantité de ravitaillement en carburant à [cyan]%s[/cyan].</t>
+		<t id="280">Tentative de ravitaillement échouée. Impossible de rechercher des stations sans avoir au moins un des éléments suivants installés : Logiciel de Commande Commerciale MK1, Logiciel de Commande Commerciale MK2, Extension du Système Commercial, Localisateur des Meilleures Affaires.</t>
+		<t id="281">Tentative de ravitaillement échouée. La quantité de ravitaillement en carburant est déjà dans la soute.</t>
+		<t id="300">Il y a eu un problème lors de l'achat de [white]%s[/white] x [magenta]%s[/magenta] à [cyan]%s[/cyan]. Le coût était de [yellow]%s[/yellow] alors qu'il n'y avait que [yellow]%s[/yellow] de disponible.</t>
+		<t id="400">Aucune station trouvée pour l'achat. Recherche de [magenta]%s[/magenta]. Chemin sûr tenté : [green]%s[/green].</t>
+		<t id="401">Aucune station trouvée pour la vente. Recherche de [magenta]%s[/magenta]. Chemin sûr tenté : [green]%s[/green].</t>
+		<t id="500">La recherche d'un chemin sûr de [cyan]%s[/cyan] à [cyan]%s[/cyan] a échoué.</t>
+		<t id="501">La recherche d'un chemin sûr a échoué, car l'objet de destination [cyan]%s[/cyan] est une cible non valide.</t>
+		<t id="600">Il n'y a pas de minéraux à extraire dans le secteur [cyan]%s[/cyan].</t>
+		<t id="601">Le minéral [magenta]%s[/magenta] n'existe pas dans ce secteur.</t>
+		<t id="602">Système de Forage Mobile non installé.</t>
+	</page>
+	<page id="382022" title="Aide à l'utilisation des scripts" descr="">
+		<t id="42">Cette commande ordonnera au vaisseau de ravitailler un vaisseau cible, et éventuellement tous les vaisseaux suiveurs, avec une marchandise spécifiée.{2022,9999}</t>
+		<t id="44">Cette commande ordonnera au vaisseau de ravitailler en carburant un vaisseau cible, et éventuellement tous les vaisseaux suiveurs, avec la quantité de ravitaillement en carburant correspondante.{2022,9999}</t>
+		<t id="46">Commande au vaisseau d'explorer le secteur actuel pour cartographier toutes les stations, les astéroïdes et les portes. Une fois terminé, le vaisseau tentera de cartographier l'objet inconnu le plus proche via le chemin le plus sûr.{2022,9999}</t>
+		<t id="75">Ramène les marines à la maison ?</t>
+		<t id="76">Commande au vaisseau de scanner les astéroïdes connus révélant leur composition minérale. Une fois tous les astéroïdes du secteur scannés, le vaisseau trouvera le secteur le plus proche avec des astéroïdes non scannés, s'y rendra et continuera.{2022,9999}</t>
+		<t id="211">À condition que le vaisseau ait les systèmes installés requis, l'autosaut activé et une quantité de ravitaillement en carburant définie, il recherchera les systèmes voisins pour le montant spécifié et achètera de l'énergie. Contrairement à la plupart des commandes de commerce, le logiciel de commande de commerce Mk1 seul permet au vaisseau de s'intégrer au réseau de carburant, en contournant la nécessité d'une propriété du joueur dans le secteur.{2022,9999}</t>
+		<t id="212">Ce vaisseau volera vers le secteur spécifié par le chemin le plus sûr possible. La sécurité est déterminée par les paramètres d'ami ou d'ennemi du vaisseau lui-même. Cette commande ignore les balises de saut.{2022,9999}</t>
+		<t id="213">Ce vaisseau volera vers la station spécifiée par le chemin le plus sûr possible. La sécurité est déterminée par les paramètres d'ami ou d'ennemi du vaisseau lui-même. Cette commande ignore les balises de saut.{2022,9999}</t>
+		<t id="301">Un transporteur équipé du logiciel de commande de transporteur peut diffuser des ordres de combat spécifiques à tous les vaisseaux basés à la maison. Les vaisseaux eux-mêmes nécessitent des mises à niveau selon les exigences normales.{2022,9999}</t>
+		<t id="411">Cette commande ouvrira une console permettant à l'ordinateur de bord de rechercher dans la base de données de toutes les stations connues dans l'univers. Afin de trouver les meilleurs prix d'achat, un localisateur de meilleures offres est requis, et pour les meilleurs prix de vente, un localisateur de meilleures stations de vente est requis. Une propriété dans le secteur connu est requise pour rechercher des marchandises, mais les usines et les vaisseaux préfabriqués peuvent être recherchés sans propriété, car leur prix est statique.{2022,9999}</t>
+		<t id="412">Cette commande recherchera le meilleur prix d'achat disponible pour la marchandise spécifiée. Une propriété possédée dans le secteur est requise pour qu'une station soit incluse dans la recherche. Comme les Travailleurs, ce vaisseau respectera les seuils d'importation-exportation. Utilise un itinéraire sûr et respecte la liste noire. Recherchera un client à un maximum de 5 secteurs. Vos propres stations sont ignorées. Cette commande fait agir le vaisseau comme un commerçant, et en tant que tel, il peut commercer avec d'autres Postes avancés.</t>
+		<t id="413">Cette commande recherchera le meilleur prix de vente disponible pour la marchandise spécifiée dans la soute. Une propriété possédée dans le secteur est requise pour qu'une station soit incluse dans la recherche. Comme les Travailleurs, ce vaisseau respectera les seuils d'importation-exportation. Utilise un itinéraire sûr et respecte la liste noire. Recherchera un client à un maximum de 5 secteurs. Vos propres stations sont ignorées. Cette commande fait agir le vaisseau comme un commerçant, et en tant que tel, il peut commercer avec d'autres Postes avancés.</t>
+		<t id="414">Le logiciel d'agent de station permet à un vaisseau de gérer les marchandises de son usine locale. Le vaisseau acquerra d'abord les ressources nécessaires soit en les récupérant dans l'une de vos usines ou l'un de vos Sanctuaires, soit en les achetant à des stations PNJ ; puis il distribuera les produits dans l'une de vos usines ou l'un de vos Sanctuaires, en donnant la priorité aux plus proches. S'il n'en trouve aucun d'éligible, l'agent de station vendra les produits aux stations PNJ.\n\nLes seuils d'importation et d'exportation des usines et des Sanctuaires sont pris en compte dans le processus, ainsi que l'option Nombre maximum de sauts de l'usine locale.\n\nLes agents de station sont synchronisés de manière à ce que deux d'entre eux ne puissent pas aller à la même usine s'ils cherchent à acheter ou à vendre la même marchandise. La synchronisation ne s'applique pas aux Sanctuaires.{2022,9999}</t>
+		<t id="415">À condition que le vaisseau soit amarré à un dock d'équipement qui n'est pas votre propriété, le vaisseau peut décharger tous ses boucliers, missiles et lasers, et les vendre à un prix moyen.</t>
+		<t id="416">Dans un souci d'économie de temps, et à condition qu'un vaisseau de classe TL soit amarré à un chantier naval viable, cette commande peut commander un grand volume d'usines préfabriquées à l'achat.{2022,9999}</t>
+		<t id="417">Un vaisseau avec une base locale et le logiciel de commande de commerce MK 1 et 2 déplacera les marchandises des stations de destination vers sa base locale en utilisant la configuration du gestionnaire de marchandises du dock.{2022,9999}</t>
+		<t id="418">L'agent du dock (AD) est essentiel à tous les Sanctuaires. Il triera les emplois disponibles et sélectionnera le plus approprié. Les agents du dock doivent être basés localement soit dans un Sanctuaire, soit dans un dock MLCC.</t>
+		<t id="419">Les vaisseaux de classe TL peuvent être paramétrés pour faire des achats dans un hub du complexe Saturne non engagé dans tout l'univers. Les fonds utilisés sont ceux du hub du complexe lui-même. Une fois toutes les stations achetées, le TL s'amarrera audit hub, prêt pour l'installation de la station.</t>
+		<t id="420">Cette commande mettra aux enchères toutes les stations dans la soute du vaisseau à un prix moyen.{2022,9999}</t>
+		<t id="421">Le coursier transportera des marchandises entre des destinations prédéfinies. Plusieurs points de ramassage et de dépôt peuvent être fournis sous forme de liste de tâches. Facultativement, le coursier recommencera au début de la liste une fois toutes les tâches terminées.{2022,9999}</t>
+		<t id="422">En définissant cette commande sur un vaisseau lorsqu'il est dans une station appartenant, il chargera les marchandises excédentaires. Le vaisseau restera amarré et surveillera la capacité de la marchandise choisie. Si la capacité de la station pour cette marchandise dépasse la quantité maximale donnée, il chargera suffisamment de marchandises pour ramener la capacité au montant minimum donné. Vous serez averti lorsque la soute du vaisseau sera pleine.{2022,9999}</t>
+		<t id="502">Lorsqu'il est installé et équipé de systèmes de forage mobiles, les pilotes de vaisseaux chercheront des débris dans le secteur actuel. Après avoir trouvé des débris, le pilote extrait des roches jusqu'à ce que sa soute soit pleine. Une fois pleine, le vaisseau ramènera les minéraux collectés à sa base locale si une base locale est fournie. Si la base locale est un vaisseau, le mineur utilisera un dispositif de transport s'il est disponible. Au fur et à mesure que le pilote gagne de l'expérience, sa capacité à accumuler des minéraux et des cristaux plus précieux augmente, tout comme la fréquence à laquelle ils sont extraits.{2022,9999}</t>
+		<t id="503">Cette commande ordonnera à tous les vaisseaux basés localement capables d'extraire des minéraux de commencer à exploiter le secteur désigné.{2022,9999}</t>
+		<t id="511">Cette commande équipera un vaisseau ou un groupe de vaisseaux de toutes les marchandises, boucliers et lasers nécessaires, contenus dans un modèle sélectionné. Notez que les mises à niveau ne peuvent pas être installées dans l'espace. Les modèles sont créés à l'aide du gestionnaire de modèles. Sélectionner "vaisseaux du groupe" ordonnera au vaisseau de ravitaillement d'inclure les vaisseaux qui suivent le vaisseau cible. La commande est désactivée si le vaisseau n'est pas équipé d'un dispositif de transport.{2022,9999}</t>
+		<t id="512">Le vaisseau déposera à distance une usine dans sa soute dans le secteur actuel du TL.{2022,9999}</t>
+		<t id="515">Cette commande définira le vaisseau transporteur pour qu'il attende dans une base locale, en surveillant les vaisseaux marqués. Si un vaisseau marqué est détecté, ce vaisseau sautera vers le vaisseau marqué et le transportera jusqu'à la base locale de ce vaisseau.{2022,9999}</t>
+		<t id="516">Après avoir sélectionné une porte, le vaisseau déploiera un piège dévastateur de tours laser en cercle autour de ladite porte. Toutes les tours laser jusqu'à un montant de 360 seront utilisées. Cette commande nécessite un dispositif de transport pour un déploiement précis des tours laser.{2022,9999}</t>
+		<t id="517">Le vaisseau récupérera la balise de saut sélectionnée.{2022,9999}</t>
+		<t id="810">Un vaisseau capable de transporter d'autres vaisseaux se déplacera vers la station de ramassage, chargera le plus possible de vaisseaux dans ses hangars et les transportera vers la station de retour de destination en s'y déplaçant et en les déchargeant.{2022,9999}</t>
+		<t id="812">Avec des marines à bord d'un vaisseau de classe TL, M7, M1 ou M2, cette commande activera l'entraînement des marines à bord au combat, à condition que le vaisseau soit amarré à une installation militaire. Une fois la commande lancée, les marines éligibles suivront un cours qui prend environ 5 heures. Après ce temps, les détails de l'entraînement seront rapportés. L'entraînement peut utiliser soit des Fusils de Désintégration, des Armes de Poing à Faible Rendement ou des Fusils EMP Terriens dans la soute du vaisseau. Les armes, à force d'être utilisées, sont souvent cassées et jetées. Plus il y a de variété entre les trois armes, plus les marines s'entraîneront rapidement. L'entraînement peut avoir lieu sans les armes des marines, mais à un rythme beaucoup plus lent. L'installation militaire hôte nécessite un paiement pour l'utilisation de ses installations ; le paiement varie en fonction de l'expérience au combat du marine, qui sera automatiquement prélevé sur le compte du vaisseau. Le paiement pour les marines très qualifiés peut atteindre jusqu'à 1 million de crédits par cours.{2022,9999}</t>
+		<t id="813">Toutes les marchandises dans la soute du vaisseau sont larguées à la station. Les marchandises installées sur le vaisseau et les marchandises de ravitaillement ne sont pas larguées.{2022,9999}</t>
+		<t id="811">Ce vaisseau désinstallera toutes les marchandises et les déchargera sur l'Avant-Poste où il est stationné. Cela n'a aucun effet sur les autres stations.{2022,9999}</t>
+		<t id="814">Cette commande active l'utilisation du système de tractage Plutarque. Le système de tractage Plutarque est une technologie qui permet au vaisseau de sauter instantanément un astéroïde entier vers des coordonnées connues. Grâce à l'étalonnage de la technologie des faisceaux tracteurs et de petites sondes de saut jetables, le système de tractage est capable d'envoyer l'astéroïde n'importe où dans l'univers connu. Cela inclut la combinaison soigneuse d'un astéroïde avec un autre, fusionnant virtuellement leurs rendements. Le dispositif a un coût : des tubes quantiques, des cellules d'énergie et des cristaux sont nécessaires pour fabriquer les sondes de saut. Des sauvegardes intégrées empêchent le placement d'astéroïdes à moins de 12 km d'un objet stationnaire ou à moins de 7 km d'un vaisseau.{2022,9999}</t>
+		<t id="1100">Cette commande ordonnera à tous les vaisseaux basés localement capables d'extraire des minéraux de commencer à exploiter le secteur désigné.{2022,9999}</t>
+		<t id="1110">Cette commande de station transférera un montant de crédits du compte de la station au-dessus de la limite inférieure vers le compte du joueur. Le transfert se poursuivra jusqu'à ce que la commande soit arrêtée.{2022,9999}</t>
+		<t id="1111">Ce système de menu permettra au propriétaire du hub complexe de définir les produits de sa station. Notez qu'un produit qui n'est pas déjà une ressource ne peut pas être supprimé des produits.{2022,9999}</t>
+		<t id="1112">Cela génère un rapport de cette station fournissant des informations utiles sur le déplacement de ses marchandises par les agents de la station uniquement.{2022,9999}</t>
+		<t id="1113">La console de configuration de la station permet au propriétaire de mettre en place des systèmes de dénomination automatique de la capacité, une tarification automatisée en fonction de la capacité, et l'ajustement de l'ajout ou de la suppression de marchandises en tant que produits.{2022,9999}</t>
+		<t id="1114">Cette station sera recyclée vers l'Avant-Poste le plus proche. Les fonds dans la station sont automatiquement transférés sur votre compte principal et tous les vaisseaux sont désamarrés.{2022,9999}</t>
+		<t id="1115">Cette commande déplacera tous les agents de station actuellement affectés, les informations sur la station, les rapports commerciaux et les informations sur la source des marchandises du dock de cette station vers une autre station choisie. Notez que seules les stations avec des marchandises de produits correspondantes sont éligibles pour un déplacement logistique.{2022,9999}</t>
+		<t id="1116">Installe le centre de commandement logistique militaire sur ce dock.{2022,9999}</t>
+		<t id="1259">Colore le nom du vaisseau.{2022,9999}</t>
+		<t id="1213">Cette commande marque ce vaisseau pour un éventuel remorqueur. L'un de vos vaisseaux capable de transporter ce vaisseau doit exécuter la commande de remorquage pour que ce vaisseau soit récupéré.{2022,9999}</t>
+		<!--<t id="9999">\n\n\033G-Litcube Systems-</t>-->
+		<t id="9999"/>
+	</page>
+	<page id="20" title="Rang économique" descr="Statistique montrant le succès dans le commerce" voice="no">
+		<t id="699000">Vendeur</t>
+		<t id="699001">Vendeur confirmé</t>
+		<t id="699002">Petit vendeur</t>
+		<t id="699003">Commerçant</t>
+		<t id="699004">Commerçant confirmé</t>
+		<t id="699005">Négociant</t>
+		<t id="699006">Négociant confirmé</t>
+		<t id="699007">Marchand</t>
+		<t id="699008">Marchand confirmé</t>
+		<t id="699009">Marchand professionnel</t>
+		<t id="699010">Corsaire</t>
+		<t id="699011">Corsaire confirmé</t>
+		<t id="699012">Corsaire professionnel</t>
+		<t id="699013">Industriel</t>
+		<t id="699014">Industriel confirmé</t>
+		<t id="699015">Industriel professionnel</t>
+		<t id="699016">Entrepreneur</t>
+		<t id="699017">Entrepreneur confirmé</t>
+		<t id="699018">Entrepreneur professionnel</t>
+		<t id="699019">Magnat</t>
+		<t id="699020">Magnat confirmé</t>
+		<t id="699021">Magnat professionnel</t>
+		<t id="699022">Patron</t>
+		<t id="699023">Patron du transport</t>
+		<t id="699024">Patron confirmé</t>
+		<t id="699025">Patron professionnel</t>
+		<t id="699026">Magnat suprême</t>
+		<t id="699027">Tycoon</t>
+		<t id="699028">Tycoon du transport</t>
+		<t id="699029">Tycoon pan-galactique</t>
+		<t id="699030">X-TREME</t>
+	</page>
+	<page id="21" title="Rang de combat" descr="Statistique montrant le succès dans les combats" voice="no">
+		<t id="699100">Inoffensif</t>
+		<t id="699101">Nuisance</t>
+		<t id="699102">Débutant</t>
+		<t id="699103">Novice</t>
+		<t id="699104">Recrue</t>
+		<t id="699105">Stagiaire</t>
+		<t id="699106">Compétent</t>
+		<t id="699107">Diplômé</t>
+		<t id="699108">Qualifié</t>
+		<t id="699109">Combattant</t>
+		<t id="699110">Vétéran</t>
+		<t id="699111">Tireur d'élite</t>
+		<t id="699112">Sniper</t>
+		<t id="699113">Oeil de faucon</t>
+		<t id="699114">Professionnel</t>
+		<t id="699115">Instructeur</t>
+		<t id="699116">Spécialiste</t>
+		<t id="699117">Chef de combat</t>
+		<t id="699118">Chef suprême</t>
+		<t id="699119">Militant</t>
+		<t id="699120">Guerrier</t>
+		<t id="699121">Assassin</t>
+		<t id="699122">Vengeur</t>
+		<t id="699123">Seigneur de guerre</t>
+		<t id="699124">Croisé</t>
+		<t id="699125">Maître de guerre</t>
+		<t id="699126">Conquérant</t>
+		<t id="699127">Suzerain</t>
+		<t id="699128">Légende</t>
+		<t id="699129">Héros</t>
+		<t id="699130">X-TREME</t>
+	</page>
+	<page id="300023" title="Rang Argon" descr="Rang Argon" voice="no">
+		<t id="95">Ennemi de la Fédération</t>
+		<t id="96">Ennemi confirmé</t>
+		<t id="97">Insurgé confirmé</t>
+		<t id="98">Antagoniste connu</t>
+		<t id="99">Ennemi suspecté</t>
+		<t id="100">Citoyen</t>
+		<t id="101">Membre de la Fédération</t>
+		<t id="102">Associé de la Fédération</t>
+		<t id="103">Ami confirmé</t>
+		<t id="104">Conseiller accepté</t>
+		<t id="105">Allié de confiance</t>
+		<t id="106">Gardien de la Fédération</t>
+		<t id="107">Maréchal de la Fédération</t>
+		<t id="108">Surveillance de la Fédération</t>
+		<t id="109">Protecteur de la Fédération</t>
+		<t id="110">Héros de la Fédération</t>
+	</page>
+	<page id="300024" title="Rang Boron" descr="Rang Boron" voice="no">
+		<t id="95">Ennemi du Royaume</t>
+		<t id="96">Némésis de la Reine</t>
+		<t id="97">Ennemi de Ménélas</t>
+		<t id="98">Adversaire confirmé</t>
+		<t id="99">Antagoniste</t>
+		<t id="100">Connaissance</t>
+		<t id="101">Ami</t>
+		<t id="102">Ami accepté</t>
+		<t id="103">Courtisan de confiance</t>
+		<t id="104">Pair noble</t>
+		<t id="105">Garde de la Reine</t>
+		<t id="106">Chevalier de la Reine</t>
+		<t id="107">Protectorat de la Reine</t>
+		<t id="108">Chevalier du Roi</t>
+		<t id="109">Protectorat du Roi</t>
+		<t id="110">Chevalier du Royaume</t>
+	</page>
+	<page id="300025" title="Rang Split" descr="Rang Split" voice="no">
+		<t id="95">Ennemi de toutes les familles Split</t>
+		<t id="96">Ennemi de Rhonkar</t>
+		<t id="97">Ennemi de la famille</t>
+		<t id="98">Paria de la famille</t>
+		<t id="99">Créature sans vergogne</t>
+		<t id="100">Créature</t>
+		<t id="101">Aventurier connu</t>
+		<t id="102">Ami</t>
+		<t id="103">Camarade</t>
+		<t id="104">Ami de la famille</t>
+		<t id="105">Associé distingué</t>
+		<t id="106">Protecteur de la famille</t>
+		<t id="107">Associé privilégié de Rhonkar</t>
+		<t id="108">Cercle intérieur de Rhonkar</t>
+		<t id="109">Imperator honoré de Rhonkar</t>
+		<t id="110">Bras fort honoré de Rhonkar</t>
+	</page>
+	<page id="300026" title="Rang Paranid" descr="Rang Paranid" voice="no">
+		<t id="95">Ennemi du prêtre Xaar</t>
+		<t id="96">Ennemi du prêtre duc</t>
+		<t id="97">Profanateur de la Sainte Lumière</t>
+		<t id="98">Errant souillé</t>
+		<t id="99">Nomade impie</t>
+		<t id="100">Nomade</t>
+		<t id="101">Ami</t>
+		<t id="102">Ami du prêtre</t>
+		<t id="103">Confident du prêtre</t>
+		<t id="104">Ami du prêtre duc</t>
+		<t id="105">Ami du prêtre roi</t>
+		<t id="106">Protectorat du prêtre</t>
+		<t id="107">Ami de l'Empereur</t>
+		<t id="108">Protectorat de l'Empereur</t>
+		<t id="109">Chercheur de la Sainte Lumière</t>
+		<t id="110">Garde d'honneur de Xaar</t>
+	</page>
+	<page id="300027" title="Rang Teladi" descr="Rang Teladi" voice="no">
+		<t id="95">Ennemi de la Société</t>
+		<t id="96">Ennemi commercial</t>
+		<t id="97">Anarchiste commercial</t>
+		<t id="98">Rebelle mercantile</t>
+		<t id="99">Passif à profit</t>
+		<t id="100">Initié au profit</t>
+		<t id="101">Opportunité de profit</t>
+		<t id="102">Auxiliaire de l'entreprise</t>
+		<t id="103">Commerçant de l'entreprise</t>
+		<t id="104">Actionnaire</t>
+		<t id="105">Actionnaire majoritaire</t>
+		<t id="106">Directeur d'entreprise</t>
+		<t id="107">Propriétaire d'entreprise</t>
+		<t id="108">Profiteur d'entreprise</t>
+		<t id="109">Capitaliste-risqueur</t>
+		<t id="110">Directeur d'entreprise</t>
+	</page>
+	<page id="300028" title="Rang Goner" descr="Rang Goner" voice="no">
+		<t id="95">Ennemi</t>
+		<t id="96">Ennemi</t>
+		<t id="97">Ennemi</t>
+		<t id="98">Ennemi</t>
+		<t id="99">Ennemi</t>
+		<t id="100">Client</t>
+		<t id="101">Client</t>
+		<t id="102">Client</t>
+		<t id="103">Client</t>
+		<t id="104">Client</t>
+		<t id="105">Client</t>
+		<t id="106">Client</t>
+		<t id="107">Client</t>
+		<t id="108">Client</t>
+		<t id="109">Client</t>
+		<t id="110">Client</t>
+	</page>
+	<page id="120" title="Rang Pirate" descr="Rang Goner" voice="no">
+		<t id="95">Sanctionné</t>
+		<t id="96">Rat</t>
+		<t id="97">Pas un ami à nous</t>
+		<t id="98">Sur la liste noire</t>
+		<t id="99">Problème</t>
+		<t id="100">Inconnu</t>
+		<t id="101">Mafieux</t>
+		<t id="102">Membre d'équipage</t>
+		<t id="103">Associé</t>
+		<t id="104">Un ami à nous</t>
+		<t id="105">Chef d'équipage</t>
+		<t id="106">Promu</t>
+		<t id="107">Membre du syndicat</t>
+		<t id="108">Chef du syndicat</t>
+		<t id="109">Capo</t>
+		<t id="110">Patron</t>
+	</page>
+	<page id="121" title="Rang Yaki" descr="Rang Goner" voice="no">
+		<t id="95">Ennemi du clan</t>
+		<t id="96">Traître des Yaki</t>
+		<t id="97">Profanateur du clan</t>
+		<t id="98">Membre paria</t>
+		<t id="99">Yaki renégat</t>
+		<t id="100">Étranger</t>
+		<t id="101">Apprenti</t>
+		<t id="102">Voleur</t>
+		<t id="103">Membre</t>
+		<t id="104">Bien connu</t>
+		<t id="105">Chef</t>
+		<t id="106">Candidat au patch</t>
+		<t id="107">Patché</t>
+		<t id="108">Capitaine</t>
+		<t id="109">L'un des rares</t>
+		<t id="110">Chef</t>
+	</page>
+	<page id="350829" title="Rangs Terriens" descr="0" voice="no">
+		<t id="95">Ennemi de Sol</t>
+		<t id="96">Terroriste</t>
+		<t id="97">Insurgé</t>
+		<t id="98">Renégat</t>
+		<t id="99">Révolutionnaire</t>
+		<t id="100">Citoyen</t>
+		<t id="101">Conseiller local</t>
+		<t id="102">Représentant régional</t>
+		<t id="103">Conseiller sénatorial</t>
+		<t id="104">Maréchal de Mars</t>
+		<t id="105">Guerrier d'Io</t>
+		<t id="106">Serviteur de Terra</t>
+		<t id="107">Sénateur planétaire</t>
+		<t id="108">Gardien de la Terre</t>
+		<t id="109">Sentinelle solaire</t>
+		<t id="110">Héros de Sol</t>
+	</page>
+	<page id="350830" title="Rangs Terriens (ATF)" descr="Rangs ATF Terriens" voice="no">
+		<t id="95">Némésis</t>
+		<t id="96">Développeur AGI illégal</t>
+		<t id="97">Sympathisant AGI connu</t>
+		<t id="98">Fugitif technologique</t>
+		<t id="99">Programmeur suspect</t>
+		<t id="100">Pas d'accès au système</t>
+		<t id="101">Accès au système extérieur</t>
+		<t id="102">Accès à la ceinture d'astéroïdes</t>
+		<t id="103">Accès à Mars</t>
+		<t id="104">Accès à Vénus</t>
+		<t id="105">Accès à Mercure</t>
+		<t id="106">Accès à la Lune</t>
+		<t id="107">Accès à la Terre</t>
+		<t id="108">Accès à la recherche</t>
+		<t id="109">Accès aux opérations</t>
+		<t id="110">Accès au commandement</t>
+	</page>
+	<!--Text Corrections Go Here-->
+	<page id="1000" title="Jobs" descr="" voice="Yes">
+		<t id="10026">Transporteur High-Tech</t>
+	</page>
+	<page id="350017" title="Boardcomp. Objects" descr="Names of all sectors (spoken by Boardcomputer)" voice="yes">
+		<t id="3923">Tour-Laser Terrienne</t>
+	</page>
+	<page id="350035" title="Menu strings misc" descr="0" voice="no">
+		<t id="4600"/>
+		<t id="4601"/>
+	</page>
+	<page id="350017" title="Boardcomp. Objects" descr="Names of all sectors (spoken by Boardcomputer)" voice="yes">
+		<!--For reference only, so that betty can say the letters-->
+		<t id="1">{}Unused{}</t>
+		<t id="500">A</t>
+		<t id="501">B</t>
+		<t id="502">C</t>
+		<t id="503">D</t>
+		<t id="504">E</t>
+		<t id="505">F</t>
+		<t id="506">G</t>
+		<t id="507">H</t>
+		<t id="508">I</t>
+		<t id="509">J</t>
+		<t id="510">K</t>
+		<t id="511">L</t>
+		<t id="512">M</t>
+		<t id="513">N</t>
+		<t id="514">O</t>
+		<t id="515">P</t>
+		<t id="516">Q</t>
+		<t id="517">R</t>
+		<t id="518">S</t>
+		<t id="519">T</t>
+		<t id="520">U</t>
+		<t id="521">V</t>
+		<t id="522">W</t>
+		<t id="523">X</t>
+		<t id="524">Y</t>
+		<t id="525">Z</t>
+		<t id="528">Pirate</t>
+		<t id="529">OTAS</t>
+		<t id="530">ATF</t>
+		<t id="531">Terrien</t>
+		<t id="532">Yaki</t>
+		<t id="533">USC</t>
+		<t id="534">Commandement Spatial unifié</t>
+		<t id="535">MK1</t>
+		<t id="536">MK2</t>
+		<t id="537">MK3</t>
+		<t id="538">Logiciel</t>
+		<t id="539">Commandoe</t>
+		<t id="540">Phanon</t>
+		<t id="541">OCV</t>
+		<t id="542">Terracorp</t>
+		<t id="543">OTAS</t>
+		<t id="544">Plutarque</t>
+		<t id="545">PTNI</t>
+		<t id="546">du Duc</t>
+		<t id="547">Atres</t>
+		<t id="548">Jonferco</t>
+		<t id="549">NMMC</t>
+		<t id="550">Bras armé</t>
+		<t id="1000">Usine</t>
+		<t id="1001">Forge</t>
+		<t id="1002">Cette installation de production fabrique : </t>
+		<t id="1003">Dock d'équipement</t>
+		<t id="1004">Missile</t>
+		<t id="1005">Station</t>
+		<t id="2244">Le plancton boron est une plante gluante qui flotte à la surface des marécages chimiques de la planète Boron. Il est produit naturellement à partir de réactions chimiques qui se produisent dans l'habitat naturel des Borons. La crème est collectée et traitée avec des additifs et d'autres minéraux borons pour produire une large gamme d'épices nutritives. Étant donné que les océans borons sont protégés de l'industrie, le plancton est principalement produit sur des stations spatiales partout dans le Royaume Boron.</t>
+		<t id="2254">Les ressources naturelles inhabituelles de la planète Boron font de cette planète une véritable usine chimique. À partir de ces nombreux produits chimiques, les Borons fabriquent un gaz unique utilisé dans tout l'univers comme analgésique et anesthésique ultime. Après que le gouvernement boron ait arrêté toute utilisation commerciale des ressources naturelles de sa planète, le gaz boron est désormais reproduit artificiellement dans des usines de biogaz dans tout le Royaume Boron.</t>
+		<t id="2314">Ce produit est basé sur le phénomène d'une anomalie de temps et d'espace observée en présence d'une singularité. Le SETA est un accessoire du moteur opérationnel normal du vaisseau, qui peut, lorsqu'il est activé, comprimer le temps. L'invention a clairement été faite pour raccourcir les voyages sur de vastes distances. Les effets secondaires dus à une utilisation prolongée sont inconnus.</t>
+		<t id="2394">Cette créature est une petite mouche de l'espace non intelligente qui vit dans l'immensité du fin fond de l'espace. Elles sont de la taille d'un petit oiseau et sont faites d'un délicat gossamer brillant qui réagit à la lumière en une multitude de couleurs. Les mouches de l'espace deviennent de plus en plus rares en raison des campagnes de récolte des Split, qui utilisent la petite mouche de l'espace pour alimenter leurs vaisseaux spatiaux.</t>
+		<t id="2444">Les graines de soja poussent naturellement à l'intérieur de grandes grottes trouvées sur la planète natale des Paranides. Les Paranides extraient l'humidité des graines comme source d'eau, et les graines sèches sont écrasées et transformées pour produire un type d'aliment de base.</t>
+		<t id="2544">Les fleurs du lever du soleil teladi sont de grandes plantes aux feuilles bleues et aux grandes fleurs blanches qui poussaient à l'origine dans les vastes marécages ouverts de la planète natale des Teladi. Les fleurs du lever du soleil sont cultivées dans des fermes florales en raison de l'exposition supérieure à la lumière et des conditions de gravité dans l'espace. Ces fleurs fournissent aux Teladi un certain nombre de ressources différentes, comme de l'huile et des produits alimentaires.</t>
+		<!--Usine de drones de fret-->
+		<t id="2707">{17,7741} {17,1000}</t>
+		<t id="2708">Cette usine produit des drones de fret.</t>
+		<!--Station OCV-->
+		<t id="2715">{17,541} {17,1005}</t>
+		<t id="2716">Cette station, bien qu'elle ressemble à la station Xenon au premier coup d'oeil, semble être un point de rassemblement ou un Avant-Poste pour le virus du canal Omicron.</t>
+		<!--Quartier général Phanon-->
+		<t id="2725">{17,540} {17,6161}</t>
+		<t id="2726">La station Phanon, compte tenu de la capacité apparente de l'entreprise à atteindre tous ses objectifs financiers, est un modeste avant-poste. Des systèmes et des protocoles de sécurité de haut niveau laissent peu de récits à raconter concernant l'intérieur de la station. Néanmoins, c'est le quartier général central de Phanon, exploité par la filiale actuelle qui est prête à faire le travail de la mystérieuse entreprise.</t>
+		<!--Chaff factory-->
+		<t id="2811">{17,2813} {17,1000}</t>
+		<t id="2812">Cette installation de production fabrique le leurre de contre-mesure.</t>
+		<t id="2813">Leurre</t>
+		<t id="2814">Contre-mesure universelle.\n\nLes leurres sont automatiquement tirés par les systèmes CCDS. Chaque CCDS peut identifier un missile Fox de la même classe. Les missiles d'artillerie ne peuvent pas être interceptés du tout.</t>
+		<t id="2824">Fox 1, Teladi.\n\nLa Guêpe est l'un des Fox 1 les plus avancés. Développé par une équipe d'ingénieurs très qualifiés, ce missile est agile, rapide, puissant, léger et peut être tiré à longue portée tout en restant très abordable.</t>
+		<t id="2834">Fox 3, Teladi.\n\nAprès l'arrivée sur le marché de l'Aurora des Borons, les Teladi, sachant que cela se vendra très bien, ont lancé la construction de la Libellule. Même si le premier lancement a été un désastre, elle est maintenant connue comme le missile Fox 3 le plus rapide.</t>
+		<t id="2844">Artillerie, Split.\n\nLe Ver à soie est un missile d'artillerie rapide et léger. Cependant, pour son prix, la charge utile est rudimentaire et le Ver à soie a le taux de tir le plus lent de sa catégorie.</t>
+		<t id="2854">Artillerie, Teladi.\n\nContrairement aux autres missiles teladi, la Guêpe est l'un des plus lents de sa catégorie. Cependant, il est chargé d'une charge utile très puissante et a un taux de tir élevé. Pour y parvenir, il utilise des technologies spéciales qui en font le missile le plus cher.</t>
+		<t id="3182">Une station spatiale typique de l'Argon utilisée sur l'ensemble du territoire de la Fédération Argon. Développées par les Argons au fil des années, ces stations spatiales offrent les plus hauts standards de confort et de technologie. Chaque station est équipée de bars, de restaurants, de casinos, de cinémas holographiques et d'hébergement. Ce sont d'excellents centres de repos et de détente.</t>
+		<t id="3482">Cette station spatiale est très développée et présente les dernières technologies paranides. Cependant, en raison de leur nature secrète, très peu de personnes sont autorisées à entrer dans son corps interne. Les stations spatiales paranides commercent principalement avec les Teladi, les Split et les Borons. Chaque station spatiale est commandée par un prêtre duc. Il est cependant cru que chaque station contient un temple paranide, dont l'accès est strictement réservé aux moines paranides.</t>
+		<t id="3582">Les stations spatiales teladi sont essentiellement fonctionnelles mais pas construites pour le confort ; elles sont uniquement construites à des fins commerciales. Sur ces stations, tout a un prix ; généralement plus élevé que dans les stations d'autres races. Une grande partie de l'équipement de haute technologie à bord de la station a été achetée ou échangée, et la station à l'intérieur semble être un étrange mélange hybride des technologies des différentes races.</t>
+		<t id="3782">Malgré le fait que les pirates appellent leur base une station spatiale, cette base de pirates est en fait construite à partir des coques de vieux vaisseaux de transport. Elle est fortement camouflée et s'est avérée difficile à localiser. Les stations pirates sont généralement bien gardées, et tout vaisseau qui s'en approche est automatiquement scanné pour détecter les armes cachées afin de s'assurer qu'il ne transporte pas de policiers ou de chasseurs ennemis. Une fois accepté dans la station, un pilote peut commercer n'importe quel nombre de marchandises restreintes.</t>
+		<!--Orinoco-->
+		<t id="3812">La conception split de l'Orinoco rivalise avec les nouveaux Super Transporteurs, une classe de lourds vaisseaux de transport blindés avec des soutes de fret massives. Bien que l'Orinoco conserve encore son statut de super transporteur, les Split ont opté pour une conception moins chère pour maîtriser les coûts de production.</t>
+		<!--Bayamon-->
+		<t id="3822">Le Bayamon est un destroyer à craindre. Plus agile que ses anciens homologues, ce vaisseau M2 ne compromet pas sa vitesse étonnante avec son blindage et sa capacité à délivrer une puissance de feu dévastatrice en cas de besoin.</t>
+		<!--Mandalay-->
+		<t id="3832">Une amélioration du Cerbère, cette frégate coûteuse est agile et plus lourdement blindée. L'armée argon voit le Mandalay comme un élément essentiel de la composition de sa flotte avancée.</t>
+		<!--Avant-Poste minier de Plutarch-->
+		<t id="4163">{17,544} {17,16031}</t>
+		<t id="4164">La société minière Plutarch a installé ces postes avancés lorsque le boom des minéraux a pris de l'ampleur dans l'espace argon. Des mineurs du monde entier ont été saisis par la fièvre de s'enrichir en prospectant pour des minéraux rares. Ces postes avancés achèteront tous les minéraux qui peuvent être trouvés lors de l'extraction de débris.</t>
+		<!--Avant-Poste minier NMMC-->
+		<t id="4165">{17,549} {17,16031}</t>
+		<t id="4166">Ne voulant pas être devancés par leur rival de longue date, Plutarch, les NMMC ont installé ces postes avancés peu après. Des mineurs du monde entier ont été saisis par la fièvre de s'enrichir en prospectant pour des minéraux rares. Ces postes avancés achèteront tous les minéraux qui peuvent être trouvés lors de l'extraction de débris.</t>
+		<!--Avant-Poste minier pirate-->
+		<t id="4167">{17,528} {17,16031}</t>
+		<t id="4168">Au service des clans pirates de toute la galaxie, ces postes avancés sont utilisés pour rassembler les matières premières nécessaires à la construction de vaisseaux dans les chantiers navals pirates locaux. Des mineurs du monde entier ont été saisis par la fièvre de s'enrichir en prospectant pour des minéraux rares. Ces postes avancés achèteront tous les minéraux qui peuvent être trouvés lors de l'extraction de débris.</t>
+		<!--Avant-Poste minier USC-->
+		<t id="4169">{17,533} {17,16031}</t>
+		<t id="4170">L'économie terrienne bénéficie grandement de l'attention que ces postes avancés reçoivent des prospecteurs locaux. Des mineurs du monde entier ont été saisis par la fièvre de s'enrichir en prospectant pour des minéraux rares. Ces postes avancés achèteront tous les minéraux qui peuvent être trouvés lors de l'extraction de débris.</t>
+		<!--Perturbateur ionique-->
+		<t id="4624">Arme de classe légère\n\nLes Borons ont développé cette arme dans le but d'améliorer la capacité de leurs chasseurs à dépouiller rapidement les boucliers de leurs ennemis. Le perturbateur ionique a une portée respectable et une vitesse élevée, ce qui remplit son objectif de conception principal ; cependant, une fois les boucliers dépouillés, l'armée boron conseille à ses pilotes de passer à une arme anti-coque plus conventionnelle.</t>
+		<!--Système de forage mobile-->
+		<t id="4634">Laser de classe outil\n\nLe système de forage mobile accélère de petites particules hélicoïdales rapides qui percent dans la roche. Les projectiles à la résonance supersonique brisent les minéraux et les ressources à l'intérieur de la structure de la roche. Le système est pré-équipé d'interfaces pour une utilisation avec un collecteur de minerai, qui envoie les ressources libérées dans la soute du vaisseau.</t>
+		<!--Émetteur Kyon Alpha-->
+		<t id="4644">Arme de classe légère\n\nL'arme OCV la plus légère, c'est encore une technologie redoutable sur les chasseurs, surclassant toute autre arme de chasseur connue dans l'univers. En raison de son apparition récente sur le marché noir peu après l'annonce de l'OCV dans le canal Omicron, on en sait très peu sur cette arme laser.</t>
+		<!--Émetteur Kyon Bêta-->
+		<t id="4654">Arme de classe lourde\n\nOn sait que les vaisseaux M6 et M7 de l'OCV transportent ces tueurs. Comme toutes les armes OCV, l'émetteur Kyon Bêta surpasse n'importe quel autre laser de sa classe. En raison de son apparition récente sur le marché noir peu après l'annonce de l'OCV dans le canal Omicron, on en sait très peu sur cette arme laser.</t>
+		<!--Émetteur Kyon Gamma-->
+		<t id="4664">Arme de classe capitale\n\nUne nouvelle arme découverte sur les systèmes de vaisseaux capitaux de l'OCV, elle est saluée comme étant l'artillerie capitale la plus destructrice connue à ce jour. En raison de son apparition récente sur le marché noir peu après l'annonce de l'OCV dans le canal Omicron, on en sait très peu sur cette arme laser.</t>
+		<!--Atlas-->
+		<t id="4702">L'armée argon a commandé ce vaisseau après de nombreuses années de spéculations selon lesquelles la résistance de la flotte était discutable. L'Atlas se spécialise dans la durabilité. Ce vaisseau peut encaisser de lourds dommages et est plus que capable de rendre ce qu'il reçoit.</t>
+		<!--Étoile filante-->
+		<t id="4712">Prétendument, un concepteur excentrique bien connu a participé à la création de ce dernier chasseur M3 de l'OTAS. Bien que fragile, ce vaisseau est l'un des M3 les plus rapides connus, tout en conservant une puissance de feu considérable.</t>
+		<!--Flèche-->
+		<t id="4722">Comme l'USC a récemment été connue pour concevoir des vaisseaux de guerre à canons frontaux, ce dernier modèle suit cette tendance. La Flèche est une plateforme d'armes lourdes lente mais lourdement blindée.</t>
+		<!--Dispositif de camouflage-->
+		<t id="4834">Il s'agit d'un dispositif spécialisé développé à l'origine pour des missions d'espionnage par les Paranides. Il rend le vaisseau invisible au gravidar et à l'oeil nu. Il est maintenant considéré comme hautement illégal dans la plupart des secteurs. On raconte que chaque race militaire a un escadron d'opérations secrètes équipé de ces dispositifs.</t>
+		<!--Usine de missiles Sting-->
+		<t id="4901">{17,4905} {17,1000}</t>
+		<t id="4902">Cette usine produit le missile agile Sting.</t>
+		<!--Missile Sting-->
+		<t id="4905">{17,4903} {17,1004}</t>
+		<t id="4906">Fox 1, Split.\n\nLe Sting est un missile moyen. Bien qu'il soit plus agile que les autres missiles Fox 1, ses autres caractéristiques sont plutôt standard.</t>
+		<!--Missile Aiguille-->
+		<t id="4907">{17,4913} {17,1004}</t>
+		<t id="4908">Fox 2, Split.\n\nL'Aiguille est un missile qui n'aurait pas dû être lancé. Il est reconnu comme une expérience inachevée par les experts et, en tant que tel, souffre de nombreux défauts. Le résultat est un missile lent et inefficace à un prix surfait. Au dernier moment, les ingénieurs split ont décidé qu'ajouter une charge utile très lourde était la seule solution pour rendre ce missile utilisable. Les pilotes split préfèrent généralement le Fox 1 - le Sting - aux Fox 2 et Fox 3.</t>
+		<!--Missile Épine-->
+		<t id="4909">{17,4923} {17,1004}</t>
+		<t id="4910">Fox 3, Split.\n\nL'Épine a été lancé en même temps que l'Aurora des Borons. Cependant, ce missile n'a jamais été un succès et est encore rarement utilisé par les pilotes split, même s'il est le missile Fox 3 le moins cher du marché.</t>
+		<!--Usine de missiles Aiguille-->
+		<t id="4911">{17,4907} {17,1000}</t>
+		<t id="4912">Cette usine produit le missile Aiguille, rapide et à courte portée.</t>
+		<!--Usine de missiles Épine-->
+		<t id="4921">{17,4909} {17,1000}</t>
+		<t id="4922">Cette usine produit le missile Épine à courte portée.</t>
+		<!--Chantier naval Yaki-->
+		<t id="4933">{17,532} {17,16391}</t>
+		<t id="4934">Le chantier naval Yaki est le coeur de la faction pirate Yaki. Outre la production de vaisseaux et d'usines, la base principale d'opérations des Yaki est également située ici.</t>
+		<!--Canon de masse-->
+		<t id="4954">Arme de classe légère\n\nCette arme est l'une des rares armes de petits vaisseaux qui tirent des projectiles solides. Elle se compose d'un canon à canons multiples à alimentation rapide, capable de délivrer un grand nombre de petits projectiles sur sa cible en peu de temps.</t>
+		<!--Usine d'engrais artificiels-->
+		<t id="4961">{17,5213} {17,1000}</t>
+		<t id="4962">Cette usine produit des engrais artificiels à partir de minéraux et de sous-produits alimentaires.</t>
+		<!--Engrais artificiels-->
+		<t id="4963">{17,5213}</t>
+		<t id="4964">Comme toutes les races produisent des produits alimentaires sur un marché étroit, les engrais sont une denrée très recherchée pour les agriculteurs qui ont besoin d'un coup de pouce sur la concurrence. Les engrais artificiels sont fabriqués à partir de minéraux et de divers produits alimentaires.</t>
+		<t id="5545">{17,5551}</t>
+		<t id="5546">entrepreneurs miniers sont souvent vus en train d'extraire ces roches dans l'espoir de s'enrichir. Contrairement aux astéroïdes, sous forme de débris, les minéraux et les cristaux rares sont exposés, ce qui serait autrement trop difficile pour les processus industriels normaux d'extraire.</t>
+		<!--Cristal rouge-->
+		<t id="5604">Utilisé principalement dans les lasers, les rayons et l'équipement médical émetteur de rayonnements, les cristaux rouges sont généralement vendus en vrac. Récemment, il a été utilisé dans des applications décoratives pour les extérieurs des bâtiments, des véhicules et des paysages.</t>
+		<!--Cristal bleu-->
+		<t id="5614">Le cristal bleu compose le coeur du moteur d'annihilation matière/antimatière de Jonferson. Il stabilise la réaction matière/antimatière et l'empêche d'aller en critique. La rareté relative de ce cristal signifie qu'il se vend à un prix plutôt élevé sur le marché des minéraux. D'autres applications sont connues, allant de l'isolation électrique pour des scénarios spéciaux à la protection thermique de divers engins spatiaux.</t>
+		<!--Cristal vert-->
+		<t id="5624">Ce cristal est considéré comme une denrée précieuse dans la plupart des cultures. Outre ses propriétés décoratives, il a des capacités uniques entre les mains de talentueux constructeurs de vaisseaux borons. Le "Shimmer Scale" permet aux bioingénieurs borons de faire pousser la matrice de coque organique présente sur tous les vaisseaux borons.</t>
+		<!--Cristal jaune-->
+		<t id="5634">Ce cristal rare est essentiel pour la construction des moteurs de saut, et agit comme un conducteur pour le champ d'énergie négative créé par le coeur de matière exotique du moteur. La plupart des mégaentreprises ayant un intérêt dans l'interface avec l'énergie négative ont depuis longtemps établi des colonies minières dans des secteurs tranquilles dans le seul but d'extraire cette matière utile.</t>
+		<!--Cristal noir-->
+		<t id="5654">Connu pour ses applications utiles dans l'industrie spatiale en raison de sa densité inégalée, le cristal noir est rarement échangé longtemps avant d'être expédié à son propriétaire final. Étant l'un des matériaux les plus rares de l'univers connu, le cristal noir est souvent utilisé dans des bijoux et des décorations extrêmement exclusifs.</t>
+		<t id="5713">Logiciel de commande de combat MK1</t>
+		<t id="5723">Logiciel de commande de combat MK2</t>
+		<t id="5743">CCDS MK1</t>
+		<t id="5744">Le système de défense contre les leurres (CCDS) contrôle les capteurs qui détectent les missiles ennemis entrants. Les données résultantes sont envoyées au lanceur de missiles pour la dispersion automatique des munitions de leurre de défense.\n\nLe CCDS MK1 peut intercepter les missiles Fox 1 à longue portée.</t>
+		<t id="5745">CCDS MK2</t>
+		<t id="5746">Le système de défense contre les leurres (CCDS) contrôle les capteurs qui détectent les missiles ennemis entrants. Les données résultantes sont envoyées au lanceur de missiles pour la dispersion automatique des munitions de leurre de défense.\n\nLe CCDS MK2 peut intercepter les missiles Fox 2 à longue portée.</t>
+		<t id="5747">CCDS MK3</t>
+		<t id="5748">Le système de défense contre les leurres (CCDS) contrôle les capteurs qui détectent les missiles ennemis entrants. Les données résultantes sont envoyées au lanceur de missiles pour la dispersion automatique des munitions de leurre de défense.\n\nLe CCDS MK3 peut intercepter les missiles Fox 3 à courte portée.</t>
+		<t id="5753">Logiciel de contrôle à distance</t>
+		<t id="5754">Ce dispositif vous permet de prendre le contrôle d'un vaisseau vide sans avoir à quitter votre cockpit. Il augmente également la portée des commandes de capture automatique.</t>
+		<t id="5763">Perturbateur de signature logicielle</t>
+		<t id="5764">Le perturbateur de signature logicielle est un petit dispositif qui, une fois connecté aux systèmes informatiques du vaisseau, rend totalement inopérantes les procédures de scan de la police.</t>
+		<t id="5783">Extension de la porte de saut quantique</t>
+		<t id="5784">Cette extension de moteur de saut étend les capacités d'un moteur de saut pour permettre au vaisseau de sauter au centre d'un secteur. Elle permet également l'utilisation de balises de saut comme point de saut, à condition que le pilote soit en bons termes avec le propriétaire de la balise de saut.</t>
+		<t id="5793">Extension de trajet commercial</t>
+		<t id="5794">La véritable extension de trajet commercial est un ensemble de nouvelles interfaces de programmation conçues pour se brancher sur les interfaces du logiciel de commande commerciale, permettant au vaisseau TS d'acheter ou de vendre automatiquement des marchandises aux meilleurs prix sur l'ensemble du réseau commercial de l'univers connu.</t>
+		<t id="5803">Logiciel d'agent de station</t>
+		<t id="5804">Le logiciel d'agent de station fournit des utilitaires et une intégration à un vaisseau, lui permettant d'acheter et de vendre des marchandises pour une usine locale. Si vous devez gérer des marchandises à partir et vers un Sanctuaire ou un Dock, utilisez plutôt la commande d'agent du dock. Le logiciel d'agent de station n'est pas requis pour les agents du dock.</t>
+		<t id="5805">Système de tractage Plutarch</t>
+		<t id="5806">Les Teladi, bien connus pour manipuler les arrangements des stations et des portes du secteur commercial afin d'augmenter les bénéfices commerciaux, ont récemment contribué au développement d'un dispositif très performant pour poursuivre cette tendance. Le développement a fait l'objet d'un contrat conjoint, avec l'aide à la recherche de la division de recherche de la Plutarch Mining Corporation et les capitaux de financement capables de la NMMC. En raison du maintien de la plupart des contrôles logistiques tout au long du projet, Plutarch a pu remporter la marque sur la technologie avec une négociation étonnamment peu importante. Le système de tractage Plutarch est une technologie qui permet au vaisseau de faire sauter instantanément un astéroïde entier vers des coordonnées connues. Grâce à l'étalonnage de la technologie des faisceaux tracteurs et des petites sondes de saut jetables, le système de tractage est capable d'envoyer l'astéroïde n'importe où dans l'univers connu. Une application notable du système est une amalgamation précise de deux astéroïdes, combinant essentiellement leurs rendements. Le dispositif a un coût : d'énormes quantités de tubes quantiques, de cellules d'énergie et de cristaux sont nécessaires pour fabriquer la grande quantité de sondes de saut requises pour la procédure.</t>
+		<t id="5813">Moteur de retraite d'urgence</t>
+		<t id="5814">Lorsque le moteur de retraite d'urgence est installé, les vaisseaux avec "saut d'urgence" activé prendront des précautions supplémentaires lorsque leurs boucliers passent sous leur seuil. Le système consomme des noyaux de moteur de saut, qui sont remplacés lors de la surcharge du moteur de saut, ce qui entraîne des échappatoires rapides. Un saut de retraite utilisant ce noyau entraînera un saut de 1 à 2 secondes. Le nombre de noyaux consommés est basé sur la classe du vaisseau : TM : 6, M8 : 10, M6 : 17, TL : 20, M7 : 45, M1 : 85, M2 : 125</t>
+		<t id="5815">Licence de sécurité Goner</t>
+		<t id="5816">Aussi pacifiques que soient les Goners, il y a ceux qui ne sont pas toujours d'accord avec leur doctrine. Cette licence accorde une exemption militaire dans l'espace Goner.</t>
+		<t id="5817">Licence militaire USC</t>
+		<t id="5818">L'enregistrement militaire terrien permet aux individus de recevoir des primes de capture et certaines autorisations légales dans l'espace terrien.</t>
+		<t id="5819">Licence militaire ATF</t>
+		<t id="5820">L'enregistrement militaire ATF permet aux individus de recevoir des primes de capture et certaines autorisations légales dans l'espace ATF.</t>
+		<t id="5821">Noyau de moteur de saut</t>
+		<t id="5822">Cet article de consommation coûteux a des propriétés uniques souvent utilisées dans l'étude de la téléportation quantique.</t>
+		<t id="5823">Extension du transporteur d'amarrage</t>
+		<t id="5824">À l'issue d'une saison d'exercices d'entraînement militaire, l'armée argon était arrivée à la conclusion que le lancement des chasseurs était le principal danger pour la survie des pilotes. Après des années de recherche et des milliards de crédits consacrés à sa création, l'extension du transporteur d'amarrage est un dispositif qui fonctionne en conjonction avec le logiciel de commande de transporteur. La technologie permet au dispositif de transport de se verrouiller sur les vaisseaux et de les transporter comme s'il s'agissait de créatures flottant dans l'espace. En utilisant ce dispositif, les vaisseaux peuvent s'amarrer et décoller sans être exposés à la navigation traditionnelle fastidieuse et dangereuse.</t>
+		<t id="6012">Artillerie, Argon.\n\nAprès un long procès avec l'OTAS concernant le brevet de ce missile, les Argons ont eu beaucoup de mal à vendre leur missile d'artillerie, tandis que l'OTAS avait déjà travaillé sur leur Windstalker pendant des années. Les deux missiles sont équivalents, même si le Disrupteur est un peu inférieur, mais aussi moins cher.</t>
+		<!--Penatron-->
+		<t id="6232">Le Penatron a été aperçu pour la première fois lors d'une invasion pirate soutenue dans la Fortune d'Elena. À la surprise des Argons, ce nouveau vaisseau ne semblait pas être basé sur aucun des modèles de vaisseaux existants. Bien qu'il ne soit pas le chasseur M3 le plus rapide de la flotte pirate connue, cet appareil de combat redouté inflige des dommages substantiels.</t>
+		<!--Appallox-->
+		<t id="6332">Ce rapide M6 est une amélioration de la série déjà vénérable des corvettes Dragon. Arborant l'une des capacités d'armement les plus lourdes des autres vaisseaux de sa classe, l'Appallox est un appareil de frappe rapide redoutable.</t>
+		<t id="6514">Fox 1, Argon.\n\nComme la plupart des missiles Fox 1, le Rapière a été développé après le Fox 2 et le Fox 3 ; c'est donc un missile robuste, avec un prix plutôt bas et une grande portée.</t>
+		<t id="6524">Fox 3, Argon.\n\nCe missile est arrivé très tard sur le marché et a été construit par la société OTAS qui, à cette époque, était au bord de la faillite. Cependant, ils n'ont jamais cru que les missiles avaient un avenir dans les guerres à venir, ils ont donc rapidement lancé le Firelance, un missile médiocre et coûteux qui équipe encore la flotte argon aujourd'hui.</t>
+		<t id="6534">Fox 1, Yaki.\n\nLe Feu sauvage est un missile bien équilibré, souvent vu dans les activités pirates, et est donc craint par de nombreux fréteurs.</t>
+		<t id="6544">Artillerie, OTAS.\n\nCe missile a été très difficile à produire en raison des nombreuses poursuites judiciaires qui ont entouré sa mise sur le marché. On dit aussi que de nombreuses technologies utilisées pour le développement du Windstalker ont été volées aux Yakis, laissés sans M7M après les récentes guerres.</t>
+		<t id="6554">Fox 2, Boron.\n\nJuste après la fin du projet Peacebringer et la création de l'Aurora, les Borons ont ressenti le besoin d'un missile rapide. Le Banshee est donc un Fox 2 très polyvalent, mais cette agilité se fait au détriment de l'efficacité de la charge utile, légèrement en dessous des normes.</t>
+		<t id="6564">Fox 1, Boron.\n\nLes ingénieurs borons ont créé le Beluga après le Banshee et l'Aurora. Avec leur expérience passée, ils ont fait l'un des meilleurs Fox 1 du marché.</t>
+		<t id="6574">Fox 2, Argon.\n\nLe Marteau a été en développement pendant des années et a connu de nombreuses difficultés qui ont entraîné de sérieux retards dans son lancement. Pour essayer de réduire les coûts, les Argons ont décidé de fixer un prix excessif sur ce missile, qui n'est particulièrement bon dans rien.</t>
+		<!--Laser de réparation-->
+		<t id="6714">Laser de classe outil\n\nLe laser de réparation est un petit outil utilitaire conçu pour réparer la coque d'un vaisseau. Bien que les pilotes impatients se précipitent souvent vers le chantier naval le plus proche lorsque leurs coques sont endommagées, le laser de réparation peut réparer facilement les petits dommages en combinaison spatiale. Tous les lasers de réparation sont accompagnés d'un avertissement selon lequel le faisceau endommage les boucliers, et un pilote doit réparer son vaisseau dans un espace sûr.</t>
+		<t id="6734">Fox 2, Teladi.\n\nLa Luciole est un missile récent équipé de la dernière génération de moteurs, et est donc rapide, mais surtout, il est capable de parcourir de très longues distances pour atteindre sa cible.</t>
+		<t id="6744"/>
+		<t id="6754">Fox 1, Paranide.
+
+Anormalement lourd pour sa catégorie, le Tempest souffre de logiciels obsolètes et de mauvaise électronique. Les Paranides préfèrent généralement utiliser des missiles plus avancés à la place de celui-ci.</t>
+		<t id="6764">Fox 2, Paranide.
+
+L'Ouragan est un missile très capable, craint par beaucoup pour sa charge utile supérieure et sa stabilité générale.</t>
+		<t id="6784">Fox 3, Paranide.
+
+Le Cyclone est un missile moyen, développé par les Paranides et la société Strongarms, lorsque les Paranides étaient alliés aux Splits. Bien qu'il n'ait rien d'extraordinaire, il est connu pour son taux de tir supérieur.</t>
+		<t id="6794">Artillerie, Paranide.
+
+Le Tornado est un missile d'artillerie longue portée moyen. Plutôt bon marché, il est très apprécié des pilotes paranides. Il est bien connu que le Typhon n'est qu'une version améliorée de ce missile.</t>
+		<t id="6804">Artillerie, Boron.
+
+Lorsque les Borons ont réalisé leur manque de missiles d'artillerie après le projet Peacebringer, ils ont dépensé une fortune dans l'espionnage industriel, et ont finalement réussi à mettre la main sur ce qu'ils pensaient être le prochain missile Split. À cette époque, les Splits et les Paranides étaient alliés et ils avaient l'habitude de partager les plans préliminaires de leurs futures armes. C'est pourquoi les Borons avaient en fait le plan de la version prototype du Tornado, qu'ils ont réussi à améliorer sous tous les aspects.</t>
+		<t id="6814"/>
+		<t id="6824">Fox 3, Boron.
+
+L'Aurora est le plus ancien missile spatial encore utilisé aujourd'hui. Pendant des décennies, les Borons ont travaillé sur un projet appelé Peacebringer, menant à quelques expériences réussies aboutissant à l'Aurora telle que nous la connaissons aujourd'hui. Ce missile est l'un des Fox 3 les plus lents, car il est fait d'un acier lourd et utilise une énorme charge utile capable de causer des dégâts considérables pour sa catégorie.</t>
+		<t id="6834"/>
+		<!--Bouclier 1 GJ Fixé-->
+		<t id="7851">Installation de Production de Boucliers 1 GJ</t>
+		<!--Générateur d'Impulsion de Concussion-->
+		<t id="7934">Arme de Classe Moyenne
+
+Le Générateur d'Impulsion de Concussion est une technologie basée sur les mérites du Lanceur de Bombes Incendiaires et du Propulseur de Plasma Haute Énergie. La rafale capable de projectiles lancés par cette arme a une bonne portée et une grande puissance d'arrêt pour la classe d'arme.</t>
+		<!--Émetteur de Rayon d'Impulsion-->
+		<t id="8004">Arme de Classe Légère
+
+Il s'agit d'un laser de base utilisé dans de nombreuses armes légères et petits chasseurs. Il a un taux de tir élevé, un projectile rapide et est une excellente arme à des fins de défense anti-missile. L'Émetteur de Rayon d'Impulsion est l'une des armes à énergie les plus anciennes. C'est une arme de défense de base pénalisée par une très faible portée. On ignore quand l'arme a été développée pour la première fois.</t>
+		<!--Canon Accélérateur de Particules-->
+		<t id="8014">Arme de Classe Légère
+
+Une arme à courte portée que l'on trouve dans certains chasseurs moyens et lourds. Les premiers de cette classe ont été développés par les Paranides et les Argons. L'arme tire des particules polarisées et focalisées en une impulsion d'énergie étroite. Elle est plus efficace contre la coque que contre les boucliers.</t>
+		<!--Canon Répéteur Phasé-->
+		<t id="8034">Arme de Classe Légère
+
+Spécialement conçu pour les pilotes de chasseurs de classe M3 qui choisissent l'agilité plutôt que la puissance brute, le CRP vise à être plus léger et plus rapide que le Propulseur de Plasma Haute Énergie.</t>
+		<!--Canon-Mitrailleur à Bolts d'Énergie-->
+		<t id="8044">Arme de Classe Légère
+
+Le Canon-Mitrailleur à Bolts d'Énergie a été conçu par les Teladi comme une réponse au Canon à Masse. Il tire des "bolts" d'énergie stockée conçus pour endommager les vaisseaux ennemis aussi efficacement que n'importe quelle arme à énergie ou à plasma, tout en exerçant moins de pression sur le générateur du vaisseau.</t>
+		<!--Lanceur de Bombes à Fragmentation-->
+		<t id="8054">Arme de Classe Légère
+
+Le Lanceur de Bombes à Fragmentation a été créé par les Paranides comme une arme anti-chasseurs qui cause plus de dommages avec un taux de tir plus faible. Il libère un projectile instable qui s'est avéré très efficace contre les chasseurs. Le LBF est une arme de milieu de gamme, avec des capacités modestes à tous égards.</t>
+		<!--Propulseur de Plasma Haute Énergie-->
+		<t id="8064">Arme de Classe Légère
+
+Une arme de chasseur à frappe lourde, ce canon tire des bolts de plasma hautement chargé à des vitesses relativement faibles.</t>
+		<!--Émetteur de Faisceau Pulsé-->
+		<t id="8084">Arme de Classe Légère
+
+L'Émetteur de Faisceau Pulsé utilise un système de haute technologie qui emploie des faisceaux d'énergie tirés rapidement pour produire une arme d'une puissance de feu respectable. Bien que ce ne soit pas une arme à frappe lourde, ce laser compense son manque de puissance d'arrêt par une vitesse élevée, un taux de tir relativement élevé et une efficacité accrue contre la coque.</t>
+		<!--Générateur d'Impulsions de Plasma-->
+		<t id="8094">Arme de Classe Légère
+
+Le GIP est une arme à courte portée et à frappe lourde. Les bolts de plasma libérés par le GIP sont très efficaces contre les boucliers.</t>
+		<!--Canon à Plasma Électromagnétique-->
+		<t id="8104">Arme de Classe Légère
+
+Le puissant et très avancé Canon à Plasma Électromagnétique de la Flotte Terrienne est l'arme la plus courante sur les chasseurs Terriens. Il utilise de puissants générateurs de champs électromagnétiques pour propulser des bolts de plasma concentrés sur les ennemis. C'est l'arme standard des chasseurs de classe moyenne qui possède un ensemble de spécifications très capables.</t>
+		<!--Générateur d'Impulsions Ioniques-->
+		<t id="8124">Arme de Classe Moyenne
+
+En plus d'être efficace contre les boucliers, le Générateur d'Impulsions Ioniques possède un projectile rapide, une excellente portée et de lourds dommages. Une arme véritablement capable parmi les armes de classe moyenne, c'est un armement courant sur les vaisseaux de classe corvette.</t>
+		<!--Canon Railgun à Éclats Ioniques-->
+		<t id="8134">Arme de Classe Moyenne
+
+Développé à partir de la technologie d'arme ionique Boron rétro-ingéniérée, le Canon Railgun à Éclats Ioniques tire des "éclats" de plasma super-chauffé ionisé, qui sont ensuite accélérés à grande vitesse à l'aide d'aimants.</t>
+		<!--Lanceur Matière/Anti-Matière-->
+		<t id="8144">Arme de Classe Moyenne
+
+La pièce maîtresse de la flotte de corvettes ; cette arme a la capacité de décharger une salve haute puissance d'anti-matière sur sa cible. C'est l'une des rares armes dont la conception a été vendue au Commonwealth pendant la Transition.</t>
+		<!--Réseau d'Artillerie Anti-Aérienne-->
+		<t id="8154">Arme de Classe Moyenne
+
+Le Réseau d'Artillerie Anti-Aérienne a été conçu comme une arme anti-corvette offrant des projectiles particulièrement efficaces contre les boucliers.</t>
+		<!--Réseau de Canons Anti-Aériens à Grappe-->
+		<t id="8164">Arme de Classe Moyenne
+
+Avec une puissance de sortie plus élevée et une plus grande portée au prix de la vitesse et de la précision, cette arme est idéalement adaptée aux engagements de chasseurs lourds.</t>
+		<!--Canon Laser à Réseau Phasé-->
+		<t id="8174">Arme de Classe Moyenne
+
+Cette arme a été conçue pour une capacité défensive précise à longue portée. Le Canon Laser à Réseau Phasé tire des bolts d'énergie superchargée à la vitesse de l'éclair.</t>
+		<!--Générateur d'Ondes de Choc Phasé-->
+		<t id="8184">Arme de Classe Moyenne
+
+Initialement développé par les Teladi et les Paranides, le GOP a depuis été amélioré par le dernier empire pour être efficace contre plusieurs chasseurs et endurant au combat.</t>
+		<!--Canon à Onde de Choc Starburst-->
+		<t id="8194">Arme de Classe Moyenne
+
+Couramment utilisé par les vaisseaux de guerre du Commandement Spatial Unifié, le Canon à Onde de Choc Starburst est une arme anti-aérienne avancée à énergie. Il est conçu pour rivaliser avec le Réseau de Canons Anti-Aériens à Grappe des Argons, et bien qu'il inflige moins de dommages, il a un taux de tir plus élevé.</t>
+		<!--Canon à Impulsions de Photons-->
+		<t id="8204">Arme de Classe Lourde
+
+Développé pour la première fois par les Argons, le Canon à Impulsions de Photons a été pendant longtemps l'arme favorite de l'Armée Argon. Cependant, à court d'argent après leurs guerres contre les Terriens, ils ont décidé de vendre une version modifiée de la conception aux autres races. La conception d'origine a été perdue, rendant cette arme assez bon marché, mais pas aussi efficace que d'autres armes de guerre.</t>
+		<!--Canon Ionique-->
+		<t id="8214">Arme de Classe Lourde
+
+En faisant évoluer la technologie du Générateur d'Impulsions Ioniques, le Canon Ionique est l'aboutissement de l'armement ionique Boron. Une énorme quantité d'énergie ionique est utilisée pour tirer des projectiles ioniques moyens à un rythme élevé qui peuvent causer d'importants dommages à n'importe quel système de boucliers.</t>
+		<!--Canon Gauss-->
+		<t id="8224">Arme de Classe Lourde
+
+Les Teladi ont conçu cette solution à base de matière à faible technologie dans un effort pour faire des économies sur les conceptions de vaisseaux de guerre coûteuses. Le Canon Gauss utilise des bobines magnétiques pour accélérer de gros projectiles ionisés qui voyagent à une portée et une vitesse alarmantes.</t>
+		<!--Lanceur de Bombes Incendiaires-->
+		<t id="8234">Arme de Classe Lourde
+
+Incapables d'obtenir facilement possession d'armes de vaisseaux de guerre haute technologie, les pirates ont conçu cela comme une alternative. Le Lanceur de Bombes Incendiaires produit essentiellement une grosse boule de plasma enflammé, qui est lancée sur la cible. Une arme grossière avec de faibles caractéristiques.</t>
+		<!--Projecteur de Singularité Ponctuelle-->
+		<t id="8244">Arme de Classe Lourde
+
+Récemment développé par des scientifiques Terriens, le Projecteur de Singularité Ponctuelle lance essentiellement de petits groupes de semi-singularités. Les singularités finissent par se déstabiliser, s'effondrer et libèrent une quantité d'énergie phénoménale. En raison de la nature de ses projectiles, le PSP est l'arme la plus meurtrière de la galaxie.</t>
+		<!--Canon à Faisceau de Plasma-->
+		<t id="8254">Erreur
+
+Données inconnues : cette arme n'est pas reconnue dans la base de données.</t>
+		<!--Canon à Triple Faisceau-->
+		<t id="8264">Arme de Classe Lourde
+
+Cette arme lance des mortiers légers de plasma super-chauffé à une vitesse extrême. Bien qu'elle ait le plus haut taux de tir de tous les vaisseaux, elle est également connue pour avoir une portée plus courte que les autres armes de sa catégorie.</t>
+		<!--Canon à Faisceau de Fusion-->
+		<t id="8274">Arme de Classe Lourde
+
+Le Canon à Faisceau de Fusion est un destructeur de chasseurs grâce à son taux de tir élevé. Pour leur aide pendant les guerres contre les Terraformeurs, les Argons se sont vu offrir la conception de cette arme. Ils la produisent encore aujourd'hui pour équiper de nombreux de leurs vaisseaux de guerre à un prix très abordable.</t>
+		<!--Minéral Rouge-->
+		<t id="8301">Minéral Rouge</t>
+		<t id="8302">Ce sable rouge doucement luminescent peut être transformé en un carburant de basse qualité apprécié des Teladi soucieux des prix. L'extrême toxicité du soi-disant 'RedBurn' a été révélée après qu'un pétrolier Teladi, pris dans les tirs croisés d'un raid Split dans le Royaume de la Fin, se soit écrasé dans les mers du monde natal Boron. La nappe de pétrole résultante a créé une zone morte de 100 km de diamètre et on pense qu'elle a contribué à la mort de plus de 30 000 Borons. Cette catastrophe, ainsi que la découverte du "Procédé Orange", a fait chuter la valeur de ce minéral ces dernières années.</t>
+		<!--Minéral Orange-->
+		<t id="8303">Minéral Orange</t>
+		<t id="8304">Longtemps appelé par le surnom de "Rouge des Fous" par les mineurs Teladi frustrés par l'incapacité de leurs scanneurs minéraux à distinguer le Rouge de l'Orange, ce sable brillant est devenu le centre de ce que les historiens commencent à appeler la "Ruée vers l'Orange" après qu'un étudiant Boron, orphelin de la Catastrophe du RedBurn, ait découvert le "Procédé Orange". Le puissant carburant que cette méthode crée serait beaucoup moins toxique que le RedBurn, bien que les scientifiques Borons se hâtent de noter que les tests sont encore en cours.</t>
+		<!--Minéral Violet-->
+		<t id="8305">Minéral Violet</t>
+		<t id="8306">Les origines de ce minéral terne ont fasciné les géologues pendant des siècles. Sa présence dans les astéroïdes est contraire à tous les modèles astronomiques actuels. La popularité de la "Théorie des Précurseurs", qui affirme que les dépôts violets sont en fait les restes fossilisés d'une ancienne race spatiale, a rendu la substance populaire auprès des collectionneurs et des enthousiastes, bien que la plupart des scientifiques rejettent l'idée comme absurde.</t>
+		<!--Minéral Bleu-->
+		<t id="8307">Minéral Bleu</t>
+		<t id="8308">La mise au jour du premier gisement de Minéral Bleu a annoncé une renaissance dans la conception des vaisseaux. Le premier supraconducteur à température ambiante naturel jamais découvert, cette substance est devenue un composant clé de la plupart des systèmes laser et de boucliers. L'abondance relative de ce minéral, associée à ses faibles coûts de raffinage, a permis de mettre des vaisseaux bien armés et blindés à la portée du citoyen moyen, bien que les effets de ce changement sur la prévalence de la piraterie soient encore à l'étude.</t>
+		<!--Minéral Vert-->
+		<t id="8309">Minéral Vert</t>
+		<t id="8310">Connu des experts en armes Terriens sous le nom de Pu-241, ce minéral est utilisé depuis des millénaires dans la construction d'ogives de missiles à haut rendement. Interdit par la plupart des races jusqu'à récemment, le vol de cinq prototypes d'ogives d'une installation de développement secrète Split a convaincu les cinq autres races de reconstituer leurs propres stocks.</t>
+		<!--Minéral Argent-->
+		<t id="8311">Minéral Argent</t>
+		<t id="8312">Le Minéral Argent est prisé pour une seule raison : C'est la seule substance connue qui a un coefficient de dilatation thermique exactement égal à zéro. Cette propriété en fait un produit très recherché pour l'ingénierie de haute précision, en particulier dans les systèmes de propulsion des gros vaisseaux de guerre. Avec l'expansion spectaculaire des armées des races ces dernières années, ce minéral rare est très demandé, et les différents gouvernements raciaux envisageraient des contrôles à l'exportation pour sécuriser leur approvisionnement.</t>
+		<!--Minéral Or-->
+		<t id="8313">Minéral Or</t>
+		<t id="8314">Extrêmement efficace pour absorber les radiations, ce minéral jaune est la première, dernière et unique protection d'un navigateur contre le propulseur de son vaisseau. L'utilité de ce minéral rare, qui va des combinaisons anti-radiations aux enveloppes d'ogives, a entraîné une demande suffisante pour que des expéditions entières soient envoyées pour le trouver (et considérées comme des échecs lorsqu'elles sont revenues avec des soutes pleines d'Argent).</t>
+		<!--Minéral Blanc-->
+		<t id="8315">Minéral Blanc</t>
+		<t id="8316">Lorsque le Maître Armurier de l'Empire Split a regardé le Minéral Blanc si négligemment rejeté par un pilote de passage, il n'a pas vu de la scorie mais l'inévitabilité de la perfection. Une fois fondu, cette roche grise terne devient un métal réputé pour sa force, sa souplesse et sa capacité à garder un tranchant. La demande parmi les clans pour une Lame de Maître a fait du minerai rare dont elle est née le rêve de chaque mineur et l'ambition de chaque pirate. L'emplacement des gisements de Minéral Blanc est un secret que des flottes sont mortes pour protéger.</t>
+		<t id="8324">Artillerie, Terrienne.
+
+Avec le Spectre, les Terriens ont fabriqué un autre missile très efficace, plus cher que leurs concurrents mais aussi plus fiable, même si certains pilotes se plaignent souvent de la portée plutôt courte de ce missile.</t>
+		<t id="8334">Fox 2, Terrien.
+
+Le Spectre est l'un des meilleurs Fox 2 sur le marché. Bien que pas bon marché et plutôt lourd, il est agile, rapide et puissant.</t>
+		<t id="8344">Fox 1, Terrien.
+
+Le Poltergeist a été créé à la hâte pour repousser les premières vagues OCV qui arrivaient de nulle part. Il est donc médiocre mais bon marché, et est conçu pour être utilisé comme tir de suppression contre les grosses cibles.</t>
+		<t id="8354">Fox 3, Terrien.
+
+Le Fantôme est un missile très bien équilibré. La structure est très légère, et c'est pourquoi ce Fox 3 est plus cher que les autres missiles de cette catégorie.</t>
+		<t id="8364">Fox 3, Yaki.
+
+Le Goule est un missile efficace disponible à faible coût. Il est principalement fabriqué à partir de matériaux de mauvaise qualité, mais les ingénieurs Yaki ont réussi à développer un logiciel de haute qualité qui fait de ce Fox 3 un très bon choix en matière de missiles avancés.</t>
+		<t id="8374">Fox 2, Yaki.
+
+L'Ombre est un missile léger bien équilibré connu pour son taux de tir supérieur et sa charge utile très efficace. Malheureusement, les technologies utilisées dans ce missile ont un coût élevé. On dit que les Yakis se sont inspirés des technologies utilisées dans le Spectre Terrien, qu'ils ont réussi à rétro-ingénierer pendant les guerres contre les Terraformeurs.</t>
+		<t id="8384"/>
+		<t id="8394"/>
+		<t id="8404"/>
+		<!--Tempestine-->
+		<t id="9061">Tempestine</t>
+		<t id="9062">La corvette d'avant-garde Split Tempestine est une arme redoutable conçue pour décharger des salves vicieuses de munitions sur une cible avec ses 12 canons principaux. Légèrement moins manoeuvrable que d'autres navires de sa classe, le Tempestine est toujours craint par les pilotes de vaisseaux de guerre dans tout l'Univers.</t>
+		<t id="9503">Réseau d'Artillerie à Photons</t>
+		<t id="9504">Arme de Classe Lourde
+
+Partiellement une refonte du Canon à Impulsions de Photons du Commonwealth, les Splits ont conçu cette puissante arme de vaisseau de guerre pour compenser un manque évident de puissance de feu lourde. Le Réseau d'Artillerie à Photons est une arme moyenne, bien adaptée au combat contre plusieurs types de cibles.</t>
+		<!--Poste d'Amarrage d'Équipement OTAS McCallum-->
+		<t id="9405">{17,529} {17,13131} {17,1003}</t>
+		<t id="9406">Le Poste d'Amarrage d'Équipement OTAS McCallum est une grande station d'amarrage abritant un hangar à grande échelle pour les vaisseaux de classe TS, M6 et plus petits.</t>
+		<!--Poste d'Amarrage d'Équipement OTAS Starliner-->
+		<t id="9407">{17,529} {17,12911} {17,1003}</t>
+		<t id="9408">Le Poste d'Amarrage d'Équipement OTAS Starliner est la plus grande installation d'amarrage de vaisseaux de guerre connue dans l'Univers connu. Il peut accueillir 9 vaisseaux de guerre avec 5 bras de fret.</t>
+		<!--Chantier Naval Pirate-->
+		<t id="9409">{17,528} {17,16041}</t>
+		<t id="9410">Les chantiers navals pirates ressemblent plus à des casses automobiles qu'à de véritables installations de construction. Ici, les restes des victimes des pirates sont apportés pour être récupérés et reconstruits, un seul vaisseau spatial opérationnel étant souvent assemblé à partir de trois coques ou plus. Dans une société si souvent caractérisée par sa violence, les chantiers navals pirates sont des endroits étonnamment ordonnés. Le Prince local garantit la sécurité des visiteurs pendant qu'ils font des affaires avec le clan, bien que les visiteurs soient avertis que la protection de la station prend fin une fois qu'un vaisseau quitte son poste d'amarrage.</t>
+		<!--Chantier Naval ATF-->
+		<t id="9411">{17,530} {17,16041}</t>
+		<t id="9412">Les chantiers navals de l'ATF sont le coeur des opérations anti-Xénons de la force opérationnelle. Transférés de l'USC après l'adoption de la Loi sur l'Expansion des Forces Spéciales et fortement rénovés, ces stations travaillent jour et nuit pour produire les engins de combat les plus technologiquement avancés du quadrant. Lourdement gardés et étroitement contrôlés, l'accès est difficile à obtenir même pour le personnel de la TSF. Il est rare que l'on autorise un étranger à voir, ne serait-ce que, l'un des engins construits ici, encore moins à en acquérir un.</t>
+		<!--Usine de Coeur de Saut-->
+		<t id="9413">{17,5821} {17,1000}</t>
+		<t id="9414">Cette usine fabrique le coeur de saut.</t>
+		<!--Chantier Naval du Commandement Spatial Unifié-->
+		<t id="9415">{17,534} {17,16041}</t>
+		<t id="9416">Les chantiers navals de l'USC incarnent la philosophie endémique dans la construction spatiale terrienne : tout ou rien. Avec suffisamment de cales pour construire une force opérationnelle entière, ces installations sont concentrées sur un seul objectif : assurer la domination militaire terrienne dans l'inévitable guerre à venir. Les observateurs ont noté que les travaux dans cette installation ont triplé après la conférence explosive du ministre des Affaires étrangères Keeli, bien que les responsables gouvernementaux aient nié que cela soit une réponse aux rumeurs inquiétantes provenant du canal d'Omicron.</t>
+		<t id="9501">Canon à Rayons Gamma</t>
+		<t id="9502">Arme de Classe Moyenne
+
+Le Canon à Rayons Gamma Terrien a été développé par une petite entreprise de recherche et développement basée sur Mars sans mandat d'aucune entreprise gouvernementale. La conception de l'arme a été vendue au Commonwealth pendant la Transition. Cependant, elle est souvent considérée comme une blague, avec un faible taux de tir et une charge utile inefficace.</t>
+		<t id="9505">Canon à Plasma</t>
+		<t id="9506">Arme de Classe Légère
+
+Le simplement nommé Canon à Plasma a été un succès surprenant lors d'une démonstration militaire à laquelle personne ne s'attendait à ce que l'"envoyé en prototype à la hâte" soit performant. Bien qu'il soit clair que l'armée terrienne avait besoin d'une nouvelle arme légère de chasseur, le design simple du Canon à Plasma était censé échouer. Similaire au Propulseur de Plasma Haute Énergie, mais pas aussi volumineux, cette arme réduit la puissance pour obtenir une portée et une vitesse respectables.</t>
+		<t id="9507">Canon à Particules Alpha</t>
+		<t id="9508">Arme de Classe Légère
+
+En plus de l'afflux d'armes légères de l'armée terrienne, l'ATF a conçu cette arme en réponse à l'arsenal de projectiles haute vitesse du Commonwealth. Ce canon à particules à tir rapide tire une attaque modeste pour sa taille avec la réputation d'être un design extrêmement efficace. Il est plus efficace contre la coque que contre les boucliers.</t>
+		<!--Forge du Canon à Rayons Gamma-->
+		<t id="9509">{17,9501} {17,1001}</t>
+		<t id="9510">Cette forge produit le Canon à Rayons Gamma.</t>
+		<!--Forge du Réseau d'Artillerie à Photons-->
+		<t id="9511">{17,9503} {17,1001}</t>
+		<t id="9512">Cette forge produit le Réseau d'Artillerie à Photons.</t>
+		<!--Forge du Canon à Plasma-->
+		<t id="9513">{17,9505} {17,1001}</t>
+		<t id="9514">Cette forge produit le Canon à Plasma.</t>
+		<!--Canon à Particules Alpha-->
+		<t id="9515">{17,9507} {17,1001}</t>
+		<t id="9516">Cette forge produit le Canon à Particules Alpha.</t>
+		<!--Magnir-->
+		<t id="9517">Magnir</t>
+		<t id="9518">Avec le nombre croissant de milliardaires terriens et d'entrepreneurs basés dans l'espace, le marché d'un croiseur de luxe conçu strictement pour les Terriens a été reconnu. Le Magnir en est le résultat.
+
+Conçu pour combler le vide sur les marchés civils, il est raisonnablement lourdement armé et correctement blindé, bien que l'aspect de luxe proprement dit ait pris un rôle secondaire. Construit pour impressionner plutôt que pour plaire, le Magnir est le navire de pose de l'année aussi impraticable qu'à la mode.</t>
+		<!--Naucell-->
+		<t id="9519">Naucell</t>
+		<t id="9520">Le Naucell est un vaisseau inhabituel ; un paquebot de luxe conçu par une race ayant très peu de sens de l'esthétique ou du luxe en général.
+
+La conception et les commandes ont été modifiées pour les pilotes non-Teladi, car même les fabricants du Naucell ont réalisé que le vaisseau aurait peu de commerciabilité parmi les Teladi eux-mêmes. Malgré tout, le vaisseau est toujours construit sur les principes de base éprouvés des Teladi de boucliers élevés et de vitesse relativement faible. La soute immense est un autre avantage, lui permettant de contenir des provisions pour des voyages d'exil solitaires pendant des mois.</t>
+		<!--Nomade-->
+		<t id="9521">Nomade</t>
+		<t id="9522">Le Nomade est un croiseur de luxe rapide, élégant et agressif. Initialement conçu pour servir de corvette de coordination de flotte et de reconnaissance, le besoin d'un tel navire dans les opérations militaires Split actuelles s'est avéré infiniment faible.
+
+Afin d'éviter de perdre le financement gouvernemental, l'équipe de conception a rapidement remanié l'intérieur pour accueillir plusieurs suites de luxe et a mis le modèle à la disposition du grand public.</t>
+		<!--8: Old Tug-->
+		<t id="10008"/>
+		<!--9: Old Luxury Cruiser-->
+		<t id="10009"/>
+		<!--10: Old Slave Transport-->
+		<t id="10010"/>
+		<!--11: Old Military Transport-->
+		<t id="10011"/>
+		<!--13: Old Extended-->
+		<t id="10013"/>
+		<!--16: Old 2nd Vanguard-->
+		<t id="10016"/>
+		<!--17: Old 2nd Sentinel-->
+		<t id="10017"/>
+		<!--18: Old 2nd Raider-->
+		<t id="10018"/>
+		<!--19: Old 2nd Hauler-->
+		<t id="10019"/>
+		<!--19: Old 2nd Hauler-->
+		<t id="10020"/>
+		<!--Marlin-->
+		<t id="10242">Ce M6 est une conception privée offerte à la Marine Royale Boron à un prix d'aubaine. Cette corvette agile et lourdement blindée est souvent considérée comme l'oeuvre d'un scientifique boron patriote.</t>
+		<!--Krait-->
+		<t id="10282">Les lignes élégantes de cette frégate boron suggèrent la vitesse et l'agilité de cette machine de guerre très capable au combat. Conçue par la Marine Royale Boron pour combler l'écart de vitesse dans sa flotte vieillissante, le Krait s'est avéré efficace pour rattraper les traînards en fuite dans les confrontations perdues.</t>
+		<!--Washi-->
+		<t id="10642">Fait surprenant, les Yaki ont investi dans une nouvelle conception de M7 qui rivalisera avec celles des races du Commonwealth. Cette frégate est un engin de frappe rapide et capable.</t>
+		<!--Auster-->
+		<t id="11182">OTAS a finalement comblé le vide dans sa classe de navires lourds de réponse rapide de première ligne en dévoilant l'Auster. Un engin de frappe capable, ce M7 comble un manque dans la flotte OTAS dans les rôles de soutien de puissance de feu moyenne à lourde.</t>
+		<!--Sirokos-->
+		<t id="11192">La corvette de classe M6 Sirokos est une machine redoutable. OTAS n'a épargné aucun effort pour livrer la perfection dans presque tous les aspects de ce navire très capable.</t>
+		<!--PX-->
+		<t id="11312">Un danger considérable sur le champ de bataille. Le PX est le chef d'escadrille de la flotte OCV et l'escorte commune. Ces corvettes agiles sont dotées d'une énorme puissance de feu pour leur taille. Comme tous les navires OCV, ce vaisseau surclasse ses équivalents du Commonwealth et Terriens à presque tous les égards.</t>
+		<!--Usine de Missiles Rapière-->
+		<t id="11800">{17,6513} {17,1000}</t>
+		<t id="11801">Le missile Rapière à la vitesse de l'éclair est produit dans cette usine de fabrication.</t>
+		<!--Usine de Missiles Firelance-->
+		<t id="11802">{17,6523} {17,1000}</t>
+		<t id="11803">Cette usine fabrique le missile Firelance.</t>
+		<!--Usine de Missiles Wildfire-->
+		<t id="11804">{17,6533} {17,1000}</t>
+		<t id="11805">Le léger missile Wildire est produit dans cette usine.</t>
+		<!--Usine de Missiles Windstalker-->
+		<t id="11806">{17,6543} {17,1000}</t>
+		<t id="11807">Cette usine produit le redouté missile Windstalker à tir direct.</t>
+		<!--Usine de Missiles Banshee-->
+		<t id="11808">{17,6553} {17,1000}</t>
+		<t id="11809">Cette usine de fabrication produit le missile Banshee.</t>
+		<!--Usine de Missiles Beluga-->
+		<t id="11810">{17,6563} {17,1000}</t>
+		<t id="11811">Cette usine fabrique le missile Beluga.</t>
+		<!--Usine de Missiles Hammerhead-->
+		<t id="11812">{17,6573} {17,1000}</t>
+		<t id="11813">Cette usine fabrique le missile Hammerhead.</t>
+		<!--Nagoya-->
+		<t id="12862">Le porte-avions lourd de classe Nagoya représente l'aboutissement du développement des porte-avions de l'USC. Récemment sorti des chantiers navals de Mars, ce navire capable ajoute une redoutable capacité de frappe lourde et de transport à la flotte terrienne.</t>
+		<!--Tern-->
+		<t id="12882">Les sociétés de sécurité teladi ont connu beaucoup de succès avec leurs innovations dans la technologie de lancement rapide de chasseurs. En conséquence, ils ont conçu le très capable porte-avions de frégate, le Tern. Bien que le Tern ferait mieux de rester à l'arrière de l'action, sa capacité à déployer rapidement des dizaines de chasseurs peut faire basculer le cours de la bataille très rapidement.</t>
+		<!--Panthère-->
+		<t id="12932">La Panthère est le résultat d'une offre infructueuse des chantiers navals de la Famille Whi pour remporter le contrat de production de masse d'une nouvelle classe de frégate. Avec quelques modifications pour installer des ponts de hangar, elle a finalement été mise en service en tant que frégate d'assaut standard avec une capacité de porte-avions limitée.</t>
+		<!--Hoshi-->
+		<t id="12982">Les Yaki ont développé un porte-avions très capable, une fois de plus en volant et en intégrant des conceptions argones et paranides dans le produit final. Le Hoshi est maintenant connu pour être un navire de transport et un engin de frappe de porte-avions bien équilibré.</t>
+		<!--Akurei-->
+		<t id="13002">Avec l'ATF, la flotte de l'USC manquait d'une véritable classe de petit porte-avions pour le soutien aérien à longue portée. Ne voulant pas être surpassé par la conception de navires du Commonwealth, les Terriens ont lancé l'Akurei TM, l'un des plus grands navires de classe TM disponibles pour ce rôle.</t>
+		<!--Kariudo-->
+		<t id="13012">Les générateurs de puissance d'armes terriens installés dans cette véritable M7 lui ont valu un grand respect, et un espace encore plus grand. Bien qu'il ne soit pas bon marché à reproduire, la disponibilité du Kariudo permet aux flottes terriennes de délivrer une puissance d'impact lourde sur le front à court préavis.</t>
+		<!--Senshi-->
+		<t id="13022">Leur première incursion dans la classe des corvettes, les Yaki ont émergé avec le Senshi. Initialement déçus par une conception aussi désuète, les Yaki ont bientôt été rassasiés lorsque les améliorations qu'ils ont apportées à un vieux plan se sont avérées fructueuses lors des tests de combat à grande échelle. Bon marché à reproduire, extrêmement rapide et capable à part entière, il semble que les Yaki aient accompli leurs objectifs de conception de navires avec le M6 Senshi.</t>
+		<!--Guardian-->
+		<t id="13032">Données inconnues : ce vaisseau n'est pas reconnu dans la base de données.</t>
+		<!--Reine de la Ruche-->
+		<t id="13042">Données inconnues : ce vaisseau n'est pas reconnu dans la base de données.</t>
+		<!--Corvette-->
+		<t id="10902">Données inconnues : ce vaisseau n'est pas reconnu dans la base de données.</t>
+		<!--Shuri-->
+		<t id="13082">En raison de la taille de la plupart des secteurs solaires dans l'espace terrien, le Shuri a été commandé dans le but spécifique d'être un navire de patrouille rapide en tête. Avec une grande vitesse et des systèmes de combat prêts, le Shuri est un exemple de conception réussie de corvette à réaction rapide.</t>
+		<!--Maraudeur-->
+		<t id="13112">Autre conception du Commonwealth bâtardisée, cette frégate de clan pirate est un engin de frappe rapide, et l'une des plateformes d'armes les plus redoutées de sa flotte.</t>
+		<!--Astraeus-->
+		<t id="13142">Depuis la mise en service du Borée, OTAS a reçu quelques critiques mineures sur l'absence apparente de capacité de destroyer lourd. Bien que le Borée soit toujours considéré comme l'un des destroyers rapides les plus compétents de l'Univers connu, l'idéologie perfectionniste d'OTAS a rapidement dévoilé ce M2 comme un signe qu'ils sont toujours les meilleurs dans ce qu'ils font.</t>
+		<!--Deca.Fade-->
+		<t id="13462">Comme s'il était l'ouvrière de la ruche OCV, ce chasseur rapide ne sert que de transport pour transporter les précieuses ressources OCV qu'ils chérissent tant. Ce vaisseau est souvent vu en train de transporter ces ressources entre les stations OCV, et les rapports préliminaires suggèrent qu'il n'est pas un tueur orienté combat comme ses congénères plus gros.</t>
+		<!--Exterminateur-->
+		<t id="13472">L'Exterminateur du Clan Pirate est une conception sans grâce de carnage et de destruction brute. Apportant des améliorations au Brigantin à presque tous les niveaux, ce destroyer s'est fait connaître pour anéantir des escadrilles entières de patrouilles du Commonwealth sans aucun survivant, lui donnant le surnom effrayant de sa classe.</t>
+		<!--Usine d'Équipement Médical-->
+		<t id="16151">{17,5303} {17,1000}</t>
+		<t id="16152">Cette usine produit du matériel médical terrien de haute qualité pour une utilisation par les hôpitaux, les baies médicales et les cliniques de tout l'Univers connu.</t>
+		<!--Équipement Médical-->
+		<t id="16153">{17,5303}</t>
+		<t id="16154">Les Terriens sont connus pour produire les outils médicaux de la plus haute qualité disponibles sur le marché. Bien que la technologie moderne ait fait de grands progrès dans la lutte contre les maladies et autres affections médicales, ces produits restent largement utilisés dans tout l'Univers.</t>
+		<!--Usine de Composants de Moteur-->
+		<t id="16161">{17,5253} {17,1000}</t>
+		<t id="16162">Cette usine produit des composants de moteur.</t>
+		<!--Composants de Moteur-->
+		<t id="16163">{17,5253}</t>
+		<t id="16164">Tous les véhicules ont des moteurs, et tous les moteurs ont besoin de pièces. Ce produit commercial est une option lucrative pour ceux qui investissent dans n'importe quel secteur de maintenance.</t>
+		<!--Usine d'Équipement de Construction-->
+		<t id="16171">{17,5243} {17,1000}</t>
+		<t id="16172">Cette usine produit de l'équipement de construction.</t>
+		<!--Équipement de Construction-->
+		<t id="16173">{17,5243}</t>
+		<t id="16174">Bien que l'équipement de construction soit un article banal en soi, la nécessité de ce produit provoquée par l'expansion et le commerce galactiques sans précédent est considérée comme une idée passionnante par beaucoup. L'équipement de construction moderne est conçu pour permettre la construction de stations, d'installations planétaires et de véhicules en toute sécurité et rapidité. Il est essentiel pour la croissance économique de toutes les races.</t>
+		<!--Balise de Saut-->
+		<t id="16252">{9974,3016}</t>
+		<!--Excalibur-->
+		<t id="16442">L'Excalibur représente le summum de l'artisanat naval que l'armée argon a à offrir. Avec un lancement et un amarrage internes capables d'accueillir des M6, l'un des réseaux de boucliers les plus puissants connus, des générateurs d'armes et d'alimentation redoutables, et un armement impressionnant, ce cuirassé est capable de mener les engagements les plus longs et les opérations militaires les plus difficiles en défense comme en attaque.</t>
+		<!--Lotan-->
+		<t id="16452">Face à la demande accrue d'armes et de boucliers sur le front, la Fédération Argon avait besoin d'un vaisseau capable de rivaliser avec le cargo Bragi Terrien. À l'origine, le navire n'était destiné qu'à des tâches de réapprovisionnement militaire, mais après de nombreuses missions réussies, il a été décidé de le mettre en production de masse afin de récupérer les coûts de développement.</t>
+		<!--Aamon-->
+		<t id="16462">L'Aamon est le résultat d'un projet de recherche conjoint sur l'aboutissement de la technologie de combat spatial terrienne et argone. Avec le meilleur de ce que chaque race a à offrir, le résultat est un chasseur lourd de première ligne très compétent.</t>
+		<!--Nexus-->
+		<t id="16472">Le Nexus est la réponse des Argons au Super Transporteur conçu par d'autres races. Bien qu'il ne soit pas un Super Transporteur à part entière, la classe Nexus améliore la plupart des conceptions TS existantes et est une option beaucoup plus raisonnable que ses homologues plus grands.</t>
+		<!--Quasar-->
+		<t id="16482">Les académies militaires argones ont longtemps pensé qu'une patrouille légère est beaucoup plus efficace lorsque la tête de point est une corvette bien blindée. Le Quasar est essentiellement de la technologie argone standard, avec quelques améliorations ; la plus notable étant l'augmentation de la capacité et du générateur de boucliers.</t>
+		<!--Esturgeon-->
+		<t id="16492">La conception boron de l'Esturgeon rivalise avec les nouveaux Super Transporteurs, une classe de navires de transport lourdement blindés avec des soutes à cargaison massives. Bien que lent, l'Esturgeon se vante d'avoir l'une des plus grandes soutes à cargaison couplée à un blindage respectable.</t>
+		<!--Aquata-->
+		<t id="16502">La Marine Royale Boron a commencé les conceptions d'une corvette à tir vers l'avant relativement bon marché pour des tactiques de harcèlement il n'y a pas si longtemps. Le résultat est l'Aquata ; une conception simple et efficace pour un but simple.</t>
+		<!--Mégalodon-->
+		<t id="16512">Ce M2P est l'entrée de la Marine Royale Boron dans la coûteuse course aux cuirassés. Le Mégalodon a une silhouette menaçante sur le front de la bataille spatiale, capable de lancer des chasseurs et des corvettes, tout en réussissant à tenir sa place d'une manière supérieure à la plupart des destroyers standard.</t>
+		<!--Coelacanthe-->
+		<t id="16522">Cette frégate bien équilibrée était une expérience de la Marine Royale Boron sur une conception peu coûteuse. Le Coelacanthe est essentiellement une version améliorée de la plateforme de combat Hydre Lourde, offrant un engin de frappe M7 agile et capable.</t>
+		<!--Goujon-->
+		<t id="16532">Bien qu'ouvertement débattu dans les salles royales, il y avait des murmures parmi l'élite militaire selon lesquels la Marine Royale manquait de puissance dans ses ailes de classe M4 par rapport aux autres marines. Bala Gi a été engagé pour concevoir le Goujon, un chasseur moyen plus rapide et mieux blindé pour faire taire ces murmures. Le Goujon est maintenant considéré comme un M4 très équilibré.</t>
+		<!--Émeu-->
+		<t id="16542">L'Émeu Teladi est un puissant porte-avions tout juste sorti des chantiers navals de la Compagnie. La conception intègre chaque détail d'un porte-avions et d'un transport à haut rendement tout en offrant une augmentation substantielle de la puissance de combat brute rarement trouvée dans d'autres navires de classe M1.</t>
+		<!--Geochen-->
+		<t id="16552">Une frégate bien équilibrée, ce M7 était une tentative d'égaliser les options sur lesquelles les Teladi en sont venus à compter en ce qui concerne les engins de soutien lourd.</t>
+		<!--Corbeau-->
+		<t id="16562">Incapables de rivaliser de manière cohérente dans la course aux cuirassés M2P, le Corbeau est le résultat de l'investissement des Teladi dans des engins plus petits mais plus capables. Le Corbeau est une puissante machine de combat bien équilibrée.</t>
+		<!--Cormoran-->
+		<t id="16572">Les Teladi ont sauté le processus de développement dans la course aux cuirassés et ont plutôt décidé de construire un prototype qui intègre la technologie moderne sans le prix moderne. Cette classe M2 offre une puissance de feu extraordinaire pour la vitesse à laquelle elle peut répondre aux menaces sectorielles.</t>
+		<!--Ptéranodon-->
+		<t id="16582">Alors que les autres races étaient jusqu'au cou dans la course au développement de leur cuirassé, les Teladi ont plutôt divisé leurs recherches en plusieurs conceptions. L'un de ces projets a abouti à la conception de ce redoutable M2. Avec une capacité d'accostage mineure, le Ptéranodon est un destroyer à réaction rapide capable de se défendre contre certains des navires les plus puissants de l'Univers connu.</t>
+		<!--Patrocle-->
+		<t id="16592">L'armée paranide avait à l'origine prévu cette conception comme base pour leur entrée dans la course aux cuirassés. Cependant, en cours de développement, il est devenu évident que le Patrocle était aussi agile qu'un destroyer standard. Tirant parti du coût réduit et de la machine de guerre extrêmement redoutable qu'était ce M2, les Paranides ont bifurqué leurs recherches pour développer ce navire en parallèle avec leur cuirassé.</t>
+		<!--Protée-->
+		<t id="16602">L'orgueil paranide a conduit à l'initiation de la conception du Protée. Avec un zèle excessif pour surpasser les races du Commonwealth dans l'effort de produire des navires de tête de corvette plus capables, ce M6 est devenu une machine de guerre agile sur le champ de bataille.</t>
+		<!--Cyclope-->
+		<t id="16612">Comme son nom l'indique, le Cyclope est une bête d'horreur, si vous êtes du côté opposé. Un cuirassé polyvalent, le Cyclope peut lancer et accoster des vaisseaux de classe M6 dans un hangar interne. Une fois engagé, peu de navires dans l'Univers peuvent se mesurer à ce véritable navire de guerre.</t>
+		<!--Ariane-->
+		<t id="16632">Comme les navires de classe porte-avions paranides sont coûteux à produire, l'armée paranide a décidé qu'une autre option pour apporter des chasseurs puissants sur la ligne de front est un transport agile conçu pour éviter le danger, tout en conservant la capacité de déployer rapidement de petits engins. Le résultat est le M7 Ariane. Bien que pas complètement incapable de se défendre, ce porte-avions frégate est principalement conçu pour apporter des chasseurs aux escarmouches de première ligne.</t>
+		<!--Drake-->
+		<t id="16642">La conception Teladi du Drake rivalise avec les nouveaux Super Transporteurs, une classe de navires de transport lourdement blindés avec des soutes à cargaison massives. Le Drake est connu pour sa conception globalement solide et abrite l'une des plus grandes soutes à cargaison d'un vaisseau de classe TS.</t>
+		<!--Ocelot-->
+		<t id="16652">L'Ocelot Split est la fierté de la Famille dans la course aux cuirassés. Probablement l'un des navires polyvalents les plus puissants de l'Univers connu, le rare Ocelot peut sauter directement dans les plus lourdes escarmouches, lancer des chasseurs, et s'approcher et se battre personnellement avec les vaisseaux de guerre les plus dangereux.</t>
+		<!--Cougar-->
+		<t id="16662">Plus comme une expérience que comme une conception sérieuse, le Cougar a été conçu pour être une plateforme d'armes rapide, à l'image de ses cousins M3. L'expérience est très louée comme un succès parmi l'armée Split.</t>
+		<!--Taipan-->
+		<t id="16672">Bien que les Split développaient le Taipan parallèlement à leur entrée dans la course aux cuirassés, ce M2 est apparu comme un sérieux concurrent aux navires standard de type destroyer. Le Taipan est l'un des navires de classe M2 les plus rapides, tout en offrant une puissance défensive sans compromis.</t>
+		<!--Acinonyx-->
+		<t id="16682">L'Acinonyx est bien connu pour être l'une des frégates d'attaque éclair M7 les plus rapides de la galaxie connue. Tout en compromettant légèrement sur la puissance des armes, ce navire compense largement cela par la capacité de s'infiltrer pour faire le travail, et de se retirer avant de subir de lourdes pertes.</t>
+		<!--Tobosaku-->
+		<t id="16692">Ce monstre terrien était l'un des premiers destroyers cuirassés de l'USC à sortir des chantiers navals. Puissance de feu brute, blindage massif, et réputé comme l'un des navires de classe M2P les plus rapides, le Tobosaku donne une bonne raison aux envahisseurs de marquer une pause.</t>
+		<!--Chikyu-->
+		<t id="16702">L'une des frégates les plus agiles de l'espace connu, le Chikyu compte sur l'habileté du pilote pour surmanoeuvrer les ennemis et se positionner stratégiquement pour déployer la puissance de feu d'une frégate. Ce vaisseau de classe M7 est principalement conçu pour la durabilité, étant l'une des frégates les plus lourdement blindées de l'espace connu.</t>
+		<!--Toukon-->
+		<t id="16712">Cette corvette M6 est largement considérée comme un exemple parfait de la façon de construire une machine de guerre. Un blindage lourd et un générateur de puissance massif font de ce bateau de guerre de première ligne un concurrent dans les grandes flottes ou les patrouilles à haute sécurité.</t>
+		<!--Hayabusa-->
+		<t id="16732">Conçu pour une tête de patrouille rapide nécessitant un soutien plus lourd, le coûteux Hayabusa est connu comme l'une des frégates les plus rapides de l'espace sans pour autant compromettre les armes ou le blindage.</t>
+		<!--Tepukei-->
+		<t id="16742">La flotte de l'USC avait besoin d'une solution plus petite et plus rentable pour le transport d'usine et le mouvement en vrac de marchandises dans les secteurs du système solaire. C'est ainsi que le Tepukei est sorti des chantiers navals de Mars il y a peu, soutenant les flottes et l'expansion économique.</t>
+		<!--Polacca-->
+		<t id="16752">Les clans de pirates avaient organisé leurs ressources de manière sans précédent pour construire le prototype de ce navire de guerre assez capable. Le Polacca, comparé aux autres navires de sa classe, n'est pas un vaisseau remarquable, mais la vitesse à laquelle il a été conçu n'a rien de banal.</t>
+		<!--Logich-->
+		<t id="16762">Le Logich, tout comme le Shuri de l'USC, était le résultat d'une enquête sur un navire de combat plus rapide conçu pour mener des patrouilles dans l'immensité de l'espace terrien. Avec le poids total du commandement de l'ATF garantissant le succès de la conception, ce M6 est l'un des plus redoutés de tout l'espace.</t>
+		<!--Solaris-->
+		<t id="16782">Le Solaris de l'USC est une conception expérimentale dans une tentative de créer un hybride de destroyer et de frégate lance-missiles lourds. Le résultat est un vaisseau de guerre polyvalent et dévastateur capable de bombardements longue portée et d'engagements rapprochés.</t>
+		<!--Shamshir-->
+		<t id="16792">La conception du chasseur moyen Shamshir était un concept terrien basé sur la survie des attaques en essaim contre les envahisseurs de vaisseaux de guerre des secteurs du système solaire. Ce navire M4 a une capacité de boucliers rivalisant avec de nombreux chasseurs lourds, tout en ne sacrifiant que légèrement la puissance des armes. C'est un chasseur de combat très capable.</t>
+		<!--Falchion-->
+		<t id="16802">Le Falchion est apparu comme un projet parallèle pour l'ATF parmi une myriade de conceptions expérimentales. Sans armes de tir direct, le Falchion délivre un coup dévastateur avec ses montures de tourelle personnalisées. Lent et maladroit, le positionnement est crucial pour ce véritable navire de guerre.</t>
+		<!--Macana-->
+		<t id="16812">Une corvette dangereuse inspirant la peur chez les citoyens pacifiques lors des raids de pirates, le Macana est le résultat de technologies Teladi et Argon bâtardisées pour créer une arme redoutable. Agile et robuste, ce M6 est un modèle très réussi pour les clans de pirates.</t>
+		<!--Sentata-->
+		<t id="16822">Suivant les navires militaires à canons avant, l'USC a conçu le Sentata comme une canonnière rapide et agile. L'objectif principal de cette classe est les passages en rafale, et non l'engagement à long terme.</t>
+		<!--Morrigu-->
+		<t id="16832">Le Morrigu est une conception relativement nouvelle des clans de pirates pour améliorer davantage leurs capacités de navires de puissance intermédiaire. Ce M6 est un navire de combat relativement moyen, avec un moteur plus rapide que la plupart.</t>
+		<!--Verdandi-->
+		<t id="16842">Comme l'ATF avait besoin de chasseurs plus petits, et les a commandés, le Verdandi était le fruit d'une marge budgétaire supplémentaire, car un complément entier de nouveaux chasseurs se traduirait par un meilleur rendement global. Bien que pas tout à fait nécessaire, le Verdandi s'impose comme l'un des chasseurs lourds les plus agiles et les plus capables.</t>
+		<!--Kvasir-->
+		<t id="16872">La classe M7 Kvasir est l'une des frégates les plus mortelles de l'espace connu. Vitesse de déploiement rapide, blindage lourd et générateurs de puissance rivaux des destroyers, c'est une arme véritablement dévastatrice dans l'arsenal de l'ATF.</t>
+		<!--Hel-->
+		<t id="16882">L'ATF a sorti le Hel pour compléter une escadrille d'attaque de chasseurs moyens. Légèrement plus rapide et mieux blindé que ses homologues, le Hel est un navire pour ceux qui ont des crédits excédentaires à dépenser.</t>
+		<!--Bragi-->
+		<t id="16892">La conception terrienne du Bragi rivalise avec les nouveaux Super Transporteurs, une classe de navires de transport lourdement blindés avec des soutes à cargaison massives. Le Bragi se distingue des autres de sa classe par un bon équilibre entre une grande capacité de chargement et un blindage lourd.</t>
+		<!--Mani-->
+		<t id="16902">L'ATF a commandé ce nouveau chasseur éclaireur après un long processus de conception axé sur un engin éclaireur plus rapide, mais toujours redoutable. Le Mani dispose de 6 canons ; un arsenal considérable pour un vaisseau de classe M5. Sans aucun doute, le Mani émerge comme l'un des vaisseaux éclaireurs les plus compétents au combat de l'Univers.</t>
+		<!--Lofn-->
+		<t id="16912">Il était évident que l'ATF manquait d'un transporteur de petits navires pour compléter les flottes de patrouille mobiles. Gardant cette lacune à l'esprit, l'ATF a conçu et lancé le Lofn, un transporteur militaire capable de lancer un plus grand nombre de chasseurs que la plupart de ses homologues du Commonwealth.</t>
+		<!--Forseti-->
+		<t id="16922">Au début, l'ATF était satisfait de sauter la course aux cuirassés qui a saisi les armées des autres races, car ils avaient confiance dans les capacités du bien supérieur Tyr. Avec le temps, cependant, l'ATF a décidé de jouer la sécurité et d'entamer la construction d'un hybride porte-avions et destroyer lourd pour combler l'écart entre les races concurrentes. Le Forseti est l'un des vaisseaux de guerre les plus puissants de l'Univers, capable de lancer et d'accoster des vaisseaux de classe M6 en interne.</t>
+		<!--Laser Orbital Terrien-->
+		<t id="20292">Suite à des escarmouches avec les forces du Commonwealth, l'USC a été impressionné par le potentiel des Tours Laser pour protéger les secteurs éloignés sans engager une flotte coûteuse. Le Laser Orbital Terrien est un clone Terrien des Tours Laser, rétro-conçu et amélioré. Pendant la phase de conception, l'accent a été mis sur une arme lourde robuste plutôt que sur la défense des chasseurs. Le Laser Orbital offre une position défensive supérieure.</t>
+		<!--Bourse-->
+		<t id="20352">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Bourse-->
+		<t id="20362">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Bourse-->
+		<t id="20372">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Bourse-->
+		<t id="20382">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Bourse-->
+		<t id="20392">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Bourse-->
+		<t id="20402">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Bourse-->
+		<t id="20412">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Bourse-->
+		<t id="20422">Suite aux changements des lois galactiques qui ont légalisé le commerce ouvert d'actions et de parts, la Compagnie Teladi a rapidement établi un certain nombre de ces Bourses. Quiconque dispose de quelques crédits peut maintenant acheter des actions dans une grande variété d'entreprises et de sociétés. Même dans le court laps de temps où ces stations ont été en activité, de nombreuses fortunes ont été gagnées et perdues.</t>
+		<!--Segaris-->
+		<t id="20621">Segaris</t>
+		<t id="20622">En réponse au marché émergent des porte-avions légers, le Segaris est un porte-avions léger conçu par les Borons, capable d'agir rapidement pour défendre les secteurs frontaliers.</t>
+		<!--O-->
+		<t id="96101">{17,514}</t>
+		<t id="96102">Le O a récemment été vu en escorte de vaisseaux OCV plus gros dans le canal d'Omicron. D'après les rapports préliminaires, il semble que les OCV aient conçu ce nouveau vaisseau de la classe des chasseurs moyens comme un assaillant plus rapide ; conçu pour atteindre le front des combats à peu près en même temps que ses variantes éclaireurs. Comme tous les vaisseaux OCV, ce navire surclasse ses équivalents du Commonwealth et Terriens à presque tous les égards.</t>
+		<!--R-->
+		<t id="96103">{17,517}</t>
+		<t id="96104">Le R est le M7 le plus résistant de la flotte OCV. Des sources laser et de puissance de vaisseau massives donnent au R un avantage considérable dans les engagements de combat prolongés. Comme tous les vaisseaux OCV, ce navire surclasse ses équivalents du Commonwealth et Terriens à presque tous les égards.</t>
+		<!--G-->
+		<t id="96105">{17,506}</t>
+		<t id="96106">Un M7 problématique récemment repéré parmi les flottes OCV, le G est une menace aussi importante que certains destroyers du Commonwealth. Comme tous les vaisseaux OCV, ce navire surclasse ses équivalents du Commonwealth et Terriens à presque tous les égards.</t>
+		<!--C-->
+		<t id="96107">{17,502}</t>
+		<t id="96108">Une réponse choquante et dangereuse à la nouvelle flotte de M7 du Commonwealth, le C n'est rien de moins que de la pure puissance brute. Les Xénons n'ont fait aucun compromis en lâchant cette frégate de guerre dépouillée sur l'Univers.</t>
+		<!--Z-->
+		<t id="96109">{17,525}</t>
+		<t id="96110">Cela n'a surpris personne lorsque le Z Xénon est apparu à travers un portail dans l'espace Boron. On soupçonnait depuis longtemps que les Xénons amélioreraient leur conception de vaisseau de guerre K, et le Z en est la réponse. Un puissant instrument de destruction, le Z actionne 64 canons autour de sa coque massive, protégée par un réseau de boucliers massif. Comme menace supplémentaire, on a vu des chasseurs accoster et décoller de ses ports.</t>
+		<!--V-->
+		<t id="96111">{17,521}</t>
+		<t id="96112">Le monstre, comme l'ont nommé certains pilotes du Commonwealth, est un destroyer à la puissance de feu et au blindage dévastateurs. Il est clair que l'OCV a tiré les leçons des conceptions de cuirassés des races du Commonwealth lors de la conception de ce destroyer effrayant. Comme tous les vaisseaux OCV, ce navire surclasse ses équivalents du Commonwealth et Terriens à presque tous les égards.</t>
+		<!--T-->
+		<t id="96113">{17,519}</t>
+		<t id="96114">Le T est le cuirassé ultime de l'OCV. Un colosse de navire, le T représente l'aboutissement de millénaires d'une technologie alien inconnue. C'est, sans aucun doute, le destroyer le plus redoutable que cette nouvelle menace menaçante du canal d'Omicron ait jamais apporté. Comme tous les vaisseaux OCV, ce navire surclasse ses équivalents du Commonwealth et Terriens à presque tous les égards.</t>
+		<!--OX-->
+		<t id="96115">{17,514}{17,523}</t>
+		<t id="96116">L'OX est un chasseur d'élite OCV spécialement conçu pour la vitesse et l'accompagnement des porte-avions. Comme tous les vaisseaux OCV, ce navire surclasse ses équivalents du Commonwealth et Terriens à presque tous les égards.</t>
+	</page>
+	<page id="353322" title="Construire des Stations L2" descr="0" voice="no">
+		<t id="101">Les temps sont bons et ma société cherche actuellement à investir dans une nouvelle station {param@StationName} dans le secteur {sector.name@L2M122.Sector}. Des sous-traitants expérimentés sont requis. La station doit être construite à côté du balise que nous avons placée.</t>
+		<t id="102">Nous avons récemment perdu une station {param@StationName} lors d'une attaque Xénon et nous cherchons quelqu'un pour nous construire une nouvelle station dans le secteur {sector.name@L2M122.Sector}. La station doit être construite à côté du balise que nous avons placée.</t>
+		<t id="103">Construction de la station {param@StationName} requise dans le secteur {sector.name@L2M122.Sector}. Les pilotes doivent organiser leur propre transport et construire la station eux-mêmes. La station doit être construite à côté du balise que nous avons placée.</t>
+	</page>
+	<page id="353334" title="Patrouille Générique L2M134" descr="0" voice="no">
+		<t id="1002">Un poste dans une force de patrouille locale est ouvert à tout pilote ayant de l'expérience au combat. La patrouille aura lieu dans le secteur {sector.name@{param@FinalSector}}. Les pilotes feront face à des vaisseaux {lookup.race.name@{value@L2M134.OBSEnemyRace}}.</t>
+		<t id="1003">Patrouille {lookup.race.name@{param@OfferRace}}</t>
+		<t id="1004">Patrouiller le secteur {sector.name@{param@FinalSector}}. Éliminez tous les ennemis du gouvernement {lookup.race.name@{param@OfferRace}}. Vous ferez face à des vaisseaux {lookup.race.name@{value@L2M134.OBSEnemyRace}}.</t>
+		<t id="2002">Un poste dans une force de patrouille locale est ouvert à tout pilote ayant de l'expérience au combat. La patrouille aura lieu dans le secteur {sector.name@{param@FinalSector}}. Des vaisseaux {lookup.race.name@{value@L2M134.OBSEnemyRace}} sont attendus.</t>
+		<t id="2004">Patrouiller le secteur {sector.name@{param@FinalSector}}. Éliminez tous les ennemis du gouvernement {lookup.race.name@{param@OfferRace}}. Attention : des groupes de pillards {lookup.race.name@{value@L2M134.OBSEnemyRace}} ont été vus dans la zone.</t>
+	</page>
+	<page id="2000" title="Script Par Def" descr="" voice="no">
+		<t id="80">Var/Table</t>
+	</page>
+	<page id="2003" title="Chaînes de menu diverses" descr="Commandes de script" voice="no">
+		<t id="141">%0heure du jeu</t>
+		<t id="665">%1%0 est une station fermée au commerce</t>
+		<t id="1706">%0table alloc</t>
+		<t id="1707">%0table get size: table=%1</t>
+		<t id="1708">table set %0[%1] = %2</t>
+		<t id="1709">%0table get %1[%2]</t>
+		<t id="1710">%0table get keys: table=%1</t>
+		<t id="1711">%0table remove key: table=%1, key=%2</t>
+		<t id="1712">table clear: table=%0</t>
+		<t id="1713">%0 table get next key: table=%1 current key=%2</t>
+		<t id="1714">%0 table clone %1</t>
+		<t id="1800">set fight rank=%0</t>
+		<t id="1801">set trade rank=%0</t>
+		<t id="1802">save game: slot=%0</t>
+		<t id="1803">%0show in property menu: %1</t>
+		<t id="1804">%0add missiles per value: %1</t>
+		<t id="1805">%0add tunings per value: %1 variance= %2</t>
+		<t id="1806">%0station is open for trading:%1</t>
+		<t id="1807">%0start build station: type=%1, sector=%2, x=%3, y=%4, z=%5, asteroid yield=%6</t>
+		<t id="1808">%0turn to face object: %1</t>
+		<t id="1809">%0%1 get collision objects</t>
+		<t id="1810">%0%1 get distance to nearest vertex of: %2</t>
+		<t id="1811">%0%1 get next gate on safe path: to sector=%2, pos=%3</t>
+		<t id="1812">%0%1 get station best buy price: start sector=%2, ware=%3, jumps=%4, reject price=%5, flags=%6, exclude=%7</t>
+		<t id="1813">%0%1 get station best sell price: start sector=%2, ware=%3, jumps=%4, reject price=%5, flags=%6, exclude=%7</t>
+		<t id="1814">%0%1 request station trade lock: station=%2, ware=%3, buy-sell=%4</t>
+		<t id="1815">%0%1 is station trade locked: ware=%2, buy-sell=%3</t>
+		<t id="1816">%0 free station trade lock: ware=%1, buy-sell=%2</t>
+		<t id="1817">%0%1 find ships in scanner range: of race=%2 class or type=%3 exclude race=%4 relation flags=%5 nearest to=%6</t>
+		<t id="1818">%0%1 find stations in scanner range: of race=%2 class or type=%3 exclude race=%4 relation flags=%5 nearest to=%6</t>
+		<t id="1819">%0%1 find flying wares in scanner range: of race=%2 nearest to=%3</t>
+		<t id="1820">%0 set orders string sprintf: fmt=%1, %2, %3, %4, %5, %6</t>
+		<t id="1821">%0 clear orders string</t>
+		<t id="1822">%0%1 get closest object in array: array=%2</t>
+		<t id="1823">set script command reference conditions: command=%0 textid=%1, %2, %3, %4, %5, %6, %7, %8</t>
+		<t id="1824">set script command reference conditions: wing command=%0 textid=%1, %2, %3, %4, %5, %6, %7, %8</t>
+		<t id="1825">set script command upgrade: command=%0 wares=%1</t>
+		<t id="1826">set script command upgrade: command=%0 wares=%1 script=%2</t>
+		<t id="1827">set script command upgrade: wing command=%0 wares=%1</t>
+		<t id="1828">set script command upgrade: wing command=%0 wares=%1 script=%2</t>
+		<t id="1829">%0create new array, arguments=%1, %2, %3, %4, %5, %6, %7, %8, %9</t>
+		<t id="1830">%0open custom menu: title=%1 description=%2 option array=%3 callback script=%4 args=%5</t>
+		<t id="1831">%0open custom info menu: title=%1 description=%2 option array=%3 callback script=%4 args=%5 max options=%6</t>
+		<t id="1832">add dynamic trade bar to menu: %0, text=%1, min=%2, max=%3, current=%4, return value=%5, left text=%6, right text=%7, enter sets=%8</t>
+		<t id="1833">add custom dynamic menu item to array %0: text=%1 return value=%2</t>
+		<t id="1834">add value selection with match to menu : %0, text=%1, value array=%2, display array=%3, default=%4, return id=%5</t>
+		<t id="1850">%0join arrays: first=%1, second=%2</t>
+		<t id="1851">%0sort two dimensional array by element: array=%1, element=%2, reverse=%3</t>
+		<t id="1852">%0sort parallel array by element: array=%1, element=%2, reverse=%3</t>
+		<t id="1853">%0array to string: array=%1, text separator=%2, format wrapper=%3</t>
+		<t id="1854">%0%1get position relative to object: relative x,y,z pos=%2</t>
+		<t id="1855">%0format number: number=%1, format wrapper=%2</t>
+		<t id="1856">register resupply ware: ware=%0</t>
+		<t id="1857">unregister resupply ware: ware=%0</t>
+		<t id="1858">%0get registered resupply wares</t>
+		<t id="1859">%0%1get resupply ware: ware=%2</t>
+		<t id="1860">%0set resupply ware: ware=%1, amount=%2</t>
+		<t id="1861">display info box: text=%0, icon=%1, timeout=%2, fadeout=%3</t>
+		<t id="1862">%0%1get station production size</t>
+		<t id="1863">%0get sector sun efficiency: sector=%1</t>
+		<t id="1864">add production item to HQ: type=%0, count=%1</t>
+		<t id="1865">add recycle item to HQ: ship=%0</t>
+		<t id="1866">add repair item to HQ: ship=%0</t>
+		<t id="1867">add reverse engineer item to HQ: ship=%0</t>
+		<t id="1868">set game time: time=%0</t>
+		<t id="1869">%0real time</t>
+		<t id="1870">set real time: time=%0</t>
+		<t id="1871">%0get favourite ship list</t>
+		<t id="1872">%0get favourite ship counter</t>
+		<t id="1873">set favourite ships: list=%0, counter=%1</t>
+		<t id="1874">%0get player statistics array</t>
+		<t id="1875">set player statistics array: array=%0</t>
+		<t id="1876">%0get player killed ships array</t>
+		<t id="1877">set player killed ships array: array=%0</t>
+		<t id="1878">%0%1get factory import threshold</t>
+		<t id="1879">%0set factory import threshold: threshold=%1</t>
+		<t id="1880">%0%1get factory export threshold</t>
+		<t id="1881">%0set factory export threshold: threshold=%1</t>
+		<t id="1882">%0%1get station pause traders</t>
+		<t id="1883">%0set station pause traders: pause=%1</t>
+		<t id="1884">%0%1get station open to your traders</t>
+		<t id="1885">%0set station open to your traders: allow=%1</t>
+		<t id="1886">%1%0 get suns array</t>
+		<t id="1887">%0%1does ship have all required upgrades for command: %2</t>
+		<t id="1888">%0%1get hue</t>
+		<t id="1889">%0%1get saturation</t>
+		<t id="1890">%0set colour: hue=%1, saturation=%2</t>
+		<t id="1891">set menu option: %0, title=%1</t>
+		<t id="1892">set menu option: %0, description=%1</t>
+		<t id="1893">%0%1is Saturn Complex Hub</t>
+		<t id="1894">%0is subtype Saturn Complex Hub: station subtype=%1</t>
+		<t id="1895">%0%1is sector visited</t>
+		<t id="1896">%0set sector visited: visited=%1</t>
+		<t id="1897">%0columnize menu text: array=%1, text=%2, alignment=%3, colour=%4, column width=%5</t>
+		<t id="1898">%0get wares of maintype: maintype=%1</t>
+		<t id="1899">%0show effect: effect=%1</t>
+		<t id="1900">%0set default shields</t>
+		<t id="1901">%0create new fixed size array, size=%1, arguments=%2, %3, %4, %5, %6, %7, %8, %9</t>
+		<t id="1902">%0strip colour from string: %1</t>
+		<t id="1903">set menu option: %0, icon=%1</t>
+		<t id="1904">%0format number: billions array=%1, format wrapper=%2</t>
+		<t id="1905">%0add billion arrays: first=%1, second=%2</t>
+		<t id="1906">%0add to billion array: array=%1, number=%2</t>
+		<t id="1907">%0multiply billion array: array=%1, number=%2</t>
+		<t id="1908">%0%1 get shipyards sells ware: ware=%2, jumps=%3, flags=%4, exclude=%5</t>
+		<t id="1909">%0%1is boarding disabled</t>
+		<t id="1910">%0%1is bailing disabled</t>
+		<t id="1911">%0set boarding disabled on ship: disabled=%1</t>
+		<t id="1912">%0set bailing disabled on ship: disabled=%1</t>
+		<t id="1913">write to addon-t file: %0 value=%1</t>
+		<t id="1914">write to addon-t #%0 append=%1 printf: fmt=%2, %3, %4, %5, %6, %7</t>
+		<t id="1915">write to addon-t #%0 append=%1 printf: pageid=%2 textid=%3, %4, %5, %6, %7, %8</t>
+		<t id="1916">%0capture ship: claim race=%1</t>
+		<t id="1917">%0bail ship: attacker=%1</t>
+		<t id="1918">%0add default equipment</t>
+		<t id="1919">%0add marines</t>
+		<t id="1920">%0%1eject ware: ware=%2, amount=%3</t>
+		<t id="1921">%0%1 get distance to nearest vertex of: x=%2, y=%3, z=%4</t>
+		<t id="1922">%0%1 is named script %2 on stack of task=%3</t>
+		<t id="1923">%0%1 is sector security threat in owned scanner range: sector=%2, ship not a threat up to gun count=%3</t>
+		<t id="1924">%0%1 needed jump drive energy for jumps %2</t>
+		<t id="1925">%0%1 max jump range based on cargo energy</t>
+		<t id="1926">set player name: name=%0</t>
+		<t id="1927">stop SETA</t>
+		<t id="1928">%0%1 get orders string</t>
+		<t id="1929">%0set invincible: invincible=%1</t>
+		<t id="1930">%0set speed for duration: tune=%1 duration=%2</t>
+		<t id="1931">%0get distance from in km to sector position: from sector=%1, from pos=%2, to sector=%3, to pos=%4</t>
+		<t id="1932">%0get in-game date string: time=%1 include time=%2</t>
+		<t id="1933">%0convert string case: string=%1 lowercase=%2</t>
+		<t id="1934">%0get ship class dock array: ship type=%1 external=%2</t>
+		<t id="1935">%0get station class dock array: station type=%1, external=%2</t>
+		<t id="1936">%0set override name flags: name flags=%1, rename object=%2</t>
+		<t id="1937">%0%1 find nearest enemy ship: distance=%2, class=%3</t>
+		<t id="1938">%0start build station and wait for cycle time: type=%1, sector=%2, x=%3, y=%4, z=%5, asteroid yield=%6</t>
+		<t id="1939">%0%1 is station sector PPP: for race=%2</t>
+		<t id="1940">%0%1 is mining outpost</t>
+		<t id="1941">%0%1 find nearest mining outpost</t>
+		<t id="1942">%0%1 get debris array from sector</t>
+		<t id="1943">%0%1 is object shown in property menu</t>
+		<t id="2000">%0get hull of type: subtype=%1</t>
+		<t id="2001">%0get rotation speed xyz array of type: subtype=%1</t>
+		<t id="2002">%0get avg rotation speed of type: subtype=%1</t>
+		<t id="2003">%0get max upgraded rotation speed xyz array of type: subtype=%1</t>
+		<t id="2004">%0get max upgraded avg rotation speed of type: subtype=%1 return upgrades=%2</t>
+		<t id="2005">%0get acceleration of type: subtype=%1</t>
+		<t id="2006">%0get max upgraded acceleration of type: subtype=%1</t>
+		<t id="2007">%0get speed of type: subtype=%1</t>
+		<t id="2008">%0get max upgraded speed of type: subtype=%1 return upgrades=%2</t>
+		<t id="2009">%0get max shield type of type: subtype=%1</t>
+		<t id="2010">%0get number of shield slots of type: subtype=%1</t>
+		<t id="2011">%0get number of missile slots of type: subtype=%1</t>
+		<t id="2012">%0get cargo bay size of type: subtype=%1</t>
+		<t id="2013">%0get max upgraded cargo bay size of type: subtype=%1 return upgrades=%2</t>
+		<t id="2014">%0get transport class capacity of type: subtype=%1</t>
+		<t id="2016">%0get number of dock ports of type: subtype=%1</t>
+		<t id="2017">%0get dock bay size of type: subtype=%1</t>
+		<t id="2018">%0is docking possible onto type: subtype=%1 by subtype=%2</t>
+		<t id="2019">%0get number of turrets of type: subtype=%1</t>
+		<t id="2020">%0get number of lasers in turret of ship type: subtype=%1, turret=%2</t>
+		<t id="2021">%0get number of physical guns in turret of ship type: subtype=%1, turret=%2</t>
+		<t id="2022">%0get total laser count of type: subtype=%1</t>
+		<t id="2023">%0get laser energy capacity of type: subtype=%1</t>
+		<t id="2024">%0get weapon recharge rate of type: subtype=%1</t>
+		<t id="2025">%0get turret id from cockpit of type: subtype=%1, cockpit=%2</t>
+		<t id="2026">%0get turret laser mask of type: subtype=%1, turret=%2</t>
+		<t id="2027">%0can laser install into turret of type: subtype=%1, laser subtype=%2, turret=%3</t>
+		<t id="2028">%0get missile mask of type: subtype=%1</t>
+		<t id="2029">%0can missile be installed into type: subtype=%1, missile subtype=%2</t>
+		<t id="2030">%0get cockpit textid of type: subtype=%1, cockpit=%2</t>
+		<t id="2031">%0get turret textid of type: subtype=%1, turret=%2</t>
+		<t id="2032">%0get class of type: subtype=%1</t>
+		<t id="2033">%0get skin of type: subtype=%1</t>
+		<t id="2034">%0get missile array of type: subtype=%1</t>
+		<t id="2035">%0is ship type missile boat: subtype=%1</t>
+		<t id="2036">%0get upgrade price: cargo-speed-rot: subtype=%1 ware=%2 units=%3</t>
+		<t id="2040">%0get laser reload time of type: laser type=%1</t>
+		<t id="2041">%0get laser energy of type: laser type=%1</t>
+		<t id="2042">%0get max laser energy of type: laser type=%1</t>
+		<t id="2050">%0get missile speed of type: missile type=%1</t>
+		<t id="2060">%0get shield energy of type: shield type=%1</t>
+		<t id="2061">%0get shield efficiency of type: shield type=%1</t>
+		<t id="2062">%0get shield recharge rate of type: shield type=%1</t>
+		<t id="2080">%0get station size of type: subtype=%1</t>
+		<t id="2081">%0get station product of type: subtype=%1</t>
+		<t id="2082">%0get station resources of type: subtype=%1</t>
+		<t id="2083">%0get station product cycle time of type: subtype=%1, efficiency=%2, player own=%3</t>
+		<t id="2084">%0get station products per cycle of type: subtype=%1, efficiency=%2, player own=%3</t>
+		<t id="2085">%0get station resources per cycle of type: subtype=%1, resource=%2, efficiency=%3, player own=%4</t>
+		<t id="2086">%0connect complex: cckit=%1, x=%2, y=%3, z=%4, station1=%5, station2=%6</t>
+		<t id="2100">%0set remaining cycle time: sec=%1</t>
+		<t id="2101">%0get blueprint resources required: shiptype=%1 ware=%2</t>
+		<t id="2102">%0set factory efficiency: efficiency=%1</t>
+		<t id="2200">%0 is script with pid running: pid=%1</t>
+		<t id="2201">override script code: target=%0 source=%1</t>
+		<t id="2202">%0 read file: name=%1</t>
+		<t id="2203">%0set mission icon: icon=%1 guid=%2</t>
+		<t id="2204">%0unset mission icon: guid=%1</t>
+		<t id="2205">sync jobs to time</t>
+		<t id="2206">%0get racemask of object%1</t>
+	</page>
+	<page id="2013" title="Script Data Type" descr="0" voice="no">
+		<t id="30">DATATYPE_TABLE</t>
+	</page>
+	<page id="8500" title="Script command reference conditions" descr="0" voice="no">
+		<t id="1">Not on your ship</t>
+		<t id="2">Your ship only</t>
+		<t id="3">Remote sector only</t>
+		<t id="4">Homebased ships capable of running command</t>
+		<t id="50">Fuel resupply quantity must be set</t>
+		<t id="51">Dock bay</t>
+		<t id="52">Marines on ship</t>
+		<t id="100">Valid homebase</t>
+		<t id="101">Valid homebase must be factory</t>
+		<t id="102">Valid homebase must be dock or Outpost</t>
+		<t id="150">Must be docked</t>
+		<t id="151">Must be docked at non-owned dock</t>
+		<t id="152">Must be docked at owned dock</t>
+		<t id="153">Must be docked at non-owned shipyard</t>
+		<t id="154">Must be docked at non-owned station</t>
+		<t id="155">Must be docked at owned station</t>
+		<t id="156">Must be docked at military outpost</t>
+		<t id="200">Available cargo for Jumpbeacon</t>
+		<t id="201">Saturn Complex Hub only</t>
+		<t id="202">Cargo bay must contain station</t>
+		<t id="203">Trade report available</t>
+		<t id="204">Cargo bay must contain factory</t>
+	</page>
+	<page id="1000" title="Jobs" descr="" voice="Yes">
+		<t id="201">Phanon</t>
+		<t id="202">OCV</t>
+		<t id="203">Industritech</t>
+		<t id="204">Tentacorp</t>
+		<t id="205">Oceania Inc.</t>
+		<t id="206">Waverider Corp.</t>
+		<t id="207">Markus Corp.</t>
+		<t id="208">Terracorp</t>
+		<t id="209">Thuruk's Inc.</t>
+		<t id="210">Pontifex Corp.</t>
+		<t id="211">Trinity Corp.</t>
+		<t id="212">Salecrest Corp.</t>
+		<t id="213">Scalebreaker Inc.</t>
+		<t id="30017">{1000,30000} {1000,40003}</t>
+		<t id="30018">{1000,30000} {1000,40004}</t>
+		<t id="30019">{1000,40009} {1000,40007}</t>
+		<t id="30020">{1000,40009} {1000,40004}</t>
+	</page>
+	<page id="351263" title="Shipclass IDs" descr="0" voice="no">
+		<t id="19115">H</t>
+		<t id="19116">O</t>
+	</page>
+	<page id="351266" title="Racenames" descr="0" voice="no">
+		<t id="15">Phanon</t>
+		<t id="16">OCV</t>
+		<t id="20">Industritech</t>
+		<t id="21">Tentacorp</t>
+		<t id="22">Oceania Inc.</t>
+		<t id="23">Waverider Corp.</t>
+		<t id="24">Markus Corp.</t>
+		<t id="25">Terracorp</t>
+		<t id="26">Thuruk's Inc.</t>
+		<t id="27">Pontifex Corp.</t>
+		<t id="28">Trinity Corp.</t>
+		<t id="29">Salecrest Corp.</t>
+		<t id="30">Scalebreaker Inc.</t>
+	</page>
+	<page id="381263" title="Shipclass IDs" descr="0" voice="no">
+		<t id="19120">R3</t>
+		<t id="19121">R4</t>
+		<t id="19122">R5</t>
+		<t id="19123">R6</t>
+		<t id="19124">R7</t>
+		<t id="19125">R8</t>
+		<t id="19126">R9</t>
+		<t id="19127">R0</t>
+		<t id="19128">R1</t>
+		<t id="19129">R2</t>
+		<t id="19130">R*</t>
+	</page>
+	<page id="2002" title="Script Constants" descr="" voice="no">
+		<t id="12">NULL</t>
+		<t id="150">GetBestStation.RespectPPP</t>
+		<t id="151">GetBestStation.NoUnknown</t>
+		<t id="152">GetBestStation.RespectLock</t>
+		<t id="153">GetBestStation.NoJumpDrive</t>
+		<t id="154">GetBestStation.IsNotEnemy</t>
+		<t id="4000">OverrideNameFlag.ShowRace</t>
+		<t id="4001">OverrideNameFlag.ShowCorp</t>
+		<t id="4002">OverrideNameFlag.ShowObj</t>
+		<t id="4003">OverrideNameFlag.ShowVariant</t>
+		<t id="4004">OverrideNameFlag.ShowGreek</t>
+		<t id="4005">OverrideNameFlag.ShowSize</t>
+		<t id="4006">OverrideNameFlag.ShowJob</t>
+		<t id="5000">RaceMask.Argon</t>
+		<t id="5001">RaceMask.Boron</t>
+		<t id="5002">RaceMask.Split</t>
+		<t id="5003">RaceMask.Paranid</t>
+		<t id="5004">RaceMask.Teladi</t>
+		<t id="5005">RaceMask.Xenon</t>
+		<t id="5006">RaceMask.Khaak</t>
+		<t id="5007">RaceMask.Pirate</t>
+		<t id="5008">RaceMask.Goner</t>
+		<t id="5009">RaceMask.Player</t>
+		<t id="5010">RaceMask.Enemy</t>
+		<t id="5011">RaceMask.Neutral</t>
+		<t id="5012">RaceMask.Friend</t>
+		<t id="5013">RaceMask.Abandoned</t>
+		<t id="5014">RaceMask.Phanon</t>
+		<t id="5015">RaceMask.Ocv</t>
+		<t id="5016">RaceMask.Atf</t>
+		<t id="5017">RaceMask.Terran</t>
+		<t id="5018">RaceMask.Yaki</t>
+		<t id="5019">RaceMask.Industritech</t>
+		<t id="5020">RaceMask.Tentacorp</t>
+		<t id="5021">RaceMask.Oceania</t>
+		<t id="5022">RaceMask.Waverider</t>
+		<t id="5023">RaceMask.Markus</t>
+		<t id="5024">RaceMask.Terracorp</t>
+		<t id="5025">RaceMask.Thuruk</t>
+		<t id="5026">RaceMask.Pontifex</t>
+		<t id="5027">RaceMask.Trinity</t>
+		<t id="5028">RaceMask.Salecrest</t>
+		<t id="5029">RaceMask.Scalebreaker</t>
+	</page>
+	<page id="2005" title="Script command reference conditions" descr="0" voice="no">
+		<t id="701">Object Info</t>
+		<t id="705">SubType Info</t>
+	</page>
+	<page id="2006" title="Script command reference conditions" descr="0" voice="no">
+		<t id="9001">Wing</t>
+	</page>
+	<page id="1907" title="Bourse des Valeurs" descr="0" voice="no">
+		<t id="1021114">Les Autorités Commerciales Terriennes ont restreint l'accès au Marché Boursier aux individus qui possèdent au moins une station dans l'espace Terrien.</t>
+	</page>
+	<page id="35" title="Chaînes de menu" descr="0" voice="no">
+		<t id="110">Accostage Externe</t>
+		<t id="111">Accostage Interne</t>
+		<t id="112">Leurres</t>
+		<t id="4744">Statut de la Licence de la Bourse</t>
+		<t id="4743">Licence de courtier approuvée pour cette bourse</t>
+		<t id="5080">Vaisseaux abandonnés</t>
+		<t id="1102413">Distance max. de secteur pour tous les Travailleurs</t>
+		<t id="1102414">La station est ouverte aux autres Négociants</t>
+		<t id="1102907">Copier les paramètres de réapprovisionnement en missiles du vaisseau</t>
+		<t id="1102909">Restaurer les paramètres globaux de réapprovisionnement en missiles</t>
+		<t id="1104026">Entraînement au Combat</t>
+		<!--Était une mise à niveau-->
+		<t id="1102525">-</t>
+		<t id="2000000">Paramètres de Notoriété</t>
+		<t id="2000001">Ignorer le Tir Ami</t>
+		<t id="2000002">Réapprovisionnement Automatique en Marchandises</t>
+		<t id="2000003">Sélectionner la Quantité de Marchandises à Réapprovisionner Automatiquement</t>
+		<t id="2000004">Copier les paramètres de réapprovisionnement en marchandises du vaisseau</t>
+		<t id="2000005">Restaurer les paramètres globaux de réapprovisionnement en marchandises</t>
+		<!--Encyclopédie-->
+		<t id="2000100">Commandes de Logiciels et d'Équipements</t>
+		<t id="2000101">Commandes d'Objets</t>
+		<t id="2000102">Ce sont des commandes pour les vaisseaux et les stations.</t>
+		<t id="2000103">Commandes de Flotte</t>
+		<t id="2000104">Ce sont des commandes pour les flottes.</t>
+		<t id="2000105">Commandes d'Escadrille</t>
+		<t id="2000106">Ce sont des commandes pour les escadrilles.</t>
+		<t id="2000107">Condition</t>
+		<t id="2000108">Cette condition doit être remplie avant que la commande ne soit disponible.</t>
+		<t id="2000109">Classe</t>
+		<t id="2000110">Cette commande s'exécutera sur cette classe.</t>
+		<!--Commerce de Station-->
+		<t id="2000200">Stock max. pour importer des ressources</t>
+		<t id="2000201">Seuil</t>
+		<t id="2000202">Stock min. pour exporter des produits</t>
+		<t id="2000203">Tarification automatique</t>
+		<t id="2000204">La station est ouverte à vos Négociants</t>
+		<t id="2000205">Activer le Rebond</t>
+		<t id="2000206">Gestionnaire d'Avant-Poste</t>
+		<t id="2000207">Gestionnaire de Recherche</t>
+		<t id="2000208">Rapport Commercial</t>
+	</page>
+	<page id="1903" title="Menu de Mappage des Entrées" descr="0" voice="no">
+		<t id="10519">Augmenter le volume de la musique</t>
+		<t id="10520">Diminuer le volume de la musique</t>
+		<t id="10521">Basculer l'affichage de la barre latérale</t>
+		<t id="11009">Effacer le journal des messages</t>
+		<t id="11010">Bourse des valeurs</t>
+		<t id="11011">Gestionnaire d'Avant-Poste</t>
+		<t id="11012">Gestionnaire de Recherche</t>
+		<t id="11013">Transférer des crédits vers la station</t>
+		<t id="11014">Transférer des crédits depuis la station</t>
+		<t id="11015">Rapport commercial</t>
+	</page>
+	<page id="2008" title="Script Object Commands" descr="0" voice="no">
+		<t id="1020">SIGNAL_TARGETED</t>
+		<t id="1021">SIGNAL_MISSILE_FIRED</t>
+	</page>
+	<page id="2020" title="command console">
+		<t id="14">Drop Station</t>
+		<t id="27">Escorte: Protégez-moi</t>
+	</page>
+	<page id="68" title="Litcube's Universe Settings" descr="0" voice="no">
+		<!--Light HUD Enabled-->
+		<t id="1">1</t>
+		<!--
+	$Initial = ($FightRank * 100) / $Total
+	$x = ($FightRank * 1000) / $Factor
+	$Chance = $Initial * ($x / 1000)
+	-->
+		<!--FLC Total-->
+		<t id="101">0</t>
+		<!--FLC Factor-->
+		<t id="102">385</t>
+		<!--FLC RollOutOF-->
+		<t id="103">1000000</t>
+		<!--SETA Max-->
+		<t id="200">10</t>
+		<!--Gate Station Build Buffer -->
+		<t id="201">5000</t>
+		<!--Sell ship price damage negative modifier -->
+		<t id="202">120</t>
+		<!--Remote System Control Software Range -->
+		<t id="203">4000</t>
+		<!--Mining Extract chance out of 1000 (default: 60) -->
+		<t id="300">60</t>
+	</page>
+	<page id="1905" title="command console">
+		<t id="104">Rang de Combat</t>
+		<t id="105">Rang de commerce</t>
+	</page>
+	<page id="7778">
+		<t id="61000">EMS: \033CAction\033X</t>
+	</page>
+</language>
+

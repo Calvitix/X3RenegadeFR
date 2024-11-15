@@ -1,0 +1,201 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl" ?>
+<script>
+<name>Lib.Gen.SortShipsByCombatRank</name>
+<version>0</version>
+<engineversion>52</engineversion>
+<description>Lib Gen: Returns the ships array sorted by combat rank</description>
+<arguments>
+<argument index="1" name="Ships" type="Value" desc="Ships" />
+<argument index="2" name="Ascendant" type="Var/Boolean" desc="Ascendant?" />
+</arguments>
+<sourcetext>
+<line linenr="001" indent=""><comment><text>*&#160;</text><var>Ascendant:&#160;Starting&#160;from&#160;the&#160;largest&#160;index,&#160;which&#160;is&#160;the&#160;usual&#160;while&#160;method</var></comment></line>
+<line linenr="002" indent=""><comment><text>*&#160;</text><var>ascending&#160;starts&#160;with&#160;the&#160;largest&#160;combat&#160;rank.</var></comment></line>
+<line linenr="003" indent=""><comment><text>*&#160;</text><var>Decending:&#160;The&#160;opposite.&#160;Largest&#160;ships&#160;at&#160;the&#160;smallest&#160;indexes,&#160;starts&#160;small</var></comment></line>
+<line linenr="004" indent=""></line>
+<line linenr="005" indent=""></line>
+<line linenr="006" indent=""><var>$ShipsCount&#160;=&#160;</var><text>&#160;size&#160;of&#160;array&#160;</text><var>$Ships</var></line>
+<line linenr="007" indent=""><var>$Data&#160;=&#160;</var><text>&#160;array&#160;alloc:&#160;size=</text><var>0</var></line>
+<line linenr="008" indent=""><var>while&#160;</var><var>$ShipsCount</var></line>
+<line linenr="009" indent="&#160;"><text>dec&#160;</text><var>$ShipsCount&#160;=&#160;</var></line>
+<line linenr="010" indent="&#160;"><var>$ShipCurrent&#160;=&#160;</var><var>$Ships</var><text>[</text><var>$ShipsCount</var><text>]</text></line>
+<line linenr="011" interruptable="@" indent="&#160;"><var>$Rank&#160;=&#160;</var><var>[THIS]&#160;-&gt;</var><text>&#160;call&#160;script&#160;</text><call>Lib.Gen.GetShipCombatRank</call><text>&#160;:&#160;</text><text>&#160;Object=</text><var>$ShipCurrent</var></line>
+<line linenr="012" indent="&#160;"><text>append&#160;</text><var>$Rank</var><text>&#160;to&#160;array&#160;</text><var>$Data</var></line>
+<line linenr="013" indent=""><text>end</text></line>
+<line linenr="014" indent=""><var>$Data&#160;=&#160;</var><text>&#160;reverse&#160;array&#160;</text><var>$Data</var></line>
+<line linenr="015" indent=""></line>
+<line linenr="016" indent=""><var>$Ships&#160;=&#160;</var><text>&#160;sort&#160;array:&#160;data=</text><var>$Ships</var><text>&#160;sort&#160;values=</text><var>$Data</var></line>
+<line linenr="017" indent=""></line>
+<line linenr="018" indent=""><var>skip&#160;if&#160;not&#160;</var><var>$Ascendant</var></line>
+<line linenr="019" indent="&#160;"><var>$Ships&#160;=&#160;</var><text>&#160;reverse&#160;array&#160;</text><var>$Ships</var></line>
+<line linenr="020" indent=""></line>
+<line linenr="021" indent=""></line>
+<line linenr="022" indent=""><text>return&#160;</text><var>$Ships</var></line>
+</sourcetext>
+<codearray>
+
+<sval type="array" size="10">
+  <sval type="string" val="Lib.Gen.SortShipsByCombatRank"/>
+  <sval type="int" val="44"/>
+  <sval type="string" val="Lib Gen: Returns the ships array sorted by combat rank"/>
+  <sval type="int" val="0"/>
+  <sval type="int" val="0"/>
+  <sval type="array" size="6">
+    <sval type="string" val="Ships"/>
+    <sval type="string" val="Ascendant"/>
+    <sval type="string" val="ShipsCount"/>
+    <sval type="string" val="Data"/>
+    <sval type="string" val="ShipCurrent"/>
+    <sval type="string" val="Rank"/>
+  </sval>
+  <sval type="array" size="13">
+    <sval type="array" size="4">
+      <sval type="int" val="131"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="128"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610610679"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="143"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="6">
+      <sval type="int" val="129"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="8">
+      <sval type="int" val="102"/>
+      <sval type="string" val="Lib.Gen.GetShipCombatRank"/>
+      <sval type="int" val="5"/>
+      <sval type="int" val="131075"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="4"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="5"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="1443"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="3"/>
+    </sval>
+    <sval type="array" size="6">
+      <sval type="int" val="1417"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="3"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610609656"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="1443"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="103"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+    </sval>
+  </sval>
+  <sval type="array" size="2">
+    <sval type="array" size="2">
+      <sval type="int" val="9"/>
+      <sval type="string" val="Ships"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="63"/>
+      <sval type="string" val="Ascendant?"/>
+    </sval>
+  </sval>
+  <sval type="array" size="10">
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="Ascendant: Starting from the largest index, which is the usual while method"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="ascending starts with the largest combat rank."/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="Decending: The opposite. Largest ships at the smallest indexes, starts small"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="0"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="0"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="8"/>
+      <sval type="int" val="4"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="9"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="10"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="12"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="12"/>
+      <sval type="int" val="2"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+</sval>
+
+</codearray>
+</script>

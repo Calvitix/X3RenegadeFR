@@ -1,0 +1,253 @@
+Dépôt d'Acquisition|43677375|2313
+Balise d'Akeela|43875092|1595
+Colline d'Aladna|43873286|1306
+Aldrin|43551724|758
+Alpha|30457813|722
+Mémorial d'Antigone|43730832|1849
+//Argon Prime|43779367|1467
+//Secteur Argon M148|43544780|2814
+Nuages d'Atreus|43759784|2113
+//Avarice|43583004|853
+//A|43985935|405
+Mauvaise Dette|43935127|1106
+Joie de Bala Gi|43784918|2100
+Rives Stériles|43964714|1438
+Ceinture d'Aguilar|43537737|1907
+Bêta|30459035|628
+Soleil Noir|43885339|1479
+Profit Bleu|43787518|1270
+Tempête Bleue|30163805|1054
+Museau Bleuâtre|43775323|1516
+Triomphe de Brennan|43841041|1624
+Profit Brillant|43685095|1489
+//B|43986840|404
+Investissement du PDG|43674665|2210
+Source du PDG|43680188|2288
+Domaine du Cardinal|43968868|1602
+Cathédrale de Xaar|43633206|2285
+Cathédrale de Zar|43576932|1645
+Buckzoid du PDG|43711408|1725
+Doute du PDG|43933159|1468
+Sprite du PDG|43818282|1524
+Chi|30482849|489
+Défaite de Cho|43795845|1443
+Cercle du Travail|43851979|1534
+Fin de la Clarté|43598925|1634
+//Cloudbase Nord-Ouest|43753653|2243
+//Cloudbase Sud-Est|43836672|2084
+//Cloudbase Sud-Ouest|43832546|2030
+Fierté de l'Entreprise|43843166|1324
+Force de l'Entreprise|43682977|1618
+Feu Sacré|43561566|1822
+Domination Contorsionnée|43667631|2057
+Creditania|30189425|1183
+//C|43987744|539
+Chance de Danna|43866623|1621
+Eaux Sombres|43959973|1430
+Chers de Greet|43565634|1329
+Delta|30461346|853
+Profondeurs du Silence|43957698|1775
+Cieux Profanés|43655220|2189
+Citadelle du Duc|43631079|1627
+Domaine du Duc|43889183|1449
+Vision du Duc|43917011|1172
+//D|43988783|522
+Dix-huit Milliards|43894993|1491
+Fortune d'Elena|43813696|1528
+Élysée de Lumière|43613216|1978
+Mines de l'Empereur|43859328|1367
+Crête de l'Empereur|43891132|1482
+Sagesse de l'Empereur|43918682|1470
+Bord de l'Empire|43887319|1364
+Epsilon|30462699|881
+Êta|30465256|645
+//E|43989806|394
+Rêves Fanés|43608992|1622
+Famille Njy|43826266|1718
+Fierté Familiale|43768837|1441
+Famille Rhonkar|43820306|1719
+Famille Rhy|43950987|1327
+Famille Ryk|43830694|1351
+Famille Tkr|43797788|1496
+Famille Whi|43715675|1456
+Famille Z'rt|43510297|1757
+Famille Zein|43738377|1473
+Famille Zyarth|43510297|1757
+Légende de Farnham|43782760|1658
+Farpoint|30150179|1071
+Portée de la Liberté|43530077|1560
+Retraite du Frère|43981130|1510
+//F|43990700|376
+Étoile Gaïenne|43589973|1373
+Gamma|30460163|683
+Getsu Fune|43745197|1388
+Évasion de Ghinn|43802213|1432
+Grande Place|43540144|1700
+Grande Barrière|43977720|963
+Grande Tranchée|43931272|1386
+Plus Grand Profit|43764728|1537
+Étoile Directrice|43563888|1246
+Croisade de Gunne|43611114|1603
+//G|43991576|454
+Infini Sacré|43569591|1513
+Harmonie de la Perpétuité|43574204|2228
+Foi d'Hatikvah|43871327|1458
+Affirmation du Ciel|43643368|1851
+Nébuleuse d'Herron|43756396|1565
+Joie d'Hila|43804145|1443
+Infini Creux|43645719|1857
+Dimensions Sacrées|30176748|1604
+Foyer de Lumière|43809955|1324
+Foyer de l'Opportunité|43773082|1740
+Homélie de la Perpétuité|43625893|2651
+//H|43992529|527
+Ianamus Zura|43913118|1561
+Intermondes|43915178|1332
+Iota|30467571|877
+//I|43993556|410
+//J|43994467|448
+Kappa|30468949|733
+Fin du Royaume|43703596|1118
+//K|43995414|466
+Lambda|30470182|813
+Foyer de la Légende|43588070|1402
+Eau Lumineuse|43907984|1204
+Lumière du Coeur|43893114|1380
+Héritage de LooManckStrat|43936733|2262
+Planètes Chanceuses|43927342|1390
+//L|43996380|369
+//Maelström|43550092|1132
+Magrathea|43594299|1421
+Frontière de Ménélas|43708993|1915
+Oasis de Ménélas|43615694|2541
+Paradis de Ménélas|43747085|2268
+Havre des Marchands|43548094|1497
+Mgrophiya|43579077|1146
+Refuge de Mi Ton|43943823|1817
+Étoile de Minuit|43535624|1613
+Mines de la Fortune|43742712|1986
+Ministère des Finances|43941455|1868
+Brumes de l'Élysée|43557108|1828
+Montalaar|43909688|1238
+Vengeance de Moo-Kye|43952815|2009
+Mu|30471495|484
+//M|43997249|408
+Voyage de Nathan|43900287|1598
+Nouveaux Revenus|43911427|1191
+Tromperie de Njy|43828484|1710
+Mémorial de Nopileos|43868744|2083
+Nu|30472479|545
+Cachette de Nyana|43879410|1631
+//N|43998158|418
+Océan de Fantaisie|43806088|1746
+Tempête d'Ocracoke|43542344|1936
+Traité d'Olmancketslat|43815723|2059
+Oméga|30484963|775
+Omicron Lyrae|43881541|1586
+//Omicron|30474619|1012
+Ceinture Minière|43835076|1096
+//O|43999076|424
+//Quartier Général PTNI|43849074|2405
+//Paranid Prime|43861196|1377
+Conclusion du Patriarche|43665065|2066
+Forteresse du Patriarche|43822525|1499
+Retraite du Patriarche|43770778|1805
+Fin de la Perdition|43584357|1601
+Péché Perpétuel|43638754|1785
+Phi|30481955|394
+//Pi|30476131|486
+Conclusion du Pontife|43635991|2262
+Royaume du Pontife|43905833|1651
+Solitude du Pontife|43983141|2295
+Cercle du Pouvoir|43729094|1238
+Refuge du Prédicateur|43922857|1768
+Vide du Prédicateur|43904095|1238
+Fin du Président|43811780|1416
+Refuge du Prêtre|43966652|1716
+Anneaux du Prêtre|43863073|1250
+Pitié du Prêtre|43864823|1301
+Centre de Profit Alpha|43846827|1747
+Partage des Profits|43735091|1263
+Prophétie Accomplie|43591845|1953
+//Psi|30483838|625
+//P|44000000|466
+Port de la Reine|43618736|1515
+Rétribution de la Reine|43620750|2111
+Espace de la Reine|43707126|1367
+//Q|44000966|556
+Lumière Rouge|43808334|1121
+Rédemption|43586458|1112
+Réservoir de Tranquillité|43961903|2310
+Nuages de Rhonkar|43791428|1867
+Feu de Rhonkar|43789288|1640
+Puissance de Rhonkar|43670188|1715
+Épreuve de Rhonkar|43672403|1762
+Rho|30477116|553
+Croisade de Rhy|43552982|1536
+Désir de Rhy|43939495|1460
+Lune de Ringo|43777339|1528
+Dérive de Rolk|43705214|1412
+Destin de Rolk|43733181|1410
+Héritage de Rolk|43929232|1540
+Épreuve de Ronkarr|43567463|1629
+//R|44002022|504
+Relique Sacrée|43970970|1341
+Sainteté de la Corruption|43650303|2250
+Pointe Sauvage|43528041|1535
+Écaille Verte|43877187|1723
+Feu de Scion|30148437|1242
+Puits sans fond|43736855|1022
+Terres Désolées du Sénateur|43603428|2156
+Fortune de l'Actionnaire|43740349|1862
+Courants Brillants|43555018|1590
+Rive de l'Infini|43925125|1717
+Sigma|30478170|760
+Tisseur de crane|30170034|1116
+Dérive des Herbes Spatiales|43762397|1831
+Bosquet des Herbes Spatiales|43687084|1782
+Flèches de l'Illusion|43596220|2206
+Pointes de l'Illusion|43580723|1782
+//Split Fire|43839255|1286
+Source de la Croyance|43979183|1447
+//S|44003025|442
+Talon de feu|30187780|1145
+Tau|30479429|585
+Larmes de l'Avidité|43648076|1727
+//Gain Teladi|43713633|1542
+Ravine de Tharka|43660122|1819
+Soleil de Tharka|43793795|1551
+Le Trou|43758461|823
+Les Hauts-Fonds|43629045|1535
+Le Coffre-Fort|43717631|1857
+Le Mur|43781334|926
+Thêta|30466401|670
+Troisième Rédemption|43641039|1829
+Trois Mondes|43727366|1228
+Barbe de Thuruk|43844990|1337
+Fierté de Thuruk|43766766|1571
+Abîme de Thyn|43857507|1321
+Excavation de Thyn|43662441|2124
+Privation de Tkr|43799784|1929
+Coffre au Trésor|43883627|1212
+Sanctuaire de la Trinité|43920652|1705
+Cieux Tordus|43657909|1713
+Deux Grands|43824524|1242
+//T|44003967|532
+Descente Impie|43559436|1630
+//Upsilon|30480515|940
+//U|44005000|531
+Voile de l'Illusion|43623362|2031
+Vestibule de la Création|43606084|2408
+//V|44006031|523
+Terres Désolées|43902385|1210
+Tempête du Tisserand|43601059|1869
+Cieux Misérables|43653053|1667
+//W|44007053|762
+Xi|30473524|595
+//X|44008315|531
+//Y|44009346|567
+Domaine de Z'rt|43512554|1630
+Zentati de la Corruption|43571604|2100
+Zêta|30464080|676
+Domaine de Zyarth|43512554|1630
+//Z|44010413|514

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language id="44">
+	<page id="7325" title="Mayhem 1">
+		<t id='14'>Vous ne possédez pas ce secteur.\n\nSi vous revendiquez ce secteur pour vous, vous devrez payer des frais et placer un Sanctuaire qui prendra du temps à être entièrement construit. Vous gagnerez également 1 menace.\nSi vous revendiquez ce secteur pour une autre race (rang 7 requis), vous ne paierez pas de frais et vous ne gagnerez pas de points de réputation, mais votre niveau de menace n'augmentera pas.\nVous pouvez également renoncer à ce secteur pour le rendre Inconnu, gratuitement.\n\nRappel : La menace augmente la force de l'OCV et de tous les groupes de combat. Avancez avec prudence.\n\nAbandonner, renoncer ou céder un secteur vous privera du droit de le récupérer pendant 6 heures.</t>
+		<t id='15'>Vous possédez ce secteur.\n\nSi vous l'abandonnez, toutes vos stations seront détruites.\nSi vous donnez ce secteur à une autre race, toutes vos stations seront transférées et vous gagnerez 1 \033MPoint de faveur\033X.\nSi vous transférez ce secteur aux Xenon, votre infamie augmente.\nDans tous les cas, tous vos vaisseaux seront désamarrés et les crédits des stations seront virés sur votre compte principal.</t>
+		<t id="22">[author][green]%s Ministre de l'Expansion[/green][/author]Au nom de notre dirigeant, veuillez accepter nos plus sincères remerciements pour nous avoir aidés à étendre notre empire.</t>
+		<t id='1000'>\033R%s\033X</t>
+		<t id='1001'>\033G%s\033X</t>
+		<t id='1002'>\033M%s\033X</t>
+		<t id='1003'>\033W%s\033X</t>
+		<t id='1004'>\033A%s\033X</t>
+		<t id='1005'>\033C%s\033X</t>
+		<t id='1006'>\033Y%s\033X</t>
+		<t id='1007'>\033O%s\033X</t>
+		<t id='1008'>\033B%s\033X</t>
+	</page>
+	<page id="17" title="Objets Boardcomp." descr="Groupes de lignes quadruples pour les paires ou les jumeaux d'usines de marchandises (parlé par l'ordinateur de bord)" voice="yes">
+		<t id="9069">Ferraille</t>
+		<t id="9070">Produits chimiques</t>
+		<t id="9071">Déchets</t>
+	</page>
+	<page id="35" title="Menu Strings misc" descr="Chaînes de caractères pour divers menus" voice="no">
+		<t id="1102512">Mettre à niveau les vaisseaux depuis le dock local</t>
+		<t id="1102515">Vendre des vaisseaux</t>
+	</page>
+	<page id="302294" title="Système de troc" descr="Chaînes de caractères utilisées par le nouveau moteur de troc et les menus de troc" voice="no">
+		<t id="1">Marchands locaux</t>
+		<t id="226">Vendre</t>
+		<t id="227">Acheter</t>
+	</page>
+	<page id="352294" title="Système de troc" descr="0" voice="no">
+		<t id="2">Marchands locaux</t>
+	</page>
+</language>

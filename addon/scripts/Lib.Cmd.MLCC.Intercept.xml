@@ -1,0 +1,2699 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>Lib.Cmd.MLCC.Intercept</name>
+	<version>5</version>
+	<engineversion>50</engineversion>
+	<description>Lib Cmd: MLCC - Scrambles ships to deal with complaints</description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="" interruptable="@">
+			<var>$SortieShips</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.X.MLCC.GetProperty</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>ReturnOnlyDocked</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+			<text> </text>
+			<text>ReturnStations</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="002" indent="" interruptable="@">
+			<var>$AllHomeBaseShipsLockCheck</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.X.MLCC.GetProperty</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>ReturnOnlyDocked</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+			<text> </text>
+			<text>ReturnStations</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="" />
+		<line linenr="005" indent="">
+			<var>$SectorComplaintList</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'LitQB.SectorSecurityComplaints.List'</text>
+		</line>
+		<line linenr="006" indent="">
+			<var>$SectorComplaintCount</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'LitQB.SectorSecurityComplaints.Count'</text>
+		</line>
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
+			<var>$Count</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$SectorComplaintList</var>
+		</line>
+		<line linenr="009" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$Count</var>
+		</line>
+		<line linenr="010" indent="&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$Count</var>
+		</line>
+		<line linenr="011" indent="&#160;">
+			<var>$ListCurrent</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$SectorComplaintList</var>
+			<text>[</text>
+			<var>$Count</var>
+			<text>]</text>
+		</line>
+		<line linenr="012" indent="&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.SectorSecurityCheck</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Sector</text>
+			<text>=</text>
+			<var>$ListCurrent</var>
+			<text> </text>
+			<text>JustForClearing</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="013" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="014" indent="">
+			<var>$SectorComplaintList</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sort</text>
+			<text> </text>
+			<text>array</text>
+			<text>:</text>
+			<text> </text>
+			<text>data</text>
+			<text>=</text>
+			<var>$SectorComplaintList</var>
+			<text> </text>
+			<text>sort</text>
+			<text> </text>
+			<text>values</text>
+			<text>=</text>
+			<var>$SectorComplaintCount</var>
+		</line>
+		<line linenr="015" indent="">
+			<var>$SectorComplaintCount</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sort</text>
+			<text> </text>
+			<text>array</text>
+			<text>:</text>
+			<text> </text>
+			<text>data</text>
+			<text>=</text>
+			<var>$SectorComplaintCount</var>
+			<text> </text>
+			<text>sort</text>
+			<text> </text>
+			<text>values</text>
+			<text>=</text>
+			<var>$SectorComplaintCount</var>
+		</line>
+		<line linenr="016" indent="" />
+		<line linenr="017" indent="">
+			<var>$SortieShipsCount</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$SortieShips</var>
+		</line>
+		<line linenr="018" indent="" />
+		<line linenr="019" indent="" />
+		<line linenr="020" indent="" />
+		<line linenr="021" indent="" />
+		<line linenr="022" indent="">
+			<var>$ComplainSectorsCount</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$SectorComplaintList</var>
+		</line>
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$ComplainSectorsCount</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="025" indent="&#160;">
+			<var>$Message</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>111</var>
+		</line>
+		<line linenr="026" indent="&#160;">
+			<text>send</text>
+			<text> </text>
+			<text>incoming</text>
+			<text> </text>
+			<text>message</text>
+			<text> </text>
+			<var>$Message</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>player</text>
+			<text>:</text>
+			<text> </text>
+			<text>display</text>
+			<text> </text>
+			<text>it</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="027" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="028" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="029" indent="" />
+		<line linenr="030" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$SortieShipsCount</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="031" indent="&#160;">
+			<var>$Message</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>read</text>
+			<text> </text>
+			<text>text</text>
+			<text>:</text>
+			<text> </text>
+			<text>page</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>id</text>
+			<text>=</text>
+			<var>112</var>
+		</line>
+		<line linenr="032" indent="&#160;">
+			<text>send</text>
+			<text> </text>
+			<text>incoming</text>
+			<text> </text>
+			<text>message</text>
+			<text> </text>
+			<var>$Message</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>player</text>
+			<text>:</text>
+			<text> </text>
+			<text>display</text>
+			<text> </text>
+			<text>it</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="033" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="034" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="035" indent="" />
+		<line linenr="036" indent="">
+			<var>$EndStatistics</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>150</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="037" indent="" />
+		<line linenr="038" indent="">
+			<var>$Message</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>101</var>
+			<text>,</text>
+			<text> </text>
+			<var>$ComplainSectorsCount</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SortieShipsCount</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="039" indent="" />
+		<line linenr="040" indent="">
+			<var>$AtLeastOneSortieSent</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="041" indent="">
+			<var>$AtLeastOneShipWithoutFuel</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="042" indent="">
+			<var>$SectorRank</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="043" indent="" />
+		<line linenr="044" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$SortieShipsCount</var>
+		</line>
+		<line linenr="045" indent="&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$SortieShipsCount</var>
+		</line>
+		<line linenr="046" indent="&#160;">
+			<var>$SortieShipCurrent</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$SortieShips</var>
+			<text>[</text>
+			<var>$SortieShipsCount</var>
+			<text>]</text>
+		</line>
+		<line linenr="047" indent="&#160;" interruptable="@">
+			<var>$SortieShipRank</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.GetShipCombatRank</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Object</text>
+			<text>=</text>
+			<var>$SortieShipCurrent</var>
+		</line>
+		<line linenr="048" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Cmd.MLCC.S.Intercept</call>
+			<text> </text>
+			<text>on</text>
+			<text> </text>
+			<text>stack</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>task</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="049" indent="&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="050" indent="&#160;" />
+		<line linenr="051" indent="&#160;">
+			<var>$ShipType</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>ware</text>
+			<text> </text>
+			<text>type</text>
+			<text> </text>
+			<text>code</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>object</text>
+		</line>
+		<line linenr="052" indent="&#160;" interruptable="@">
+			<var>$TaskInfo</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.X.MLCC.GetTaskInfoOnShipType</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Type</text>
+			<text>=</text>
+			<var>$ShipType</var>
+		</line>
+		<line linenr="053" indent="&#160;">
+			<var>$Intercept</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$TaskInfo</var>
+			<text>[</text>
+			<var>1</var>
+			<text>]</text>
+		</line>
+		<line linenr="054" indent="&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$TaskInfo</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>null</var>
+			<text> </text>
+			<text>OR</text>
+			<text> </text>
+			<var>$Intercept</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<text>'No'</text>
+		</line>
+		<line linenr="055" indent="&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="056" indent="&#160;" />
+		<line linenr="057" indent="&#160;" />
+		<line linenr="058" indent="&#160;">
+			<var>$ComplainSectorsCount</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$SectorComplaintList</var>
+		</line>
+		<line linenr="059" indent="&#160;">
+			<var>$SectorRank</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>0</var>
+		</line>
+		<line linenr="060" indent="&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$ComplainSectorsCount</var>
+		</line>
+		<line linenr="061" indent="&#160;&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$ComplainSectorsCount</var>
+		</line>
+		<line linenr="062" indent="&#160;&#160;">
+			<text>inc</text>
+			<text> </text>
+			<var>$SectorRank</var>
+		</line>
+		<line linenr="063" indent="&#160;&#160;">
+			<var>$ComplainSectorCurrent</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$SectorComplaintList</var>
+			<text>[</text>
+			<var>$ComplainSectorsCount</var>
+			<text>]</text>
+		</line>
+		<line linenr="064" indent="&#160;&#160;" />
+		<line linenr="065" indent="&#160;&#160;">
+			<var>$EnergyRequired</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>needed</text>
+			<text> </text>
+			<text>jump</text>
+			<text> </text>
+			<text>drive</text>
+			<text> </text>
+			<text>energy</text>
+			<text> </text>
+			<text>for</text>
+			<text> </text>
+			<text>jump</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>sector</text>
+			<text> </text>
+			<var>$ComplainSectorCurrent</var>
+		</line>
+		<line linenr="066" indent="&#160;&#160;">
+			<var>$EnergyRequired</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$EnergyRequired</var>
+			<text> </text>
+			<text>*</text>
+			<text> </text>
+			<var>2</var>
+		</line>
+		<line linenr="067" indent="&#160;&#160;">
+			<var>$Energy</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>amount</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>ware</text>
+			<text> </text>
+			<var>{Energy Cells}</var>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<text>cargo</text>
+			<text> </text>
+			<text>bay</text>
+		</line>
+		<line linenr="068" indent="&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$Energy</var>
+			<text> </text>
+			<text>&lt;</text>
+			<text> </text>
+			<var>$EnergyRequired</var>
+		</line>
+		<line linenr="069" indent="&#160;&#160;&#160;">
+			<var>$Msg</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>151</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$ComplainSectorCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SectorRank</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="070" indent="&#160;&#160;&#160;">
+			<var>$EndStatistics</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$EndStatistics</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$Msg</var>
+		</line>
+		<line linenr="071" indent="&#160;&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="072" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="073" indent="&#160;&#160;" />
+		<line linenr="074" indent="&#160;&#160;">
+			<var>$Flags</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[Find.Enemy]</var>
+		</line>
+		<line linenr="075" indent="&#160;&#160;">
+			<var>$EnemyShips</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$ComplainSectorCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<text>ships</text>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<text>scanner</text>
+			<text> </text>
+			<text>range</text>
+			<text>:</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<text> </text>
+			<var>[Player]</var>
+			<text> </text>
+			<text>class</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>type</text>
+			<text>=</text>
+			<text> </text>
+			<var>[Moveable Ship]</var>
+			<text> </text>
+			<text>exclude</text>
+			<text> </text>
+			<text>race</text>
+			<text>=</text>
+			<text> </text>
+			<var>[Neutral Race]</var>
+			<text> </text>
+			<text>relation</text>
+			<text> </text>
+			<text>flags</text>
+			<text>=</text>
+			<text> </text>
+			<var>$Flags</var>
+			<text> </text>
+			<text>nearest</text>
+			<text> </text>
+			<text>to</text>
+			<text>=</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="076" indent="&#160;&#160;" interruptable="@">
+			<var>$EnemyShips</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.SortShipsByCombatRank</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Ships</text>
+			<text>=</text>
+			<var>$EnemyShips</var>
+			<text> </text>
+			<text>Ascendant</text>
+			<text>=</text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="077" indent="&#160;&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Cmd.MLCC.S.Intercept</call>
+			<text> </text>
+			<text>on</text>
+			<text> </text>
+			<text>stack</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>task</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="078" indent="&#160;&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="079" indent="&#160;&#160;">
+			<var>$Count</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$EnemyShips</var>
+		</line>
+		<line linenr="080" indent="&#160;&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$Count</var>
+		</line>
+		<line linenr="081" indent="&#160;&#160;&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$Count</var>
+		</line>
+		<line linenr="082" indent="&#160;&#160;&#160;">
+			<var>$EnemyShipCurrent</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$EnemyShips</var>
+			<text>[</text>
+			<var>$Count</var>
+			<text>]</text>
+		</line>
+		<line linenr="083" indent="&#160;&#160;&#160;">
+			<text>gosub</text>
+			<text> </text>
+			<var>IsThisEnemyLocked</var>
+			<text>:</text>
+		</line>
+		<line linenr="084" indent="&#160;&#160;&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$EnemyLocked</var>
+		</line>
+		<line linenr="085" indent="&#160;&#160;&#160;&#160;">
+			<text>continue</text>
+		</line>
+		<line linenr="086" indent="&#160;&#160;&#160;" />
+		<line linenr="087" indent="&#160;&#160;&#160;" interruptable="@">
+			<var>$EnemyRank</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.GetShipCombatRank</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Object</text>
+			<text>=</text>
+			<var>$EnemyShipCurrent</var>
+		</line>
+		<line linenr="088" indent="&#160;&#160;&#160;" />
+		<line linenr="089" indent="&#160;&#160;&#160;" />
+		<line linenr="090" indent="&#160;&#160;&#160;" />
+		<line linenr="091" indent="&#160;&#160;&#160;" />
+		<line linenr="092" indent="&#160;&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$SortieShipRank</var>
+			<text> </text>
+			<text>&gt;</text>
+			<text> </text>
+			<var>$EnemyRank</var>
+		</line>
+		<line linenr="093" indent="&#160;&#160;&#160;&#160;">
+			<comment>* *** Found target, begin checks ***</comment>
+		</line>
+		<line linenr="094" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="095" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+			<var>$NotSafe</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.IsThreatToShipInSector</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Sector</text>
+			<text>=</text>
+			<var>$ComplainSectorCurrent</var>
+			<text> </text>
+			<text>ReferenceShip</text>
+			<text>=</text>
+			<var>$SortieShipCurrent</var>
+		</line>
+		<line linenr="096" indent="&#160;&#160;&#160;&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$NotSafe</var>
+		</line>
+		<line linenr="097" indent="&#160;&#160;&#160;&#160;&#160;">
+			<var>$Msg</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>153</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$ComplainSectorCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SectorRank</var>
+			<text>,</text>
+			<text> </text>
+			<var>$NotSafe</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="098" indent="&#160;&#160;&#160;&#160;&#160;">
+			<var>$EndStatistics</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$EndStatistics</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$Msg</var>
+		</line>
+		<line linenr="099" indent="&#160;&#160;&#160;&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="100" indent="&#160;&#160;&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="101" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="102" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Gen.IsThreatToShipInGroup</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>ReferenceShip</text>
+			<text>=</text>
+			<var>$SortieShipCurrent</var>
+			<text> </text>
+			<text>Target</text>
+			<text>=</text>
+			<var>$EnemyShipCurrent</var>
+		</line>
+		<line linenr="103" indent="&#160;&#160;&#160;&#160;&#160;">
+			<var>$Msg</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>153</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$ComplainSectorCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SectorRank</var>
+			<text>,</text>
+			<text> </text>
+			<text>'Group Threat'</text>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="104" indent="&#160;&#160;&#160;&#160;&#160;">
+			<var>$EndStatistics</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$EndStatistics</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$Msg</var>
+		</line>
+		<line linenr="105" indent="&#160;&#160;&#160;&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="106" indent="&#160;&#160;&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="107" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="108" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="109" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="110" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="111" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="112" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="113" indent="&#160;&#160;&#160;&#160;">
+			<var>$IDCode</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$EnemyShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>ID</text>
+			<text> </text>
+			<text>code</text>
+		</line>
+		<line linenr="114" indent="&#160;&#160;&#160;&#160;">
+			<var>$EnemyShipString</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$EnemyShipCurrent</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<text>' '</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$IDCode</var>
+		</line>
+		<line linenr="115" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="116" indent="&#160;&#160;&#160;&#160;">
+			<var>$Msg</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>102</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$ComplainSectorCurrent</var>
+			<text>,</text>
+			<text> </text>
+			<var>$SectorRank</var>
+			<text>,</text>
+			<text> </text>
+			<var>$EnemyShipString</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="117" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="118" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="119" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="120" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="121" indent="&#160;&#160;&#160;&#160;">
+			<var>$Message</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$Message</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$Msg</var>
+		</line>
+		<line linenr="122" indent="&#160;&#160;&#160;&#160;" />
+		<line linenr="123" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+			<text>START</text>
+			<text> </text>
+			<var>$SortieShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Lib.Cmd.MLCC.S.Intercept</call>
+			<text> </text>
+			<text>:</text>
+			<text> </text>
+			<text>Target</text>
+			<text>=</text>
+			<var>$EnemyShipCurrent</var>
+		</line>
+		<line linenr="124" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+			<text>=</text>
+			<text> </text>
+			<text>wait</text>
+			<text> </text>
+			<text>randomly</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<var>50</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<var>100</var>
+			<text> </text>
+			<text>ms</text>
+		</line>
+		<line linenr="125" indent="&#160;&#160;&#160;&#160;">
+			<var>$AtLeastOneSortieSent</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="126" indent="&#160;&#160;&#160;&#160;">
+			<text>break</text>
+		</line>
+		<line linenr="127" indent="&#160;&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="128" indent="&#160;&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="129" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="130" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="131" indent="" />
+		<line linenr="132" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$AtLeastOneSortieSent</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="133" indent="&#160;">
+			<text>if</text>
+			<text> </text>
+			<var>$AtLeastOneShipWithoutFuel</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="134" indent="&#160;&#160;">
+			<comment>* No ships sent, none of which werent sent because of fuel. assume under strength</comment>
+		</line>
+		<line linenr="135" indent="&#160;&#160;">
+			<var>$Msg</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>8407</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>110</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="136" indent="&#160;&#160;">
+			<var>$Message</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$Message</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$Msg</var>
+		</line>
+		<line linenr="137" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="138" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="139" indent="" />
+		<line linenr="140" indent="">
+			<var>$Message</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$Message</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$EndStatistics</var>
+		</line>
+		<line linenr="141" indent="">
+			<text>write</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>player</text>
+			<text> </text>
+			<text>logbook</text>
+			<text> </text>
+			<var>$Message</var>
+		</line>
+		<line linenr="142" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="143" indent="" />
+		<line linenr="144" indent="" />
+		<line linenr="145" indent="">
+			<var>IsThisEnemyLocked</var>
+			<text>:</text>
+		</line>
+		<line linenr="146" indent="&#160;">
+			<var>$LockCheckSortieShipCount</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$AllHomeBaseShipsLockCheck</var>
+		</line>
+		<line linenr="147" indent="&#160;">
+			<var>$EnemyLocked</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[FALSE]</var>
+		</line>
+		<line linenr="148" indent="&#160;">
+			<text>while</text>
+			<text> </text>
+			<var>$LockCheckSortieShipCount</var>
+		</line>
+		<line linenr="149" indent="&#160;&#160;">
+			<text>dec</text>
+			<text> </text>
+			<var>$LockCheckSortieShipCount</var>
+		</line>
+		<line linenr="150" indent="&#160;&#160;">
+			<var>$LockCheckSortieShipCurrent</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$AllHomeBaseShipsLockCheck</var>
+			<text>[</text>
+			<var>$LockCheckSortieShipCount</var>
+			<text>]</text>
+		</line>
+		<line linenr="151" indent="&#160;&#160;">
+			<var>$LockCheckTarget</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$LockCheckSortieShipCurrent</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>command</text>
+			<text> </text>
+			<text>target</text>
+		</line>
+		<line linenr="152" indent="&#160;&#160;">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$LockCheckTarget</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>$EnemyShipCurrent</var>
+		</line>
+		<line linenr="153" indent="&#160;&#160;&#160;">
+			<var>$EnemyLocked</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="154" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="155" indent="">
+			<text>endsub</text>
+		</line>
+		<line linenr="156" indent="" />
+		<line linenr="157" indent="" />
+		<line linenr="158" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="159" indent="" />
+		<line linenr="160" indent="" />
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="Lib.Cmd.MLCC.Intercept" />
+			<sval type="int" val="50" />
+			<sval type="string" val="Lib Cmd: MLCC - Scrambles ships to deal with complaints" />
+			<sval type="int" val="5" />
+			<sval type="int" val="0" />
+			<sval type="array" size="33">
+				<sval type="string" val="SortieShips" />
+				<sval type="string" val="AllHomeBaseShipsLockCheck" />
+				<sval type="string" val="SectorComplaintList" />
+				<sval type="string" val="SectorComplaintCount" />
+				<sval type="string" val="Count" />
+				<sval type="string" val="ListCurrent" />
+				<sval type="string" val="SortieShipsCount" />
+				<sval type="string" val="ComplainSectorsCount" />
+				<sval type="string" val="Message" />
+				<sval type="string" val="EndStatistics" />
+				<sval type="string" val="AtLeastOneSortieSent" />
+				<sval type="string" val="AtLeastOneShipWithoutFuel" />
+				<sval type="string" val="SectorRank" />
+				<sval type="string" val="SortieShipCurrent" />
+				<sval type="string" val="SortieShipRank" />
+				<sval type="string" val="ShipType" />
+				<sval type="string" val="TaskInfo" />
+				<sval type="string" val="Intercept" />
+				<sval type="string" val="ComplainSectorCurrent" />
+				<sval type="string" val="EnergyRequired" />
+				<sval type="string" val="Energy" />
+				<sval type="string" val="Msg" />
+				<sval type="string" val="Flags" />
+				<sval type="string" val="EnemyShips" />
+				<sval type="string" val="EnemyShipCurrent" />
+				<sval type="string" val="EnemyLocked" />
+				<sval type="string" val="EnemyRank" />
+				<sval type="string" val="NotSafe" />
+				<sval type="string" val="IDCode" />
+				<sval type="string" val="EnemyShipString" />
+				<sval type="string" val="LockCheckSortieShipCount" />
+				<sval type="string" val="LockCheckSortieShipCurrent" />
+				<sval type="string" val="LockCheckTarget" />
+			</sval>
+			<sval type="array" size="104">
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.X.MLCC.GetProperty" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.X.MLCC.GetProperty" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="LitQB.SectorSecurityComplaints.List" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="LitQB.SectorSecurityComplaints.Count" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610610167" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.SectorSecurityCheck" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1417" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1417" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610608125" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="8" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="111" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="203" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610607101" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="126" />
+					<sval type="int" val="8" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="112" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="203" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="150" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="8" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="101" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="11" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610590967" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.GetShipCombatRank" />
+					<sval type="int" val="14" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1072" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="-1610604280" />
+					<sval type="string" val="Lib.Cmd.MLCC.S.Intercept" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="27" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="707" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="15" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.X.MLCC.GetTaskInfoOnShipType" />
+					<sval type="int" val="16" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="15" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="17" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="25">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610603000" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="16" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="17" />
+					<sval type="int" val="5" />
+					<sval type="string" val="No" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
+					<sval type="int" val="7" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="27" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="12" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610591223" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="142" />
+					<sval type="int" val="12" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="567" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="19" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="19" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="19" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="13" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="13" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="618" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="20" />
+					<sval type="int" val="9" />
+					<sval type="int" val="720896" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610599677" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="20" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="19" />
+					<sval type="int" val="15" />
+					<sval type="int" val="3" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="21" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="151" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="9" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="21" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="84" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="22" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="108" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="14">
+					<sval type="int" val="1817" />
+					<sval type="int" val="23" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="10" />
+					<sval type="int" val="10" />
+					<sval type="int" val="12" />
+					<sval type="int" val="2134" />
+					<sval type="int" val="10" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="22" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.SortShipsByCombatRank" />
+					<sval type="int" val="23" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="23" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1072" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="-1610598392" />
+					<sval type="string" val="Lib.Cmd.MLCC.S.Intercept" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="84" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="23" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610591479" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="24" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="23" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1167" />
+					<sval type="int" val="92" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610596600" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="25" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="57" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.GetShipCombatRank" />
+					<sval type="int" val="26" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="24" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610591741" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="14" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="26" />
+					<sval type="int" val="15" />
+					<sval type="int" val="2" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.IsThreatToShipInSector" />
+					<sval type="int" val="27" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610594813" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="27" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="21" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="153" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="27" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="9" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="21" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="83" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Gen.IsThreatToShipInGroup" />
+					<sval type="int" val="-1610593789" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="24" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="21" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="153" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Group Threat" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="9" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="21" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="83" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1036" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="24" />
+					<sval type="int" val="28" />
+				</sval>
+				<sval type="array" size="19">
+					<sval type="int" val="104" />
+					<sval type="int" val="29" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="24" />
+					<sval type="int" val="5" />
+					<sval type="string" val=" " />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="28" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-4" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="21" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="102" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="18" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="29" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="8" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="21" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="102" />
+					<sval type="string" val="Lib.Cmd.MLCC.S.Intercept" />
+					<sval type="int" val="-2147483646" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="24" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="107" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="4" />
+					<sval type="int" val="50" />
+					<sval type="int" val="4" />
+					<sval type="int" val="100" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="83" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="57" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="40" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="27" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610589949" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610589949" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="21" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8407" />
+					<sval type="int" val="4" />
+					<sval type="int" val="110" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="8" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="21" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="8" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="400" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="101" />
+					<sval type="string" val="IsThisEnemyLocked" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="30" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="25" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610586615" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="30" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="30" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="31" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="30" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="527" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="31" />
+					<sval type="int" val="32" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610586872" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="32" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="24" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="25" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="95" />
+				</sval>
+				<sval type="array" size="1">
+					<sval type="int" val="1168" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="69">
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="13" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="14" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="18" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="18" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="22" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="22" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="24" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="27" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="33" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="33" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="38" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="38" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="38" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="44" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="51" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="51" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="51" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="56" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="63" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="63" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="64" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="64" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="64" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="64" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="65" />
+					<sval type="int" val="1" />
+					<sval type="string" val="*** Found target, begin checks ***" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="65" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="70" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="70" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="70" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="76" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="77" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="77" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="77" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="77" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="78" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="82" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="82" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="83" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="84" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="85" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="85" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="87" />
+					<sval type="int" val="1" />
+					<sval type="string" val="No ships sent, none of which werent sent because of fuel. assume under strength" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="89" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="89" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="89" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="92" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="92" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="102" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="103" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="103" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="104" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="104" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

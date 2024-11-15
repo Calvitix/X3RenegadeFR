@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language id="44">
+	<page id="8385" title="Litcube's Revelation" descr="Texts" voice="yes">
+		<t id="1">Révélation de Litcube</t>
+		<t id="2">[author][green]%s[/green][/author]FLASH %sZ\nFM COMUNOM UNIFIED OMICRON COMMAND RINGO MOON\n\nTO ALL REGISTERED MERCENARY FORCES\nINFO\nCOMCENTARG ARGON PRIME\nCOMCENTBOR KINGDOM END\nCOMCENTSPL FAMILY PRIDE\nCOMCENTPAR PARANID PRIME\nCOMCENTTER EARTH\nCOMCENTTEL SEIZEWELL\n\nUNCLAS\nMSGID/MERCLIASON/COMUNOM\nSUBJ/OCV INCURSION IMMINENT\n\nRMKS/1. OCV RECON ACTIVITY DETECTED IN %s.\n2. ASSUME PRELUDE TO ASSAULT FROM %s.\n3. MERCENARY AUTHORIZATION ACT PARAGRAPH 3B IN EFFECT.\n4. STANDARD REWARD OFFERED FOR OCV KILLS IN %s.\n4. ADM DEWOLF SENDS.//</t>
+		<t id="3">[author][green]%s[/green][/author]FLASH %sZ\nFM COMUNOM UNIFIED OMICRON COMMAND RINGO MOON\n\nTO ALL ACTIVE COMUNOM UNITS AND SUPPORTING FORCES\nINFO\nCOMCENTARG ARGON PRIME\nCOMCENTBOR KINGDOM END\nCOMCENTSPL FAMILY PRIDE\nCOMCENTPAR PARANID PRIME\nCOMCENTTER EARTH\nCOMCENTTEL SEIZEWELL\n\nTOPSEC\nMSGID/OPSTAFF/COMUNOM\nSUBJ/OPERATIONAL ORDERS\n\nRMKS/1.   CONTINGENCY ROMEO IS NOW IN EFFECT. ALL SHIPS ARE HEREBY ORDERED TO CEASE OPERATIONS IN %s AND WITHDRAW TO STAGING POINT BAKER.\n2.     LOSS OF %s IS CLASSIFIED TOP SECRET. ALL PRIVATE MILITARY UNITS ARE REMINDED THEY ARE SUBJECT TO UCMJ WHILE OPERATING IN COMUNOM AOR.\n3.     ADM DEWOLF SENDS.//</t>
+		<t id="4">[author][green]%s[/green][/author]PRIORITY %sZ\nFM COMUNOM UNIFIED OMICRON COMMAND RINGO MOON\n\nTO ALL ACTIVE COMUNOM UNITS AND SUPPORTING FORCES\nINFO\nCOMCENTARG ARGON PRIME\nCOMCENTBOR KINGDOM END\nCOMCENTSPL FAMILY PRIDE\nCOMCENTPAR PARANID PRIME\nCOMCENTTER EARTH\nCOMCENTTEL SEIZEWELL\n\nCLASSIFIED\nMSGID/OPSTAFF/COMUNOM\nSUBJ/SITUATION REPORT\n\nRMKS/1.   ALL OCV INFRASTRUCTURE IN %s CONFIRMED DESTROYED. \n2.     COMUNOM FORCES WILL RTB UPON CONFIRMATION THAT ALL OCV MOBILE UNITS HAVE BEEN ELIMINATED.\n3.     COMUNOM HAS RECOMMENDED IMMEDIATE DISPATCH OF %s REGULAR MILITARY FORCE TO GARRISON %s.\n4.     ALL PARTICIPATING MERCENARY FORCES HAVE BEEN PAID AS STIPULATED IN MERCENARY AUTHROIZATION ACT PARAGRAPH 5D.\n5.     GOOD WORK, PEOPLE.\n6.     ADM DEWOLF SENDS.///</t>
+		<t id="5">[author][green]%s[/green][/author]IMMEDIATE %sZ\nFM COMUNOM UNIFIED OMICRON COMMAND RINGO MOON\n\nTO ALL REGISTERED MERCENARY FORCES\nINFO\nCOMCENTARG ARGON PRIME\nCOMCENTBOR KINGDOM END\nCOMCENTSPL FAMILY PRIDE\nCOMCENTPAR PARANID PRIME\nCOMCENTTER EARTH\nCOMCENTTEL SEIZEWELL\n\nUNCLASS\nMSGID/MERCLIASON/COMUNOM\nSUBJ/COMUNOM STRIKE IMMINENT\n\nRMKS/1.   COMUNOM RECON ELEMENTS HAVE IDENTIFIED A TEMPORARY WEAKNESS IN %s OCV DEFENSES. \n2.     RAPID RESPONSE FORCE HAS BEEN ACTIVATED FOR AN IMMIDIATE DEPLOYMENT BUT REQUIRES ESCORT.\n3.     STRIKE FORCE IS RENDEZVOUSING IN %s SECTOR CENTER AND WILL JUMP TO %s EXACTLY 10 MIZURA FROM DISSEMINATION OF THIS MESSAGE.\n4.     ANY MERCENARY FORCES THAT CHOOSE TO PARTICIPATE WILL BE PAID A PER KILL BOUNTY AS STIPULATED IN MERCENARY AUTHROIZATION ACT PARAGRAPH 5D.\n5.     ADM DEWOLF SENDS.//</t>
+		<t id="6">[author][green]%s[/green][/author]À la partie privée %s :\n\nC'est avec un grand honneur que nous vous présentons cette récompense de %s pour avoir participé à cette dernière opération militaire dans le secteur %s. Vos efforts ont contribué à l'éradication du Virus du Canal d'Omicron.</t>
+		<t id="7">[author][green]Commonwealth[/green][/author]Une nouvelle ère a commencé. Les rapports de partout dans l'Univers confirment que la menace du Virus du Canal d'Omicron a été éliminée une fois pour toutes. La mobilisation militaire reviendra lentement à des niveaux normaux dans les semaines à venir, et la vie du Commonwealth peut reprendre dans l'existence relativement paisible que l'Univers était avant les horreurs infligées par cette révélation la plus insidieuse et mystérieuse.</t>
+		<t id="8">[author][green]Fédération Argon[/green][/author]À toutes les parties accessibles :\n\nComme vous l'avez peut-être déjà entendu par divers canaux médiatiques au sein de vos mondes d'origine respectifs, il est devenu évident que nous ne sommes pas seuls dans les secteurs du Canal d'Omicron. Hier, des vaisseaux éclaireurs dans le secteur %s ont signalé des observations de ce qui semble être des vaisseaux de fabrication Xénon et terraformeurs anciens se rassemblant à proximité d'une station Xénon. Bien que nous ne soyons pas sûrs des intentions de cette nouvelle entité, ou si cette menace possible est de nature Xénon, nous vous exhortons à restreindre tous les sauts et passages prévus vers Tokyo Kappa.\n\nPlus d'informations seront disponibles à mesure que les équipes d'expédition Borons continueront à découvrir les origines et les intentions de cette nouvelle entité.</t>
+		<t id="9">OCV Neutralisés : \033C%s\033X \033Y%s Cr\033X</t>
+		<t id="101">Fédération Argonne</t>
+		<t id="102">Royaume Boron</t>
+		<t id="103">Dynastie Split</t>
+		<t id="104">Empire Paranide</t>
+		<t id="105">Compagnie Teladi</t>
+		<t id="106">Commandement Spatial Unis</t>
+		<t id="107">Goneur</t>
+		<t id="108">Syndicat Yaki</t>
+		<t id="200">500</t>
+		<t id="201">15</t>
+		<t id="202">20</t>
+		<t id="203">50</t>
+		<t id="204">1000</t>
+		<t id="205">1000</t>
+		<t id="206">2750</t>
+		<t id="207">5000</t>
+		<t id="208">8000</t>
+	</page>
+	<page id="12" title="Boardcomp. greek" descr="Spoken greek letters" voice="yes">
+		<t id="200">Alpha</t>
+		<t id="201">Beta</t>
+		<t id="202">Gamma</t>
+		<t id="203">Delta</t>
+		<t id="204">Epsilon</t>
+		<t id="205">Zeta</t>
+		<t id="206">Eta</t>
+		<t id="207">Theta</t>
+		<t id="208">Iota</t>
+		<t id="209">Kappa</t>
+		<t id="210">Lambda</t>
+		<t id="211">Mu</t>
+		<t id="212">Nu</t>
+		<t id="213">Xi</t>
+		<t id="214">Omicron</t>
+		<t id="215">Pi</t>
+		<t id="216">Rho</t>
+		<t id="217">Sigma</t>
+		<t id="218">Tau</t>
+		<t id="219">Upsilon</t>
+		<t id="220">Phi</t>
+		<t id="221">Chi</t>
+		<t id="222">Psi</t>
+		<t id="223">Omega</t>
+		<t id="224">Omega</t>
+	</page>
+	<page id="350007" title="Boardcomp. Sectornames" descr="Names of all sectors (spoken by Boardcomputer)" voice="yes">
+		<t id="1020121">{7,1020000} {12,223}</t>
+		<t id="1020122">{17,10821} {12,210}</t>
+		<t id="1020222">{17,10531} {12,209}</t>
+		<t id="1020223">{17,10431} {12,208}</t>
+		<t id="1020320">{17,10131} {12,200}</t>
+		<t id="1020322">{17,10231} {12,206}</t>
+		<t id="1020323">{17,10321} {12,207}</t>
+		<t id="1020420">{17,10261} {12,201}</t>
+		<t id="1020421">{17,10331} {12,202}</t>
+		<t id="1020422">{17,10191} {12,205}</t>
+		<t id="1020521">{17,10451} {12,203}</t>
+		<t id="1020522">{17,10501} {12,204}</t>
+	</page>
+	<page id="19" title="Sector Descriptions" descr="">
+		<t id="1030121">La peur, la panique et le chaos ont suivi la découverte de ce secteur. Ce qui semble être de nature Xénon envoie des ondes de choc d'inquiétude dans toutes les populations civilisées, et menace de briser les chaînes forgées lors du Symposium du Canal d'Omicron.</t>
+		<t id="1030122">Il a été convenu lors du Symposium du Canal d'Omicron que les Argons se verraient accorder le droit d'initier le renforcement d'une forte présence militaire dans ce secteur. Jetant tous les espoirs de paix et de profit au vent, les Argons ont entrepris l'acte apparemment désintéressé de garder les Secteurs du Canal, bien qu'avec une quantité considérable d'appréhension.</t>
+		<t id="1030222">Les entreprises Teladi ont presque abandonné la colonisation massive de ce secteur, jusqu'à présent, en raison de la capacité industrielle écrasante requise pour transformer Kea Delta en un centre de profit massif. Les Teladi n'ont cependant pas l'intention de renoncer à leur contrôle dans un avenir prévisible.</t>
+		<t id="1030223">Bien que ce ne soit qu'un secteur naissant, les dirigeants religieux parmi les Paranides ont de grands espoirs de transformer ce secteur en un réservoir économique à partir duquel les hauts prêtres et les ducs tireraient.</t>
+		<t id="1030320">Le premier des secteurs du Canal d'Omicron à avoir été découvert, le pilote militaire Argon Flot Bro a donné son nom à sa découverte d'après son système d'origine. Causant une légère irritation parmi le Commonwealth, l'armée Argon a rapidement sécurisé le premier secteur avant d'appeler le symposium maintenant connu pour une percée diplomatique ; à savoir, la division égale de tous les secteurs du Canal d'Omicron.</t>
+		<t id="1030322">Initialement destiné à devenir un paradis de vacances pour les membres de la famille royale, il y a eu beaucoup d'intérêt public lorsque, à la toute dernière heure, tous les plans de départ ont été mis en attente ou annulés purement et simplement. C'est maintenant un secteur partagé publiquement avec des projections de croissance lente.</t>
+		<t id="1030323">Les dirigeants militaires Split ont annoncé que ce secteur devait rester une zone de production de secours pour son industrie navale principale à Cho's Defeat. Des rumeurs persistent selon lesquelles les Split auraient déplacé des matériaux de nature insidieuse dans le secteur comme plan de "sécurité", au cas où la paix du Canal d'Omicron vacillerait. Les Split rejettent catégoriquement ces allégations.</t>
+		<t id="1030420">Comme ce secteur est le plus proche de l'espace Boron, la race aquatique s'est vu offrir les premiers droits de colonisation lors du symposium diplomatique du Canal d'Omicron. Initialement, les diplomates royaux ont émis des objections timides, affirmant que Cerberus Alpha aurait dû leur appartenir, mais ont finalement cédé aux premiers droits de découvreur des Argons.</t>
+		<t id="1030421">Après que les deux premiers secteurs aient été divisés, les Split ont ardemment fait pression pour obtenir le contrôle de ce secteur, mais les raisons officielles restent inconnues.</t>
+		<t id="1030422">Les diplomates Argons ont transféré le contrôle de ce secteur à des investisseurs commerciaux intéressés par l'expansion, en échange d'un soutien rapide et généreux aux colons. Vu par de nombreux capitalistes-risqueurs comme une excellente opportunité, le gouvernement Argon a réussi à garder l'offre secrète, les volontaires étant venus facilement.</t>
+		<t id="1030521">L'Empire Paranide a accordé à ses prêtres le contrôle ultime sur toutes les questions et préoccupations du secteur du Canal d'Omicron en ce qui concerne les intérêts Paranides. Bien que reconnu comme un avantage potentiel pour la race Paranide, l'empire dans son ensemble ne semble que légèrement préoccupé par les questions entourant leurs deux secteurs accordés.</t>
+		<t id="1030522">Il a été noté lors du Symposium du Canal d'Omicron que les Teladi ont attendu patiemment pendant les tours de sélection. Ce n'est qu'après que toutes les affaires du Canal aient été réglées que certains ont noté avec une légère amusement que la planète dominante du secteur, Uirrus, contenait des gisements de minerai extrêmement précieux, évalués à une valeur que certains disent équivalente à ceux trouvés dans Merchant Haven.</t>
+	</page>
+</language>

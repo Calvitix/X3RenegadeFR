@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language id="44">
+﻿   <page id="1900" title="Intro Menus" descr="0" voice="no">
+		<t id="350">Mayhem 3</t>
+		<t id="351">--------------</t>
+		<t id="352"/>
+		<t id="353">Galaxie:</t>
+		<t id="354">Vaisseau de départ:</t>
+	</page>
+	<page id="1910" title="À propos du Dialogue" descr="Premier dialogue avant le début du jeu - À propos">
+		<t id="1">Démarrer X3:AP</t>
+		<t id="2">Annuler</t>
+		<t id="106">X3: Albion Prelude</t>
+ <t id="999">XENON-02\n</t>
+		<t id="1108">Ignorer les derniers paramètres et démarrer avec les paramètres par défaut</t>
+		<t id="1197">Paramètres graphiques</t>
+		<t id="1199">Périphérique d'entrée</t>
+		<t id="1200">Logo du joueur</t>
+		<t id="1201">Dossier des captures d'écran</t>
+		<t id="1216">Mayhem 3 Renegades V3.0, 2024\nMayhem 3 Zero Hour V2.2, 2024\nLitcube's Universe V1.7.2, 2016\n© EGOSOFT 2013, tous droits réservés.</t>
+		<t id="1217">Page Mayhem 3 : https://forum.egosoft.com/viewtopic.php\?t=448700\n\nWiki de Litcube's Universe : litcubeswiki.rf.gd/luwiki/wiki/index.php/Main_Page.html?i=1</t>
+		<t id="1218">Page Mayhem 3 : https://forum.egosoft.com/viewtopic.php\?t=448700\n\nWiki de Litcube's Universe : litcubeswiki.rf.gd/luwiki/wiki/index.php/Main_Page.html?i=1</t>
+		<t id="1235">Exécuter en tant que Benchmark</t>
+		<t id="1242">Sélectionner le Pack de Mods</t>
+		<t id="1249">Vérifier les mises à jour</t>
+		<t id="10000">http://update.egosoft.com/update.php?game=X3AP&amp;ver=2.0.01&amp;lang=EN</t>
+		<t id="10001">3.3</t>
+		<t id="10002">Avertissement de version</t>
+		<t id="10003">Une version incorrecte du fichier EXE a été détectée. Assurez-vous que le contenu de votre jeu est à jour et que vous utilisez le dernier fichier EXE disponible. La version actuelle peut ne pas fonctionner correctement.\n\nÊtes-vous sûr de vouloir continuer ?</t>
+	</page>
+	<page id="1912" title="Dialogue des paramètres graphiques" descr="" voice="0">
+		<t id="110">Paramètres graphiques</t>
+		<t id="1068">Contrôle de qualité &amp;automatique</t>
+		<t id="1095">&amp;Fenêtre</t>
+		<t id="1096">&amp;Plein écran</t>
+		<t id="1101">Réi&amp;nitialiser aux paramètres par défaut</t>
+		<t id="1102">OK</t>
+		<t id="1103">Annuler</t>
+		<t id="1219">Périphérique &amp;Direct 3D</t>
+		<t id="1220">&amp;Résolution</t>
+		<t id="1222">&amp;Anticrénelage</t>
+		<t id="1241">Filtrage &amp;anisotrope des textures</t>
+		<t id="1242">&amp;Effet de flou activé</t>
+		<t id="1247">&amp;Qualité des shaders</t>
+		<t id="1248">&amp;Qualité des textures</t>
+		<t id="1250">Périphérique et Résolution</t>
+		<t id="1251">Qualité</t>
+		<t id="1252">Effets</t>
+		<t id="1254">Plus de &amp;sources de lumière dynamiques</t>
+		<t id="1255">&amp;Variations de couleur des vaisseaux</t>
+		<t id="1256">Désactiver l'optimisation de la &amp;taille des sommets</t>
+		<t id="1258">Utiliser une &amp;lecture vidéo alternative</t>
+		<t id="1257">Dépannage</t>
+		<t id="1259">&amp;Distance d'affichage</t>
+		<t id="10000">Faible</t>
+		<t id="10001">Moyen</t>
+		<t id="10002">Élevé</t>
+		<t id="10003">Très élevé</t>
+		<t id="11000">2x</t>
+		<t id="11001">4x</t>
+		<t id="11002">6x</t>
+		<t id="11003">8x</t>
+		<t id="12000">2x</t>
+		<t id="12001">4x</t>
+		<t id="12002">8x</t>
+		<t id="12003">16x</t>
+		<t id="20000">Affichage(ou Écran ou Moniteur)</t>
+		<t id="20001">Sans bordure</t>
+		<t id="20002">Synchronisation verticale</t>
+	</page>
+	<page id="1913" title="Dialogue du dossier de capture" descr="">
+		<t id="1">OK</t>
+		<t id="2">Annuler</t>
+		<t id="164">Dossier de capture</t>
+		<t id="1221">Dossier de capture</t>
+		<t id="10000">Le répertoire n'existe pas !\nCréer le répertoire ?</t>
+		<t id="10001">Attention !</t>
+		<t id="10010">Échec de la création du répertoire !</t>
+		<t id="10011">Erreur !</t>
+	</page>
+	<page id="1914" title="Dialogue d'ajustement des entrées" descr="">
+		<t id="1">OK</t>
+		<t id="2">Annuler</t>
+		<t id="144">Ajustement du contrôleur</t>
+		<t id="1184">Inverser le gouvernail / la direction</t>
+		<t id="1185">Utiliser les gaz</t>
+		<t id="1186">Utiliser le gouvernail</t>
+		<t id="1187">Inverser le gouvernail / la direction</t>
+		<t id="1188">Utiliser le chapeau POV pour regarder autour</t>
+		<t id="1189">Inverser le contrôle d'inclinaison</t>
+		<t id="1190">Inverser le contrôle d'inclinaison</t>
+		<t id="1191">Inverser le contrôle du gouvernail</t>
+		<t id="1223">Paramètres du joystick</t>
+		<t id="1224">Paramètres de la souris</t>
+		<t id="1225">Paramètre de retour de force :</t>
+		<t id="1226">Zone morte :</t>
+		<t id="1233">Affectation des boutons</t>
+		<t id="1239">Sensibilité :</t>
+		<t id="1241">Configurer comme Joypad</t>
+		<t id="1242">Afficher la disposition du contrôleur</t>
+		<t id="10000">Enfant</t>
+		<t id="10001">Adulte</t>
+		<t id="10002">Culturiste</t>
+		<t id="20000">Toujours capturer le curseur (ou toujours verrouiller le curseur sur la fenêtre du jeu)</t>
+		<t id="20001">Utiliser comme contrôleur Xbox</t>
+		<t id="20002">Réinitialiser au contrôleur Xbox</t>
+		<t id="20003">Mapper vers :(mapper l'axe du joystick à une fonction comme tangage/gaz)</t>
+		<t id="20004">Axe source :(numéro d'axe qui est mappé)</t>
+		<t id="20005">Échelle/Inversion :</t>
+		<t id="20006">Valeur effective :(ou état actuel de l'axe)</t>
+		<t id="20007">Désactiver</t>
+		<t id="20008">Remapper les boutons</t>
+		<t id="20009">Réinitialiser aux paramètres par défaut</t>
+		<t id="20010">Bouton :</t>
+		<t id="20011">Affecter (comme : affecter un bouton à une fonction)</t>
+		<t id="20012">Appuyez sur le bouton du contrôleur pour affecter,\nÉchap pour annuler,\nSuppr pour désactiver</t>
+		<t id="20013">Extra (suivi du numéro du bouton)</t>
+		<t id="20014">(direction du dpad)Gauche</t>
+		<t id="20015">(direction du dpad)Droite</t>
+		<t id="20016">(direction du dpad)Haut</t>
+		<t id="20017">(direction du dpad)Bas</t>
+		<t id="20018">(nom du bouton pour appuyer sur un stick analogique du contrôleur)Appuyer</t>
+		<t id="20019">(axe du joystick)Gaz</t>
+		<t id="20020">(axe du joystick)Gouvernail</t>
+		<t id="20021">(axe xbox)Gâchette gauche</t>
+		<t id="20022">(axe xbox)Gâchette droite</t>
+	</page>
+	<page id="1915" title="Dialogue du logo du joueur" descr="">
+		<t id="1">OK</t>
+		<t id="2">Annuler</t>
+		<t id="147">Mon logo personnel</t>
+		<t id="1197">Importer une image</t>
+		<t id="1200">Image importée</t>
+		<t id="1227">Importez votre propre JPEG</t>
+	</page>
+	<page id="1916" title="Dialogue de remappage des entrées" descr="">
+		<t id="132">Contrôles</t>
+		<t id="1114">Laser / OK</t>
+		<t id="1115">Missile</t>
+		<t id="1117">Cible suivante, Page suivante du menu</t>
+		<t id="1118">Cible précédente, Page précédente du menu</t>
+		<t id="1119">Changer la sélection du moniteur</t>
+		<t id="1122">Zoom</t>
+		<t id="1124">Modificateur de vitesse - maintenir</t>
+		<t id="1126">Changer de mode d'affichage</t>
+		<t id="1161">S.E.T.A.</t>
+		<t id="1169">OK</t>
+		<t id="1170">Annuler</t>
+		<t id="1172">Propulsion de déplacement latéral</t>
+		<t id="1176">Menu principal</t>
+		<t id="1188">Menu des options</t>
+		<t id="1228">Seules les touches de clavier spéciales comme retour, ctrl et alt peuvent être remappées à l'aide de cette matrice !</t>
+		<t id="1229">Joystick</t>
+		<t id="1230">Clavier</t>
+		<t id="1231">Souris</t>
+	</page>
+	<page id="1917" title="Keyboard input dialog" descr="">
+		<t id="133">Press the key or button you want to associate!</t>
+		<t id="10101">Button 1</t>
+		<t id="10102">Button 2</t>
+		<t id="10103">Button 3</t>
+		<t id="10104">Button 4</t>
+		<t id="10105">Button 5</t>
+		<t id="10106">Button 6</t>
+		<t id="10107">Button 7</t>
+		<t id="10108">Button 8</t>
+		<t id="10109">Button 9</t>
+		<t id="10110">Button 10</t>
+		<t id="10201">Space</t>
+		<t id="10202">Return</t>
+		<t id="10203">LCtrl</t>
+		<t id="10204">LAlt</t>
+		<t id="10205">Ralt</t>
+		<t id="10206">RCtrl</t>
+		<t id="10301">Left</t>
+		<t id="10302">Right</t>
+		<t id="10303">Mid</t>
+		<t id="10304">Special</t>
+		<t id="10305">Special2</t>
+	</page>
+	<page id="1918" title="Mod Name input dialog" descr="">
+		<t id="1">OK</t>
+		<t id="2">Cancel</t>
+		<t id="3">Original</t>
+		<t id="179">Select Mod Package</t>
+	</page>
+</language>

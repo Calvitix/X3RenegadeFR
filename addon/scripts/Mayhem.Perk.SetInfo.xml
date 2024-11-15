@@ -1,0 +1,656 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>Mayhem.Perk.SetInfo</name>
+	<version>8</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments />
+	<sourcetext>
+		<line linenr="001" indent="" />
+		<line linenr="002" indent="">
+			<comment>* Also see Mayhem.Perk.Init.</comment>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="">
+			<var>$table</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>alloc</text>
+		</line>
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="">
+			<comment>* table set $table ( 'Laser manufacture' ) = 'Allows Outpost to produce lasers.'</comment>
+		</line>
+		<line linenr="007" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Missile manufacture'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'unlocks missile production.'</text>
+		</line>
+		<line linenr="008" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Advanced engineering'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'all ships produced here: -50% upkeep but 2x production time.'</text>
+		</line>
+		<line linenr="009" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Faster research'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'+50% research rate. Also improves Hacking station and Cyberwar perk.'</text>
+		</line>
+		<line linenr="010" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Cheaper stations'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'all stations produced here: -50% cost but 4x production time.'</text>
+		</line>
+		<line linenr="011" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'No food consumption'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Incompatible with Triple Population Growth.'</text>
+		</line>
+		<line linenr="012" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Extra engine tuning'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'all ships produced here fly faster.'</text>
+		</line>
+		<line linenr="013" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Tax'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Tax Efficiency will be at least 100% but with reduced population growth rate.'</text>
+		</line>
+		<line linenr="014" indent="">
+			<comment>* table set $table ( 'Electromagnetic pulse' ) = 'This weapon can reset all shields in the sector.'</comment>
+		</line>
+		<line linenr="015" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Adjacency perk bonus'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Extra perk slot for every player Outpost in adjacent sectors.'</text>
+		</line>
+		<line linenr="016" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Solar panels'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Generates Energy Cells depending on sector sun efficiency.'</text>
+		</line>
+		<line linenr="017" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Free interorbital storage'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'No shipping costs in Logistics -&gt; Stock -&gt; TIS.'</text>
+		</line>
+		<line linenr="018" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Dry dock'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Docked capships: -75% upkeep / other ships: -25% upkeep.'</text>
+		</line>
+		<line linenr="019" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Pirate contract'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'No pirate attacks &amp; Yaki claims. New marines +20 fighting if adjacent pirate base or yaki sector.'</text>
+		</line>
+		<line linenr="020" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Insurance policy'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'No unfortunate events.'</text>
+		</line>
+		<line linenr="021" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Hacking station'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Convertit la station de recherche locale en station de piratage.'</text>
+		</line>
+		<line linenr="022" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Fortress'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'EMP + respawning Lasertower ring &amp; security Fighters + 1 global OWP limit'</text>
+		</line>
+		<line linenr="023" indent="">
+			<comment>* table set $table ( 'Ring of fire' ) = 'Deploys lasertowers around this Outpost (no respawn). Increases global OWP limit by 1.'</comment>
+		</line>
+		<line linenr="024" indent="">
+			<comment>* table set $table ( 'Space Weed manufacture' ) = 'Cargo jobs can reveal clients. Traders come to buy at 20 infamy.'</comment>
+		</line>
+		<line linenr="025" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Triple Population Growth'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'3x population growth rate.  2x food cost. Incompatible with No food consumption.'</text>
+		</line>
+		<line linenr="026" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Cyberwar center'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Auto port scans &amp; backdoor installation (5 jumps). Generates hackerchips.'</text>
+		</line>
+		<line linenr="027" indent="">
+			<comment>* table set $table ( 'Fighter militia' ) = 'Outpost citizens provide free fighter defense force in this system.'</comment>
+		</line>
+		<line linenr="028" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Jump station'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Outpost works like a jump beacon with free upkeep &amp; no Xenon infections.'</text>
+		</line>
+		<line linenr="029" indent="">
+			<comment>* Mordan2</comment>
+		</line>
+		<line linenr="030" indent="">
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$table</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<text>'Friendly Neighbor'</text>
+			<text> </text>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Outpost gradually improves relations with all its immediate neighbors over time'</text>
+		</line>
+		<line linenr="031" indent="" />
+		<line linenr="032" indent="" />
+		<line linenr="033" indent="">
+			<text>set</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'mayhem_perkInfo'</text>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$table</var>
+		</line>
+		<line linenr="034" indent="" />
+		<line linenr="035" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$table</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="Mayhem.Perk.SetInfo" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="8" />
+			<sval type="int" val="0" />
+			<sval type="array" size="1">
+				<sval type="string" val="table" />
+			</sval>
+			<sval type="array" size="22">
+				<sval type="array" size="2">
+					<sval type="int" val="1706" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Missile manufacture" />
+					<sval type="int" val="5" />
+					<sval type="string" val="unlocks missile production." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Advanced engineering" />
+					<sval type="int" val="5" />
+					<sval type="string" val="all ships produced here: -50% upkeep but 2x production time." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Faster research" />
+					<sval type="int" val="5" />
+					<sval type="string" val="+50% research rate. Also improves Hacking station and Cyberwar perk." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Cheaper stations" />
+					<sval type="int" val="5" />
+					<sval type="string" val="all stations produced here: -50% cost but 4x production time." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="No food consumption" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Incompatible with Triple Population Growth." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Extra engine tuning" />
+					<sval type="int" val="5" />
+					<sval type="string" val="all ships produced here fly faster." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Tax" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Tax Efficiency will be at least 100% but with reduced population growth rate." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Adjacency perk bonus" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Extra perk slot for every player Outpost in adjacent sectors." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Solar panels" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Generates Energy Cells depending on sector sun efficiency." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Free interorbital storage" />
+					<sval type="int" val="5" />
+					<sval type="string" val="No shipping costs in Logistics -&gt; Stock -&gt; TIS." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Dry dock" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Docked capships: -75% upkeep / other ships: -25% upkeep." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Pirate contract" />
+					<sval type="int" val="5" />
+					<sval type="string" val="No pirate attacks &amp; Yaki claims. New marines +20 fighting if adjacent pirate base or yaki sector." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Insurance policy" />
+					<sval type="int" val="5" />
+					<sval type="string" val="No unfortunate events." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Hacking station" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Convertit la station de recherche locale en station de piratage." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Fortress" />
+					<sval type="int" val="5" />
+					<sval type="string" val="EMP + respawning Lasertower ring &amp; security Fighters + 1 global OWP limit" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Triple Population Growth" />
+					<sval type="int" val="5" />
+					<sval type="string" val="3x population growth rate.  2x food cost. Incompatible with No food consumption." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Cyberwar center" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Auto port scans &amp; backdoor installation (5 jumps). Generates hackerchips." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Jump station" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Outpost works like a jump beacon with free upkeep &amp; no Xenon infections." />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1708" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Friendly Neighbor" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Outpost gradually improves relations with all its immediate neighbors over time" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="157" />
+					<sval type="int" val="5" />
+					<sval type="string" val="mayhem_perkInfo" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+			<sval type="array" size="13">
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Also see Mayhem.Perk.Init." />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="1" />
+					<sval type="int" val="1" />
+					<sval type="string" val="table set $table ( 'Laser manufacture' ) = 'Allows Outpost to produce lasers.'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="8" />
+					<sval type="int" val="1" />
+					<sval type="string" val="table set $table ( 'Electromagnetic pulse' ) = 'This weapon can reset all shields in the sector.'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="16" />
+					<sval type="int" val="1" />
+					<sval type="string" val="table set $table ( 'Ring of fire' ) = 'Deploys lasertowers around this Outpost (no respawn). Increases global OWP limit by 1.'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="16" />
+					<sval type="int" val="1" />
+					<sval type="string" val="table set $table ( 'Space Weed manufacture' ) = 'Cargo jobs can reveal clients. Traders come to buy at 20 infamy.'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="18" />
+					<sval type="int" val="1" />
+					<sval type="string" val="table set $table ( 'Fighter militia' ) = 'Outpost citizens provide free fighter defense force in this system.'" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="19" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Mordan2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

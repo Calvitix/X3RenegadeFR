@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language id="44">
+	<page id="9972" title="Mayhem 3">
+		<t id="1">1200</t><!-- Research cycle, in seconds (default: 1200) -->
+		<t id="158">30</t><!-- Research points per scan from data scanner. (default: 30) -->
+		<t id="201">10</t><!-- Research points per research cycle at 100%. (default: 10) -->
+		<t id="10">100</t><!-- Research cost multiplier (default: 100) -->
+		<t id="176">50</t><!-- General crafting resource cost multiplier, for lasers, missiles, shields, stations and ships. (Zero Hour default: 50 base default: 100) -->
+		<t id="200">25</t><!-- General crafting time cost multiplier, for lasers, missiles, shields, stations and ships. (Zero Hour default: 25 base default: 100) -->
+		<t id="131">9</t><!-- Quality factor. (default: 9) -->
+		<t id="39">65</t><!-- Recycle factor, in % of normal costs. (default: 65) -->
+		<t id="38">0</t><!-- Food display after Outposts names, 0 to deactivate. Also affect Research station info display. (default: 0) -->
+		<t id="204">14400</t><!-- Xenon small invasions delay, in seconds. (default: 7200) -->
+		<t id="207">43200</t><!-- Xenon big invasions delay, in seconds. (default: 21600) -->
+		<t id="287">3</t><!-- Xenon invasion groups limit (small and big fleets get counted separately). (Zero Hour default: 3. ZH allows extra fleets based on current amount of xenon sectors. Vanilla Mayhem default was 6) -->
+		<t id="209">1800</t><!-- Pirate fighters spawning delay, in seconds. (default: 1800) -->
+		<t id="219">60</t><!-- Pirate limit in all the galaxy. (default: 60) -->
+		<t id="212">12</t><!-- Maximum number of pirate bases in the galaxy. (default: 12) -->
+		<t id="70">4</t><!-- Maximum perks per Outposts. Difficulty modifier: +1 in easy; -1 in hard. (default: 4) -->
+		<t id="71">20000</t><!-- Total project size needed to increase ship specialization by 1%. (default: 20000) -->
+		<t id="72">20000</t><!-- Total project size needed to increase laser specialization by 1%. (default: 20000) -->
+		<t id="73">20000</t><!-- Total project size needed to increase missile specialization by 1%. (default: 20000) -->
+		<t id="74">20000</t><!-- Total project size needed to increase shield specialization by 1%. (default: 20000) -->
+		<t id="175">20000</t><!-- Total project size needed to increase station specialization by 1%. (default: 20000) -->
+		<t id="142">20</t><!-- Maximum specialization level. (Zero Hour default: 20 base default: 50) -->
+		<t id="164">3600</t><!-- Maintenance cycle, in seconds. (Zero Hour default: 3600 base default: 600) -->
+		<t id="75">100</t><!-- Maintenance cost multiplier. (Zero Hour default: 100 base default: 100) -->
+		<t id="177">0</t><!-- Free maintenance for the ship you're piloting yourself. (default: 0) -->
+		<t id="98">100</t><!-- Tax multiplier. Tax is based on number of people and is collected every hour. (default: 100) -->
+		<t id="119">0</t><!-- Player cheat: all ships you craft receive full lasers and shields. (default: 0) -->
+		<t id="132">0</t><!-- Disable bailing. (default: 0) -->
+		<t id="213">100</t><!-- Bailing chance multiplier. (default: 100) -->
+		<t id="210">0</t><!-- Player ships can bail. (default: 0) -->
+		<t id="197">60</t><!-- Maximum bailing ships that can be in the galaxy at the same time. (default: 60) -->
+		<t id="214">3</t><!-- Maximum bailing ships that can be in the same sector at the same time. (default: 3) -->
+		<t id="139">900</t><!-- How often the AI checks for its station needs, in seconds. (Zero Hour default: 900 default: 1800) -->
+		<t id="140">20</t><!-- Chances (out of 1000) for every ship to drop EACH of his shield/laser when destroyed by ANYONE. (default: 20):  Not used anymore. -->
+		<t id="232">40</t><!-- Chances (out of 1000) for every ship to drop EACH of his shield/laser when destroyed by PLAYERSHIP. (default: 40) Not used anymore. -->
+		<t id="8">600</t><!-- Food consumption cycle, in seconds. (Zero Hour default: 600 base default: 300) -->
+		<t id="76">9</t><!-- People max. growth per consumption cycle. (Zero Hour default: 9 base default: 5) -->
+		<t id="143">18</t><!-- Waste production factor per consumption cycle (* people). (Zero Hour default: 18 default: 6) -->
+		<t id="205">300</t><!-- E-Cell production multiplier (from Solar Panels perk). (Zero Hour default: 300 default: 100) -->
+		<t id="144">2</t><!-- Outpost product production factor per consumption cycle (* people). (default: 2) -->
+		<t id="9">1</t><!-- Outpost resource consumption factor per consumption cycle (* people). (default: 1) -->
+		<t id="145">5</t><!-- Fleet ratio per X sectors owned (negative is per sector) - Battle Group. (Zero Hour default: 5 base default: 4) -->
+		<t id="146">7</t><!-- Fleet ratio per X sectors owned (negative is per sector) - Border Patrol. (Zero Hour default: 7 base default: 4) -->
+		<t id="147">6</t><!-- Fleet ratio per X sectors owned (negative is per sector) - Rearguard. (Zero Hour default: 6 base default: 4) -->
+		<t id="148">20</t><!-- Fleet ratio per X sectors owned (negative is per sector) - Task Force. (Zero Hour default: 20 base default: 4) -->
+		<t id="149">5</t><!-- Fleet ratio per X sectors owned (negative is per sector) - Police. (Zero Hour default: 5 base default: 2) -->
+		<t id="150">3</t><!-- Fleet ratio per X sectors owned (negative is per sector) - Escort. (Zero Hour default: 3 base default: 1) -->
+		<t id="151">2</t><!-- Initiative ratio. That's how stronger a Battle Group or a Task Force AI fleet needs to be to attack another one. (default: 2) -->
+		<t id="152">4</t><!-- Retreat ratio. Ratio at which an AI fleet will retreat to the nearest safe Outpost and wait for full reinforcement. Does not affect Police and Escort. (default: 4) -->
+		<t id="153">0</t><!-- AI cheat: debt system. The AI will build anything when it needs it, and will pay the costs later, if it can. (default: 0) -->
+		<t id="208">1</t><!-- AI cheat: debt system, only for stations. (default: 1) -->
+		<t id="217">0</t><!-- AI cheat: debt system, only for Yakis. (default: 0) -->
+		<t id="154">1</t><!-- AI cheat: shared resources. The AI will use all its Outposts to pay for what it needs. The transfer of resources is free and immediate. (default: 1) -->
+		<t id="159">0</t><!-- AI cheat: it sees everything and doesn't need to have a ship in a sector to monitor it. For performance reasons, AI Traders and Agents always see everything. (default: 0) -->
+		<t id="170">0</t><!-- AI cheat: ships come fully equipped instead of crafting the equipment from real resources. (default: 0) -->
+		<t id="172">0</t><!-- AI cheat: free stations. (default: 0) -->
+		<t id="222">3600</t><!-- AI cheat: timeout, in seconds, after which the AI ships waiting to be outfitted will be automatically equipped. 0 is deactivated. (Zero Hour default: 3600 base default: 14400) -->
+		<t id="294">1</t><!-- AI cheat: free shields for freighters. (default: 1) -->
+		<t id="173">50000</t><!-- Amount of hull repaired by any Outpost every minute. (Zero Hour default: 50000 default: 10000) -->
+		<t id="155">5000</t><!-- Amount of hull repaired by the Carrier Repair Module every minute. (default: 5000) -->
+		<t id="191">50000</t><!-- Hull points that all stations regenerate about every minute. (default: 50000) -->
+		<t id="163">10400</t><!-- Claim duration, in seconds. (default: 14400) -->
+		<t id="286">0</t><!-- Claim minimum delay between two claims by the same battle group, in seconds. (Zero Hour default: 0 base default: 14400) -->
+		<t id="156">10800</t><!-- Truce duration, in seconds. (default: 10800) -->
+		<t id="157">21600</t><!-- Protectorate duration, in seconds. (default: 21600) -->
+		<t id="160">-3000</t><!-- Reputation modifier when the player claims a sector against its owner. (default: -3000) -->
+		<t id="161">-500</t><!-- Reputation modifier when the player conquers a sector against all surrounding sector owners, per player sector. (default: -500) -->
+		<t id="162">500000</t><!-- Penalty you must pay if you destroy a station from a Protectorate. (default: 500000) -->
+		<t id="165">5000</t><!-- Illegal cargo scan penalty. (default: 5000) -->
+		<t id="166">3600</t><!-- Mission offer timeout, in seconds. (default: 3600) -->
+		<t id="167">100</t><!-- Mission credits reward multiplier. (default: 100) -->
+		<t id="168">100</t><!-- Mission reputation reward multiplier. (default: 100) -->
+		<t id="174">10</t><!-- Cost of a Jump Beacon, in Jumpdrive Cores. (default: 10) -->
+		<t id="178">33</t><!-- Terracorp Interorbital Storage costs multiplier, in percent. (default: 33) -->
+		<t id="179">25</t><!-- Number of people at which the chance of an event per hour is increased by 1%. (default: 25) -->
+		<t id="188">14400</t><!-- EMP delay, in seconds. (default: 14400) -->
+		<t id="193">0</t><!-- Experimental Transporter Device: only teleport to ships equipped with a Transporter Device. (default: 0) -->
+		<t id="195">60</t><!-- Experimental Transporter Device cooldown. (default: 60) -->
+		<t id="203">0</t><!-- Player Outposts are free (AI Outposts are always free). (default: 0) -->
+		<t id="199">-1</t><!-- Reputation rank under which the AI can invade player sectors. eg. at -1, AI will invade player sectors only if the player has -2 to -5. (default: -1) -->
+		<t id="206">0</t><!-- Deep strike: allows Battle Groups to invade sectors that do not border their own sectors. Yakis always have Deep strike ON. (default: 0) -->
+		<t id="196">43200</t><!-- Period of time, in seconds, during which the AI will build everything for free if the galaxy expansion has been set to "none". (default: 43200) -->
+		<t id="211">3</t><!-- If the AI owns this number of sectors, or less, every crafting will be free. (default: 3) -->
+		<t id="218">0</t><!-- During the last stage of the plot, OCV only spawns a new wave if the previous one has been totally destroyed. Makes things a lot easier if set to 1. (default: 0) -->
+		<t id="220">21600</t><!-- Maximum time the AI can spend in "retreat mode", in seconds. (default: 21600) -->
+		<t id="223">517</t><!-- Reputation cost multiplier to reset your reputation to 0 from a Pirate base. (default: 517) -->
+		<t id="224">2</t><!-- No-main-turrets-ships VS station tactics. 0: the ship rotates around itself while firing, 1: the ship makes a full stop, 2: the ship circles around the station. This tactics does not apply to ships that have main turrets. In that case, they will behave like fighters, facing the targeted station at all times. (default: 2) -->
+		<t id="225">0</t><!-- Hide Outpost production messages. (default: 0) -->
+		<t id="260">1</t><!-- Hide Outpost production messages for lasers, shields and missiles. (default: 1) -->
+		<t id="226">0</t><!-- Disable player ships fallback manoeuvres. (default: 0) -->
+		<t id="227">100000</t><!-- Favor point cost. (default: 100000) -->
+		<t id="228">0</t><!-- AI will not invade empires that own less than or equal to this number of sectors. Set to 0 if you want the AI to be able to annihilate other empires. (default: 0) -->
+		<t id="229">1</t><!-- Additional combat manoeuvres for all fighters. (Zero Hour default: 1 base default: 0) -->
+		<t id="288">1</t><!-- Additional combat manoeuvres for Xenon / OCV / Kha'ak fighters. (default: 1) -->
+		<t id="230">0</t><!-- Additional combat manoeuvres for all big ships. (default: 0) -->
+		<t id="231">0</t><!-- Player cheat: ignore all docking restrictions. (default: 0) -->
+		<t id="233">20</t><!-- Production queue limit for each Outpost. (default: 20) -->
+		<t id="234">0</t><!-- Enable Outpost events lore messages (id 2700 to 2704). (default: 0) -->
+		<t id="235">10</t><!-- Default import threshold for player. (default: 10) -->
+		<t id="236">40</t><!-- Default export threshold for player. (default: 40) -->
+		<t id="237">20</t><!-- Default import threshold for AI. (default: 20) -->
+		<t id="238">60</t><!-- Default export threshold for AI. (Zero Hour Default: 60 default: 40) -->
+		<t id="239">43200</t><!-- Hive Queen min delay. (default: 43200) -->
+		<t id="240">54000</t><!-- Hive Queen max delay. (default: 54000) -->
+		<t id="242">8</t><!-- Maximum number of sectors the Yakis will conquer, in percentage of total galaxy. (default: 8) -->
+		<t id="243">100</t><!-- Taxi credits payment multiplier, in percent. (default: 100) -->
+		<t id="244">100</t><!-- Taxi reputation payment multiplier, in percent. (default: 100) -->
+		<t id="245">500000</t><!-- Threshold, in credits, under which a strategic resource is considered in shortage (see the Diplomacy menu). (default: 500000) -->
+		<t id="246">0</t><!-- Activate the "Ship purchase" feature. (default: 0) -->
+		<t id="247">2</t><!-- Ship purchase: the amount of ships the faction should be able to build before accepting the player's order. (default: 2) -->
+		<t id="248">120</t><!-- Ship purchase cost multiplier, in percent. (default: 120) -->
+		<t id="249">10</t><!-- Favor point cost, in Loyalty points. (default: 10) -->
+		<t id="250">1</t><!-- Allied factions share their resources. Option id 154 must be enabled. Also affects coalitions. (default: 1) -->
+		<t id="252">50</t><!-- Starting resource multiplier, for all AI Outposts, in percent. Only affects default Outposts spawned during galaxy generation. (Zero Hour default: 50 default: 100) -->
+		<t id="253">50000</t><!-- Bounty added to one ship when he kills a Freighter. (default: 50000) -->
+		<t id="255">3</t><!-- High research cost multiplier for ship variants. (default: 3) -->
+		<t id="256">4</t><!-- Company Traders per Trading station. (default: 4) -->
+		<t id="257">1</t><!-- Coalition system. (default: 1) -->
+		<t id="258">8</t><!-- Coalition tolerance factor: how much bigger an empire needs to be, in % galaxy control, for a faction to roll a coalition check against it. (Zero Hour default: 8 base default: 10) -->
+		<t id="259">0</t><!-- If set to 1, all Battle Groups will await to be completed before considering an invasion. (default: 0) -->
+		<t id="264">1</t><!-- AI is allowed to build M7Ms. New game required. (default: 1) -->
+		<t id="265">50000</t><!-- Fine you'll have to pay if you get caught by the Police transporting illegal wares. (default: 50000) -->
+		<t id="266">100</t><!-- Cargo hauler credits payment multiplier, in percent. (default: 100) -->
+		<t id="267">100</t><!-- Cargo hauler reputation payment multiplier, in percent. (default: 100) -->
+		<t id="268">40000</t><!-- Taxi improvement cost. (default: 40000) -->
+		<t id="269">95</t><!-- Maximum target shields, in percent, to fire a missile (ie. the attacker will fire only below this value). Affects all ships, except M7M and M8. (default: 95) -->
+		<t id="270">8</t><!-- Missile turrets (M7M / M8) will not fire if the number of incoming missiles to target is above this number. (default: 8) -->
+		<t id="271">100</t><!-- Hacking costs multiplier, in percent. (default: 100) -->
+		<t id="272">50</t><!-- Mobile factory efficiency multiplier, in percent, compared to conventional factories. (default: 50) -->
+		<t id="273">0</t><!-- Mobile factories you can use at the same time. 0 for unlimited. (default: 0) -->
+		<t id="274">200000</t><!-- Active defence cost. (default: 200000) -->
+		<t id="275">2400</t><!-- Active defence duration, in seconds. (default: 2400) -->
+		<t id="276">5</t><!-- Maximum groups of mercenaries per each company. (default: 5) -->
+		<t id="277">10</t><!-- Chance of loading illegal ware when a mercenary reaches a station. (default: 10) -->
+		<t id="278">0</t><!-- Resource-free factories. New game recommended, as it won't change your current factories. (default: 0) -->
+		<t id="279">0</t><!-- Stations drop part of their wares when destroyed. (default: 0) -->
+		<t id="280">5000</t><!-- Extra waiting time between turret firing for Fighters. The only purpose of this setting is to increase performance. (default: 5000) -->
+		<t id="281">6000</t><!-- Extra waiting time between turret firing for Big Ships. The only purpose of this setting is to increase performance. (default: 6000) -->
+		<t id="282">10</t><!-- Extra waiting time between turret firing for Huge Ships. The only purpose of this setting is to increase performance. (Zero Hour default: 10 base default: 0) -->
+		<t id="283">0</t><!-- Number of sectors UNDER which an empire will only build half of the ships they need in each squadron. The amount of squadrons is not modified. 0 to deactivate (Zero Hour default: 0 base default: 7) -->
+		<t id="284">8000</t><!-- Duration of the message that pops up when one of your asset is killed, in ms. 0 to deactivate. (default: 8000) -->
+		<t id="285">5</t><!-- Missions you need to complete in a given sector to buy it. (default: 5) -->
+		<t id="289">20000</t><!-- Sector buying cost multiplier. (default: 20000) -->
+		<t id="290">0</t><!-- Player ships ignore safe path when moving. 0 means that all your ships will fly in a smart way, avoiding enemy and blacklisted sectors whenever possible. (default: 0) -->
+		<t id="291">100</t><!-- Ship inspection time multiplier. (default: 100) -->
+		<t id="292">200</t><!-- Maintenance factor above which fleet followers and Workers will be sent for a ship inspection. Optional for fleet followers. (default: 200) -->
+		<t id="293">1</t><!-- How many Space Weed the perk Space Weed manufacture produces per consumption cycle. (Zero Hour default: 1 base default: 2) -->
+
+
+		<!-- Mayhem 2 Texts -->
+		<t id="3000">\033XRECHERCHE DE LA CIBLE...</t>
+		<t id="3001">\033OCIBLE INVALIDE</t>
+		<t id="3002">\033XVÉRIFICATION DE LA PORTÉE \(%s MÈTRES\)...</t>
+		<t id="3003">\033XDISTANCE MAXIMALE %s M</t>
+		<t id="3004">\033XSONDAGE...</t>
+		<t id="3005">\033WCONNEXION À LA BASE DE DONNÉES...</t>
+		<t id="3006">\033WBALAYAGE DE %s : %s%%</t>
+		<t id="3007">\033GBALAYAGE TERMINÉ : PROGRESSION DU PLAN : %s / %s</t>
+		<t id="3008">\033RCONNEXION PERDUE</t>
+		<t id="3009">\033RERREUR DE SÉCURITÉ - CE VAISSEAU NE PEUT PLUS ÊTRE SCANNÉ</t>
+		<t id="3010">\033XPAS DE CIBLE</t>
+		<t id="3011">\033RCIBLE HORS DE PORTÉE</t>
+		<t id="3012">\033RERREUR DE DOUBLON DANS LA BASE DE DONNÉES</t>
+		<t id="3013">\033RDYSFONCTIONNEMENT</t>
+		<t id="3014">\033RERREUR DE DÉRIVATION DE L'ÉNERGIE DU BOUCLIER</t>
+		<t id="3015">\033RERREUR D'INTÉGRITÉ DES DONNÉES - CRYPTAGE INCONNU</t>
+		<t id="3016">Scanneur de données non installé.</t>
+		<t id="3017">\033GBALAYAGE TERMINÉ : PLAN ACQUIS</t>
+
+		<t id="3050">La compétence \033G%s\033X est requise.</t>
+		<t id="3053">Votre \033YAscension\033X est maintenant terminée</t>
+		<t id="3054">Vos objectifs d'\033YAscension\033X ont été dévoilés - consultez votre console personnelle pour plus de détails</t>
+
+		<!-- Messages du tutoriel Mayhem 3 -->
+		<t id="1800">[justify][author]\033WTutorial[/author]\033WLes passagers monteront automatiquement à bord de votre vaisseau lorsque vous accosterez aux stations. Leur destination sera affichée sur le manifeste des passagers ou dans le panneau d'information de leur marchandise, accessible depuis votre soute à fret. Le paiement que vous recevrez sera basé sur la distance parcourue. Une meilleure réputation signifie que vos clients vous feront davantage confiance pour aller plus loin.[/justify]</t>
+		<t id="1801">[justify][author]\033GSysteme de Livraison Automatique[/author]Bonjour %s,\n\nVous avez \033C{1}\033X objet en attente. Il appartenait précédemment à %s et a été automatiquement transféré dans votre soute à fret. Bonne journée !\n\n\033WVous avez acquis un Scanneur de Données. Cet appareil vous permet de scanner n'importe quel vaisseau afin de déverrouiller son plan pour vos futurs Avant-Postes. Le scan de données est un processus sûr et gratuit. Pour commencer à scanner un vaisseau, vous devez d'abord attribuer un raccourci spécial depuis le menu des paramètres de contrôle, en bas de l'onglet Interface. Le scan prend un certain temps et pour déverrouiller un plan, il faut souvent effectuer plusieurs scans sur différents vaisseaux du même type. C'est une tâche fastidieuse, mais vous pourrez bientôt accélérer le processus en construisant des stations de recherche dans vos secteurs. Notez que si vous perdez votre Scanneur de Données, vous pourrez en fabriquer un autre à partir de vos Avant-Postes. Faites attention cependant, c'est un équipement coûteux ![/justify]</t>
+		<t id="1802">[author]\033YTutorial[/author]\n[center]\033YBienvenue dans Mayhem 3 Renegades.[/center]\n\n\n[justify]\033WVeuillez configurer ces raccourcis dans Options > Contrôles > Interface\n- Console personnelle\n- Scanneur de Données\n- Téléporteur Expérimental\n\n\nCe mod est tout sur la construction d'un empire.\n\nLe contrôle du territoire change constamment à un rythme lent. Cela peut créer des situations difficiles, mais ne devrait jamais bloquer la progression du joueur.\nLes factions qui deviennent trop puissantes finiront par perdre face à une grande alliance de plus petites factions.\n\nIl n'est également pas nécessaire de vaincre l'OCV comme dans Litcube's Universe, seulement si vous le voulez.[/justify]</t><!-- Gros message "tutoriel". -->
+		<t id="1803">[justify][author]\033YTutorial[/author]\033VVous n'êtes pas autorisé à accoster aux Avant-Postes d'autres factions.\n\nLa seule façon d'interagir est d'utiliser des commandes comme Négoce:Course Commerciale ou Travailleur:Négociant.[/justify]</t>
+		<t id="1804">[justify][author]\033YTutorial[/author]\033WLe transporteur de fret propose des emplois lorsque vous accostez à des stations aléatoires de votre choix. Le paiement que vous recevrez sera basé sur la distance parcourue. Une meilleure réputation fait que vos clients vous font davantage confiance pour aller plus loin.\n\nParfois, vous recevrez des offres d'emploi pour du fret illégal. Cela sera affiché dans votre menu Fret. Les expéditions illégales réussies créent également de nouvelles opportunités de vendre de l'Herbe Spatiale.[/justify]</t>
+		<t id="1805">[justify][author]\033YTutorial[/author]\033VVotre Avant-Poste peut produire des vaisseaux et des stations, félicitations !\n\nVous devriez configurer ce raccourci dans les options du jeu : [yellow]Contrôles > Interface > Avant-Postes[/yellow]\n\n\033VAchetez plus de nourriture afin que votre peuple ne meure pas de faim et puisse générer des ressources gratuites et des revenus fiscaux qui s'amélioreront avec le temps.\n\nDes emplacements de bonus supplémentaires peuvent être déverrouillés plus tard en utilisant le bonus "Bonus de Proximité" ou le Terraformage.\n\nLes premières usines utiles sont souvent une Centrale Solaire associée à une usine de Satellites, puis la vente des satellites.\n\nUtilisez judicieusement vos ressources de départ. Elles peuvent ne pas suffire à construire une économie autosuffisante. N'ayez pas peur d'acheter des ressources. Une usine fonctionnera pendant des heures même avec une seule livraison de ressources.\n\nAstuce : n'utilisez pas de Négociants automatisés tant que vous n'avez pas une petite flotte pour traquer les pirates. Sinon, obtenez un peu d'infamie pour que les pirates vous laissent tranquille.\n\nBonne chance ![/justify]</t>
+
+		<!-- Textes d'aide de Mayhem 3 -->
+		<t id="2000">%s\n%s</t><!-- Saut de ligne entre deux textes. -->
+		<t id="2001">[u]%s[/u]</t><!-- Souligné. -->
+		<t id="2002">[center][select value="%s"]&lt; %s &gt;[/select][/center]\n</t><!-- Bouton de question entrant. -->
+		<t id="2003">[text cols='1' colwidth='400'][justify]%s[/justify][/text]</t><!-- Bloc de texte étroit, justifié. -->
+		<t id="2004">\033GDernières Nouvelles :\033X %s</t><!-- "Dernière minute". -->
+		<t id="2049">\n\n\n %s</t><!-- Trois sauts de ligne avant les boutons de question. -->
+		<t id="2005">\n%s</t><!-- Saut de ligne avant. -->
+		<t id="2006">%s\n</t><!-- Saut de ligne après. -->
+		<t id="2007">[author]\033G%s[/author]%s</t><!-- Auteur (en vert). -->
+		<t id="2008">\n</t><!-- Saut de ligne. -->
+		<t id="2009">\n\n%s</t><!-- Double saut de ligne avant. -->
+		<t id="2010">%s\n\n</t><!-- Double saut de ligne après. -->
+
+		<!-- Messages de fin de faction de Mayhem 3 -->
+		<t id="2040">[author]\033GConseil Argon[/author]Vous êtes une honte. Bannir la Démocratie de cette galaxie aura des conséquences. La Fédération n'oublie pas...</t>
+		<t id="2041">[author]\033GConseil Boron[/author]Vous n'êtes pas digne de notre Reine. Les Borons quitteront cette galaxie pour toujours, espérant qu'un jour vous vous souviendrez de ce qu'est la paix.</t>
+		<t id="2042">[author]\033GConseil Paranide[/author]Hérétique ! Nous laissons cette galaxie derrière nous, pour le moment, mais les Dieux vous surveilleront...</t>
+		<t id="2043">[author]\033GConseil Split[/author]Vous avez gagné cette guerre, mais il y en aura beaucoup d'autres que vous ne pourrez pas gérer. La Famille est plus forte !</t>
+		<t id="2044">[author]\033GConseil Teladi[/author]Vous débarrasser de nous n'était pas sage mon ami. Pensez à tous les profits que vous allez perdre sans notre expertise commerciale. Vous n'êtes qu'un serpent et vous serez bientôt oublié.</t>
+		<t id="2045">[author]\033GConseil Yakis[/author]Nous sommes les Yakis, nous sommes indestructibles ! Nous reviendrons avec des vaisseaux plus gros et des armes plus puissantes !</t>
+
+		<!-- Options de départ de Mayhem 3 -->
+		<t id="2050">[justify][author]\033GContrôle de l'Identité du Commonwealth[/author]Message à %s\nObjet : IMPORTANT\nDate : %s\n\nAu cours d'une maintenance de routine, une erreur de base de données s'est produite lors de la mise à jour de votre profil. Ce processus de contrôle d'identité automatique est nécessaire pour s'assurer que vos données personnelles n'ont pas été compromises. Notez que vous pouvez naviguer dans ce menu à l'aide de votre clavier.\n\n\033WQuelques ralentissements et saccades peuvent apparaître dans les dix premières minutes du jeu, même après la génération de la galaxie.[/justify]</t>
+		<t id="2051">(choice1)Je vais répondre aux questions</t>
+		<t id="2052">(choice2)Laissez-moi tranquille !</t>
+		<t id="2053">[author]\033GContrôle de l'Identité du Commonwealth[/author]Nous vous avons identifié comme étant %s. L'identité de votre père est inconnue, mais plusieurs documents ont été récupérés avec succès, notamment son testament, dans lequel il vous a légué son dernier vaisseau connu. Cependant, la base de données ne mentionne pas son dernier emploi.</t>
+		<t id="2054">(choice3)Il était mineur \(TS Mineur\)</t>
+		<t id="2055">(choice4)Il était mercenaire \(M3\)</t>
+		<t id="2056">(choice5)Il était négociant \(TS\)</t>
+		<t id="2057">(choice6)Il était chauffeur de taxi \(TP avec un Ordinateur d'Accostage\)</t>
+		<t id="2058">(choice7)C'est une erreur, je n'ai reçu aucun vaisseau</t>
+		<t id="2059">[author]\033GContrôle de l'Identité du Commonwealth[/author]Il vous a également laissé de l'argent.</t>
+		<t id="2060">(choice8)Juste un peu</t>
+		<t id="2061">(choice9)Une belle somme</t>
+		<t id="2062">(choice10)Je n'ai rien reçu</t>
+		<t id="2063">[author]\033GContrôle de l'Identité du Commonwealth[/author]Vos derniers emplois avec la faction %s ne sont pas documentés. Étant au chômage aujourd'hui, comment décririez-vous vos relations avec vos anciens employeurs ?</t>
+		<t id="2064">(choice11)Excellentes</t>
+		<t id="2065">(choice12)Bonnes</t>
+		<t id="2066">(choice13)Neutres</t>
+		<t id="2067">[author]\033GContrôle de l'Identité du Commonwealth[/author]En raison des récentes préoccupations concernant le vol de certaines technologies terriennes et aussi pour préserver votre sécurité, Terracorp est maintenant tenue d'avoir accès aux données que vous avez rassemblées dans votre encyclopédie. Certaines entrées manquent dans la section des plans de vaisseaux.</t>
+		<t id="2068">(choice14)Je n'en connais aucun</t>
+		<t id="2069">(choice15)Je connais quelques plans</t>
+		<t id="2070">[author]\033GContrôle de l'Identité du Commonwealth[/author]Il y a aussi quelques blancs sur vos connaissances de la galaxie.</t>
+		<t id="2071">(choice16)J'aime découvrir les choses par moi-même</t>
+		<t id="2072">(choice17)Je suis familier avec les environs</t>
+		<t id="2073">(choice18)Je connais de nombreux secteurs</t>
+		<t id="2074">[author]\033GContrôle de l'Identité du Commonwealth[/author]Terracorp veut que vous vous sentiez en sécurité dans les galaxies de la bordure extérieure. C'est pourquoi il est essentiel que les croyances personnelles soient correctement enregistrées et classées. Êtes-vous religieux ?</t>
+		<t id="2075">(choice19)Je connais déjà toute la carte</t>
+		<t id="2076">(choice20)Non</t>
+		<t id="2077">[author]\033GContrôle de l'Identité du Commonwealth[/author]Êtes-vous une personne de famille ?</t>
+		<t id="2078">(choice21)Oui</t>
+		<t id="2079">(choice22)Non</t>
+		<t id="2080">[author]\033GContrôle de l'Identité du Commonwealth[/author]Êtes-vous pacifiste ?</t>
+		<t id="2081">(choice23)Oui</t>
+		<t id="2082">(choice24)Non</t>
+		<t id="2083">[author]\033GContrôle de l'Identité du Commonwealth[/author]Avez-vous des opinions politiques fortes ?</t>
+		<t id="2084">(choice25)Oui</t>
+		<t id="2085">(choice26)Non</t>
+		<t id="2086">[author]\033GContrôle de l'Identité du Commonwealth[/author]Pensez-vous que les Terriens devraient investir plus de crédits dans le terraformage de nouvelles planètes ?</t>
+		<t id="2087">(choice27)N'essayons pas de créer plus de Xénons</t>
+		<t id="2088">(choice28)Le budget est bon comme il est maintenant</t>
+		<t id="2089">(choice29)Tout l'univers devrait être à nous !</t>
+		<t id="2090">[author]\033GContrôle de l'Identité du Commonwealth[/author]Pensez-vous que la corruption est un problème dans les galaxies de la bordure extérieure ?</t>
+		<t id="2091">(choice30)Pas vraiment</t>
+		<t id="2092">(choice31)C'est la moyenne comme partout ailleurs</t>
+		<t id="2093">(choice32)C'est un gros problème en effet</t>
+		<t id="2094">[author]\033GContrôle de l'Identité du Commonwealth[/author]Pensez-vous que l'exploration spatiale devrait être une priorité ?</t>
+		<t id="2095">(choice33)Elle devrait être moins importante qu'elle ne l'est actuellement</t>
+		<t id="2096">(choice34)Nous avons assez de missions d'exploration</t>
+		<t id="2097">(choice35)Nous devrions explorer davantage pour réveiller plus de machines vengeresses !</t>
+		<t id="2098">[author]\033GContrôle de l'Identité du Commonwealth[/author]Choisissez votre quête d'Ascension.\n\n\033WLe Démarrage Rapide est recommandé pour les joueurs qui veulent sauter le tout début du jeu et revendiquer un secteur directement.\n\n\033WAstuce : les secteurs vides ne peuvent pas être revendiqués par d'autres factions tant que vous n'aurez pas placé votre première station.</t>
+		<t id="2099">(choice36)Renommée</t>
+		<t id="2100">(choice37)Connaissance</t>
+		<t id="2101">(choice38)Richesse</t>
+		<t id="2102">(choice39)Pouvoir</t>
+		<t id="2106">(choice42)Démarrage Rapide</t>
+		<t id="2103">[author]\033GContrôle de l'Identité du Commonwealth[/author]Félicitations ! Votre base de données personnelle est maintenant à jour.</t>
+		<t id="2104">(choice40)Je suis prêt</t>
+		<t id="2105">(choice41)Construisons un empire</t>
+		<t id="2107">[author]\033GContrôle de l'Identité du Commonwealth[/author][white]Le mode Difficile comporte plus de fonctionnalités et est le mode prévu pour les vétérans de Mayhem. En mode Facile ou Normal, l'IA ne peut pas attaquer le joueur sans provocation et les revenus fiscaux sont extrêmement généreux (absence de frais d'entretien des secteurs).\n\n[/white][red]Mode Difficile seulement :[/red]\n> les secteurs et les balises de saut ont des frais d'entretien\n> les balises de saut du joueur sont limitées et placées uniquement dans les secteurs amis\n> les Renégats utilisent des vaisseaux M6\n> déclarations de guerre contre le joueur\n> certaines flottes OCV pourraient s'éloigner davantage des secteurs Xénons</t>
+		<t id="2108">(choice43)[green]Facile[/green]</t>
+		<t id="2109">(choice44)[white]Normal[/white]</t>
+		<t id="2110">(choice45)[red]Difficile[/red]</t>
+
+		<!-- Intrigues de Mayhem 3 -->
+		<t id="2200">[justify][author]\033RInconnu[/author]Je m'appelle Niklas, vous ne me connaissez pas. Je vous contacte au nom de votre père. Avant de mourir, il m'a demandé de vous rencontrer en personne et de vous donner un appareil précieux qu'il a passé la dernière décennie à obtenir. Malheureusement, la situation s'est aggravée depuis la dernière fois que j'ai parlé avec lui. Chaque faction se bat maintenant pour des raisons obscures et tout le monde semble oublier qui est le véritable ennemi. Mais je m'écarte, ce n'est pas notre sujet.\n\nCet appareil est maintenant entre les mains du gouvernement et, contrairement à ces gars-là, j'appartiens à un groupe qui honore les traditions et les souvenirs des %ss. Je ne vous mentirai pas : nous travaillons contre eux et nous les avons combattus pendant des décennies. Que vous le croyiez ou non, votre père était l'un des nôtres. Je vous enverrai une page de son journal personnel pour que vous forgiez vos propres opinions. Si vous pensez que nous avons raison de nous battre pour notre liberté et notre indépendance, et si vous voulez nous rejoindre, vous devrez prouver votre valeur. Quelle que soit votre ambition, marquez votre empreinte dans cette galaxie, accomplissez votre Ascension, et nous nous reverrons bientôt.[/justify]</t>
+		<t id="2201">[text cols='1' colwidth='400'][justify]\033YLe texte suivant est un extrait chiffré d'un livre écrit il y a 16 ans\n\n\033X... sur mon chemin ici. La chose la plus importante à se rappeler est que l'histoire n'est jamais avec nous, le peuple. Les méchants gagnent toujours et ils disent à leurs enfants ce qu'ils veulent entendre. L'obéissance ne fait pas les hommes, le libre arbitre si. Vous devez lire entre les lignes et accepter la vérité sans regarder en arrière sur vos actes. C'est de cela que parle cette rébellion : comprendre le monde sans peur, larmes ou rires. Pensez-vous que Terracorp nous plaint ? Pouvez-vous imaginer qu'ils approuvent un plan qui les rendrait moins importants dans cette galaxie ? Ou peut-être que vous avez été nourri de mensonges doux et d'illusions. Alors laissez-moi rafraîchir votre mémoire sur le passé...\n\nComme vous le savez probablement de l'école, les Terriens ont commencé le terraformage de milliers de planètes il y a des siècles. Dans leur désespéré effort pour tout contrôler, ils ont construit une IA capable de faire le travail dur, les Xénons, qui se sont ensuite retournés contre leur peuple. Ce que vous ne savez pas cependant, c'est que le Commonwealth a essayé de combattre les Xénons, mais au lieu de les aider, les Terriens leur ont déclaré la guerre à cause de leurs scientifiques fous qui croyaient que certains Xénons étaient encore actifs et agissaient dans l'intérêt de leur empire impitoyable.\n\nAprès cinq guerres consécutives, le Commonwealth a été vaincu. Chaque faction, les Argons, les Borons, les Paranides, les Splits et les Teladis, ont été bannis des galaxies centrales. Pendant de nombreuses années, ils se sont cachés dans les coins sombres de l'univers connu, tandis que les Terriens créaient Terracorp, une gigantesque entreprise qui sera utilisée pour gérer les "problèmes extérieurs". À partir de ce jour, tout est devenu privé et les Terriens ont réussi à influencer les gens pour leur faire croire qu'ils étaient irréprochables.\n\nQuelques années plus tard, ils ont eu cette idée de terraformer de nouvelles planètes... Ils n'ont pas imaginé à quel point les Xénons étaient devenus puissants avec le temps, et Terracorp a volé des milliards de crédits d'impôts pour envoyer des Terriens à leur mort contre ces machines vicieuses. Mais ensuite, le désir de plus de profits les a fait changer d'avis. Au lieu d'envoyer plus de vaisseaux militaires dans les galaxies contrôlées par les Xénons, ils ont mis aux enchères ces secteurs aux restes du Commonwealth, leur faisant croire qu'ils pouvaient se relever et redevenir les factions fortes qu'ils avaient toujours voulu être. Les secteurs centraux leur resteraient fermés et ils resteraient toujours à la périphérie de l'univers conquis, mais ils seraient libres d'exister et n'auraient plus à se cacher. Ils ont accepté l'offre et ont acheté des centaines de galaxies infestées de Xénons. Bien sûr, cette menace leur a été cachée par les Terriens. Ce qu'ils leur ont dit en revanche, c'est que Terracorp était responsable de ces galaxies de la bordure extérieure. Quelques règles ont été conçues pour limiter l'expansion de chaque faction. Évidemment, cela a conduit à des guerres internes, et sans dirigeants capables de réunir tout le monde, nous n'avions aucune chance contre les Terriens. Nous avons dû faire face à la cupidité et à la soif de pouvoir d'un côté, et aux Xénons de l'autre...\n\n\033YFin de l'extrait[/justify][/text]</t>
+		<t id="2202">[justify][author]\033G%s Notaire[/author]%s,\n\nUn document récent signé par votre père nous est parvenu ce matin. Étant son seul héritier légitime, nous avons réussi à ajouter cet objet à la liste de ses derniers souhaits. Veuillez accoster à la station %s dans le secteur %s. J'enverrai l'emplacement dans votre journal personnel. L'objet est scellé mais sa signature numérique indique qu'il a été enregistré comme un scanneur il y a quelques années.\n\nCordialement,\n%s\n\n\033VVotre journal personnel est différent de votre journal des messages. Il peut stocker des entrées personnalisées et met également à jour automatiquement les objectifs de mission. Vous pouvez accéder à votre journal via votre console personnelle (attribuez un raccourci ou utilisez le menu des commandes supplémentaires du vaisseau pour l'ouvrir). Vous pouvez également attribuer un raccourci directement à votre journal.[/justify]</t>
+		<t id="2203">[justify][author]\033WTutorial[/author]\033WPour commencer votre empire, vous devez construire un Avant-Poste qui montrera aux autres factions que vous gagnez en puissance et que vous êtes prêt à étendre votre influence. Rappelez-vous que dans cette galaxie, les gens sont fatigués de la guerre et se tourneront facilement vers un empire indépendant comme le vôtre.\n\nPour commencer votre voyage, vous avez reçu un TL, qui vous attend dans %s. Déchargez l'Avant-Poste de sa soute à fret pour conquérir votre premier secteur. Dans cet Avant-Poste, vous trouverez de la nourriture et des ressources de base. Essayez de ne pas vous faire de nouveaux ennemis et préférez un secteur Inconnu dans une zone tranquille, et assurez-vous qu'il n'y a pas de pirates ou de Xénons. Soyez prudent cependant, les factions qui sont dans les secteurs adjacents n'aimeront pas le fait que vous vous installiez trop près d'eux. Cependant, pour cette fois, ils devraient vous ignorer.\n\nCe nouveau TL ne nécessite pas d'entretien, mais les autres que vous construirez vous-même seront à vos propres frais.\n\nDans le TL, vous trouverez également une Station de Recherche et quelques Balises de Saut. Utilisez-les avec sagesse. Si vous voulez construire plus de Balises de Saut, veuillez lire la section Mécanique -> Balises de Saut de l'encyclopédie ; ou lisez le panneau d'information de la Soute à Fret de votre TL.[/justify]</t>
+		<t id="2204">[justify]Vous avez le TL, bien. Il y a un Avant-Poste dans sa soute à fret ; utilisez-le pour conquérir votre premier secteur. Essayez de ne pas vous faire de nouveaux ennemis et préférez un secteur Inconnu plutôt qu'un secteur encombré. Soyez prudent cependant, les factions qui sont dans les secteurs adjacents n'aimeront pas le fait que vous vous installiez si près d'eux, mais pour le moment nous n'avons vraiment pas le choix.\n\nPendant que vous faites cela, nous préparons des actions directes contre nos ennemis. Ils apprendront bientôt qu'ils auraient dû respecter le peuple.[/justify]</t>
+		<t id="2205">[justify]Vous ne me connaissez pas, mais nous vous connaissons ; ou du moins, nous connaissons votre père. Je travaille pour une société indépendante qui vous surveille depuis un certain temps maintenant.\n\nJ'ai réussi à mettre la main sur l'appareil quantique que votre "groupe" recherche. Il était non sécurisé et personne ne sait de quoi il s'agit de toute façon. Votre père le savait cependant, et nous savons d'après sa base de données personnelle que cet outil peut vous aider à passer d'un secteur à l'autre plus rapidement que quiconque dans cette galaxie. Je suis prêt à vous le vendre pour 100 000 crédits. Je suis le seul à être au courant de cela, donc si vous êtes intéressé, venez à %s avec l'argent et je vous le donnerai.[/justify]</t>
+		<t id="2206">[justify][author]\033OVieille Chaîne d'Information du Commonwealth[/author]Heure d'envoi : %s\n\nCe matin, un autre groupe de Xénons a été repéré dans le secteur %s, où les machines se rassemblent pour détruire nos actifs. Ce vieux réseau est déjà piraté par des entités gouvernementales pour essayer de nous couper de la vérité. Nous devons agir maintenant et mettre fin à nos guerres internes afin de faire face aux Xénons et aux Terriens qui sont responsables de leur création. Ce sera probablement le dernier et le seul message que nous pourrons envoyer. Nous avons besoin d'aide pour détruire les [u]stations[/u] Xénons dans l'espoir de les ralentir et peut-être même de les arrêter complètement.[/justify]</t>
+		<t id="2207">[justify][author]\033GDernier Moment[/author]Chers citoyens,\n\nMalgré nos efforts pour mettre fin à la guerre et apporter la paix dans notre galaxie, une rébellion faible et désorganisée connue sous le nom de Yakis a récemment saboté plusieurs de nos stations. Ces actions ne seront pas tolérées et nous trouverons et jugerons toute personne liée à ces crimes.[/justify]</t>
+		<t id="2208">[justify][author]\033GSysteme de Livraison Automatique[/author]Bonjour %s,\n\nVous avez \033C{2}\033X objets en attente. Vous ne pouvez en déverrouiller qu'un seul. Pour le déverrouiller, payez %s crédits.\n\n[u]Avis : vous serez poursuivi si vous causez des dommages au système.[/u]\n\n\033WLe choix que vous vous apprêtez à faire est irréversible. Le Prototype de Saut-Hyperspatial permet à votre propre vaisseau de se téléporter dans n'importe quel secteur pour une quantité variable de Cellules Énergétiques. Il a une longue période de recharge. D'un autre côté, le Dispositif de Téléportation Expérimental vous permet, en tant que pilote, de vous téléporter sur n'importe lequel de vos vaisseaux et d'échanger de place avec son pilote. Cela ne coûte rien et a une période de recharge beaucoup plus courte. Les deux appareils sont activés avec le raccourci du Dispositif de Téléportation, et ils ne peuvent pas être utilisés pour transporter autre chose que votre vaisseau ou vous-même.[/justify]</t>
+		<t id="2209">Payer 100 000 crédits pour le Prototype de Saut-Hyperspatial</t>
+		<t id="2210">Ignorer</t>
+		<t id="2211">[justify][author]\033GSysteme de Livraison Automatique[/author]Un message joint :\n===================\n\nJe ne peux vraiment pas vous rencontrer en personne, ce serait trop dangereux. L'appareil que vous venez d'acquérir est dit impossible à dupliquer par Terracorp, et malheureusement je pense qu'ils ont raison. J'espère qu'il vous aidera néanmoins, et que vous apporterez la paix dans notre galaxie. Bonne chance ![/justify]</t>
+		<t id="2212">[justify][author]\033OVieille Chaîne d'Information du Commonwealth[/author]Heure d'envoi : %s\n\nNous venons d'intercepter plusieurs rapports officiels confirmant la perte des signaux des stations Xénons dans tous les secteurs Xénons. Ces rapports sont assez incomplets et quelque peu cryptiques dans certaines sections, donc nous ne pouvons pas être sûrs que tous les Xénons aient été détruits. Mais pour l'instant, remercions simplement les Indépendants pour ce qu'ils ont fait, et espérons que les Xénons ne reviendront pas.\n\n\033VVous avez gagné un peu de réputation avec toutes les factions, plus un point de Faveur.[/justify]</t>
+		<t id="2213">[justify]Vous avez bien fait de construire un empire à partir de rien, mais comme vous avez vos priorités, nous avons aussi les nôtres, et nous devons maintenant nous concentrer sur le Commonwealth. Nous savons que vous avez probablement des amis parmi ces factions, mais avec votre aide, nous avons maintenant une vraie chance d'apporter la paix dans la galaxie et d'arrêter toute la corruption pour de bon.\n\nComme l'a dit votre père, ces batailles doivent être impitoyables. Nous avons plusieurs personnes dédiées au sabotage de leurs actifs. Grâce à cela et à notre influence, nous avons pris le contrôle d'une petite partie de cette galaxie, et nous devenons plus forts d'heure en heure. Vous avez votre propre force maintenant ; que vous vouliez nous aider ou non, c'est à vous de décider.[/justify]</t>
+		<t id="2215">[justify][author]\033OVieille Chaîne d'Information du Commonwealth[/author]Heure d'envoi : %s\n\nLe rapport confidentiel suivant provient de l'une des factions du Commonwealth dont le nom restera caché.\n\n"Il y a quelques jours, le professeur Liam et moi avons été témoins d'une faille dans l'espace-temps. Alors que nous commencions à célébrer notre nouvelle découverte - un nouveau moyen de rassembler nos vaisseaux de galaxies lointaines - nous nous sommes rendu compte que le signal que nous avons reçu de ce que nous appelons "le Maelström" ne provenait d'aucune faction connue. Il ressemblait d'abord à la signature de plusieurs vaisseaux Xénons, car nous savons que les Terriens en ont construit des milliers et qu'ils ne sont définitivement pas contrôlés par des humains, mais ensuite nous avons pris un meilleur regard et réussi à identifier un seul vaisseau. Puis quelques heures plus tard, nous avons ouvert une autre faille à travers laquelle des centaines de ces signaux passaient.\n\nAddendum : après un autre échec, nous avons décidé d'abandonner notre projet. Il semble que le calibrage soit erroné et que nous ne puissions pas identifier les galaxies que nous ciblons. Ces nouvelles machines semblent avoir été laissées là pour une raison, sans moyen d'en sortir. Espérons que les failles que nous avons ouvertes sont maintenant fermées et qu'elles ne passeront pas."[/justify]</t>
+		<t id="2216">[justify][author]\033GDernier Moment[/author]Le Commonwealth installe maintenant des Pare-Feu Avancés et des Lasers de Surveillance Internes sur la plupart de ses vaisseaux pour protéger ses actifs.[/justify]</t>
+		<t id="2217">[justify][author]\033RCanal d'Urgence[/author]Chers citoyens,\n\nJe m'appelle le professeur Liam et je travaille pour l'Observatoire Intergalactique du Commonwealth. Nous avons remarqué une faille dans le continuum espace-temps dans %s. Ce n'est probablement rien d'inquiétant car nous faisons de notre mieux pour la fermer, mais vous devez vous en tenir éloignés. Nous avons de bonnes raisons de croire que cela pourrait aider des vaisseaux d'autres galaxies à venir, mais l'autre sens reste inexplicablement fermé. En d'autres termes : vous ne pouvez pas la traverser. Alors restez à l'écart et laissez-nous faire notre travail.[/justify]</t>
+		<t id="2218">[justify][author]\033CConseil du Commonwealth[/author]Cher dirigeant des Indépendants,\n\nPour garantir la paix dans notre galaxie, nous avons décidé que toute organisation, faction ou groupe de quelque nature que ce soit qui n'aurait pas été coopératif envers notre but respectable, en particulier en ce qui concerne notre position sur la situation des Yakis, serait considéré comme indigne de notre reconnaissance. Veuillez voir ce geste symbolique comme un moyen pour vous de faire les bons choix à l'avenir.[/justify]</t>
+		<t id="2219">[justify][author]\033GDernier Moment[/author]Chers citoyens !\n\nC'est une grande journée aujourd'hui, car les portails de l'OCV ont tous disparu de notre galaxie ! Nos scientifiques ne sont toujours pas en mesure d'expliquer ce phénomène, ni de nier s'il est permanent ou non, mais ils semblent plutôt confiants et pleins d'espoir pour notre avenir. Ils ont également réussi à extraire des données précieuses des vaisseaux de l'OCV.\n\n\033VFélicitations, vous avez vaincu l'OCV dans cette galaxie ! En récompense, vous pouvez maintenant rechercher tous les vaisseaux de l'OCV et construire leurs lasers.[/justify]</t>
+		<t id="2220">[justify][author]\033RCanal d'Urgence[/author]Oh merde ![/justify]</t>
+		<t id="2221">[justify]Je savais que je pouvais compter sur toi mon ami ! C'est maintenant le moment pour les Yakis de se lever ![/justify]</t>
+		<t id="2222">Payer 100 000 crédits pour le Dispositif de Téléportation Expérimental</t>
+		<t id="2223">Je n'ai pas assez d'argent</t>
+		<t id="2224">[justify]Vous avez construit un autre Avant-Poste, bien joué ! Peut-être qu'il est temps pour nous de nous renforcer en augmentant votre flotte.\n\nIl y a une autre façon d'acquérir des vaisseaux que de les construire : vous pourriez voler les vaisseaux d'autres factions... Si vous êtes intéressé, j'ai un gars dans la station de négoce de %s qui pourrait vous vendre quelques "volontaires". Avec un peu d'entraînement, je suis sûr que vous pourriez en faire bon usage.[/justify]</t>
+		<t id="2225">[justify][author]\033YTutorial[/author]\n[white]Pour commencer :\n\nExplorez pour trouver un secteur agréable et sûr. Il n'est pas vraiment utile de placer beaucoup de satellites pour le moment.\n\nEssayez d'acquérir une dizaine de vaisseaux pendant votre Ascension. Cherchez les signaux des Vestiges (Journal) ou les vaisseaux abandonnés (voir les revendications des factions dans le Ministère de la Guerre) ou le marché noir (console personnelle)\n\nGagnez de la réputation auprès des factions qui pourraient devenir vos futurs voisins. Effectuez des missions ou détruisez des pirates dans leurs secteurs\n\nLes primes sont rentables (console personnelle). Si vous réussissez à tuer un commandant pirate, son groupe restant fuira devant vous.\n\nSi vous voulez vous détendre, vous pouvez faire du Transport de Fret ou des Courses de Taxi (enregistrez votre vaisseau dans la console personnelle). Le commerce n'est généralement pas viable à moins que vous ne soyez expérimenté avec le mod et que vous sachiez quels deals rechercher. La plupart des joueurs devraient simplement attendre d'avoir des stations qui génèrent ou produisent quelque chose et ensuite vendre cette production.\n\nEssayez de scanner un négociant neutre pour lui voler sa cargaison\n\nIl est très utile d'utiliser ce temps pour déverrouiller les plans d'un M6, d'un chasseur, d'un TS et d'une variante de TS mineur (en utilisant votre Scanneur de Données)[/white][/justify]</t>
+		<t id="2226">[justify][author]\033MTerracorp[/author]Cher pilote,\n\nIl est maintenant temps de discuter de votre avenir dans la galaxie.\n\nNous vous donnons maintenant la possibilité de commander une mission de terraformation sur les planètes que vous contrôlez. Une fois la commande passée, nos terraformeurs terriens s'y téléporteront et commenceront le processus. Pendant ce temps, certaines anciennes entités qui étaient autrefois nos premiers terraformeurs dans le canal Omicron pourraient se réveiller et attaquer probablement le secteur. Tenez bon, défendez vos actifs et gardez un œil sur les signaux anormaux affichés sur votre carte de la galaxie. Ces signaux ont autrefois été utilisés pour crypter nos transmissions lorsque nous terraformions nos planètes centrales. Ils peuvent être un bon indicateur de la force des anciens terraformeurs dans le secteur. De plus, si les signaux sont faibles, nous pourrons terraformer la planète plus rapidement.\n\n\033VVous pouvez maintenant terraformer des planètes dans n'importe quel secteur que vous contrôlez afin d'obtenir des bonus spéciaux. La terraformation est accessible via le menu du Ministère de la Guerre.[/justify]</t>
+		<t id="2227">[justify][author]\033MTerracorp[/author]Cher pilote,\n\nVous avez fait un excellent travail pour nous aider à terraformer vos planètes. Malheureusement, l'OCV est trop une menace dans cette région pour que nous investissions plus de temps dans vos installations. Nous vous laissons une équipe de spécialistes au cas où vous voudriez terraformer davantage de planètes, ainsi qu'un Forseti, pour votre peine. Bonne chance.\n\n\033VVous avez reçu un Forseti terrien dans %s.[/justify]</t>
+		<t id="2228">[justify][author]\033RInconnu[/author]\033RV0$ 4C+10N$ N3 $3R0N+ P4$ 0UB||33$. N0$ P|4N3+$, N0+R3 94|4X13. V0U$ 4V3Z \033M24 H3UR3$\033R P0UR P4R+1R.[/justify]</t>
+		<t id="2230">[justify][author]\033WDirecteur Général de Terracorp[/author]Amiral,\n\nVous avez réussi votre mission, félicitations ! Tous les secteurs appartiennent maintenant aux Terriens, et vos actions contribueront à calmer les choses avec le Commonwealth. Vous avez apporté un peu plus de paix dans la galaxie !\n\nAvec cette galaxie enfin sûre, je suis sûr que le Conseil Terrien aura à nouveau besoin de nos services dans une autre galaxie ! Retournez à votre quartier général principal et préparez-vous pour votre prochaine mission ![/justify]</t>
+		<t id="2231">[justify][author]\033WDirecteur Général de Terracorp[/author]Amiral,\n\nVous avez échoué dans votre mission. Tous vos Avant-Postes ont été détruits et il n'y a plus d'espoir dans cette galaxie. Annulez toutes les opérations et faites rapport à votre quartier général principal dans les deux prochaines semaines. Nous avons d'autres galaxies à conquérir.[/justify]</t>
+		<t id="2232">[justify][author]\033GDernier Moment[/author]Troubles civils ! %s secteurs se rassemblent dans une rébellion massive !\n\nLa piraterie prospère et les taux d'assurance commencent à grimper. Notre galaxie fait face à plus d'instabilité.[/justify]</t>
+		<t id="2233">Choisir le Prototype de Saut-Hyperspatial</t>
+		<t id="2234">Choisir le Dispositif de Téléportation Expérimental</t>
+		<t id="2235">[justify][author]\033WTutorial[/author]\033WCette galaxie est jeune et les factions ne font que commencer à s'étendre. Dans ce contexte, les règles sont un peu différentes :\n\nLes factions n'attendront pas la fin de votre Ascension pour commencer à conquérir des secteurs.\nL'OCV commencera à apparaître depuis son portail principal après 1 jour.\nLe Marché Noir sera disponible après 1 jour.\nLes escadrons IA sont plus téméraires.\nLes Avant-Postes et les Stations de Négoce IA ont reçu plus de ressources de départ.\nLes missions secondaires ont moins de variété pendant un certain temps.\nLes Reines Kha'ak n'apparaîtront jamais.\nL'activité des Pirates et des Xénons est réduite pendant 1 jour.\n\nQuelques conseils pour ce mode de jeu :\n\nLa quantité de Kha'aks dans un secteur est liée à la quantité d'astéroïdes. Évitez les secteurs avec beaucoup d'astéroïdes.\nEmbauchez des mercenaires.\nUtilisez les Stations de Négoce.\nNe prenez pas de risque, les Kha'aks sont forts, mais plutôt lents. Il peut être rentable d'explorer et de les traverser à grande vitesse.\nDans cette galaxie naissante, les vaisseaux abandonnés sont principalement des Terriens, car seuls eux se sont aventurés ici avant. Ce sont des vaisseaux puissants, mais essayez de vous concentrer sur la revendication des vaisseaux les plus rapides avant, car vous devez éviter les combats inutiles.[/justify]</t>
+		<t id="2236">[justify][author]\033YTutorial[/author]Vous avez atteint un secteur de Mémoire Terrien.\n\nIci, vous pouvez parfois trouver des [yellow]Balises de Saut[/yellow] abandonnées. Revendiquez-les depuis votre combinaison spatiale ou dites à un vaisseau de le faire en utilisant Cmd>Spécial>Capturer le Vaisseau.\n\nLes Balises de Saut fonctionnent comme une porte de saut. Vos vaisseaux utilisent automatiquement les itinéraires les plus rapides.\nPour ramasser les balises, vous avez besoin d'un vaisseau avec suffisamment d'espace de chargement.\n\nUn réseau de balises de saut peut relier des secteurs éloignés pour booster l'efficacité fiscale ou pour sauter au-dessus de secteurs dangereux.\n\nEn mode Difficile, ces balises sont très coûteuses à entretenir et strictement limitées à l'utilisation dans les secteurs que vous possédez ou dans ceux de vos alliés amicaux. À tous les niveaux de difficulté, le nombre de balises que vous pouvez posséder est limité (configurable) et elles ne devraient être placées que dans les meilleurs emplacements stratégiques possibles. L'écran d'entretien affiche la fréquence d'utilisation de chaque balise pour estimer sa valeur. Vos meilleures balises auront typiquement le coût de saut moyen le plus faible et seront au centre de chaque groupe de systèmes séparés que vous possédez ou de jonctions clés avec des alliés. Le bonus de Station de Saut peut être utilisé pour étendre votre capacité à sauter directement entre les systèmes. Remarque : le bonus de Station de Saut est également limité à un certain nombre au niveau mondial (configurable)[/justify]</t>
+
+		<!-- Mayhem 3 Misc. Messages -->
+		<t id="2500">[justify][author]\033GDépartement de l'Harmonie de Terracorp[/author]Message à %s\nObjet : Notification légale\nDate : %s\n\nChers Messieurs/Mesdames,\n\nIl nous a été signalé que l'un de vos vaisseaux a participé à la destruction d'un actif légalement protégé par un traité de Protectorat. Nous tenons à vous rappeler que cette action est illégale dans toutes les galaxies terriennes. Terracorp a reçu le mandat de vous prélever la pénalité de %s crédits.\n\nCeci est un message automatique, veuillez ne pas répondre.\nLe montant de votre pénalité a déjà été débité de tous vos comptes.\nMerci de votre coopération.[/justify]</t>
+		<t id="2501">[author]\033R%s Police[/author][text cols='1' colwidth='400'][justify]RAPPORT DE POLICE\n==============\nNUMÉRO DE DOSSIER : %s\nHEURE DU RAPPORT : %s\nNATURE DE L'INFRACTION : SCAN DE VAISSEAU ILLÉGAL\n==============\nDÉTAILS DE L'INFRACTION :\nUN VAISSEAU A ÉTÉ SCANNÉ PAR LE PRINCIPAL CONTREVENANT DANS LE SECTEUR %s EN UTILISANT DES SYSTÈMES DE SCAN CONVENTIONNELS.\n==============\nMESURES PRISES :\nLE PRINCIPAL CONTREVENANT A ÉTÉ SIGNALÉ À L'AUTORITÉ DE TERRACORP. LE PRINCIPAL CONTREVENANT EST CONDAMNÉ À UNE AMENDE DE %s CRÉDITS.[/justify][/text]</t>
+		<t id="2502">[justify][author]\033R%s-Transmission Cryptée[/author]Je m'appelle %s et je travaille pour le gouvernement %s. Nous sommes ravis que votre nouveau secteur %s ne soit pas à notre frontière. Il y a un potentiel de collaboration.\n\n[yellow]Tutoriel :[/yellow]\n+1 point de Faveur %s. Peut être utilisé pour activer les [yellow]Actions Diplomatiques[/yellow] dans le Ministère de la Guerre. Peut être gagné en tuant des vaisseaux du Commonwealth. Rejoindre une coalition vous donne des faveurs illimitées et un meilleur taux de recherche.[/justify]</t>
+		<t id="2503">[justify][author]\033G%s Conseil[/author]Nous tenons à vous remercier d'avoir rejoint notre guerre contre les %ss. Notre empire devient plus fort chaque jour et avec votre aide, nous serons en mesure de neutraliser cet ennemi. Je parlerai de vous à certaines de nos équipes pour qu'elles vous aident si vous en avez besoin. Bonne chance dans votre combat !\n\n\033VVous êtes maintenant en guerre permanente contre les %ss et vous avez gagné 1 point de Faveur des %ss. Ces points sont utilisés pour prendre des actions diplomatiques à partir du menu du Ministère de la Guerre que vous pouvez accéder via votre console personnelle ou en attribuant un raccourci.[/justify]</t>
+		<t id="2504">[author]\033R%s Police[/author][text cols='1' colwidth='400'][justify]RAPPORT DE POLICE\n==============\nNUMÉRO DE DOSSIER : %s\nHEURE DU RAPPORT : %s\nNATURE DE L'INFRACTION : INTRUSION DE VAISSEAU ILLÉGALE\n==============\nDÉTAILS DE L'INFRACTION :\nUN GROUPE DE MERCENAIRES A RÉUSSI À ENTRER DANS UN VAISSEAU SÉCURISÉ DANS LE SECTEUR %s. ILS ONT DÉTRUIT DE NOMBREUX ACTIFS À L'INTÉRIEUR ET À L'EXTÉRIEUR DU VAISSEAU, ET ONT ENDOMMAGÉ L'INTÉGRITÉ DE LA COQUE, ENTRAÎNANT DE GRAVES PROBLÈMES DE SÉCURITÉ.\n==============\nMESURES PRISES :\nCOMPTE TENU DE LA GRAVITÉ DE L'INFRACTION, LE VAISSEAU "%s" QUI A ÉTÉ IDENTIFIÉ COMME LE PRINCIPAL CONTREVENANT A ÉTÉ SIGNALÉ À LA POLICE LOCALE ET SERA POURCHASSÉ ET DÉTRUIT, CONFORMÉMENT À LA LOI. LE VAISSEAU PLAIGNANT EST MIS EN QUARANTAINE JUSQU'À NOUVEL ORDRE.[/justify][/text]</t>
+		<t id="2505">[author]\033R%s Police[/author][text cols='1' colwidth='400'][justify]RAPPORT DE POLICE\n==============\nNUMÉRO DE DOSSIER : %s\nHEURE DU RAPPORT : %s\nNATURE DE L'INFRACTION : TRANSPORT DE CARGAISON ILLÉGALE\n==============\nDÉTAILS DE L'INFRACTION :\nUN CARGO A ÉTÉ SCANNÉ PAR LA POLICE DANS LE SECTEUR %s. UNE MARCHANDISE CLASSÉE ILLÉGALE PAR LES LOIS EN VIGUEUR A ÉTÉ IDENTIFIÉE PAR LES OFFICIERS.\n==============\nMESURES PRISES :\nLE PRINCIPAL CONTREVENANT A ÉTÉ SIGNALÉ À L'AUTORITÉ DE TERRACORP. LE PRINCIPAL CONTREVENANT EST CONDAMNÉ À UNE AMENDE DE %s CRÉDITS.[/justify][/text]</t>
+		<t id="2506">[author]\033WOffre d'emploi de transporteur de fret[/author][justify]Nous devons livrer %s unités de %s à %s. La rémunération est de %s crédits. Êtes-vous intéressé ?[/justify]</t>
+		<t id="2507">[author]\033WOffre d'emploi de transporteur de fret[/author][justify]Nous devons livrer %s unités de %s à %s. En raison de la nature de la marchandise, nous sommes prêts à vous payer %s crédits. Êtes-vous intéressé ?[/justify]</t>
+		<t id="2508">Oui</t>
+		<t id="2509">Non</t>
+		<t id="2510">[author]\033R%s Cabinet de Guerre[/author]Cher dirigeant des Indépendants,\n\nMalgré nos mauvaises relations et nos récents conflits armés, nous aimerions vous montrer la miséricorde de notre peuple et vous offrir une trêve qui effacerait nos querelles passées... Accepteriez-vous ?</t>
+		<t id="2511">Capitaine,\n\nUne demi-journée de plus s'est écoulée. Voici notre rapport régulier :\n\nNous possédons %s{0} secteurs, %s{1} stations et %s{2} vaisseaux. En moyenne, les autres factions possèdent %s{3} secteurs, %s{4} stations et %s{5} vaisseaux.\n\nLa force totale de notre flotte est évaluée à un score de %s{6}\n\n\n[center]===  ANALYSE STRATÉGIQUE  ===[/center]\n\n[white]%s{7}[/white]\n\n[center]==========[/center]\n\nLes Xénons ont %s{13} vaisseaux et %s{14} stations. Les Pirates ont %s{15} vaisseaux et %s{16} stations.\n\nNous avons les produits suivants en grande quantité : %s{8}.\n\nNous avons un total de %s{9} crédits.\n\nNous avons des satellites dans %s{10} sur %s{11} secteurs.\n\nNotre flotte a un facteur d'entretien moyen de %s{12} %.\n\nFin du rapport.</t>
+
+		<!-- Messages de missions de Mayhem 3 -->
+		<t id="2600">[justify]Nous avons des raisons de croire que les Xénons vont envahir le secteur de %s. Si vous acceptez la mission, vous serez payé pour chaque Xénon tué par vous ou l'un de vos vaisseaux.\n\nDifficulté : %s\nRécompense en crédits : par vaisseau détruit\nRécompense en réputation : par vaisseau détruit\n\n\033XLes Xénons apparaissent lorsque votre propre vaisseau ou l'un des chefs de votre flotte entre dans le secteur.\n\n\033XCette mission est adaptée à votre rang de Combat.[/justify]</t>
+		<t id="2601">[justify]Nous voulons nous débarrasser de certains de nos ennemis %s. Si vous acceptez la mission, vous ou l'un de vos vaisseaux devrez détruire de manière chirurgicale une liste de vaisseaux %s donnés.\n\nDifficulté : %s\nRécompense en crédits : %s\nRécompense en réputation : %s\n\n\033XCette mission est adaptée à votre rang de Combat.[/justify]</t>
+		<t id="2602">[justify]Nous avons un besoin urgent de provisions. Voici une liste des marchandises que nous voulons que vous ou l'un de vos vaisseaux livre à cette station : %s\n\nDifficulté : %s\nRécompense en crédits : %s\nRécompense en réputation : %s[/justify]</t>
+		<t id="2603">[justify]Nous avons quelques vaisseaux que nous sommes prêts à vendre au bon prix. Si vous êtes un bon négociant, je peux vous proposer des vaisseaux de classe supérieure. Seriez-vous intéressé pour voir ce que nous avons ?\n\nPrix : %s[/justify]</t>
+		<t id="2604">[justify]Il y a quelques jours, une météorite a frappé une planète lointaine. De nouveaux astéroïdes atteignent maintenant notre galaxie dans %s et nous avons besoin de quelqu'un pour les scanner. Cette mission peut être accomplie par n'importe lequel de vos vaisseaux.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s[/justify]</t>
+		<t id="2605">[justify]Nous avons besoin de quelqu'un pour récupérer des artefacts perdus. Nous savons qu'ils ont été lâchés par un vaisseau inconnu autour du secteur %s. Ils peuvent être là ou dans n'importe quel secteur adjacent. Cette mission peut être accomplie par n'importe lequel de vos vaisseaux.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s[/justify]</t>
+		<t id="2606">Accepter</t>
+		<t id="2607">Décliner</t>
+		<t id="2608">Vous avez reçu une mission de notre part. Y a-t-il un problème ?</t>
+		<t id="2609">Bonjour à nouveau, êtes-vous là pour faire une livraison ?</t>
+		<t id="2610">Je passe juste</t>
+		<t id="2611">Annuler la mission</t>
+		<t id="2612">Livrer les marchandises</t>
+		<t id="2613">Livrer les artefacts</t>
+		<t id="2614">%s\n</t>
+		<t id="2615">[justify]Nous devons accroître notre visibilité dans les secteurs voisins en déployant %s satellites avancés. Les satellites ne sont pas fournis ; ils doivent être positionnés à des coordonnées très spécifiques, et seule une marge de 5 km est autorisée.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s[/justify]</t>
+		<t id="2616">[justify]L'un de nos vaisseaux a été endommagé dans %s, et l'équipage est blessé. Ces personnes ont besoin que quelqu'un ramène le vaisseau à notre station dans les plus brefs délais. Si vous réussissez, le vaisseau est à vous.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s[/justify]</t>
+		<t id="2617">[justify]Il y a quelques semaines, l'un de nos vaisseaux a été volé, mais jusqu'à présent la Police n'avait trouvé aucun indice sur l'identité du voleur. Ils ont maintenant %s suspects, mais les détectives sont assez occupés pour le moment, donc nous avons besoin que quelqu'un scanne chacun des suspects et ramène le voleur à cette station. Nous ne sommes pas intéressés par son vaisseau, donc si vous réussissez, considérez-le comme le vôtre.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s\n\n\033LLe scan d'un vaisseau est illégal à moins d'avoir une licence de la Police.\n\n\033LLa mission échouera si le voleur ou son vaisseau sont détruits.[/justify]</t>
+		<t id="2618">[justify]Nous avons des produits délicats à livrer à nos clients et notre gars habituel est absent. Vous aurez %s colis à livrer dans différentes stations, et nous fournissons le vaisseau, car nos clients sont plus à l'aise quand les produits viennent du même endroit. Si vous réussissez, vous pouvez garder le vaisseau. Compte tenu de la nature des produits, je vous recommanderais d'avoir une escorte ; on ne sait jamais...\n\nDifficulté : %s\nRécompense en crédits : %s\nRécompense en réputation : %s\n\n\033LLa mission échouera si le vaisseau ou l'une des stations est détruite.\n\n\033LCette mission n'est pas adaptée.[/justify]</t>
+		<t id="2619">[justify]Certains Intercepteurs Kha'ak continuent d'attaquer nos mineurs dans %s. L'un de nos vaisseaux a récemment été endommagé, et nous supposons que l'équipage est mort dans la bataille. Cependant, si vous le capturez et y restez un moment, les Kha'aks reviendront et vous pourrez les détruire une fois pour toutes. Si vous réussissez, vous pouvez garder le vaisseau.\n\nDifficulté : %s\nRécompense en crédits : par vaisseau détruit\nRécompense en réputation : par vaisseau détruit\n\n\033XCette mission est adaptée à la force des vaisseaux que vous avez dans le secteur du vaisseau minier une fois capturé.[/justify]</t>
+		<t id="2620">[justify]Nous recevons de puissants signaux Xénons provenant de %s. Nous avons besoin que quelqu'un protège notre station et détruise le phare d'où ils proviennent tous !\n\nDifficulté : %s\nRécompense en crédits : par vaisseau détruit + %s\nRécompense en réputation : par vaisseau détruit + %s\n\n\033XCette mission est adaptée à la force des vaisseaux que vous avez actuellement dans le secteur de cette station.[/justify]</t>
+		<t id="2621">[justify]Nous devons rassembler des renseignements sur notre ennemi actuel, les %ss. Pour ce faire, vous devez vous approcher de la station %s et la scanner. Une fois terminé, vous pourrez télécharger les données que vous aurez collectées dans nos systèmes.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s\n\n\033LLa police locale vous poursuivra si vous vous approchez de leur portée pendant le processus de scan.\n\n\033LSeul le vaisseau que vous pilotez vous-même peut accomplir cette mission. Le processus de scan commencera automatiquement lorsque vous serez proche de la station.[/justify]</t>
+		<t id="2622">[author]Données de renseignement[/author][center]%s[/center]</t>
+		<t id="2623">[justify]Nous devons amener l'un de nos cadres à la station %s. La ligne de production là-bas rencontre des difficultés, et nous ne pouvons pas nous permettre d'autres retards.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s\n\n\033XAprès avoir terminé cette mission, la station ciblée recevra un bonus de production temporaire.[/justify]</t>
+		<t id="2624">[justify]Nous venons de terminer une commande sur mesure et nous avons besoin que quelqu'un la livre à la station %s.\n\nDifficulté : N/A\nRécompense en crédits : %s\nRécompense en réputation : %s[/justify]</t>
+
+		<!-- Événements de Mayhem 3 -->
+		<t id="2700">[justify]Capitaine, notre équipe médicale a identifié une maladie inconnue à l'intérieur de notre Avant-Poste. Plusieurs personnes sont déjà infectées et nous craignons que d'autres le soient dans un proche avenir. Heureusement, avec le temps et les mesures appropriées, le virus ne devrait pas durer longtemps.[/justify]</t>
+		<t id="2701">[justify]Capitaine, nos ingénieurs ont identifié un bug critique dans le logiciel utilisé dans de nombreux vaisseaux construits dans notre Avant-Poste. Les vaisseaux passés et futurs sont touchés et nous aurons besoin de temps pour résoudre ce problème. En attendant, les coûts d'entretien de ces vaisseaux seront doublés.[/justify]</t>
+		<t id="2702">[justify]Capitaine, nous enquêtons actuellement sur un problème que nous avons dans nos chaînes de production. Tous les progrès dans notre usine seront ralentis pendant un certain temps.[/justify]</t>
+		<t id="2703">[justify]Capitaine, nous avons un incendie dans notre entrepôt ! Malheureusement, les sécurités ne fonctionnent pas comme elles le devraient et nous devons envoyer des hommes pour maîtriser la situation. Cela pourrait prendre un certain temps.[/justify]</t>
+		<t id="2704">[justify]Capitaine, notre équipe informatique a identifié un virus qui se propage rapidement dans tous nos systèmes. Le code porte la signature de l'OCV et nous pensons que les principales cibles sont nos vaisseaux. Nous devrions arrêter toute la production de vaisseaux jusqu'à ce que ce problème soit résolu. Heureusement, tous les vaisseaux précédemment construits à partir de notre Avant-Poste sont sains et saufs.[/justify]</t>
+	</page>
+
+	<!-- Commands, descriptions and other important stuff -->
+	<page id="382010" title="Script Cmd Names" descr="">
+		<t id="1126">Ajouter les produits par défaut de l'Avant-Poste</t>
+		<t id="1127">Créer des emplois par défaut</t>
+		<t id="1260">Autodetruire</t>
+		<t id="1261">Ajouter les données du vaisseau à la base de données</t>
+		<t id="1262">Ouvrir la console personnelle</t>
+		<t id="1263">Briefing de mission</t>
+		<t id="534">Se faire réparer</t>
+		<t id="535">Se faire inspecter</t>
+		<t id="504">Construire un portail vers Blue Horizon</t>
+		<t id="58">Lancer une mission d'abordage</t>
+		<t id="600">Lancer une mission d'abordage</t>
+		<t id="1128">Colorer le nom de la station</t>
+		<t id="1129">Déclencher un EMP</t>
+		<t id="506">Transmuter des cristaux</t>
+		<t id="83">Flotte : Se rassembler sur</t>
+		<t id="87">Flotte : Attaquer tous les ennemis</t>
+		<t id="88">Flotte : Protéger</t>
+		<t id="518">Traversier</t>
+		<t id="206">Se déplacer vers la balise la plus proche</t>
+		<t id="700">Agent</t>
+		<t id="701">Explorateur</t>
+		<t id="702">Pillard</t>
+		<t id="703">Mineur</t>
+		<t id="704">Service</t>
+		<t id="705">Négociant</t>
+		<t id="706">Remorqueur</t>
+		<t id="220">Fuir vers une station sûre</t>
+		<t id="221">Fuir vers une position</t>
+		<t id="720">Escadron : Groupe de combat</t>
+		<t id="721">Escadron : Patrouille frontalière</t>
+		<t id="722">Escadron : Escorte</t>
+		<t id="723">Escadron : Police</t>
+		<t id="724">Escadron : Arrière-garde</t>
+		<t id="725">Escadron : Force d'intervention</t>
+		<t id="519">Déclencher un EMP</t>
+		<t id="520">Scanner les astéroïdes locaux</t>
+		<t id="730">Soutien</t>
+		<t id="1340">Flotte : Suivre le commandant</t>
+		<t id="1341">Flotte : Se retirer</t>
+		<t id="1342">Flotte : Ravitailler</t>
+		<t id="1343">Flotte : Se retirer vers le secteur</t>
+		<t id="521">Capturer le vaisseau</t>
+		<t id="601">Afficher l'entrée de la base de données</t>
+		<t id="602">Scanner les ports cibles</t>
+		<t id="603">Installer un backdoor...</t>
+		<t id="604">Télécharger un ver...</t>
+		<t id="605">Désinstaller le backdoor...</t>
+		<t id="507">Fabriquer</t>
+		<t id="522">Larguer la station à</t>
+	</page>
+	
+	<page id="382011" title="Script Cmd Shorts" descr="">
+		<t id="1126">SancDef</t>
+		<t id="1127">DefJobs</t>
+		<t id="1260">SelfDest</t>
+		<t id="1261">ScanData</t>
+		<t id="1262">Console</t>
+		<t id="1263">Mission</t>
+		<t id="534">Repair</t>
+		<t id="535">Inspection</t>
+		<t id="504">Blue</t>
+		<t id="600">Board</t>
+		<t id="1128">ClrStaNam</t>
+		<t id="1129">Emp</t>
+		<t id="506">Trans</t>
+		<t id="83">Rally</t>
+		<t id="518">Ferry</t>\n
+		<t id="206">MovBeacon</t>
+		<t id="700">Wk:A</t>
+		<t id="701">Wk:E</t>
+		<t id="702">Wk:L</t>
+		<t id="703">Wk:M</t>
+		<t id="704">Wk:S</t>
+		<t id="705">Wk:Tr</t>
+		<t id="706">Wk:Tu</t>
+		<t id="220">FleeStn</t>
+		<t id="221">FleePos</t>
+		<t id="519">Emp</t>
+		<t id="730">Supp</t>
+		<t id="1340">Fleet.Follow</t>
+		<t id="1341">Fleet.Retreat</t>
+		<t id="1342">Fleet.Supply</t>
+		<t id="1342">Fleet.Supply</t>
+		<t id="1343">Fleet.RetreatSec</t>
+		<t id="521">Cap</t>
+		<t id="601">HakDb</t>
+		<t id="602">PortScan</t>
+		<t id="603">BackdoorOn</t>
+		<t id="604">Worm</t>
+		<t id="605">BackdoorOff</t>
+		<t id="507">Prod</t>
+		<t id="522">DropAt</t>
+	</page>
+	
+	
+	<page id="382008" title="Script Cmd Names" descr="">
+		<t id="1126">COMMAND_OUTPOST_DEFAULT_PRODUCTS</t>
+		<t id="1127">COMMAND_CREATE_DEFAULT_JOBS</t>
+		<t id="1260">COMMAND_SELF_DESTRUCT</t>
+		<t id="1261">COMMAND_SCAN_DATA</t>
+		<t id="1262">COMMAND_PERSONAL_CONSOLE</t>
+		<t id="1263">COMMAND_MISSION_BRIEFING</t>
+		<t id="534">COMMAND_REPAIR</t>
+		<t id="535">COMMAND_INSPECTION</t>
+		<t id="504">COMMAND_BLUE_HORIZON</t>
+		<t id="600">COMMAND_BOARD</t>
+		<t id="1128">COMMAND_COLOURSTATIONNAME</t>
+		<t id="1129">COMMAND_EMP</t>
+		<t id="506">COMMAND_TRANSMUTE</t>
+		<t id="83">COMMAND_FLEET_RALLY</t>
+		<t id="518">COMMAND_FERRY</t>
+		<t id="206">COMMAND_MOVE_BEACON</t>
+		<t id="700">COMMAND_WORKER_AGENT</t>
+		<t id="701">COMMAND_WORKER_EXPLORER</t>
+		<t id="702">COMMAND_WORKER_LOOTER</t>
+		<t id="703">COMMAND_WORKER_MINER</t>
+		<t id="704">COMMAND_WORKER_SERVICE</t>
+		<t id="705">COMMAND_WORKER_TRADER</t>
+		<t id="706">COMMAND_WORKER_TUG</t>
+		<t id="720">COMMAND_SQUADRON_BATTLEGROUP</t>
+		<t id="721">COMMAND_SQUADRON_BORDERPATROL</t>
+		<t id="722">COMMAND_SQUADRON_ESCORT</t>
+		<t id="723">COMMAND_SQUADRON_POLICE</t>
+		<t id="724">COMMAND_SQUADRON_REARGUARD</t>
+		<t id="725">COMMAND_SQUADRON_TASKFORCE</t>
+		<t id="726">COMMAND_SQUADRON_RETREAT</t>
+		<t id="220">COMMAND_FLEE_STATION</t>
+		<t id="221">COMMAND_FLEE_POSITION</t>
+		<t id="519">COMMAND_EMP_MOBILE</t>
+		<t id="730">COMMAND_SUPPORT</t>
+		<t id="1340">COMMAND_FLEET_FOLLOW</t>
+		<t id="1341">COMMAND_FLEET_RETREAT</t>
+		<t id="1342">COMMAND_FLEET_SUPPLY</t>
+		<t id="1343">COMMAND_FLEET_RETREAT_SECTOR</t>
+		<t id="521">COMMAND_CAPTURE_SHIP</t>
+		<t id="601">COMMAND_CONNECT</t>
+		<t id="602">COMMAND_PORTSCAN</t>
+		<t id="603">COMMAND_BACKDOOR_ON</t>
+		<t id="604">COMMAND_WORM</t>
+		<t id="605">COMMAND_BACKDOOR_OFF</t>
+		<t id="507">COMMAND_MANUFACTURE</t>
+		<t id="522">COMMAND_DROP_STATION_AT_POSITION</t>
+	</page>
+	
+	<page id="382022" title="Script user help" descr="">
+		<t id="36">Se Déplacer à la position et continuer.</t>
+		<t id="1126">Tous les composants de fabrication seront ajoutés en tant que produits dans cet Avant-Poste.</t>
+		<t id="1127">Cette commande effacera les tâches précédentes et en créera de nouvelles en fonction des marchandises nécessaires pour construire des stations et des vaisseaux. Une valeur de base sera demandée pour déterminer la quantité de marchandises qui sera configurée dans les tâches d'acquisition. Tous les emplois créés de cette manière ont le commerce comme cible.</t>
+		<t id="1260">Ce vaisseau sera détruit.</t>
+		<t id="1261">Ces données de vaisseau seront ajoutées à la base de données afin de rechercher son plan.</t>
+		<t id="1262">Ouvre votre console personnelle</t>
+		<t id="1263">Affiche le briefing de mission de la station actuelle à laquelle ce vaisseau est amarré, le cas échéant.</t>
+		<t id="534">Ce vaisseau sera réparé jusqu'à sa base d'origine ou l'Avant-Poste le plus proche, ou jusqu'à son transporteur s'il est équipé d'un module de réparation de transporteur. Les travailleurs sont automatiquement réparés, ainsi que les suiveurs de flotte si leur paramètre de flotte le permet.</t>
+		<t id="535">Ce vaisseau fera l'objet d'une inspection de sa base d'origine ou de l'Avant-Poste le plus proche. Une inspection de navire réinitialise le facteur d'entretien du navire. Vous pouvez également envoyer vos navires pour une inspection via l'écran d'entretien. Les travailleurs sont automatiquement entretenus, ainsi que les suiveurs de flotte si leur paramètre de flotte le permet.</t>
+		<t id="504">Ce vaisseau construira un portail vers le secteur énigmatique de l'Horizon bleu. La progression sera affichée dans le nom du vaisseau et n'avancera que si le vaisseau reste dans le secteur source. Le vaisseau doit avoir suffisamment de nividium pour pouvoir initier cette commande. Fonctionne uniquement pendant l'histoire principale.</t>
+		<t id="58">Envoyer une escouade de marines à l'abordage d'un vaisseau proche.</t>
+		<t id="600">Envoyer une escouade de marines à l'abordage d'un vaisseau proche.</t>
+		<t id="1128">Colore le nom de la station.</t>
+		<t id="1129">Déclenche une impulsion électromagnétique qui perturbe tous les boucliers du secteur.</t>
+		<t id="519">Déclenche une impulsion électromagnétique qui perturbe tous les boucliers dans un rayon de 50 km.</t>
+		<t id="401">Cette commande lancera le négociant universel. Il échangera toutes les marchandises qui peuvent être achetées et vendues pour réaliser des bénéfices. Si une base d'origine est définie, alors l'argent de la station est utilisé et l'UT restera autour de celle-ci, sinon l'argent du joueur sera utilisé et la portée de négociation maximale sera basée sur l'expérience de l'UT. Si le navire n'a plus d'opportunités de négoce, il restera en veille et essaiera à nouveau. Une expérience plus importante augmente les bénéfices. Si l'UT a une base d'origine, il respectera son paramètre de portée de négociation maximale. L'expérience de l'UT détermine la portée de négociation maximale absolue.\n{2022,99991}</t>
+		<t id="506">Le transmutateur de cristaux sert à créer de nouveaux cristaux à partir de cristaux de moins bonne qualité. Les cristaux synthétisés donnent des cristaux rouges, les rouges donnent des jaunes, les jaunes donnent des bleus et ainsi de suite.</t>
+		<t id="83">Cette commande fera appeler tous les navires actuellement en flotte par le commandant de la flotte pour se regrouper à un point de ralliement personnalisé. Les navires qui "ne sont pas actuellement en flotte" sont ignorés. Si certains navires peuvent s'amarrer à vos transporteurs, ils le feront et deviendront des navires de soutien. Vos navires protégeront le commandant et chercheront des cibles optimales en fonction de leurs paramètres de flotte que vous pouvez modifier via votre console personnelle.</t>
+		<t id="84">Cette commande fera rejoindre le navire à son commandant de flotte et sera prêt pour les ordres de la flotte. Il deviendra un navire de soutien s'il peut s'amarrer à des transporteurs de la flotte.</t>
+		<t id="85">Cette commande ordonnera au commandant de la flotte d'organiser une attaque contre une cible unique.</t>
+		<t id="86">Cette commande ordonnera au commandant de la flotte d'organiser les navires de la flotte pour tuer tous les navires ennemis trouvés dans le secteur.</t>
+		<t id="87">Cette commande ordonnera au commandant de la flotte de défendre le secteur et de le garder libre de tout navire hostile.</t>
+		<t id="88">Cette commande ordonnera au commandant de la flotte d'organiser une force de défense pour protéger une station ou escorter un navire.</t>
+		<t id="89">Cette commande ordonnera au commandant de la flotte d'organiser une flotte d'invasion pour détruire toutes les stations d'un secteur donné. S'il ne reste plus de stations, la flotte commencera à défendre le secteur.</t>
+		<t id="1340">Cette commande est le comportement général de tous les membres de la flotte. Ils chercheront des cibles proches du commandant, puis protégeront le commandant ou attaqueront sa cible.</t>
+		<t id="1341">Cette commande fera retraiter le commandant de la flotte et tous les membres de la flotte vers un secteur sûr proche, le cas échéant. La portée maximale à laquelle ce secteur sûr se trouve du commandant peut être modifiée dans le menu des paramètres de la flotte.</t>
+		<t id="1342">Cette commande fera collecter des missiles dans vos postes avancés par un navire et les distribuera dans une flotte spécifiée, selon les options de réapprovisionnement que vous pouvez modifier via le menu des armes de n'importe quel navire. Le fournisseur ne peut être affecté que via le menu des paramètres de la flotte, et il peut être affecté à plusieurs flottes en même temps. Le fournisseur continuera à chercher des missiles disponibles et en commandera de nouveaux à sa base d'origine si possible.</t>
+		<t id="518">Ce navire remorquera tous les chasseurs qui viennent à sa base d'origine sans pouvoir sauter. Il remorquera également les suiveurs si possible.</t>
+		<t id="206">Cette commande ordonnera au navire d'aller à votre balise de saut la plus proche, le cas échéant.</t>
+		<t id="700">Les agents sont affectés aux postes avancés et aux usines. Lorsqu'ils sont affectés à un Avant-Poste, les agents exécuteront les commandes d'importation et d'exportation de la liste des tâches que vous pouvez personnaliser via le menu du gestionnaire de Avant-Poste. Lorsqu'ils sont affectés à une usine, les agents importeront les ressources dont l'usine a besoin et exporteront les produits qu'elle fabrique. La priorité est donnée au Avant-Poste local lors de l'importation. Les agents affectés à une usine exporteront les produits vers l'Avant-Poste local s'il n'y a pas d'autres clients.\n\nLes agents ne négocient jamais avec d'autres factions, contrairement aux négociants.</t>
+		<t id="701">Les explorateurs sont affectés aux usines de satellites avancées. Leur seul but est de déployer un réseau de satellites et de s'assurer que chaque secteur est toujours surveillé. Quand ils n'ont pas au moins un satellite avancé dans leur soute, ils cherchent leur base d'origine, puis l'Avant-Poste local. S'ils ne peuvent en trouver dans ces deux stations, ils attendront. Comme tous les autres travailleurs, les explorateurs respectent le paramètre de distance de secteur maximum de leur base d'origine. Ils n'achètent pas de satellites auprès d'autres stations de faction et ne cartographient pas les secteurs hostiles.</t>
+		<t id="702">Les pillards sont affectés aux postes avancés. Ils scannent en permanence les secteurs voisins à la recherche de marchandises volantes. Quand ils en trouvent au moins une, ils la collectent et rentrent chez eux quand toutes les marchandises volantes ont été collectées. Ils ne vont pas dans les secteurs hostiles. Leur portée de collecte est augmentée avec un dispositif de transport.</t>
+		<t id="703">Les mineurs sont affectés aux postes avancés et aux usines de fabrication de tubes quantiques. Ils doivent être équipés de systèmes de forage mobiles. Ils exploitent les débris qui sont locaux à leur base d'origine.</t>
+		<t id="704">Les navires de service sont affectés aux postes avancés. Ils répondent aux appels d'aide locaux de diverses natures.</t>
+		<t id="705">Les négociants sont affectés aux postes avancés et aux stations de négoce. Ils essaient d'abord de négocier les marchandises de leur base d'origine qui sont répertoriées dans la section Négociants du menu de logistique, dans le gestionnaire de Avant-Poste, puis ils cherchent des opportunités en parcourant les usines accessibles.\n\nSi vous voulez négocier une marchandise que vous avez dans l'un de vos postes avancés, vous devez l'ajouter explicitement à la liste des marchandises de l'onglet Négociants de la section Logistique, dans le menu du gestionnaire de Avant-Poste.</t>
+		<t id="706">Les remorqueurs sont affectés aux postes avancés. Ils scannent en permanence les secteurs voisins à la recherche de navires abandonnés qui ont été évacués. Puis ils les capturent et les ramènent à leur base d'origine. Ils ne vont pas dans les secteurs hostiles. Leur portée de capture est augmentée avec un logiciel de contrôle à distance.</t>
+		<t id="220">Ce navire fuira vers la station amarrable la plus proche. Il abandonnera s'il ne peut trouver de station.</t>
+		<t id="221">Ce navire fuira vers une position.</t>
+		<t id="720">Les groupes de combat envahissent des secteurs. Une fois qu'une cible a été choisie, le groupe de combat se rassemblera dans un secteur sûr et lancera l'invasion de la cible à partir de là, juste après l'avoir revendiqué.</t>
+		<t id="721">Les patrouilles frontalières défendent les secteurs qui se trouvent à la limite de leur territoire.</t>
+		<t id="722">Les navires d'escorte protègent soit les fréteurs, soit défendent leur secteur actuel.</t>
+		<t id="723">Les navires de police pourchassent les navires qui transportent des marchandises illégales à bord. Ils défendent également leur secteur d'origine et les secteurs adjacents.</t>
+		<t id="724">Les navires d'arrière-garde défendent tous les secteurs qui ne sont pas à la limite de leur territoire.</t>
+		<t id="725">La force opérationnelle est un groupe spécial qui lance des raids aléatoires sur des navires faibles ou des actifs statiques comme les satellites avancés et les balises de saut. Ils s'assurent également que les attaques ennemies ne restent pas impunies.</t>
+		<t id="730">Les navires de soutien sont ceux qui peuvent s'amarrer à des transporteurs, généralement des chasseurs. Cette commande les fait défendre le transporteur et attaquer sa cible, le cas échéant. Si le transporteur est équipé d'un module de réparation de transporteur, le navire de soutien restera amarré jusqu'à ce qu'il soit réparé. Si le transporteur est détruit, le navire tentera de trouver un autre dans sa formation actuelle.</t>
+		<t id="99990"/>
+		<t id="99991"/>
+		<t id="99992"/>
+		<t id="99993"/>
+		<t id="99994"/>
+		<t id="520">Ce vaisseau scannera tous les astéroïdes dans son secteur actuel. Il ne recherche pas dans d'autres secteurs.</t>
+		<t id="74">Cette commande fera patrouiller le vaisseau dans le secteur sélectionné et le défendra contre tous les navires ennemis à portée. Si vous avez un satellite avancé dans le secteur, la portée du vaisseau est étendue.</t>
+		<t id="15">Ce vaisseau attaquera tous les navires ennemis à portée. Sauf la commande Défendre le secteur, le vaisseau restera en position. Si vous avez un satellite avancé dans le secteur, la portée du vaisseau est étendue.</t>
+		<t id="26">Ce vaisseau attaquera tous les navires ennemis à portée. Sauf la commande Défendre le secteur, le vaisseau restera en position. Si vous avez un satellite avancé dans le secteur, la portée du vaisseau est étendue.</t>
+		<t id="24">Ordonnez à ce vaisseau de collecter une marchandise volante dans un secteur. Ce vaisseau doit avoir suffisamment d'espace de chargement libre et une classe de transport suffisamment élevée pour transporter la marchandise. La portée de collecte est augmentée avec un dispositif de transport.</t>
+		<t id="521">Ordonnez à ce vaisseau de capturer un navire abandonné dans un secteur. La portée de revendication est augmentée avec un logiciel de contrôle à distance. Ne peut pas être appelé sur votre propre vaisseau.</t>
+		<t id="2000">Forcez ce vaisseau à suivre votre vaisseau actuel. Les attaques sont ignorées.</t>
+		<t id="5">Forcez ce vaisseau à suivre un autre vaisseau. Les attaques sont ignorées.</t>
+		<t id="100">Commande de tourelle pour tirer sur tous les ennemis qui se trouvent dans la portée de tir de la tourelle.\n{2022,99990}</t>
+		<t id="101">Commande de tourelle pour faire de la cible actuelle du navire la cible d'attaque principale de la tourelle.\n{2022,99990}</t>
+		<t id="102">Commande de tourelle pour tirer sur les navires attaquants et également sur les missiles entrants. Sur les navires de classe M8, cela peut être utilisé pour protéger les alliés à proximité de tous les missiles entrants.\n{2022,99990}</t>
+		<t id="103">Commande de tourelle pour tirer sur les navires attaquants.\n{2022,99990}</t>
+		<t id="105">Commande de tourelle pour tirer sur les missiles uniquement, et pas sur les navires même en cas d'attaque. Sur les navires de classe M8, cela peut être utilisé pour protéger les alliés à proximité de tous les missiles entrants\n{2022,99994}</t>
+		<t id="106">Commande de tourelle pour tirer sur les chasseurs uniquement, en ignorant les fréteurs et les navires plus gros.\n{2022,99994}</t>
+		<t id="107">Commande de tourelle pour tirer sur les navires de guerre uniquement, en ignorant les fréteurs et les chasseurs.\n{2022,99994}</t>
+		<t id="908">La commande de tourelle Alpha est un modèle vierge que le capitaine peut configurer depuis le menu Gameplay.</t>
+		<t id="909">La commande de tourelle Bêta est un modèle vierge que le capitaine peut configurer depuis le menu Gameplay.</t>
+		<t id="910">La commande de tourelle Gamma est un modèle vierge que le capitaine peut configurer depuis le menu Gameplay.</t>
+		<t id="30">Cette commande ordonnera à ce vaisseau de collecter toutes les marchandises volantes dans un secteur. Il rentrera chez lui, le cas échéant, pour décharger les marchandises collectées, ou s'amarrera à la station sûre la plus proche.</t>
+		<t id="601">Se connecte à votre cible actuelle et affiche également des informations provenant de votre base de données de piratage. Cette action ne peut pas être effectuée par d'autres pilotes. Comme toutes les commandes de piratage, celle-ci nécessite un rootkit de piratage.</t>
+		<t id="602">Scanne votre cible actuelle à la recherche de ports ouverts. Ce scan ne peut pas être effectué par d'autres pilotes. Le scan lui-même est sécurisé, mais nécessite une connexion de ciblage constante. La cible doit se trouver dans une portée de scan valide. Comme toutes les commandes de piratage, celle-ci nécessite un rootkit de piratage.</t>
+		<t id="603">Installe une porte dérobée sur votre cible actuelle. Cette action coûte un hackerchip et ne peut pas être effectuée par d'autres pilotes. La cible doit avoir un port vulnérable. La cible doit se trouver dans une portée de scan valide. Comme toutes les commandes de piratage, celle-ci nécessite un rootkit de piratage.</t>
+		<t id="604">Télécharge un ver sur la station à laquelle vous êtes actuellement amarré. Cette action coûte un hackerchip et ne peut pas être effectuée par d'autres pilotes. Vous devez avoir un botnet puissant pour pouvoir craquer le mot de passe admin de l'interface publique de la station. Comme toutes les commandes de piratage, celle-ci nécessite un rootkit de piratage.</t>
+		<t id="605">Désinstalle une porte dérobée existante sur un port spécifié de votre cible actuelle. Cette action coûte un hackerchip et ne peut pas être effectuée par d'autres pilotes. La cible doit se trouver dans une portée de scan valide. Comme toutes les commandes de piratage, celle-ci nécessite un rootkit de piratage.</t>
+		<t id="507">Crée un produit à partir de ressources spécifiques directement depuis ce vaisseau. Cette commande nécessite le kit d'usine mobile, et elle nécessite également que le vaisseau reste immobile et non amarré pendant tout le processus de production. Toute autre commande donnée pendant ce processus l'interrompra et les ressources engagées seront perdues. Notez que cette méthode de production est moins efficace qu'une usine conventionnelle.</t>
+		<t id="522">Se déplace à la position sélectionnée et y place la station.</t>
+	</page>
+	<page id="8500" title="Script command reference conditions" descr="0" voice="no">
+		<t id="301">Doit être un Avant-Poste</t>
+		<t id="302">Doit être dans un secteur spécifique</t>
+		<t id="303">Doit avoir suffisamment de nividium</t>
+		<t id="304">Progrès de l'histoire</t>
+		<t id="305">Exclusif</t>
+		<t id="306">Les données du vaisseau doivent être inconnues</t>
+		<t id="307">Cristaux à bord</t>
+		<t id="308">Doit être affecté à un Avant-Poste</t>
+		<t id="309">Doit être affecté à une usine</t>
+		<t id="310">Doit être affecté à un Avant-Poste ou à une usine</t>
+		<t id="311">Doit être affecté à une usine de satellites avancés</t>
+		<t id="312">Doit être affecté à un Avant-Poste ou à une usine de fabrication de tubes quantiques</t>
+		<t id="313">La base d'origine doit avoir un emplacement libre</t>
+		<t id="314">Doit être TM, TP ou TS</t>
+		<t id="315">Doit être TP</t>
+		<t id="316">Doit être TS</t>
+		<t id="317">Doit être TM</t>
+		<t id="318">Doit être mineur</t>
+		<t id="319">Doit être M5 ou M4</t>
+		<t id="320">Doit être M3, M6, TM, TP ou TS</t>
+		<t id="321">Logiciel de contrôle à distance</t>
+		<t id="322">Dispositif de transport</t>
+		<t id="323">\033RRéservé à la Communauté</t>
+		<t id="324">Doit pouvoir transporter des cargaisons de taille ST</t>
+		<t id="325">\033CCommande automatique</t>
+		<t id="326">Doit être un commandant de flotte</t>
+		<t id="327">Doit être un membre de la flotte</t>
+		<t id="328">Doit être un vaisseau</t>
+		<t id="329">Doit être un vaisseau avec un port vulnérable</t>
+		<t id="330">Doit être un vaisseau ou une station</t>
+		<t id="331">Doit être un vaisseau avec une porte dérobée</t>
+		<t id="332">Doit être non amarré</t>
+		<t id="333">Doit être M6, M5, M4, M3, TP ou TS</t>
+		<t id="334">Doit être M6, TM, TP ou TS</t>
+		<t id="335">Doit être M5, M4, M3, TM, TP ou TS</t>
+		<t id="600">Doit transporter un kit de station</t>
+		<t id="522">Doit être TL</t>
+	</page>
+	
+	<page id="381999" title="Cargo descriptor" descr="">\n
+		<t id="6">KS</t>
+		<t id="16">Conteneur spécial Kha'ak</t>
+	</page>
+	
+	<page id="380017" title="Boardcomp. objects" descr="0" voice="yes">
+		<t id="16941">Analyseur de données</t>
+		<t id="7172">En raison de la pénurie de certains matériaux précédemment utilisés dans la fabrication d'équipements d'infanterie, la ferraille est souvent utilisée pour fabriquer des munitions, des armes et des équipements pour les marines et les mercenaires. Les pirates sont bien connus pour leurs compétences dans la création de tels équipements.</t>
+		<t id="15124">Le fusil Désintégrateur est un type d'arme de poing courant. Il a été inventé par un membre d'une riche Famille qui pensait que ses designs étaient si parfaits que l'arme désintégrerait littéralement tout sur son passage, d'où le nom. En fait, c'est un fusil faible à peine capable de tirer droit. Il a cependant un avantage : son faible coût. Les fusils Désintégrateurs sont considérés comme hautement illégaux dans la majorité de l'espace, bien que la plupart des marines et des pirates les utilisent quotidiennement.</t>
+		<t id="15114">Les armes de poing à faible puissance (illégales), qui comprennent les pistolets à phase et les pistolets paralysants, sont largement utilisées par de nombreuses forces de l'ordre et organisations militaires. Leur puissance de feu limitée les empêche d'être utilisées lors d'assauts tactiques et d'opérations d'abordage.</t>
+		<t id="15134">Les fusils EMP Terriens (illégaux) sont largement utilisés par toutes les forces Terriennes contre les véhicules terrestres et les défenses statiques. Le fusil est tellement gros qu'il doit être manipulé par une équipe de deux hommes. Il n'est efficace que contre les cibles alimentées électriquement.</t>
+		<t id="76084">Railgun monté</t>
+		<t id="76085">Le Railgun est une arme électrique spécialement conçue pour être montée sur les tours laser. En fait, ce canon est tellement gros et lourd que toute la tour laser est construite autour de lui.</t>
+		<t id="76086">Transmutateur de cristaux</t>
+		<t id="76087">Cet équipement est construit à partir de cristaux noirs, dont il utilise les propriétés remarquables pour appliquer une transformation moléculaire à tout cristal afin de le transmuter en une version de meilleure qualité. Les cristaux synthétisés sont compatibles. Cet équipement est officieusement connu parmi les pilotes sous le nom de "Pierre philosophale". Notez que le transmutateur de cristaux a subi plusieurs mises à niveau au fil du temps. La dernière permet de drainer une grande quantité d'énergie des boucliers afin de rendre la transmutation presque instantanée.</t>
+		<t id="76088">Kit d'entretien mobile</t>
+		<t id="76089">Cet équipement haute technologie a été conçu pour permettre à n'importe quel navire d'effectuer l'entretien pendant le fonctionnement, évitant ainsi que le facteur d'entretien n'augmente au fil du temps comme c'est normalement le cas lorsqu'un navire est non amarré.</t>
+		<t id="76090">Module de réparation de transporteur</t>
+		<t id="76091">Cet équipement lourd se compose de plusieurs outils qui peuvent réparer les navires amarrés au fil du temps. Bien que le processus soit lent, la conception haute technologie du module permet l'utilisation de matériaux existants pour effectuer la réparation, la rendant ainsi complètement gratuite.</t>
+		<t id="76092">Prototype de saut quantique</t>
+		<t id="76093">Pendant longtemps, cet équipement a été répertorié comme "Artéfact inconnu 78642F". Il a été conservé dans une usine Terrienne, loin des galaxies principales, et oublié là-bas tandis que les Xénons détruisaient la plupart des actifs de l'USC. Cependant, Terracorp a récemment découvert que l'artéfact n'avait pas été endommagé lors des attaques. Malheureusement, ils n'ont pas réussi à le récupérer et l'ont signalé comme "propriété volée du gouvernement". Ils ont rappelé à la Communauté que l'utilisation de la téléportation quantique est strictement interdite à l'intérieur des galaxies de la bordure extérieure. Ils ont également déclaré qu'en raison du stade très précoce de développement de ce dispositif, toutes les tentatives de le reproduire échoueraient.</t>
+		<t id="76094">Dispositif EMP mobile</t>
+		<t id="76095">Ce dispositif génère une quantité considérable (||) d'énergie qui peut être libérée sous forme d'une impulsion très rapide, affectant les boucliers de tous les navires et structures à proximité de l'émetteur.</t>
+		<t id="76096">Dispositif de transport expérimental</t>
+		<t id="76097">Pendant longtemps, cet équipement a été répertorié comme "Artéfact inconnu 78642F". Il a été conservé dans une usine Terrienne, loin des galaxies principales, et oublié là-bas tandis que les Xénons détruisaient la plupart des actifs de l'USC. Cependant, Terracorp a récemment découvert que l'artéfact n'avait pas été endommagé lors des attaques. Malheureusement, ils n'ont pas réussi à le récupérer et l'ont signalé comme "propriété volée du gouvernement". Ils ont rappelé à la Communauté que l'utilisation de la téléportation quantique est strictement interdite à l'intérieur des galaxies de la bordure extérieure. Ils ont également déclaré qu'en raison de la nature avancée de ce dispositif, toutes les tentatives de le reproduire échoueraient.</t>
+		<t id='2071654'>Avant-Poste</t>
+		<t id='2071655'>Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="16971">Station de recherche</t>
+		<t id="16972">Initialement conçue par les Terriens, cette station dispose de tout l'équipement nécessaire pour découvrir de nouveaux plans. Toutes les stations de recherche partagent la même base de données et peuvent travailler simultanément sur le même projet. Dès qu'un plan est entièrement étudié, il peut être construit à partir de n'importe quel Avant-Poste.</t>
+		<t id="16973">La Machine de la Mort</t>
+		<t id="16974">???????????????????</t>
+		<t id="16942">Un dispositif spécial qui permet de scanner d'autres navires afin d'obtenir leurs données structurelles nécessaires à la recherche de plans.</t>
+		<t id="16204">Des lasers de sécurité internes guidés par infrarouge et IFF peuvent être installés à des endroits stratégiques sur n'importe quel navire pour fournir une sécurité interne renforcée en cas d'intrusion ou d'abordage.</t>
+		<t id="16194">Le dispositif de polarisation de la coque produit un champ magnétique soutenu à haute puissance sur la coque d'un navire, ce qui peut sérieusement perturber même les découpeurs au plasma les plus efficaces, protégeant ainsi contre l'entrée forcée de la coque ou les dommages intérieurs dus à une haute pression, à un tir laser ou au sabotage.</t>
+		<t id="2413">Ordinateur d'amarrage</t>
+		<t id="2414">Cet équipement permet à n'importe quel navire de s'amarrer instantanément à la station ou au transporteur le plus proche. Notez qu'un ordinateur d'amarrage n'est pas nécessaire si le transporteur est équipé d'un dispositif de transport.</t>
+		<t id="15351">Avant-Poste Argon</t>
+		<t id="15352">Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="15353">Avant-Poste Boron</t>
+		<t id="15354">Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="15355">Avant-Poste Paranide</t>
+		<t id="15356">Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="15357">Avant-Poste Split</t>
+		<t id="15358">Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="15359">Avant-Poste Teladi</t>
+		<t id="15360">Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="15361">Avant-Poste Yaki</t>
+		<t id="15362">Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="15363">Avant-Poste</t>
+		<t id="15364">Cette immense station dispose de toutes les infrastructures nécessaires pour accueillir un groupe de personnes et fabriquer de nouveaux navires et stations. Initialement conçus par des architectes Goners, tous les postes avancés sont construits autour d'un système ingénieux permettant de déplacer les murs à volonté et de créer de nouvelles salles, rendant toute la station flexible. Elle dispose également d'un atelier de réparation et d'un hangar à navires.</t>
+		<t id="2281">Laboratoire chimique</t>
+		<t id="2282">Les laboratoires chimiques sont de grandes usines qui transforment les déchets généraux en un liquide hautement toxique qui est ensuite stabilisé dans des salles froides. L'environnement de ces salles est tellement extrême que chaque laboratoire chimique est entièrement automatisé. Les produits chimiques produits ici sont principalement utilisés pour fabriquer du Teladianium.</t>
+		<t id="16101">TOA</t>
+		<t id="16102">Les accélérateurs trans-orbitaux sont utilisés pour accélérer les vaisseaux spatiaux à une vitesse proche de la lumière afin qu'ils puissent traverser rapidement les vastes distances de la galaxie et les décélérer à nouveau. Contrairement aux portes Terriennes, ils datent de l'ère pré-téléportation quantique et ne permettent pas les voyages intergalactiques.</t>
+		<t id="16103">Trou de ver</t>
+		<t id="16104">Ces trous de ver sont utilisés pour permettre aux vaisseaux spatiaux de traverser rapidement les vastes distances de la galaxie. Contrairement aux trous de ver Terriens, ils ont une énergie très limitée et ne permettent pas les voyages intergalactiques.</t>
+		<t id="3731">Maelström</t>
+		<t id="3732">Ce portail unidirectionnel est instable et a été ouvert par des scientifiques qui prétendent savoir comment ils fonctionnent. Mais ils ne le savent vraiment pas.</t>
+		<t id="3181">Station de négoce</t>
+		<t id="3182">Développées par des entreprises privées au fil des années, ces stations spatiales offrent les plus hauts standards de confort et de technologie.(||) Chaque station est équipée de bars, de restaurants, de casinos, de cinémas holographiques, de boutiques et d'hébergements. Les pilotes peuvent s'attendre à un accueil amical.</t>
+		<t id="3973">Dispositif de transport</t>
+		<t id="3974">Ce dispositif coûteux permet à l'utilisateur de se téléporter sur n'importe quel navire à portée sans avoir à sortir dans l'espace. Il permet également de récupérer des marchandises à plus grande distance, le transfert de marchandises entre deux navires, et l'amarrage instantané de tout navire qui vient à un transporteur équipé d'un dispositif de transport. Notez que sans dispositif de transport sur le transporteur, il est toujours possible de s'amarrer instantanément à lui si le navire est équipé d'un ordinateur d'amarrage.</t>\n\n
+		<t id="2022">Les mines d'Ore sont principalement construites autour de petits astéroïdes en raison de la plus grande productivité permise par la faible gravité de ces astéroïdes. Les astéroïdes sont d'abord analysés à l'aide de scanners spéciaux pour déterminer leur richesse en minéraux.(||) Des équipes de robots supervisés par des mineurs exploitent les mines. L'Ore est traité et transporté vers diverses usines où il est utilisé dans la fabrication de pièces métalliques. Étant donné que Terracorp a l'exclusivité sur tous les minéraux et que le Commonwealth ne pourrait pas survivre sans ces ressources, la conception de cette mine a été fournie gratuitement à chaque faction. Tous les autres modèles sont interdits.</t>
+		<t id="2032">Les mines de Silicium sont construites autour de petits astéroïdes qui sont analysés au préalable pour déterminer leur richesse en minéraux de silicium. Le minéral se trouve généralement juste en dessous de la surface. Il est extrait en utilisant une technologie à ciel ouvert où la surface de l'astéroïde est littéralement grattée par de grandes machines de terrassement, révélant les riches bandes de silicium en dessous.(||) Celles-ci sont ensuite creusées et collectées par des robots prospecteurs spécialisés. Le Silicium est transformé en fines tranches qui fournissent les matières premières pour la fabrication de nombreux produits techniques. Étant donné que Terracorp a l'exclusivité sur tous les minéraux et que le Commonwealth ne pourrait pas survivre sans ces ressources, la conception de cette mine a été fournie gratuitement à chaque faction. Tous les autres modèles sont interdits.</t>
+		<t id="9070">Produits chimiques</t>
+		<t id="9071">Les produits chimiques sont une ressource essentielle principalement utilisée dans la fabrication de Teladianium.</t>
+		<t id="9072">Déchets</t>
+		<t id="9073">Les déchets sont produits par les gens et sont utilisés par certaines industries comme les laboratoires de produits chimiques, et plus inquiétant, les installations de pâte de protéines.</t>
+		<t id="2054">Les cristaux sont importants pour la production de lasers et de boucliers. Ils sont produits dans des cristalleries à partir de cellules d'énergie. Ils peuvent également être transmutés pour les transformer en cristaux de couleurs rares.</t>
+		<t id="2052">Les cristalleries produisent de nombreux cristaux qui sont utilisés dans la fabrication de lasers et de boucliers. Les cristaux sont produits à partir de cellules d'énergie.</t>
+		<t id="2352">Les aquariums Chelt que l'on trouve dans les secteurs Split sont de vastes bassins d'eau salée contenus dans des dômes géodésiques où les Split élèvent la créature connue sous le nom de Chelt. Ces créatures sont nourries puis abattues pour fournir de la viande aux Split.(||) La peau du Chelt est utilisée pour fabriquer un cuir résistant, tandis que le tissu adipeux, après exportation vers une raffinerie Rastar, est raffiné pour produire le fin huile appelée Rastar. Chaque aquarium nécessite de l'énergie pour faire fonctionner les moteurs nécessaires au contrôle des gigantesques bassins d'eau salée.</t>
+		<t id="2354">Les Chelts sont des animaux marins naturels qui parcouraient autrefois les mers et les océans de la planète d'origine des Split, que ces derniers tuaient pour leur viande, leur huile et leur peau qu'ils transformaient en un matériau de cuir résistant. Cependant, pendant de nombreuses jazuras, les Chelts ont été surexploités et ont failli être amenés à l'extinction. De nos jours, les Chelts sont élevés dans des aquariums Chelt dans l'espace et sont ensuite vendus aux raffineries Rastar.</t>
+		<t id="2082">Une usine informatique fabrique à la fois des systèmes informatiques complets et des composants informatiques individuels qui sont très demandés dans tout l'univers pour un usage général.(||) Les usines créent également les systèmes informatiques plus spécialisés que l'on trouve dans tous les vaisseaux spatiaux.</t>
+		<t id="7232">Le poisson, les fruits, la viande et les légumes sont tous produits et consommés par les avant-postes.</t>
+		<t id="7282">Le poisson, les fruits, la viande et les légumes sont tous produits et consommés par les avant-postes.</t>
+		<t id="7242">Le poisson, les fruits, la viande et les légumes sont tous produits et consommés par les avant-postes.</t>
+		<t id="7272">Le poisson, les fruits, la viande et les légumes sont tous produits et consommés par les avant-postes.</t>
+		<t id="15222">L'installation de production de blindage de coque est essentielle à l'industrie de la défense et constitue une partie importante de l'économie globale, étant donné que la demande de vaisseaux militaires a explosé ces dernières années.</t>
+		<t id="15224">La production de ce blindage de coque avancé, composé d'un mélange de métaux traditionnels et de Teladianium, a été considérablement augmentée ces dernières années en raison de l'activité accrue de construction navale de toutes les forces du Commonwealth.</t>
+		<t id="7222">Les bijoux, les produits pharmaceutiques, les graines et les textiles sont des articles de luxe principalement échangés par des entreprises privées.</t>
+		<t id="7212">Les bijoux, les produits pharmaceutiques, les graines et les textiles sont des articles de luxe principalement échangés par des entreprises privées.</t>
+		<t id="7312">Les bijoux, les produits pharmaceutiques, les graines et les textiles sont des articles de luxe principalement échangés par des entreprises privées.</t>
+		<t id="7202">Les bijoux, les produits pharmaceutiques, les graines et les textiles sont des articles de luxe principalement échangés par des entreprises privées.</t><t id="2072">Les usines de puces produisent des microprocesseurs, des composants essentiels dans tous les ordinateurs. Elles se trouvent généralement à proximité d'une usine informatique avec un flux constant de navettes de transport entre les deux emplacements.(||) Les puces sont fabriquées à partir de cellules d'énergie qui sont chargées les unes contre les autres pour créer une conductivité supplémentaire. Une fois terminées, les puces sont ensuite envoyées à l'usine informatique pour être installées dans les ordinateurs.</t>
+		<t id="2072">Les usines de puces produisent des microprocesseurs, des composants essentiels dans tous les ordinateurs. Elles se trouvent généralement à proximité d'une usine d'ordinateurs avec un flux constant de navires de transport allant et venant entre les deux sites. Les puces sont fabriquées à partir de cellules d'énergie qui sont chargées les unes contre les autres pour créer une conductivité supplémentaire. Une fois terminées, les puces sont ensuite envoyées à l'usine d'ordinateurs pour être installées dans les ordinateurs.</t>
+		<t id="2074">Les microprocesseurs sont fabriqués à partir de cellules d'énergie qui sont chargées les unes contre les autres pour créer une conductivité supplémentaire. Ils sont principalement utilisés dans le processus de production des composants informatiques.</t>
+		<t id="2062">Les usines de tubes fabriquent des tubes quantiques - un équivalent au niveau quantique de la valve, créé à partir d'Ore, qui est utilisé à l'intérieur des moteurs et des commandes de tous les vaisseaux spatiaux.</t>
+		<t id="2064">Les tubes quantiques sont utilisés à l'intérieur des moteurs et des commandes de tous les vaisseaux spatiaux.</t>
+		<t id="2024">L'Ore est le minéral le plus courant dans tout l'univers connu. Il est utilisé dans le processus de production de presque tous les biens techniques. L'Ore est produit dans des mines d'Ore construites autour de petits astéroïdes. Il peut également être extrait par des navires spéciaux équipés d'un système de forage mobile.</t>
+		<t id="2034">Le Silicium est la principale ressource minérale sur laquelle sont basés tous les missiles. Il se trouve généralement juste en dessous de la surface des astéroïdes et est extrait dans d'immenses mines de Silicium dans l'espace, ou par des navires spéciaux équipés d'un système de forage mobile.</t>
+		<t id="2382">Une raffinerie Rastar est un endroit sombre et nauséabond où de gros morceaux de la chair grasse des Chelts sont raffinés, puis transformés pour produire une fine huile appelée Rastar.(||) De nombreuses races utilisent cette huile comme lubrifiant pour les pièces mécaniques délicates.</t>
+		<t id="2384">Le Rastar est une huile produite à partir de la graisse animale du Chelt, un animal marin élevé par les Split.(||) Cette huile, une fois raffinée, est très fine et est utilisée par la plupart des races pour lubrifier les pièces mécaniques en mouvement des stations spatiales.</t>
+		<t id="2552">Une fonderie de Teladianium est une grande usine dédiée à la production du matériau dur et résistant connu sous le nom de Teladianium, utilisé dans tout l'univers pour la construction de stations spatiales.(||) Il est fabriqué en mélangeant de la boue de Teladian séchée avec des produits chimiques avant d'être ajouté à du plastique synthétique pour produire le matériau final.</t>
+		<t id="2554">La boue de Teladian est un type de sédiment très fin et limoneux trouvé au fond des rivières et des marais de la planète Teladi. Cette boue, une fois séchée, devient un minéral dur appelé Teladianium.(||) Ce minéral peut ensuite être mélangé à des produits chimiques, traité et même ajouté à des plastiques synthétiques pour créer un matériau résistant et flexible plus fort que l'acier trempé mais beaucoup plus léger. Le Teladianium est utilisé dans la construction de stations spatiales.</t>
+		<t id="4812">Cette station fabrique des satellites avancés qui remplacent les anciens satellites de relais de navigation. L'usine utilise des machines délicates pour construire ces petits appareils complexes.(||) Avec l'invention de l'envoi d'informations via le réseau de portes, des satellites ont été développés pour aider à amplifier ces transmissions, les scientifiques y ont ensuite ajouté un petit réseau de capteurs pour aider à la navigation et à la gestion à longue distance des stations.</t>
+		<t id="4814">Ce satellite est la prochaine génération de communications avancées. Il est capable de capturer des vidéos, une nouvelle fonctionnalité développée pour surveiller les stations et les vaisseaux.(||) Ce satellite conserve toujours les anciennes fonctionnalités permettant la navigation et le transfert d'informations.</t>
+		<t id="16975">Rootkit de piratage</t>
+		<t id="16976">Cet équipement indétectable est un ensemble de commandes essentielles utilisées par les pirates. Ces commandes ne sont accessibles que pour votre propre vaisseau.</t>
+		<t id="16977">Kit d'usine mobile</t>
+		<t id="16978">Cet équipement permet à n'importe quel vaisseau cargo ST de fabriquer une large gamme de produits. Cependant, cette usine mobile rudimentaire est moins efficace que les vraies usines, mais elle permet également la fabrication de produits exclusifs comme les balises de saut et les puces de piratage. Le kit d'usine mobile nécessite que le vaisseau soit amarré en permanence et ajoute également un coût d'entretien qui n'est pas financé par Terracorp.</t>
+		<t id="5414">Ces puces ont été créées par un célèbre parti de pirates il y a longtemps, lorsqu'il n'était plus possible de pirater un vaisseau distant tout en étant assis devant un écran d'ordinateur. De nos jours, ces petits morceaux de cuivre coûteux sont encore utilisés en secret pour corrompre les ports ouverts des vaisseaux voisins. Elles nécessitent tellement d'énergie qu'elles ne sont utilisables qu'une seule fois.</t>
+	</page>
+	
+	<page id="380035" title="Chaînes de caractères diverses du menu" descr="0" voice="no">
+		<t id="1102532">Afficher les satellites et les balises de saut</t>
+		<t id="738">Ventes à d'autres commerçants</t>
+		<t id="1102523">Achats auprès d'autres commerçants</t>
+		<t id="751">Niveau d'alerte</t>
+		<t id="752">Élevé</t>
+		<t id="753">Normal</t>
+		<t id="679">&lt; OK &gt;</t>
+		<t id="1100028">Paramètres de la station</t>
+		<t id="1104020">Combat</t><!-- Leadership -->
+		<t id="1104021">Piratage</t><!-- Logique -->
+		<t id="1104022">Ingénierie</t><!-- Perception -->
+		<t id="1104023">Mécanique</t><!-- Artisanat -->
+		<t id="4755">Retirer de la flotte</t>
+		<t id="4756">Devenir commandant de flotte</t>
+		<t id="4752">Commandant de flotte</t>
+		<t id="4753">Dissoudre la flotte</t>
+		<t id="2060">Ajouter à l'escadrille (: Votre Nova - YM345-Y)</t>
+		<t id="1104009">Grouper les vaisseaux par (Grouper la liste des vaisseaux par)</t>
+		<t id="1104014">Retirer de l'escadrille actuelle</t>
+	</page>
+
+	<page id="353335" title="L2 Défendre un objet" descr="0" voice="no">
+		<t id="101">Des pirates vont attaquer ma station ! Ils m'ont dit que s'ils ne me payaient pas, ils reviendraient et détruiraient {object.name@L2M135.Station}. Je n'ai pas pu me permettre de les payer et j'ai maintenant désespérément besoin que quelqu'un m'aide.\n\033RMais soyez prudent ! Ils savent que vous êtes un mercenaire, ils essaieront probablement de vous abattre avant de s'en prendre à ma station !</t>
+		<t id="102">Eh bien, des personnages louches m'ont dit que de mauvaises choses pourraient arriver à ma station si je ne les payais pas pour la "sécurité". J'ai décidé que je devrais en effet avoir de la sécurité avant qu'ils ne reviennent !\n\033RMais soyez prudent ! Ils savent que vous êtes un mercenaire, ils essaieront probablement de vous abattre avant de s'en prendre à ma station !</t>
+	</page>
+
+	<page id="381000" title="Noms d'emplois" descr="Races et noms d'emplois" voice="yes">
+		<t id="8000100">{17,10005}</t><!-- Mineur -->
+		<t id="8000101">Commerçant</t>
+	</page>
+
+	<page id="382020" title="Console de commande" descr="0" voice="no">
+		<t id="1005">Travailleurs...</t>
+		<t id="8">Base d'opérations :</t>
+		<t id="11">»» Toutes les tourelles...</t>
+		<t id="86">Masquer du menu des propriétés</t>
+		<t id="46">Effacer la base d'opérations</t>
+	</page>
+	
+	<!-- Menu de l'escadrille - désolé, je ne peux pas supporter la folie des majuscules ! -->
+	<page id="352020" title="Console de commande" descr="0" voice="no">
+		<t id="46">Effacer la base d'opérations</t>
+		<t id="47">Escadrille de vol :</t>
+		<t id="48">Configuration par défaut pour tous les vaisseaux</t>
+		<t id="51">Portée de saut automatique minimale</t>
+		<t id="52">Saut d'urgence</t>
+		<t id="53">Seuil de bouclier pour le saut d'urgence</t>
+		<t id="54">Quantité de ravitaillement en carburant (sauts)</t>
+		<t id="56">Sélectionner le passager</t>
+		<t id="58">Ailier pour le joueur</t>
+		<t id="62">Vaisseaux actuellement dans l'escadrille</t>
+		<t id="63">Réinitialiser la base d'opérations de tous les vaisseaux sur la valeur par défaut de l'escadrille</t>
+		<t id="64">Effacer la base d'opérations de tous les vaisseaux de l'escadrille</t>
+		<t id="67">Formation naturelle</t>
+		<t id="68">Ouvrir la console de commande du vaisseau</t>
+		<t id="69">Renvoyer le vaisseau dans l'escadrille</t>
+		<t id="70">Retirer temporairement le vaisseau de l'escadrille</t>
+		<t id="71">Définir comme base d'opérations pour d'autres vaisseaux</t>
+		<t id="75">Paramètres du vaisseau</t>
+		<t id="77">Quitter l'escadrille</t>
+		<t id="78">Ajouter des vaisseaux à l'escadrille</t>
+		<t id="81">Définir les tourelles de tous les vaisseaux</t>
+		<t id="82">Définir les tourelles de tous les chasseurs</t>
+		<t id="83">Définir les tourelles de tous les vaisseaux capitaux</t>
+		<t id="84">Nombre de chefs de formation</t>
+		<t id="85">Nombre maximum de vaisseaux par formation</t>
+		<t id="86">Masquer du menu des propriétés</t>
+		<t id="1006">Piratage...</t>
+	</page>
+
+	<page id="54" title="Meilleure vente d'amélioration" descr="" voice="no">
+		<t id="10">Peu courant</t>
+		<t id="15">Courant</t>
+		<t id="18">Meilleures ventes</t>
+	</page>
+
+	<page id="58" title="Meilleure achat d'amélioration" descr="" voice="no">
+		<t id="10">Peu courant</t>
+		<t id="15">Courant</t>
+	</page>
+
+	<page id="350037" title="Textes de l'encyclopédie" descr="0" voice="no">
+		<t id="9">Marchandises échangeables</t>
+		<t id="25">Dommages aux boucliers (par seconde)</t>
+		<t id="26">Dommages à la coque (par seconde)</t>
+		<t id="31">Énergie requise</t>
+	</page>
+	
+	<page id="351271" title="Misc" descr="0" voice="yes">
+		<t id="102019"/><!-- Old Goner station announcement. -->
+		<t id="102049"/><!-- Old Goner station announcement. -->
+		<t id="102069"/><!-- Old Goner station announcement. -->
+	</page>
+	
+	<page id="1266" title="Racenames" descr="Strings for the races" voice="no">
+		<t id="9">Corp. Privée</t>
+	</page>
+	
+	<page id="1265" title="Scripteditor" descr="" voice="no">
+		<t id="37">Sélect. Faction</t>
+	</page>
+	
+</language>

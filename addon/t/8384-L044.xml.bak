@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<language id="44">
+	<!--
+  <page id="2008" title="Script Cmd Names" descr="">
+    <t id="661">COMMAND_PHANONCORPREPORT</t>
+  </page>
+
+  <page id="2010" title="Script Cmd Names" descr="">
+    <t id="661">Hire, send spy to Phanon Corp.</t>
+  </page>
+
+  <page id="2011" title="Script Cmd Shorts" descr="">
+    <t id="661">SendSpyToPhanonCorp</t>
+  </page>
+  -->
+	<page id="8384" title="Litcube's Rival Corporation Artificial Life" descr="">
+		<t id="1">Corporation Phanon de Litcube</t>
+		<t id="2">Phanon</t>
+		<t id="15">[author][green]Phanon Corporation[/green][/author]Cher %s,\n\nAu nom de la Phanon Corporation, moi, Zalex Yhulan, voudrais exprimer nos plus profonds regrets pour vos actions précédentes. Sachez que la Phanon Corporation reviendra bientôt avec des efforts redoublés.</t>
+		<t id="23">Siège de %s</t>
+		<t id="24">[author][green]**Expéditeur Inconnu**[/green][/author]Cher %s,\n\nAu nom de mon employeur qui restera anonyme, je vous transfère une somme financière considérable de %s sur votre compte. Considérez-le comme un gage de l'appréciation de mon employeur pour avoir traité avec la dernière société fantoche de la Phanon Corporation. Les intérêts de mon employeur et les vôtres semblent s'aligner sur une voie ou une autre, donc je m'attends à être en contact avec vous à une date ultérieure.</t>
+		<t id="26">[author][green]**Expéditeur Inconnu**[/green][/author]Cher %s,\n\nJe voudrais vous adresser mes félicitations au nom de mon employeur, qui ne peut rester que l'anonyme pour le moment. Il est de la compréhension de mon employeur qu'avec la défaite de la société mère de la Phanon Corporation, l'Univers X a finalement vu la fin de cette menace déstabilisatrice. Comme récompense finale à la fin d'un long voyage, veuillez accepter ce don de %s pour votre entreprise de la nôtre. Prenez soin de vous, pilote, et adieu.</t>
+		<t id="27">[author][green]GNN[/green][/author]Dans un revirement surprenant, la filiale %s de la Phanon Corporation a été démise de ses fonctions aujourd'hui. Bien que le PDG de la filiale n'ait pas pu être joint pour commenter, des sources affirment que le licenciement était dû à un récent déclin des performances financières.</t>
+		<t id="101">TandiTech</t>
+		<t id="102">Nova Ltd.</t>
+		<t id="103">Vashire</t>
+		<t id="104">Rhayl Plex</t>
+		<t id="105">Omicron Ltd.</t>
+		<t id="106">Megax</t>
+		<t id="107">Syndex</t>
+		<t id="108">Phanon</t>
+		<t id="201">[author][green]TandiTech Corporation[/green][/author]Cher %s,\n\nAu nom de la TandiTech Corporation, une filiale de la Phanon Corporation, moi, Kyrdall Kormal, Président, j'aimerais profiter de cette occasion pour vous transmettre personnellement mes plus chaleureuses salutations et mes meilleurs vœux. Certains sponsors ont apporté un capital-risque de %s pour lancer notre organisation. Conformément à la loi sur le libre-échange, il est de notre devoir de vous informer que notre société s'est établie avec un siège opérationnel dans le secteur %s, et qu'elle s'étendra à partir de là comme le jugeront bon notre conseil d'administration et comme le justifieront nos bénéfices accumulés. Nous voudrions également vous rappeler aimablement de bien vouloir vous tenir à l'écart de nos biens, y compris nos vaisseaux commerciaux, nos vaisseaux de guerre et nos stations, car le libre marché peut être un endroit difficile, exigeant et souvent dangereux. Ici, chez TandiTech, votre sécurité est importante pour nous.\n\nMes plus chaleureuses salutations,\nKyrdall Kormal</t>
+		<t id="202">[author][green]Nova Ltd. Corporation[/green][/author]Cher %s,\n\nAu nom de la Nova Ltd. Corporation, une filiale de la Phanon Corporation, moi, Tastad Nova, Président, je voudrais vous informer que vos relations avec notre précédente société sœur, la TandiTech Corporation, peuvent être pardonnées et oubliées. Je suis sûr que nos transactions commerciales ne se croiseront pas cette fois-ci. Pour assurer notre succès, la Phanon Corporation nous a accordé un salaire plus élevé que prévu, qui n'inclut pas un capital-risque de %s.\n\nMes plus chaleureuses salutations,\nTastad Nova</t>
+		<t id="203">[author][green]Vashire Corporation[/green][/author]Cher %s,\n\nAu nom de la Vashire Corporation, une filiale de la Phanon Corporation, moi, Klhuad, PDG, j'aimerais exprimer mes plus sincères regrets pour tous les biens et actifs vous appartenant qui ont connu une fin prématurée aux mains de nos forces de sécurité. Je suis sûr que ce malentendu ne viendra pas s'interposer dans la dernière entreprise de la Phanon Corporation. Comme le stipule la loi universelle sur le commerce, les registres indiqueront que notre capital-risque accordé par la Phanon Corporation est de %s.\n\nMes plus chaleureuses salutations,\nKlhuad</t>
+		<t id="204">[author][green]Rhayl Plex Corporation[/green][/author]Cher %s,\n\nAu nom de la Rhayl Plex Corporation, une filiale de la Phanon Corporation, moi, Om Ido, PDG, je vous avertis. Je suis un homme d'affaires de la vieille école, j'ai fréquenté diverses universités économiques Teladi et j'ai un CV de la taille d'un vaisseau de transport. Le capital-risque de la Phanon Corp. à ce stade est de %s, mais vous pouvez le vérifier vous-même. Restez à l'écart de nos actifs.\n\nMes plus chaleureuses salutations,\nOm Ido</t>
+		<t id="205">[author][green]Omicron Ltd. Corporation[/green][/author]%s,\n\nJ'ai très peu de choses à vous dire. La Phanon Corporation investit %s cette fois-ci. Restez à l'écart, ou faites face aux conséquences. Moi, Perdis Lhuan, PDG de l'Omicron Ltd. Corporation, j'ai pris possession d'un avant-poste. Nous avons établi une frontière, et vous n'entraverez pas davantage les entreprises de la Phanon Corporation.\n\nPerdis Lhuan</t>
+		<t id="206">[author][green]Megax Corporation[/green][/author]%s,\n\nÉloignez-vous de nos vaisseaux. La subvention de %s de la Megax Corporation n'a pas de temps à perdre avec votre entreprise. Ceci est un avertissement.\n\nXag Khurmagaun</t>
+		<t id="207">[author][green]Syndex Corporation[/green][/author]%s,\n\nCeci est simplement le message obligatoire que nous sommes tenus d'envoyer par la loi commerciale interstellaire. La subvention de %s de la Phanon Corporation, qui nous a été récemment transmise. Rien de plus, rien de moins.\n\nNaydol Ulmankstal</t>
+		<t id="208">[author][green]La Phanon Corporation[/green][/author]%s,\n\nAlors c'en est arrivé là, n'est-ce pas ? Tout le poids de la Phanon Corporation est derrière notre dernière entreprise de %s. Vous et vos affiliés êtes marqués comme une menace de sécurité officielle et serez traités en conséquence. Vos actions n'arrêteront pas nos prises de contrôle, nous avons donc finalement décidé d'intervenir, en mettant tout notre poids derrière nos entreprises.\n\nZalex Yhulan</t>
+		<t id="250">[author][green]%s[/green][/author][cyan]**Message Diffusé**[/cyan]\nConformément à la loi commerciale interstellaire, nous émettons des déclarations financières et d'actifs aux parties enregistrées, y compris un modèle d'évaluation des menaces militaires Argon, conformément aux règlements d'enregistrement militaire Argon. Tous les enregistrements sont entièrement légaux ; la certification est fournie sur demande.\n</t>
+		<t id="251">Société : [red]La Phanon Corporation[/red]</t>
+		<t id="252">Filiale active : [red]%s[/red]</t>
+		<t id="253">Solde créditeur : [white]%s[/white]</t>
+		<t id="254">Actifs liquides : [white]%s[/white]</t>
+		<t id="255">Prochaine acquisition prévue : [white]%s[/white]</t>
+		<t id="256">Négociants libres enregistrés : [white]%s[/white]</t>
+		<t id="257">Représentants de vente de stations enregistrés : [white]%s[/white]</t>
+		<t id="258">Usines enregistrées : [white]%s[/white]</t>
+		<t id="259">Actifs militaires enregistrés : [white]%s[/white]</t>
+		<t id="260">Indice AMTA : [white]%s[/white]</t>
+		<!--Edit Phanon Corporation's start sectors here-->
+		<!--which are currently unused-->
+		<!--Unknown Sector Nu-->
+		<t id="300">3,15</t>
+		<!--Unknown Sector Kappa-->
+		<t id="301">8,16</t>
+		<!--V Alpha-->
+		<t id="302">11,14</t>
+		<!--Y Alpha-->
+		<t id="303">9,16</t>
+		<!--Unknown Sector Beta-->
+		<t id="304">9,7</t>
+		<!--Unknown Sector Epsilon -->
+		<t id="305">8,8</t>
+		<!--Void of Opportunity-->
+		<t id="306">12,5</t>
+		<!--Veil of Delusion-->
+		<t id="307">16,16</t>
+		<!--Danna's Chance-->
+		<t id="308">4,6</t>
+		<!--Hatikvah's Faith-->
+		<t id="309">6,6</t>
+		<!--Lasting Vengance-->
+		<t id="310">10,16</t>
+		<!--Gunne's Crusade-->
+		<t id="311">7,10</t>
+		<!--Desecrated Skies-->
+		<t id="312">8,12</t>
+		<!--Edit Phanon Corporation's asset notification message delay.  Default is 240 mins.-->
+		<t id="320">240</t>
+		<!--Edit Phanon Corporation's salary multiplier.  Default is 500.  This is multiplied by the generation (1-8).-->
+		<t id="350">2500</t>
+		<!--Edit Phanon Corporation's next generation wait period.  Below is the spectrum between first generation and last generation wait times.-->
+		<t id="351">225</t>
+		<t id="352">1080</t>
+		<!--Edit Phanon Corporation's super sales modifier (multiplier for station selling).  Default is 1 x Generation-->
+		<t id="353">1</t>
+		<!--Edit Phanon Corporation's auto-level progression.  Values are in AMTA-->
+		<t id="354">500</t>
+		<t id="355">1500</t>
+		<t id="356">2750</t>
+		<t id="357">4625</t>
+		<t id="358">7438</t>
+		<t id="359">11656</t>
+		<t id="360">17984</t>
+	</page>
+</language>
+
+
+
+
+
+
+
+
+
+

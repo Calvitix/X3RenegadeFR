@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+Voici la traduction en français du texte XML, en préservant la structure et les caractères spéciaux :
+
+<ln id="tooltip_string_3">Nom de la galaxie. Laisser vide pour un aléatoire.</ln>
+<ln id="tooltip_trackbar_1">Définit la taille physique de la galaxie.</ln>
+<ln id="tooltip_trackbar_2">Détermine la quantité de brouillard générée aléatoirement dans chaque secteur. 0 signifie pas de brouillard du tout. Notez que la distance de vue n'est affectée que par le réglage Moyen dans le jeu.</ln>
+<ln id="tooltip_checkbox_13">La bande-son alternative utilise le fichier mayhem_data\custom_musics.txt au lieu de ...\custom_musics_lu.txt.</ln>
+<ln id="tooltip_listicon_1">Ami est Alliance Indestructible, Ennemi est Guerre Totale, Dynamique est par défaut. Décochez pour désactiver une race. 1 race minimum.</ln>
+<ln id="tooltip_checkbox_2">Les secteurs du Commonwealth sont attribués aléatoirement au lieu de former un territoire cohérent.</ln>
+<ln id="tooltip_checkbox_4">Le Commonwealth a moins de secteurs isolés.</ln>
+<ln id="tooltip_checkbox_10">La galaxie a un trou géant au milieu. Incompatible avec la galaxie Éclatée.</ln>
+<ln id="tooltip_checkbox_18">La galaxie a moins de secteurs. Incompatible avec la galaxie Creuse.</ln>
+<ln id="tooltip_checkbox_19">Chaque secteur reçoit une population, une recherche et un soutien supplémentaires.</ln>
+<ln id="tooltip_checkbox_20">Les Xénons ont tendance à se regrouper dans les mêmes zones au lieu d'être générés aléatoirement.</ln>
+<ln id="tooltip_checkbox_17">Par défaut, ce programme crée des dossiers de sauvegarde et restaure/supprime vos parties en cas de changement de galaxie. Si vous ne voulez pas que cela se produise, cochez cette case.</ln>
+<ln id="tooltip_checkbox_22">Dessiner un aperçu approximatif de la disposition de la galaxie. Désactivé par défaut pour éviter tout spoiler. Ne peut pas prévisualiser les galaxies non générées.</ln>
+<ln id="tooltip_checkbox_14">Passer le générique d'introduction.</ln>
+<ln id="tooltip_checkbox_15">Ne pas afficher le menu spécial avant de lancer X3.</ln>
+<ln id="tooltip_checkbox_16">Garder le Créateur de Jeu ouvert après le lancement de X3.</ln>
+<ln id="message_backup_folder">Nom du dossier de sauvegarde. Sera créé s'il n'existe pas.</ln>
+<ln id="message_backup_done">Vos parties ont été copiées avec succès dans le dossier de sauvegarde.</ln>
+<ln id="message_backup_fail">Il n'y a pas de parties dans '{1}'.</ln>
+<ln id="message_restore_error">Erreur : les dossiers source et de destination sont les mêmes.</ln>
+<ln id="message_restore_confirm">Toutes les parties dans '{1}' seront supprimées avant la restauration. Voulez-vous continuer ?</ln>
+<ln id="message_restore_fail">Il n'y a pas de parties dans '{1}'.</ln>
+<ln id="message_first_backup1">Étant donné qu'il s'agit de la première fois que vous lancez X3 avec une galaxie personnalisée, toutes vos parties précédentes ont été sauvegardées dans {1}backup_origin.</ln>
+<ln id="message_first_backup2">Par défaut, ce programme gère vos parties en fonction de la galaxie que vous sélectionnez. Dans le processus, les sauvegardes sont évidemment déplacées ou supprimées. Si vous jouez à un autre mod, ou si vous voulez jouer à une galaxie personnalisée, vous devrez gérer manuellement vos parties en cochant la case 'Ne pas gérer mes parties'.</ln>
+<ln id="message_no_expansion_warning">Le paramètre d'extension a été réglé sur 'Aucun'. Toutes les factions commenceront avec un seul secteur et la galaxie aura un grand nombre de Xénons, de Kha'aks et de Pirates. Si vous êtes un nouveau joueur, ce paramètre n'est pas recommandé. Voulez-vous quand même procéder ?</ln>
+<ln id="message_small_galaxy_warning">La taille de la galaxie est inférieure à la moyenne. Il est recommandé de jouer avec le trait de galaxie "Statistiques de secteur supplémentaires". Voulez-vous activer ce trait maintenant ?</ln>
+<ln id="message_save_warning1">Vous avez actuellement des parties sauvegardées sur cette galaxie. Êtes-vous sûr de vouloir supprimer cette galaxie et toutes les parties qui y sont associées ?</ln>
+<ln id="message_save_warning2">Vous perdrez toutes vos parties sur la galaxie actuelle. Êtes-vous sûr de vouloir supprimer cette galaxie et toutes les parties qui y sont associées ?</ln>
+<ln id="misc_current"> (actuel)</ln>
+<ln id="misc_launching">Lancement...</ln>
+<ln id="misc_run">Exécuter</ln>
+<ln id="misc_generating">Génération, veuillez patienter...</ln>
+<ln id="misc_generate">Générer</ln>
+<ln id="misc_yes">oui</ln>
+<ln id="misc_no">non</ln>
+<ln id="error_x3_not_found">X3AP.exe introuvable dans le dossier racine.</ln>
+<ln id="error_galaxy_not_found">Dossier de galaxie introuvable.</ln>
+<ln id="error_default_browser">Impossible de démarrer le navigateur par défaut, veuillez utiliser le lien suivant : https://www.buymeacoffee.com/Joubarbe</ln>
+<ln id="error_file1">Impossible de trouver '{1}config.ini'.</ln>
+<ln id="error_file2">Erreur lors du chargement de '{1}dialog.xml'.</ln>
+<ln id="error_file3">Erreur XML à la ligne {1} : '{2}'.</ln>
+<ln id="error_file4">Erreur de création de dialogue : '{1}'.</ln>
+<ln id="error_file5">Impossible d'ouvrir '{1}'.</ln>
+<ln id="error_file6">Impossible d'ouvrir '{1}gamestart_ships.json'.</ln>
+<ln id="error_file7">Erreur critique lors de la tentative de création de '{1}'.</ln>
+<ln id="error_file8">Erreur critique lors de la tentative de lecture de '{1}'.</ln>
+<ln id="error_invalid_name">Ce nom n'est pas valide.</ln>
+<ln id="error_invalid_galaxy_name">Le nom de galaxie {1} est déjà pris. Opération annulée.</ln>	<ln id="race_argon">Argon</ln>
+	<ln id="race_boron">Boron</ln>
+	<ln id="race_split">Split</ln>
+	<ln id="race_paranid">Paranide</ln>
+	<ln id="race_teladi">Teladi</ln>
+	<ln id="race_terran">Terrien</ln>
+	<ln id="race_terran_gamestart">Terracorp (Prologue)</ln>
+	<ln id="race_none">aucun</ln>
+	<ln id="race_unknown">inconnu</ln>
+	<ln id="race_markus">Markus Corp.</ln>
+	<ln id="race_oceania">Oceania Inc.</ln>
+	<ln id="race_thuruk">Thuruk's Inc.</ln>
+	<ln id="race_pontifex">Pontifex Corp.</ln>
+	<ln id="race_salecrest">Salecrest Corp.</ln>
+	<ln id="race_random">Aléatoire</ln>
+	<ln id="ware_fish">Poisson</ln>
+	<ln id="ware_fruit">Fruit</ln>
+	<ln id="ware_meat">Viande</ln>
+	<ln id="ware_vegetables">Légumes</ln>
+	<ln id="desc_dejure">Propriétaire de Jure : {1}</ln>
+	<ln id="desc_company">Compagnie: {1}</ln>
+	<ln id="desc_signals">Signaux anormaux: {1} %</ln>
+	<ln id="desc_memory">Mémoire terrienne: {1}</ln>
+	<ln id="desc_pop">Max. population: {1}</ln>
+	<ln id="desc_support">Entretien Station: {1}</ln>
+	<ln id="desc_research">Taux de recherche: {1} %</ln>
+	<ln id="desc_production">Production de l'Avant-Poste: {1}</ln>
+	<ln id="desc_consumption">Consommation de l'Avant-Poste: {1}</ln>
+	<ln id="rel_friend">Ami</ln>
+	<ln id="rel_foe">Ennemi</ln>
+	<ln id="rel_default">Dynamique</ln>
+	<ln id="language_id">44</ln> <!-- Do not put an extra 0 if needed. Example, in Russian: 7 -->
+	<ln id="language_id_file">44</ln> <!-- Put an extra 0 if needed. Example, in Russian: 07 -->
+</root>

@@ -1,0 +1,487 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>Mayhem.Mission.GetAliasPrefix</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments>
+		<argument index="1" name="missionName" type="Var/String" desc="" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="" />
+		<line linenr="002" indent="" interruptable="@">
+			<var>$missionNames</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[NULL]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Mayhem.Mission.GetNames</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="003" indent="">
+			<var>$prefixes</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>15</var>
+		</line>
+		<line linenr="004" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>0</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Patrol'</text>
+		</line>
+		<line linenr="005" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>1</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Suppression'</text>
+		</line>
+		<line linenr="006" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>2</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Provision'</text>
+		</line>
+		<line linenr="007" indent="&#160;">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>3</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Acquisition'</text>
+		</line>
+		<line linenr="008" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>4</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Prospecting'</text>
+		</line>
+		<line linenr="009" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>5</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Collection'</text>
+		</line>
+		<line linenr="010" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>6</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Exploration'</text>
+		</line>
+		<line linenr="011" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>7</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Rescue'</text>
+		</line>
+		<line linenr="012" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>8</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Police'</text>
+		</line>
+		<line linenr="013" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>9</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Deliveries'</text>
+		</line>
+		<line linenr="014" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>10</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Bait'</text>
+		</line>
+		<line linenr="015" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>11</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Defense'</text>
+		</line>
+		<line linenr="016" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>12</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Intel'</text>
+		</line>
+		<line linenr="017" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>13</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'VIP'</text>
+		</line>
+		<line linenr="018" indent="">
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>14</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Supplies'</text>
+		</line>
+		<line linenr="019" indent="" />
+		<line linenr="020" indent="">
+			<var>$index</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>index</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<var>$missionName</var>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$missionNames</var>
+			<text> </text>
+			<text>offset</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="021" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$index</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>-1</var>
+		</line>
+		<line linenr="022" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
+			<var>$prefix</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$prefixes</var>
+			<text>[</text>
+			<var>$index</var>
+			<text>]</text>
+		</line>
+		<line linenr="025" indent="" />
+		<line linenr="026" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>$prefix</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="Mayhem.Mission.GetAliasPrefix" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="5">
+				<sval type="string" val="missionName" />
+				<sval type="string" val="missionNames" />
+				<sval type="string" val="prefixes" />
+				<sval type="string" val="index" />
+				<sval type="string" val="prefix" />
+			</sval>
+			<sval type="array" size="22">
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="Mayhem.Mission.GetNames" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="12" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="15" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Patrouille" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Suppression" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Provision" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Acquisition" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Prospection" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="5" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Collection" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="6" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Exploration" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="7" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Secours" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Police" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="9" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Livraison" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="10" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Récupération" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Défense" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="12" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Renseignement" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="13" />
+					<sval type="int" val="5" />
+					<sval type="string" val="VIP" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="4" />
+					<sval type="int" val="14" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Soutien" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="1083" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610607608" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+			</sval>
+			<sval type="array" size="1">
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="string" val="" />
+				</sval>
+			</sval>
+			<sval type="array" size="4">
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="17" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="20" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="21" />
+					<sval type="int" val="2" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>
